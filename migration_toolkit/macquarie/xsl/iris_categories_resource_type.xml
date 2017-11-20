@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+     <resource label="A1 - Book"/>
+    <resource label="A2 - Book"/>
+    <resource label="A3 - Book"/>
+    <resource label="A4 - Book"/>
+    <resource label="B1 - Book Chapter"/>
+    <resource label="B2 - Book Chapter"/>
+    <resource label="C1 - Journal Article"/>
+    <resource label="C2 - Journal Article"/>
+    <resource label="C3 - Journal Article"/>
+    <resource label="C4 - Journal Letter / Review"/>
+    <resource label="C5 - Journal Editorship"/>
+    <resource label="D - Review"/>
+    <resource label="E1 - Conference Paper"/>
+    <resource label="E2 - Conference Paper"/>
+    <resource label="E3 - Conference Paper"/>
+    <resource label="E4 - Conference Proceedings Editorship"/>
+    <resource label="F - Audio Visual"/>
+    <resource label="G - Software"/>
+    <resource label="H - Design"/>
+    <resource label="I - Patent"/>
+    <resource label="J1 - Creative Work"/>
+    <resource label="J2 - Creative Work"/>
+    <resource label="J3 - Exhibition"/>
+    <resource label="J4 - Exhibition"/>
+    <resource label="J5 - Exhibition Curatorship"/>
+    <resource label="K1 - Reference Entry"/>
+    <resource label="K2 - Reference Entry"/>
+    <resource label="L - Other Public Output"/>
+    <resource label="Z - Other Research Output"/>
+</resources>
+                  

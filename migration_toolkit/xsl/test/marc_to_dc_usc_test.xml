@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <utfx:stylesheet src="marc_dc_usc.xsl"/>
+    
+    <!-- The following code was commented out for USC data, request to not show this in VITAL portal -->
+    <!-- Dest Code -->
+    <!--<utfx:test>
+        <utfx:name>Dest Code</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">070227t2002||||||| eng|d</controlfield>
+                        <datafield tag="596" ind1=" " ind2=" "><subfield code="a">C1</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:description>
+       C1
+        </dc:description>
+                 </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>-->
+    
+    <!-- Peer Reviewed -->
+    <utfx:test>
+        <utfx:name>Peer Reviewed</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="595" ind1=" " ind2=" ">
+                            <subfield code="a">Refereed, Research</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                 <dc:description>Refereed, Research</dc:description>
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Title -->
+    
+    
+    <!-- ISBN -->
+    <utfx:test>
+        <utfx:name>ISBN</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield ind1=" " ind2=" " tag="020">
+                            <subfield code="a">0-275-96945-2</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                   <dc:language>eng</dc:language>
+                   <dc:identifier>URN:ISBN: 0-275-96945-2</dc:identifier>
+              </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- ISSN -->
+    <utfx:test>
+        <utfx:name>ISSN</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield ind1=" " ind2=" " tag="022">
+                            <subfield code="a">1011-6370</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                  <dc:language>eng</dc:language>
+                  <dc:identifier>URN:ISSN: 1011-6370</dc:identifier>
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Test Name</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="245" ind1="0" ind2="0">
+                            <subfield code="a">Observing the open-closed boundary using cusp-latitude magnetometers</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+              <dc:title>Observing the open-closed boundary using cusp-latitude magnetometers</dc:title>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Herb Title -->
+    <utfx:test>
+        <utfx:name>Test Herb Name</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="243" ind1="0" ind2="0">
+                            <subfield code="a">Family Name</subfield>
+                            <subfield code="g">Botanical Name</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:title>Family Name : Botanical Name</dc:title>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [1.1] -->
+    <utfx:test>
+        <utfx:name>Creators [1.1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Ables, Sean Thomas</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:creator>Ables, Sean Thomas</dc:creator>
+                <dc:language>eng</dc:language>
+              </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [1.2] -->
+    <utfx:test>
+        <utfx:name>Creators [1.2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Ables, Sean Thomas</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                            <subfield code="d">1926-1983</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">                
+                    <dc:creator>Ables, Sean Thomas 1926-1983</dc:creator>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [2.1] -->
+    <utfx:test>
+        <utfx:name>Creators [2.1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                    <dc:creator>Fraser, Brian J</dc:creator>
+                <dc:language>eng</dc:language>
+              </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [2.2] -->
+    <utfx:test>
+        <utfx:name>Creators [2.2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                    <dc:creator>Fraser, Brian J</dc:creator>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [2.3] -->
+    <utfx:test>
+        <utfx:name>Creators [2.3]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                            <subfield code="e">col</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:creator>Fraser, Brian J (Collector)</dc:creator>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [3] -->
+    <utfx:test>
+        <utfx:name>Creators [3]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="710" ind1="2" ind2=" ">
+                            <subfield code="a">University of Newcastle</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">                  
+                    <dc:relation>University of Newcastle</dc:relation>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Determiner -->
+    <utfx:test>
+        <utfx:name>Creators [4]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="720" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                            <subfield code="e">asn</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">                  
+                <dc:creator>Fraser, Brian J (Determiner)</dc:creator>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Description -->
+    <utfx:test>
+        <utfx:name>Description</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="520" ind1="3" ind2=" ">
+                            <subfield code="a">A new ground-based diagnostic of reconnection at the magnetopause</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                    <dc:description>A new ground-based diagnostic of reconnection at the magnetopause</dc:description>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Publisher Information & publication date -->
+    <utfx:test>
+        <utfx:name>Publisher Information &amp; publication date</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Washington</subfield>
+                            <subfield code="b">American Geophysical Union</subfield>
+                            <subfield code="c">2005</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                    <dc:publisher>American Geophysical Union</dc:publisher>
+                    <dc:date>2005</dc:date>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Publisher Information & publication date - Date only -->
+    <utfx:test>
+        <utfx:name>publication date</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                              <subfield code="c">2005</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:date>2005</dc:date>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Relation -->
+    <utfx:test>
+        <utfx:name>Relation</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="787" ind1="0" ind2=" ">
+                            <subfield code="t">Geophysical Research Letters</subfield>
+                            <subfield code="g">Vol. 32, no. 10 (May 28. 2005), p. 4 pages</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                    <dc:relation>Geophysical Research Letters: Vol. 32, no. 10 (May 28. 2005), p. 4 pages</dc:relation>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Additional INfo - Herbs -->
+    <utfx:test>
+        <utfx:name>Additional Info</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="500" ind1=" " ind2="0">
+                            <subfield code="a">Additional info</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:description>Additional info</dc:description>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Status -->
+    <utfx:test>
+        <utfx:name>Status</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="513" ind1=" " ind2="0">
+                            <subfield code="a">Status here</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:description>Status here</dc:description>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Rights -->
+    <utfx:test>
+        <utfx:name>Rights</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="540" ind1=" " ind2="0">
+                            <subfield code="a">We have permission to have this in our repository</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                             <dc:rights>We have permission to have this in our repository</dc:rights>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Publisher URL -->
+    <utfx:test>
+        <utfx:name>Publisher URL</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="856" ind1="4" ind2="0">
+                            <subfield code="u">http://0-www.agu.org.library.newcastle.edu.au/journals/gl/</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                  <dc:identifier>http://0-www.agu.org.library.newcastle.edu.au/journals/gl/</dc:identifier>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Subjects -->
+    <utfx:test>
+        <utfx:name>Subjects</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="650" ind1=" " ind2=" ">
+                            <subfield code="a">flux-transfer events</subfield>
+                            <subfield code="a">interplanetary magnetic-field</subfield>
+                            <subfield code="a">impulse events</subfield>
+                            <subfield code="a">magnetopause</subfield>
+                            <subfield code="a">reconnection</subfield>
+                            <subfield code="a">signatures</subfield>
+                            <subfield code="a">altitude</subfield>
+                            <subfield code="a">identification</subfield>
+                            <subfield code="a">magnetosphere</subfield>
+                            <subfield code="a">layer</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                    <dc:subject>flux-transfer events</dc:subject>
+                    <dc:subject>interplanetary magnetic-field</dc:subject>
+                    <dc:subject>impulse events</dc:subject>
+                    <dc:subject>magnetopause</dc:subject>
+                    <dc:subject>reconnection</dc:subject>
+                    <dc:subject>signatures</dc:subject>
+                    <dc:subject>altitude</dc:subject>
+                    <dc:subject>identification</dc:subject>
+                    <dc:subject>magnetosphere</dc:subject>
+                    <dc:subject>layer</dc:subject>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Coverage -->
+    <utfx:test>
+        <utfx:name>Coverage</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="662" ind1=" " ind2=" ">
+                            <subfield code="b">Region Name</subfield>
+                            <subfield code="c">District Name</subfield>
+                            <subfield code="g">Locality</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:coverage>Locality, District Name, Region Name</dc:coverage>  
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Type -->
+    <utfx:test>
+        <utfx:name>Item Type</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">journal article</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                    <dc:type>journal article</dc:type>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Collection Title-->
+    <utfx:test>
+        <utfx:name>Collection Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="773" ind1="0" ind2=" ">
+                            <subfield code="t">The University of Newcastle VITAL repository</subfield>
+                            <subfield code="g">Vol. 32, no. 10 (May 28. 2005), p. 4 pages</subfield>
+                            <subfield code="n">1</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:relation>The University of Newcastle VITAL repository: Vol. 32, no. 10 (May 28. 2005), p. 4 pages</dc:relation>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- DEST Collection Year removed from portal view -->
+    <!--<utfx:test>
+        <utfx:name>DEST Collection Year</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="591" ind1=" " ind2=" ">
+                            <subfield code="a">2005</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                    <dc:description>2005</dc:description>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>-->
+    <!-- DEST Category removed from portal view-->
+    <!--<utfx:test>
+        <utfx:name>DEST Category</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="592" ind1=" " ind2=" ">
+                            <subfield code="a">C1</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                  <dc:description>C1</dc:description>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>-->
+    <!-- Conference Title -->
+    <utfx:test>
+        <utfx:name>Conference Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="711" ind1="0" ind2=" ">
+                            <subfield code="a">This is a conference</subfield>
+                            <subfield code="d">2005</subfield>
+                            <subfield code="c">Brisbane, Australia</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                 <dc:relation>This is a conference, Brisbane, Australia 2005 </dc:relation>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!--test Language-->
+    <utfx:test>
+        <utfx:name>Language</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                      
+                    <dc:language>eng</dc:language>
+ 
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!--Herb collection-->
+    <utfx:test>
+        <utfx:name>Series/Collection</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="490" ind1="0" ind2=" ">
+                            <subfield code="a">USC Virtual Herbarium</subfield>
+                            
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:relation>USC Virtual Herbarium</dc:relation>
+                
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <!-- Patent Number -->
+    <utfx:test>
+        <utfx:name>Patent Number</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="013" ind1="0" ind2=" ">
+                            <subfield code="a">Patent Number</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                 <dc:language>eng</dc:language>
+                  <dc:description>Patent Number: Patent Number</dc:description>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Date -->
+    <utfx:test>
+        <utfx:name>Date</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="046" ind1="0" ind2=" ">
+                            <subfield code="a">m</subfield>
+                            <subfield code="k">19/04/1978</subfield>
+                            <subfield code="l">19/04/1978</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:date>1978</dc:date>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Date Year Only-->
+    <utfx:test>
+        <utfx:name>Date</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+                        <datafield tag="046" ind1="0" ind2=" ">
+                            <subfield code="a">m</subfield>
+                            <subfield code="k">1978</subfield>
+                            <subfield code="l">1978</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:date>1978</dc:date>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+
+
+
+</utfx:tests>

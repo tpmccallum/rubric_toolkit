@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+   <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="recursive_digital_commons_to_dc.xsl"/>
+
+   <!-- Test to verify conversion of adt html to Dublin Core -->
+
+
+
+   <utfx:test>
+      <utfx:name>title</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <record>
+               <header>
+                  <identifier>oai:digitalcommons.massey.ac.nz:craig_prichard-1002</identifier>
+                  <datestamp>2006-10-18</datestamp>
+                  <setSpec>publication:craig_5Fprichard</setSpec>
+               </header>
+
+               <metadata>
+                  <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/      http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+                     <dc:title>Responding to Class Theft: Theoretical and Empirical Links to Critical Management Studies</dc:title>
+                     <dc:creator>Prichard, Craig</dc:creator>
+                     <dc:creator>tim</dc:creator>
+                    <dc:creator>Bron</dc:creator>
+                     <dc:description>This paper suggests closer linkages between the fields of Postmodern Class Analysis (PCA) and Critical Management Studies (CMS)2 are possible. It argues that CMS might contribute to the empirical engagement with the over-determined relations between class and non-class processes in work organizations (this appears to have received relatively little attention in PCA) and that PCA's theoretical and conceptual commitments may provide one means for CMS to engage in class analysis. CMS's focus on power and symbolic relations has led to the relative neglect of exploitation and class, in surplus terms. Both fields share similar although not identical political and ethical commitments.</dc:description>
+                     <dc:date>2007-01-01</dc:date>
+                     <dc:type>text</dc:type>
+                     <dc:format>application/pdf</dc:format>
+                     <dc:identifier xsi:type="dcterms:URI">http://digitalcommons.massey.ac.nz/craig_prichard/3</dc:identifier>
+                     <dc:publisher>Massey University.</dc:publisher>
+
+                     <dc:rights>http://digitalcommons.massey.ac.nz/dissertations/theses_copyright.html</dc:rights>
+                     <dc:subject>Critical Management Studies; Critical Management Studies</dc:subject>
+                     <dc:subject>Postmodern class analysis</dc:subject>
+                     <dc:subject>management</dc:subject>
+
+                  </oai_dc:dc>
+
+               </metadata>
+            </record>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dublin_core>
+               <dcvalue element="date" qualifier="available">2006-10-18</dcvalue>
+               <dcvalue element="title" qualifier="none">Responding to Class Theft: Theoretical and Empirical Links to Critical Management Studies</dcvalue>
+               <dcvalue element="contributor" qualifier="author">Prichard, Craig</dcvalue>
+               <dcvalue element="contributor" qualifier="author">tim</dcvalue>
+               <dcvalue element="contributor" qualifier="author">Bron</dcvalue>
+               <dcvalue element="description" qualifier="abstract">This paper suggests closer linkages between the fields of Postmodern Class Analysis (PCA) and Critical Management Studies (CMS)2 are possible. It argues that CMS might contribute to the empirical engagement with the over-determined relations between class and non-class processes in work organizations (this appears to have received relatively little attention in PCA) and that PCA's theoretical and conceptual commitments may provide one means for CMS to engage in class analysis. CMS's focus on power and symbolic relations has led to the relative neglect of exploitation and class, in surplus terms. Both fields share similar although not identical political and ethical commitments.</dcvalue>
+               <dcvalue element="date" qualifier="issued">2007-01-01</dcvalue>
+               <dcvalue element="type" qualifier="none">text</dcvalue>
+               <dcvalue element="format" qualifier="medium">application/pdf</dcvalue>
+               <dcvalue element="identifier" qualifier="uri">http://digitalcommons.massey.ac.nz/craig_prichard/3</dcvalue>
+               <dcvalue element="publisher" qualifier="none">Massey University.</dcvalue>
+               <dcvalue element="rights" qualifier="none">http://digitalcommons.massey.ac.nz/dissertations/theses_copyright.html</dcvalue>
+               <dcvalue element="subject" qualifier="classification">Critical Management Studies; Critical Management Studies</dcvalue>
+               <dcvalue element="subject" qualifier="classification">Postmodern class analysis</dcvalue>
+               <dcvalue element="subject" qualifier="classification">management</dcvalue>
+            </dublin_core>
+         </utfx:expected>
+      </utfx:assert-equal>
+   </utfx:test>
+
+
+
+
+
+
+   <!--<utfx:test>
+      <utfx:name>language</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <meta name="dc.language" scheme="RFC1766" content="en"/>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element = "language" qualifier = "iso">en</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>-->
+
+
+   <!--  <utfx:test>
+      <utfx:name>description</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <meta name="dc.description" content= "PhD Doctorate"/>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element = "type" qualifier = "none">PhD Doctorate</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+-->
+
+
+</utfx:tests>

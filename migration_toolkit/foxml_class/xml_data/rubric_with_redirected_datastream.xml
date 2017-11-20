@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject xmlns:foxml="http://www.fedora.info/resources/faq.shtml#rdfproperties" PID="test:99"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+	<foxml:objectProperties>
+		<foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="I"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="test import object"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL2"/>
+	</foxml:objectProperties>
+	<foxml:datastream ID="DC" STATE="I" CONTROL_GROUP="X">
+		<foxml:datastreamVersion ID="DC.0" MIMETYPE="text/xml" LABEL="Dublin Core">
+			<foxml:xmlContent>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+					<dc:title>FOXML Reference Object</dc:title>
+					<dc:creator>Sandy Payette</dc:creator>
+					<dc:subject>Fedora documentation</dc:subject>
+					<dc:description>FOXML showing how a digital object is encoded for persistent storage in a Fedora repository</dc:description>
+					<dc:publisher>Cornell CIS</dc:publisher>
+					<dc:identifier>demo:999</dc:identifier>
+				</oai_dc:dc>
+			</foxml:xmlContent>
+		</foxml:datastreamVersion>
+	</foxml:datastream>
+	<foxml:datastream ID="rubric" STATE="I" CONTROL_GROUP="X">
+		<foxml:datastreamVersion ID="rubric.0" MIMETYPE="text/xml" LABEL="rubric-inline">
+			<foxml:xmlContent>
+				<uvalibadmin:admin xmlns:uvalibadmin="http://virginia.lib.edu/uvalibadmin:tech">
+					<uvalibadmin:technical>
+						<uvalibadmin:format>image/jpeg</uvalibadmin:format>
+						<uvalibadmin:compression>LZW</uvalibadmin:compression>
+						<uvalibadmin:bitDepth BITS=""/>
+						<uvalibadmin:colorSpace/>
+						<uvalibadmin:colorProfile CPLOCAT="" CPFILE=""/>
+						<uvalibadmin:resolution>600</uvalibadmin:resolution>
+					</uvalibadmin:technical>
+				</uvalibadmin:admin>
+			</foxml:xmlContent>
+		</foxml:datastreamVersion>
+	</foxml:datastream>
+	<foxml:datastream CONTROL_GROUP="E" ID="rubric-external" STATE="A">
+		<foxml:datastreamVersion ID="rubric-external.0" MIMETYPE="application/pdf" LABEL="rubric-test-external-pdf">
+			<foxml:contentLocation REF="http://localhost/test.pdf" TYPE="URL"/>
+		</foxml:datastreamVersion>
+	</foxml:datastream>
+	<foxml:datastream CONTROL_GROUP="R" ID="rubric-redirected" STATE="A">
+		<foxml:datastreamVersion ID="rubric-redirected.0" MIMETYPE="image/jpeg" LABEL="rubric redirected jpg image">
+			<foxml:contentLocation REF="http://localhost/redirected.jpg" TYPE="URL"/>
+		</foxml:datastreamVersion>
+	</foxml:datastream>
+</foxml:digitalObject>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:mods="http://www.loc.gov/mods/v3">
+    <utfx:stylesheet src="marc_to_mods_fez.xsl"/>
+
+
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                        <datafield tag="245" ind1="0" ind2="0">
+                            <subfield code="a">Title goes here</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+               
+                        <mods>
+                            <titleInfo>
+                                <title>Title goes here</title>
+                            </titleInfo>
+                            <typeOfResource>text</typeOfResource>
+                            <originInfo>
+                                <place>
+                                    <placeTerm authority="marccountry" type="code">gw</placeTerm>
+                                </place>
+                                <dateIssued encoding="marc">1891</dateIssued>
+                                <issuance>monographic</issuance>
+                            </originInfo>
+                            <language>
+                                <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                            </language>
+                            <physicalDescription>
+                                <form authority="marcform">electronic</form>
+                            </physicalDescription>
+                            <targetAudience authority="marctarget">specialized</targetAudience>
+                            <recordInfo>
+                                <recordCreationDate encoding="marc">050419</recordCreationDate>
+                            </recordInfo>
+                        </mods>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+<utfx:test>
+    <utfx:name>Author</utfx:name>
+    <utfx:assert-equal>
+        <utfx:source validate="no">
+            <collection xmlns="http://www.loc.gov/MARC21/slim">
+                <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                    <datafield tag="100" ind1="1" ind2=" ">
+                        <subfield code="a">Author 1 goes here</subfield>
+                    </datafield>
+                </record>
+            </collection>
+        </utfx:source>
+        <utfx:expected validate="no">
+        <mods>
+            <name authority="">
+                   <namePart type="personal">Author 1 goes here</namePart>
+                        <role>
+                            <roleTerm type="text">author</roleTerm>
+                        </role>
+                </name>
+                    <typeOfResource>text</typeOfResource>
+                    <originInfo>
+                        <place>
+                            <placeTerm authority="marccountry" type="code">gw</placeTerm>
+                        </place>
+                        <dateIssued encoding="marc">1891</dateIssued>
+                        <issuance>monographic</issuance>
+                    </originInfo>
+                    <language>
+                        <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                    </language>
+                    <physicalDescription>
+                        <form authority="marcform">electronic</form>
+                    </physicalDescription>
+                    <targetAudience authority="marctarget">specialized</targetAudience>
+                    <recordInfo>
+                        <recordCreationDate encoding="marc">050419</recordCreationDate>
+                    </recordInfo>
+            </mods>
+        </utfx:expected>
+    </utfx:assert-equal>
+</utfx:test>
+    
+    <utfx:test>
+        <utfx:name>Author</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Author 2 goes here</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                    <mods>
+                        <name authority="">
+                            <namePart type="personal">Author 2 goes here</namePart>
+                            <role>
+                                <roleTerm type="text">author</roleTerm>
+                            </role>
+                        </name>
+                        <typeOfResource>text</typeOfResource>
+                        <originInfo>
+                            <place>
+                                <placeTerm authority="marccountry" type="code">gw</placeTerm>
+                            </place>
+                            <dateIssued encoding="marc">1891</dateIssued>
+                            <issuance>monographic</issuance>
+                        </originInfo>
+                        <language>
+                            <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                        </language>
+                        <physicalDescription>
+                            <form authority="marcform">electronic</form>
+                        </physicalDescription>
+                        <targetAudience authority="marctarget">specialized</targetAudience>
+                        <recordInfo>
+                            <recordCreationDate encoding="marc">050419</recordCreationDate>
+                        </recordInfo>
+                    </mods>
+              
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    <utfx:test>
+        <utfx:name>Author</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Author 3 goes here</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+               
+                    <mods>
+                        <name authority="">
+                            <namePart type="personal">Author 3 goes here</namePart>
+                            <role>
+                                <roleTerm type="text">author</roleTerm>
+                            </role>
+                        </name>
+                        <typeOfResource>text</typeOfResource>
+                        <originInfo>
+                            <place>
+                                <placeTerm authority="marccountry" type="code">gw</placeTerm>
+                            </place>
+                            <dateIssued encoding="marc">1891</dateIssued>
+                            <issuance>monographic</issuance>
+                        </originInfo>
+                        <language>
+                            <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                        </language>
+                        <physicalDescription>
+                            <form authority="marcform">electronic</form>
+                        </physicalDescription>
+                        <targetAudience authority="marctarget">specialized</targetAudience>
+                        <recordInfo>
+                            <recordCreationDate encoding="marc">050419</recordCreationDate>
+                        </recordInfo>
+                    </mods>
+               
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <utfx:test>
+        <utfx:name>Genre</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">Conference Proceedings</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+              
+                    <mods>
+                        <typeOfResource>text</typeOfResource>
+                        <genre authority="">Conference Proceedings</genre>
+                        <originInfo>
+                            <place>
+                                <placeTerm authority="marccountry" type="code">gw</placeTerm>
+                            </place>
+                            <dateIssued encoding="marc">1891</dateIssued>
+                            <issuance>monographic</issuance>
+                        </originInfo>
+                        <language>
+                            <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                        </language>
+                        <physicalDescription>
+                            <form authority="marcform">electronic</form>
+                        </physicalDescription>
+                        <targetAudience authority="marctarget">specialized</targetAudience>
+                        <recordInfo>
+                            <recordCreationDate encoding="marc">050419</recordCreationDate>
+                        </recordInfo>
+                    
+                </mods>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    <utfx:test>
+        <utfx:name>Abstract</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                        <datafield tag="520" ind1=" " ind2=" ">
+                            <subfield code="a">Abstract goes here</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                    <mods>
+                        <typeOfResource>text</typeOfResource>
+                        <originInfo>
+                            <place>
+                                <placeTerm authority="marccountry" type="code">gw</placeTerm>
+                            </place>
+                            <dateIssued encoding="marc">1891</dateIssued>
+                            <issuance>monographic</issuance>
+                        </originInfo>
+                        <language>
+                            <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                        </language>
+                        <physicalDescription>
+                            <form authority="marcform">electronic</form>
+                        </physicalDescription>
+                        <abstract>Abstract goes here</abstract>
+                        
+                        
+                        
+                        <targetAudience authority="marctarget">specialized</targetAudience>
+                        <recordInfo>
+                            <recordCreationDate encoding="marc">050419</recordCreationDate>
+                        </recordInfo>
+                    </mods>
+              
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <utfx:test>
+        <utfx:name>Keywords</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                        <datafield tag="650" ind1=" " ind2=" ">
+                            <subfield code="a">keyword 1</subfield>
+                            <subfield code="a">keyword 2</subfield>
+                         </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                    <mods>
+                        <typeOfResource>text</typeOfResource>
+                        <originInfo>
+                            <place>
+                                <placeTerm authority="marccountry" type="code">gw</placeTerm>
+                            </place>
+                            <dateIssued encoding="marc">1891</dateIssued>
+                            <issuance>monographic</issuance>
+                        </originInfo>
+                        <language>
+                            <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                        </language>
+                        <physicalDescription>
+                            <form authority="marcform">electronic</form>
+                        </physicalDescription>
+                        <targetAudience authority="marctarget">specialized</targetAudience>
+                        <subject authority="keyword">
+                            <topic>keyword 1</topic>
+                        </subject>
+                        <subject authority="keyword">
+                            <topic>keyword 2</topic>
+                        </subject>
+                       
+                        
+                        <recordInfo>
+                            <recordCreationDate encoding="marc">050419</recordCreationDate>
+                        </recordInfo>
+                    </mods>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    <utfx:test>
+        <utfx:name>Conference Name</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                        <datafield tag="773" ind1="0" ind2=" ">
+                            <subfield code="t">Urban Water Research Association of Australia, Melbourne VIC 1996-05, 53p, tables, 35 figs, refs.</subfield>
+                        </datafield>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                <mods>
+                    
+                    <typeOfResource>text</typeOfResource>
+                    <originInfo>
+                        <place>
+                            <placeTerm authority="marccountry" type="code">gw</placeTerm>
+                        </place>
+                        <dateIssued encoding="marc">1891</dateIssued>
+                        <issuance>monographic</issuance>
+                    </originInfo>
+                    <language>
+                        <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+                    </language>
+                    <physicalDescription>
+                        <form authority="marcform">electronic</form>
+                    </physicalDescription>
+                    <targetAudience authority="marctarget">specialized</targetAudience>
+                    <relatedItem type="host">
+                    <titleInfo>
+                        <title>Urban Water Research Association of Australia, Melbourne VIC 1996-05, 53p, tables, 35 figs, refs</title>
+                    </titleInfo>
+                    </relatedItem>
+                    
+                    <recordInfo>
+                        <recordCreationDate encoding="marc">050419</recordCreationDate>
+                    </recordInfo>
+                </mods>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    
+    
+    
+</utfx:tests>

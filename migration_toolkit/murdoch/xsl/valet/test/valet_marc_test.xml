@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+-->
+    <utfx:stylesheet src="marc.xsl"/>
+
+
+    <!-- Journal Item -->
+    <utfx:test>
+        <utfx:name>Journal Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <creator_affiliation>RUBRIC University</creator_affiliation>
+                            <creator_first_name>Bill</creator_first_name>
+                            <creator_last_name>Smith</creator_last_name>
+                            <description_abstract>This is a brief abstract</description_abstract>
+                            <faculty>Faculty of Science</faculty>
+                            <research_unit>Computer Science Research Unit</research_unit>
+                            <journal_peer_reviewed>Yes</journal_peer_reviewed>
+                            <resource_type>Journal Article</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>Title - Does the largest chela of the males of three crab species undergo an allometric change that can be used to determine morphometric maturity</title>
+                            <journal_publisher>Academic Press</journal_publisher>
+                            <journal_place_publication>London, UK</journal_place_publication>
+                            <journal_issn>1054-3139</journal_issn>
+                            <journal_title>Does the largest chela of the males of three crab species undergo an allometric change that can be used to determine morphometric maturity</journal_title>
+                            <journal_volume>63</journal_volume>
+                            <journal_number/>
+                            <journal_issue>1</journal_issue>
+                            <journal_page_from>140</journal_page_from>
+                            <journal_page_to>150</journal_page_to>
+                            <journal_url>http://websitejournal.com</journal_url>
+                            <university_name>RUBRIC University</university_name>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Journal Article</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="773">
+                    <subfield code="t">Does the largest chela of the males of three crab species undergo an allometric change that can be used to determine morphometric maturity</subfield>
+                    <subfield code="n">1</subfield>
+                    <subfield code="g">Vol. 63, Issue 1, p. 140-150</subfield>
+                    <subfield code="x">1054-3139</subfield>
+                    <subfield code="d">Academic Press : London, UK</subfield>
+                </datafield>
+                <datafield ind1="4" ind2="0" tag="852">
+                    <subfield code="u">http://websitejournal.com</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="300">
+                    <subfield code="a">10</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">2006</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">Title - Does the largest chela of the males of three crab species undergo an allometric change that can be used to determine morphometric maturity</subfield>
+                </datafield>
+                <datafield ind1="3" ind2=" " tag="520">
+                    <subfield code="a">This is a brief abstract</subfield>
+                </datafield>
+               <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Smith, Bill</subfield>
+                    <subfield code="u">RUBRIC University</subfield>
+                </datafield>
+                <datafield ind1="2" ind2=" " tag="710">
+                    <subfield code="a">RUBRIC University</subfield>                    
+                    <subfield code="b">Faculty of Science</subfield>
+                    <subfield code="c">Computer Science Research Unit</subfield>
+                </datafield>               
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+       
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- Book Item -->
+    <utfx:test>
+        <utfx:name>Book Item_Valet2MARC</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>Book</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>Book Title - undergo an allometric change that can be used to determine morphometric maturity</title>
+                            <book_publisher>Academic Press</book_publisher>
+                            <book_place_publication>London, UK</book_place_publication>
+                            <book_isbn>1054-3139</book_isbn>
+                            <book_edition>6th</book_edition>
+                            <book_series>The Third Age</book_series>
+                            <book_series_number>1</book_series_number>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Book</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="a">London, UK</subfield>
+                    <subfield code="b">Academic Press</subfield>
+                    <subfield code="c">2006</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="0" tag="440">
+                    <subfield code="a">The Third Age</subfield>
+                    <subfield code="v">1</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="020">
+                    <subfield code="a">1054-3139</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="250">
+                    <subfield code="a">6th</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">2006</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">Book Title - undergo an allometric change that can be used to determine morphometric maturity</subfield>
+                </datafield>
+              </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Book Chapter Item -->
+    <utfx:test>
+        <utfx:name>Book Chapter Item_Valet2MARC</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>Book Chapter</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>A decade of enterprise bargaining in Australia: An Introduction</title>
+                            <chapter_isbn>0310-5814</chapter_isbn>
+                            <chapter_publisher>Macquarie University, Sydney, Australia</chapter_publisher>
+                            <chapter_page_from>64</chapter_page_from>
+                            <chapter_page_to>84</chapter_page_to>
+                            <chapter_editor>John Burgess &amp; Duncan Macdonald</chapter_editor>
+                            <chapter_book_title>Developments in Enterprise Bargaining in Australia</chapter_book_title>
+                            <chapter_place_publication>Reston, USA</chapter_place_publication>
+                            <chapter_edition>1</chapter_edition>
+                            <chapter_url>http://website.com</chapter_url>
+                            <chapter_series>The Third Age</chapter_series>
+                            <chapter_series_number>1</chapter_series_number>
+                            <chapter_number>12</chapter_number>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Book Chapter</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="773">
+                    <subfield code="t">Developments in Enterprise Bargaining in Australia</subfield>
+                    <subfield code="b">1</subfield>
+                    <subfield code="g"> Chapter 12 p. 64-84</subfield>
+                    <subfield code="d">Macquarie University, Sydney, Australia : Reston, USA </subfield>
+                    <subfield code="z">0310-5814</subfield>
+                </datafield>
+                <datafield ind1="4" ind2="0" tag="852">
+                    <subfield code="u">http://website.com</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="0" tag="440">
+                    <subfield code="a">The Third Age</subfield>
+                    <subfield code="v">1</subfield>
+                </datafield>
+                
+                <datafield ind1="1" ind2=" " tag="700">
+                    <subfield code="a">John Burgess &amp; Duncan Macdonald</subfield>
+                    <subfield code="e">(Editor)</subfield>
+                </datafield>
+                
+                <datafield ind1=" " ind2=" " tag="300">
+                    <subfield code="a">20</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">2006</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">A decade of enterprise bargaining in Australia: An Introduction</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Review Item -->
+    <utfx:test>
+        <utfx:name>Review Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>Review</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>A decade of enterprise bargaining in Australia: An Introduction</title>
+                            <review_publisher>Academic Press</review_publisher>
+                            <review_place_publication>London, UK</review_place_publication>
+                            <review_issn>1054-3139</review_issn>
+                            <review_title>Does the largest chela of the males of three crab species undergo an allometric change</review_title>
+                            <review_volume>63</review_volume>
+                            <review_number>2</review_number>
+                            <review_issue>1</review_issue>
+                            <review_page_from>140</review_page_from>
+                            <review_page_to>150</review_page_to>
+                            <review_url>http://websitereview.com</review_url>
+                            <review_peer_reviewed>No</review_peer_reviewed>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Review</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="773">
+                    <subfield code="t">Does the largest chela of the males of three crab species undergo an allometric change</subfield>
+                    <subfield code="n">0</subfield>
+                    <subfield code="g">Vol. 63, Issue 1, no. 2, p. 140-150</subfield>
+                    <subfield code="x">1054-3139</subfield>
+                    <subfield code="d">Academic Press : London, UK</subfield>
+                </datafield>
+                <datafield ind1="4" ind2="0" tag="852">
+                    <subfield code="u">http://websitereview.com</subfield>
+                </datafield>
+               <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">2006</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">A decade of enterprise bargaining in Australia: An Introduction</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    !-- Conference Item -->
+    <utfx:test>
+        <utfx:name>Conference Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                             <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights>These are my rights</rights>
+                            <description_abstract>This is a really cool Conference Paper</description_abstract>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Conference Paper</resource_type>
+                            <year>1998</year>
+                            <creator_last_name>Fityus</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                           <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</title>
+                            <conference_place_publication>Springwood, NSW, Australia</conference_place_publication>
+                            <conference_publisher>Conference Publications for Australian Geomechanics Society</conference_publisher>
+                            <conference_location>London, UK</conference_location>
+                            <conference_title>Geotechnical Engineering and Engineering Geology in the Hunter Valley</conference_title>
+                            <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                            <conference_editor>Fred Smith</conference_editor>
+                            <conference_date>1998</conference_date>
+                            <conference_issn>1234-5689</conference_issn>
+                            <conference_isbn>1234568982</conference_isbn>
+                            <conference_page_from>140</conference_page_from>
+                            <conference_page_to>150</conference_page_to>
+                            <conference_url>http://websiteconf.com</conference_url>
+                            <conference_name>Geotechnical Engineering and Engineering Conference</conference_name>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Conference Paper</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="2" ind2=" " tag="711">
+                    <subfield code="a">Geotechnical Engineering and Engineering Conference</subfield>
+                    <subfield code="c">London, UK</subfield>
+                    <subfield code="d">1998</subfield>
+                </datafield>         
+                <datafield ind1="0" ind2=" " tag="773">
+                    <subfield code="t">Geotechnical Engineering and Engineering Geology in the Hunter Valley</subfield>
+                    <subfield code="g">p. 140-150</subfield>
+                    <subfield code="d">Conference Publications for Australian Geomechanics Society : Springwood, NSW, Australia</subfield>
+                    <subfield code="n">1</subfield>
+                    <subfield code="x">1234-5689</subfield>
+                    <subfield code="z">1234568982</subfield>
+                </datafield>   
+                <datafield ind1="4" ind2="0" tag="852">
+                    <subfield code="u">http://websiteconf.com</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">1998</subfield>
+                </datafield>
+                
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</subfield>
+                </datafield>
+                <datafield ind1="3" ind2=" " tag="520">
+                    <subfield code="a">This is a really cool Conference Paper</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Fityus, Stephen George</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="0" tag="540">
+                    <subfield code="a">These are my rights</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    !-- Conference Item  2-->
+    <utfx:test>
+        <utfx:name>Conference Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights>These are my rights</rights>
+                            <description_abstract>This is a really cool Conference Paper</description_abstract>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Conference Publication</resource_type>
+                            <year>1998</year>
+                            <creator_last_name>Fityus</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</title>
+                            <conference_place_publication>Springwood, NSW, Australia</conference_place_publication>
+                            <conference_publisher>Conference Publications for Australian Geomechanics Society</conference_publisher>
+                            <conference_location>London, UK</conference_location>
+                            <conference_title>Geotechnical Engineering and Engineering Geology in the Hunter Valley</conference_title>
+                            <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                            <conference_editor>Fred Smith</conference_editor>
+                            <conference_date>1998</conference_date>
+                            <conference_issn>1234-5689</conference_issn>
+                            <conference_isbn>1234568982</conference_isbn>
+                            <conference_page_from>140</conference_page_from>
+                            <conference_page_to>150</conference_page_to>
+                            <conference_url>http://websiteconf.com</conference_url>
+                            <conference_name>Geotechnical Engineering and Engineering Conference</conference_name>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Conference Paper</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="2" ind2=" " tag="711">
+                    <subfield code="a">Geotechnical Engineering and Engineering Conference</subfield>
+                    <subfield code="c">London, UK</subfield>
+                    <subfield code="d">1998</subfield>
+                </datafield>         
+                <datafield ind1="0" ind2=" " tag="773">
+                    <subfield code="t">Geotechnical Engineering and Engineering Geology in the Hunter Valley</subfield>
+                    <subfield code="g">p. 140-150</subfield>
+                    <subfield code="d">Conference Publications for Australian Geomechanics Society : Springwood, NSW, Australia</subfield>
+                    <subfield code="n">1</subfield>
+                    <subfield code="x">1234-5689</subfield>
+                    <subfield code="z">1234568982</subfield>
+                </datafield>   
+                <datafield ind1="4" ind2="0" tag="852">
+                    <subfield code="u">http://websiteconf.com</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">1998</subfield>
+                </datafield>
+                
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</subfield>
+                </datafield>
+                <datafield ind1="3" ind2=" " tag="520">
+                    <subfield code="a">This is a really cool Conference Paper</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Fityus, Stephen George</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="0" tag="540">
+                    <subfield code="a">These are my rights</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Software Item -->
+    <utfx:test>
+        <utfx:name>Software Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Computer Software</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excel-lent</title>
+                            <software_technical_details>A really neat piece of code</software_technical_details>
+                            <software_edition>2</software_edition>
+                            <software_publisher>Pixar</software_publisher>
+                            <software_place_publication>Toowoomba QLD</software_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Computer Software</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="300">
+                    <subfield code="a">A really neat piece of code</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="250">
+                    <subfield code="a">2</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="a">Toowoomba QLD</subfield>
+                    <subfield code="b">Pixar</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">1997</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">Excel-lent</subfield>
+                </datafield>
+               <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Fityush, Stephen George</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Report Item -->
+    <utfx:test>
+        <utfx:name>Report Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Report</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Report</title>
+                            <report_commissioner>Fred Smith</report_commissioner>
+                            <report_series>The Advanced Excellent Report Series</report_series>
+                            <report_series_number>3</report_series_number>
+                            <report_isbn>1234-4563</report_isbn>
+                            <report_publisher>Pixar</report_publisher>
+                            <report_place_publication>Toowoomba QLD</report_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Report</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="2" tag="720">
+                    <subfield code="a">Fred Smith</subfield>
+                    <subfield code="e">patron</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="0" tag="440">
+                    <subfield code="a">The Advanced Excellent Report Series</subfield>
+                    <subfield code="v">3</subfield>
+                </datafield>
+                
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="a">Toowoomba QLD</subfield>
+                    <subfield code="b">Pixar</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="020">
+                    <subfield code="a">1234-4563</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">1997</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">Excellent Report</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Fityush, Stephen George</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Working Paper Item -->
+    <utfx:test>
+        <utfx:name>Working Paper Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Working Paper</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Working paper</title>
+                           <working_paper_isbn>1234-6598</working_paper_isbn>
+                            <working_paper_issn>123456879123</working_paper_issn>
+                            <working_paper_publisher>Collins</working_paper_publisher>
+                            <working_paper_place_publication>Sydney, NSW</working_paper_place_publication>
+                            <working_paper_title>The lovely Working Paper</working_paper_title>
+                            <working_paper_number>3</working_paper_number>
+                            <working_paper_url>http://workingpaper.com</working_paper_url>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Working Paper</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="020">
+                    <subfield code="a">1234-6598</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="022">
+                    <subfield code="a">123456879123</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="0" tag="440">
+                    <subfield code="a">The lovely Working Paper</subfield>
+                    <subfield code="v">3</subfield>
+                </datafield>
+                <datafield ind1="4" ind2="0" tag="852">
+                    <subfield code="u">http://workingpaper.com</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">1997</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">Excellent Working paper</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Fityush, Stephen George</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Thesis Item -->
+    <utfx:test>
+        <utfx:name>Thesis Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Thesis</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>ExcellenThesis</title>
+                            <thesis_degree>Professional Doctorate</thesis_degree>
+                            <thesis_degree_program>Master of Science Something</thesis_degree_program>
+                            <thesis_supervisor_first_name>Billy</thesis_supervisor_first_name>
+                             <thesis_supervisor_last_name>Bob</thesis_supervisor_last_name>
+                            <thesis_supervisor_affiliation>Murdoch University</thesis_supervisor_affiliation>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Thesis</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="2" tag="720">
+                    <subfield code="a">Bob, Billy</subfield>
+                    <subfield code="e">(Supervisor)</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                
+                <datafield ind1=" " ind2=" " tag="502">
+                    <subfield code="a">Professional Doctorate - Master of Science Something</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">1997</subfield>
+                </datafield>
+               
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">ExcellenThesis</subfield>
+                    </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Fityush, Stephen George</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Patent Item -->
+    <utfx:test>
+        <utfx:name>Patent Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Patent</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Patent</title>
+                            <patent_owner>Fred Smith</patent_owner>
+                            <patent_number>TF5643</patent_number>
+                            <patent_provisional_number>YHT6543</patent_provisional_number>
+                            <patent_pct_number>87654</patent_pct_number>
+                            <patent_wipo_number>09876</patent_wipo_number>
+                            <patent_place_publication>Sydney, NSW</patent_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Patent</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="2" tag="720">
+                    <subfield code="a">Fred Smith</subfield>
+                    <subfield code="e">(Owner)</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="013">
+                    <subfield code="a">TF5643</subfield>
+                    <subfield code="b">at</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="013">
+                    <subfield code="a">YHT6543</subfield>
+                    <subfield code="u">provisional</subfield>
+               </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">PCT/87654</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">WIPO/09876</subfield>
+                </datafield>
+
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">1997</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">Excellent Patent</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Fityush, Stephen George</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+                
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    <!-- Creative work -->
+    <utfx:test>
+        <utfx:name>Creative work (260 a, b and c)</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                             <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Work</title>
+                            <creative_type>creative type</creative_type>
+                            <creative_record_dist>Distributor Name</creative_record_dist>
+                            <creative_edition>2</creative_edition>
+                            <creative_publisher>Publisher</creative_publisher>
+                            <creative_publish_year>creative_publish_year</creative_publish_year>
+                            <creative_record_dist_medium>Medium</creative_record_dist_medium>
+                            <creative_isbn>ISBN</creative_isbn>
+                            <creative_title>Variation of title</creative_title>
+                            <creative_place_publication>creative_place_publication</creative_place_publication>
+                            <creative_url>creative_url</creative_url>
+                            <creative_start_date>Date</creative_start_date>
+                            <creative_number_pages>creative_number_pages</creative_number_pages>
+                            <creative_exhibition_location>creative_exhibition_location</creative_exhibition_location>
+                            <creative_advert_date>Date</creative_advert_date>
+                            <creative_advert_place>creative_advert_place</creative_advert_place>
+                            <creative_record_create_date>Record Date</creative_record_create_date>
+                            <creative_record_first_perform_date>Perform Date</creative_record_first_perform_date>
+                            <resource_type>Creative Work</resource_type>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Creative Work</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">creative type</subfield>
+                </datafield>
+               
+                <datafield ind1=" " ind2=" " tag="250">
+                    <subfield code="a">2</subfield>
+                </datafield>
+                
+                <datafield tag="260" ind1=" " ind2=" ">
+                    <subfield code="a">creative_place_publication</subfield>
+                    <subfield code="b">Publisher</subfield> 
+                    <subfield code="b">Distributor Name (Distributor)</subfield>
+                    <subfield code="c">creative_publish_year</subfield>                  
+                </datafield>                
+                <datafield ind1="4" ind2="0" tag="852">
+                    <subfield code="u">creative_url</subfield>
+                </datafield>
+                
+                <datafield ind1=" " ind2=" " tag="300">
+                    <subfield code="a">creative_number_pages</subfield>
+                </datafield>
+                
+                <datafield ind1=" " ind2=" " tag="585">
+                    <subfield code="a">EXHIBITION NOTE: creative_exhibition_location, Date</subfield>
+                 </datafield>
+                
+                <datafield ind1=" " ind2=" " tag="585">
+                    <subfield code="a">ADVERT FOR EXHIBITION: creative_advert_place, Date</subfield>
+                 </datafield>
+                    
+                <datafield ind1=" " ind2=" " tag="518">
+                    <subfield code="a">Date of Recording: Record Date</subfield>
+                    </datafield>
+                   <datafield ind1=" " ind2=" " tag="518">
+                    <subfield code="a">First performed: Perform Date</subfield>
+                   </datafield>
+                <datafield ind1=" " ind2=" " tag="340">
+                    <subfield code="a">Medium</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="020">
+                    <subfield code="a">ISBN</subfield>
+                </datafield>
+                <datafield ind1="0" ind2="3" tag="246">
+                    <subfield code="a">Variation of title</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">1997</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">Excellent Work</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">November</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="650">
+                    <subfield code="a">rain</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">precipitation</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">cloud</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="653">
+                    <subfield code="a">thunder</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Fityush, Stephen George</subfield>
+                    <subfield code="u">Murdoch University</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="500">
+                    <subfield code="u">More details to hand.....</subfield>
+                </datafield>
+                    
+           </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <!-- Creative work 2-->
+    <utfx:test>
+        <utfx:name>Creative work 2 (260 c only)</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <creative_type>creative type</creative_type>
+                            <creative_edition>EDITION OR VERSION STATEMENT</creative_edition>
+                          <creative_publish_year>creative_publish_year</creative_publish_year>
+                           <resource_type>Creative Work</resource_type>
+                       </Formdata>
+                    </Session>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Creative Work</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">creative type</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="250">
+                    <subfield code="a">EDITION OR VERSION STATEMENT</subfield>
+                </datafield>
+                <datafield tag="260" ind1=" " ind2=" ">
+                   <subfield code="c">creative_publish_year</subfield>
+                </datafield>
+ 
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <!-- Creative work 3-->
+    <utfx:test>
+        <utfx:name>Creative work 3(260 a only)</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <creative_type>creative type</creative_type>
+                            <creative_edition>EDITION OR VERSION STATEMENT</creative_edition>
+                            <creative_place_publication>creative_place_publication</creative_place_publication>
+                            <resource_type>Creative Work</resource_type>
+                        </Formdata>
+                    </Session>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Creative Work</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">creative type</subfield>
+                </datafield>
+               <datafield ind1=" " ind2=" " tag="250">
+                    <subfield code="a">EDITION OR VERSION STATEMENT</subfield>
+                </datafield>
+               <datafield tag="260" ind1=" " ind2=" ">
+                    <subfield code="a">creative_place_publication</subfield>
+               </datafield>
+                
+     
+          </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+
+
+<!-- Reference work -->
+<utfx:test>
+    <utfx:name>Reference work</utfx:name>
+    <utfx:assert-equal>
+        <utfx:source validate="no">
+            <collection>
+                <Session>
+                    <Formdata>
+                        <session>Murdoch Id - 28</session>
+                        <faculty/>
+                        <subject>November &#13; rain &#13;</subject>
+                        <keyword>precipitation</keyword>
+                        <keyword_1>cloud</keyword_1>
+                        <keyword_2>thunder</keyword_2>
+                        <additional_info>More details to hand.....</additional_info>
+                        <rights/>
+                        <dest_category>E1</dest_category>
+                         <year>1997</year>
+                        <creator_last_name>Fityush</creator_last_name>
+                        <creator_first_name>Stephen George</creator_first_name>
+                        <creator_affiliation>Murdoch University</creator_affiliation>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <title>Excellent Work</title>
+                        <ref_work_title>ref_work_title</ref_work_title>
+                        <ref_work_edition>ref_work_edition</ref_work_edition>
+                        <ref_work_volume>ref_work_volume</ref_work_volume>
+                        <ref_work_editor>fred</ref_work_editor>
+                        <ref_work_publisher>ref_work_publisher</ref_work_publisher>
+                        <ref_work_publication_year>ref_work_publication_year</ref_work_publication_year>
+                        <ref_work_place_publication>ref_work_place_publication</ref_work_place_publication>
+                        <ref_work_url>ref_work_url</ref_work_url>
+                        <ref_work_appear_year>ref_work_appear_year</ref_work_appear_year>
+                        <ref_work_isbn>ref_work_isbn</ref_work_isbn>
+                        <resource_type>Reference Work</resource_type>
+                    </Formdata>
+                </Session>
+            </collection>
+        </utfx:source>
+        <utfx:expected validate="no">
+            <datafield tag="655" ind1=" " ind2="7">
+                <subfield code="a">Reference Work</subfield>
+                <subfield code="2">local</subfield>
+            </datafield>
+   
+            <datafield ind1=" " ind2="0" tag="440">
+                <subfield code="a">ref_work_title</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="250">
+                <subfield code="a">ref_work_edition</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="0" tag="245">
+                <subfield code="n">ref_work_volume</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="720">
+                <subfield code="a">fred</subfield>
+                <subfield code="e">Editor</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="260">
+                <subfield code="a">ref_work_place_publication</subfield>
+                <subfield code="b">ref_work_publisher</subfield>
+                <subfield code="c">ref_work_publication_year</subfield>
+            </datafield>
+            <datafield ind1="4" ind2="0" tag="852">
+                <subfield code="u">ref_work_url</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="518">
+                <subfield code="a">Appearance Year: ref_work_appear_year</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="020">
+                <subfield code="a">ref_work_isbn</subfield>
+            </datafield>
+            <datafield ind1="0" ind2=" " tag="041">
+                <subfield code="a">eng</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="260">
+                <subfield code="c">1997</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="0" tag="245">
+                <subfield code="a">Excellent Work</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="7" tag="650">
+                <subfield code="a">November</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="7" tag="650">
+                <subfield code="a">rain</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="653">
+                <subfield code="a">precipitation</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="653">
+                <subfield code="a">cloud</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="653">
+                <subfield code="a">thunder</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="100">
+                <subfield code="a">Fityush, Stephen George</subfield>
+                <subfield code="u">Murdoch University</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="500">
+                <subfield code="u">More details to hand.....</subfield>
+            </datafield>
+           
+        </utfx:expected>
+    </utfx:assert-equal>
+</utfx:test>
+    
+    <!-- Audio Visual -->
+    <utfx:test>
+        <utfx:name>Audio Visual</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <av_type>av_type</av_type>
+                            <av_editor>av_editor</av_editor>
+                            <av_publisher>av_publisher</av_publisher>
+                            <av_publish_year>av_publish_year</av_publish_year>
+                            <av_place_publication>av_place_publication</av_place_publication>
+                            <av_url>av_url</av_url>
+                            <av_recording_length>av_recording_length</av_recording_length>
+                            <resource_type>Audio Visual</resource_type>
+                        </Formdata>
+                    </Session>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="655" ind1=" " ind2="7">
+                    <subfield code="a">Audio Visual</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield tag="508" ind1="1" ind2=" ">
+                    <subfield code="a">editor, av_editor</subfield>
+                </datafield>
+                <datafield tag="260" ind1=" " ind2=" ">
+                    <subfield code="a">av_place_publication</subfield>
+                    <subfield code="b">av_publisher</subfield>
+                    <subfield code="c">av_publish_year</subfield>
+                    </datafield>
+                <datafield tag="852" ind1="4" ind2="0">
+                    <subfield code="u">av_url</subfield>
+                    </datafield>
+                <datafield tag="306" ind1=" " ind2=" ">
+                    <subfield code="a">av_recording_length</subfield>
+                </datafield>
+                <datafield tag="340" ind1=" " ind2=" ">
+                    <subfield code="a">av_type</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Multiple Authors -->
+    <utfx:test>
+        <utfx:name>Multiple Authors</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>    
+                    <Session>
+                        <Attachments/>
+                        <Formdata>
+                            <dest_category>C1</dest_category>
+                            <faculty/>
+                            <rights/>
+                            <_count_creator-multiple_creators>4</_count_creator-multiple_creators>
+                            <creator_first_name>R</creator_first_name>
+                            <creator_first_name_1>Vladimir</creator_first_name_1>
+                            <creator_first_name_2>Michael Ralph</creator_first_name_2>
+                            <creator_first_name_3>Elena</creator_first_name_3>
+                            <creator_first_name_4>Frances Ann</creator_first_name_4>
+                            <creator_last_name>Downey</creator_last_name>
+                            <creator_last_name_1>Estivill-Castro</creator_last_name_1>
+                            <creator_last_name_2>Fellows</creator_last_name_2>
+                            <creator_last_name_3>Prieto-Rodriguez</creator_last_name_3>
+                            <creator_last_name_4>Rosamond</creator_last_name_4>
+                            <function>save_formdata</function>
+                            <journal_issn>1571-0661</journal_issn>
+                            <journal_page_from>205</journal_page_from>
+                            <journal_page_to>218</journal_page_to>
+                            <journal_peer_reviewed>Yes</journal_peer_reviewed>
+                            <journal_place_publication>United States</journal_place_publication>
+                            <journal_publisher>Elsevier</journal_publisher>
+                            <journal_title>Electronic Notes in Theoretical Computer Science</journal_title>
+                            <journal_volume>78</journal_volume>
+                            <language>eng</language>
+                            <resource_type>Journal Article</resource_type>
+                            <session>uon-P146923-CPE18071203</session>
+                            <title>Cutting up is hard to do: the parameterized Complexity of k-Cut and Related Problems</title>
+                            <year>2003</year>
+                        </Formdata>
+                    </Session>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no"> 
+                <datafield ind1=" " ind2="7" tag="655">
+                    <subfield code="a">Journal Article</subfield>
+                    <subfield code="2">local</subfield>
+                </datafield>
+                <datafield ind1="0" ind2=" " tag="773">
+                    <subfield code="t">Electronic Notes in Theoretical Computer Science</subfield>
+                    <subfield code="n">1</subfield>
+                    <subfield code="g">Vol. 78, p. 205-218</subfield>
+                    <subfield code="x">1571-0661</subfield>
+                    <subfield code="d">Elsevier : United States</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="300">
+                    <subfield code="a">13</subfield>
+                </datafield>
+                             
+                <datafield ind1="0" ind2=" " tag="041">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield ind1=" " ind2=" " tag="260">
+                    <subfield code="c">2003</subfield>
+                </datafield>
+                <datafield ind1="1" ind2="0" tag="245">
+                    <subfield code="a">Cutting up is hard to do: the parameterized Complexity of k-Cut and Related Problems</subfield>
+              </datafield>
+                    <datafield ind1=" " ind2=" " tag="100">
+                    <subfield code="a">Downey, R</subfield>
+                   </datafield>
+                <datafield ind1="1" ind2=" " tag="700">
+                    <subfield code="a">Estivill-Castro, Vladimir</subfield>
+                    </datafield>
+                <datafield ind1="1" ind2=" " tag="700">
+                    <subfield code="a">Fellows, Michael Ralph</subfield>
+                </datafield>
+                <datafield ind1="1" ind2=" " tag="700">
+                    <subfield code="a">Prieto-Rodriguez, Elena</subfield>
+                </datafield>
+                <datafield ind1="1" ind2=" " tag="700">
+                    <subfield code="a">Rosamond, Frances Ann</subfield>
+                </datafield>
+                
+            </utfx:expected>
+        </utfx:assert-equal>  
+    </utfx:test>
+    
+
+</utfx:tests>

@@ -1,0 +1,89 @@
+<foxml:digitalObject xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PID="ADT:102" xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="A"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="ADTImport07 In the Outer - Not on the Outer: Women and Australian Rules Football"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL"></foxml:property>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A">
+    <foxml:datastreamVersion ID="DC.0" LABEL="Dublin Core" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>In the Outer - Not on the Outer: Women and Australian Rules Football</dc:title>
+          <dc:creator>Deborah Hindley</dc:creator>
+          <dc:description>This thesis identifies, examines and probes the nature of women’s involvement in Australian Rules Football. Rather than have a single theoretical underpinning, an interdisciplinary approach, albeit with a feminist perspective, was applied because of the broad scope of the study. Australian Rules Football is an institution that can transcend class, race, and gender. It is also a multi-billion dollar industry. The game traces its origins back to 1858 and claims influences from rugby and an Aboriginal game called marn-grook. While it is played mainly by men, exclusively at league level, interest and involvement is not limited by gender.  &#xD;
+Academics and administrators have frequently written off women’s involvement with football. Even though scholarly interest in both sport and feminism has grown since the 1970s, little significant work has been undertaken to examine women’s interaction with Australian Rules Football. Leading Australian feminist Anne Summers rejected the notion that women could find anything of value in football apart from following players as devoted wives, mothers, girlfriends or ‘groupies.’ Through investigation of monographs and edited collections, I reveal that myriad scholars, feminists and historians have missed the point of sporting scholarship: many women enjoy involvement with football, they understand the game and its strategies and value being part of the football community in diverse and evolving capacities. &#xD;
+The original contribution to knowledge in this doctorate is to demonstrate that while women have had a central role in the development and maintenance of Australian Rules Football since the game was founded in colonial times, their contribution has gone unacknowledged by historians and administrators. My thesis places on record those omissions. Particularly, I highlight the lack of acknowledgement and respect for the work of a woman who authored a comprehensive and seminal social history written on the game. This is the archetypal example of how women, in many roles – both professional and personal – have been marginalized, despite playing pivotal roles with Australian Rules Football. The original contribution contained in these pages tracks Australian gender relations through the social institution of Australian Rules Football. To create both space and strategies for the revaluation of women in football history, a new model of female fandom is offered. The testimony of the women included is weighty in numbers and pithy in content. The scale of interviews represents diversity in age, class, ethnicity, regionality and role or function with football. Superficially it may appear that women can be placed in taxonomy. Women’s involvement with Australian Rules Football is complex and their involvement enmeshes in the many facets and spheres of the game.&#xD;
+The completion of this thesis follows the long overdue appointment of the A.F.L.’s first female commissioner, Samantha Mostyn, in June 2005. Without disrespecting Mostyn, this was a tokenistic cultural shift by adding a commissioner to the existing eight males with the goal of adding further business expertise, not a new insight or strategic cultural intervention. It also comes at a time when the Australian Football League’s has a new challenge to address, with the growing interest and participation in Association Football in Australia after the qualification for the 2006 World Cup. At this moment of change and contestation, Women’s Australian Rules competitions are impoverished through lack of structural and financial support while women’s Association Football, both in Australia and internationally, is flourishing.&#xD;
+</dc:description>
+          <dc:publisher>. </dc:publisher>
+          <dc:date>2006</dc:date>
+          <dc:publisher>Murdoch University. </dc:publisher>
+          <dc:date></dc:date>
+          <dc:rights>http://www.murdoch.edu.au/goto/CopyrightNotice</dc:rights>
+          <dc:rights>Copyright Deborah Hindley</dc:rights>
+          <dc:identifier>http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20060913.85805</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DS1" STATE="A">
+    <foxml:datastreamVersion ID="DS1.0" LABEL="MARCXML Record" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <record>
+            <leader>00000nam a22000002a 4500</leader>
+            <controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </controlfield>
+            <datafield ind1="1" ind2="0" tag="245">
+              <subfield code="a">In the Outer - Not on the Outer: Women and Australian Rules Football</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="" tag="100">
+              <subfield code="a">Deborah Hindley</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">Women</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">Australian Rules Football</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">History</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">Cultural Studies</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="520">
+              <subfield code="a">This thesis identifies, examines and probes the nature of women’s involvement in Australian Rules Football. Rather than have a single theoretical underpinning, an interdisciplinary approach, albeit with a feminist perspective, was applied because of the broad scope of the study. Australian Rules Football is an institution that can transcend class, race, and gender. It is also a multi-billion dollar industry. The game traces its origins back to 1858 and claims influences from rugby and an Aboriginal game called marn-grook. While it is played mainly by men, exclusively at league level, interest and involvement is not limited by gender.  &#xD;
+Academics and administrators have frequently written off women’s involvement with football. Even though scholarly interest in both sport and feminism has grown since the 1970s, little significant work has been undertaken to examine women’s interaction with Australian Rules Football. Leading Australian feminist Anne Summers rejected the notion that women could find anything of value in football apart from following players as devoted wives, mothers, girlfriends or ‘groupies.’ Through investigation of monographs and edited collections, I reveal that myriad scholars, feminists and historians have missed the point of sporting scholarship: many women enjoy involvement with football, they understand the game and its strategies and value being part of the football community in diverse and evolving capacities. &#xD;
+The original contribution to knowledge in this doctorate is to demonstrate that while women have had a central role in the development and maintenance of Australian Rules Football since the game was founded in colonial times, their contribution has gone unacknowledged by historians and administrators. My thesis places on record those omissions. Particularly, I highlight the lack of acknowledgement and respect for the work of a woman who authored a comprehensive and seminal social history written on the game. This is the archetypal example of how women, in many roles – both professional and personal – have been marginalized, despite playing pivotal roles with Australian Rules Football. The original contribution contained in these pages tracks Australian gender relations through the social institution of Australian Rules Football. To create both space and strategies for the revaluation of women in football history, a new model of female fandom is offered. The testimony of the women included is weighty in numbers and pithy in content. The scale of interviews represents diversity in age, class, ethnicity, regionality and role or function with football. Superficially it may appear that women can be placed in taxonomy. Women’s involvement with Australian Rules Football is complex and their involvement enmeshes in the many facets and spheres of the game.&#xD;
+The completion of this thesis follows the long overdue appointment of the A.F.L.’s first female commissioner, Samantha Mostyn, in June 2005. Without disrespecting Mostyn, this was a tokenistic cultural shift by adding a commissioner to the existing eight males with the goal of adding further business expertise, not a new insight or strategic cultural intervention. It also comes at a time when the Australian Football League’s has a new challenge to address, with the growing interest and participation in Association Football in Australia after the qualification for the 2006 World Cup. At this moment of change and contestation, Women’s Australian Rules competitions are impoverished through lack of structural and financial support while women’s Association Football, both in Australia and internationally, is flourishing.&#xD;
+</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="260">
+              <subfield code="c">2006</subfield>
+            </datafield>
+            <datafield ind1="0" ind2="" tag="041">
+              <subfield code="a">eng
+     </subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="260">
+              <subfield code="b">Murdoch University</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="540">
+              <subfield code="a">http://www.murdoch.edu.au/goto/CopyrightNotice</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="540">
+              <subfield code="a">Copyright Deborah Hindley</subfield>
+            </datafield>
+            <datafield ind1="4" ind2="" tag="856">
+              <subfield code="u">http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20060913.85805</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="502">
+              <subfield code="a">In the Outer - Not on the Outer: Women and Australian Rules Football</subfield>
+            </datafield>
+          </record>
+        </collection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

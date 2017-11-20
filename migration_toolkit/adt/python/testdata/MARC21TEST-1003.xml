@@ -1,0 +1,144 @@
+<foxml:digitalObject xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PID="MARC21TEST:1003" xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="A"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="MAQImported Item: Source authentication in group communication"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL"></foxml:property>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A">
+    <foxml:datastreamVersion ID="DC.0" LABEL="Dublin Core" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:creator>Al-Ibrahim, Mohamed Hussain</dc:creator>
+          <dc:title>Source authentication in group communication</dc:title>
+          <dc:publisher>. </dc:publisher>
+          <dc:date>2005.</dc:date>
+          <dc:description>Multicast is a relatively new and emerging communication mode in which a sender sends a message to a group of recipients in just one connection establishment... reducing broadband overhead and increasing resource utilization in the already congested and contented network...  The focus of the research in this area has been in two directions: first, building an efficient routing infrastructure, and secondly, building a sophisticated security infrastructure. The focus of this work is on the second issue.</dc:description>
+          <dc:description>An ideal authenticated multicast environment ... provides authenticity for all the communication operations in the system... We ...  propose a comprehensive solution to the problem ... for all its possible operations... 1. one-to-one (or joining mode) 2. one-to-many (or broadcast mode) 3. many-to-one (or concast mode) 4. intermediate (or transit mode) ... We study the ... mode known as anycast, in which a server is selected from a group of servers. Further we develop ... schemes for group-based communication exploiting the distinct features of one-time signatures... cover situations when a threshold number of participants are involved and ... where a proxy signer is required.</dc:description>
+          <dc:subject>Authentication.</dc:subject>
+          <dc:subject>Digital signatures.</dc:subject>
+          <dc:subject>Computer networks</dc:subject>
+          <dc:subject>Security measures.</dc:subject>
+          <dc:subject>Data encryption (Computer science)</dc:subject>
+          <dc:subject>Computers</dc:subject>
+          <dc:subject>Access control.</dc:subject>
+          <dc:subject>Cryptography.</dc:subject>
+          <dc:subject>Computer security.   alibrahim@kuc01.kuniv.edu.kw&gt;</dc:subject>
+          <dc:subject>Computer network protocols.</dc:subject>
+          <dc:creator>Macquarie University.</dc:creator>
+          <dc:identifier>http://lachesis.lib.mq.edu.au/catalogue/erthesis/728917.pdf</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DS1" STATE="I">
+    <foxml:datastreamVersion ID="DS1.0" LABEL="MARCXML Record" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <collection xmlns="http://www.loc.gov/MARC21/slim" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <record>
+            <leader>03381ctm a2200397 a 4500</leader>
+            <controlfield tag="001">728917</controlfield>
+            <controlfield tag="005">20060919142937.0</controlfield>
+            <controlfield tag="008">051007s2005    xnaa    sbm   000 0 eng d</controlfield>
+            <datafield ind1=" " ind2=" " tag="040">
+              <subfield code="a">NMQU</subfield>
+              <subfield code="b">eng</subfield>
+              <subfield code="c">NMQU</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="042">
+              <subfield code="a">anuc</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="090">
+              <subfield code="a">Electronic version</subfield>
+            </datafield>
+            <datafield ind1="1" ind2=" " tag="100">
+              <subfield code="a">Al-Ibrahim, Mohamed Hussain</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="0" tag="245">
+              <subfield code="a">Source authentication in group communication</subfield>
+              <subfield code="h">[electronic resource] /</subfield>
+              <subfield code="c">by Mohamed Hussain Al-Ibrahim.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="260">
+              <subfield code="c">2005.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="502">
+              <subfield code="a">Thesis (PhD)--Macquarie University (Division of Information &amp; Communication Sciences, Department of Computing), 2004.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="500">
+              <subfield code="a">Title from screen page; viewed 10 Oct 2005.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="504">
+              <subfield code="a">Bibliography: leaves 163-175.</subfield>
+            </datafield>
+            <datafield ind1="0" ind2=" " tag="505">
+              <subfield code="a">Introduction -- Cryptographic essentials -- Multicast: structure and security -- Authentication of multicast streams -- Authentication of concast communication -- Authentication of transit flows -- One-time signatures for authenticating group communication -- Authentication of anycast communication -- Authentication of joining operation - Conclusion and future directions.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="516">
+              <subfield code="a">Electronic publication; full text available in PDF format.</subfield>
+            </datafield>
+            <datafield ind1="3" ind2=" " tag="520">
+              <subfield code="a">Multicast is a relatively new and emerging communication mode in which a sender sends a message to a group of recipients in just one connection establishment... reducing broadband overhead and increasing resource utilization in the already congested and contented network...  The focus of the research in this area has been in two directions: first, building an efficient routing infrastructure, and secondly, building a sophisticated security infrastructure. The focus of this work is on the second issue.</subfield>
+              <subfield code="b">... building a secure system requires providing a number of services... [including] confidentiality, integrity, authenticity and non-repudiation... One of the distinguishing issues in securing multicast environment is providing source authentication...</subfield>
+            </datafield>
+            <datafield ind1="3" ind2=" " tag="520">
+              <subfield code="a">An ideal authenticated multicast environment ... provides authenticity for all the communication operations in the system... We ...  propose a comprehensive solution to the problem ... for all its possible operations... 1. one-to-one (or joining mode) 2. one-to-many (or broadcast mode) 3. many-to-one (or concast mode) 4. intermediate (or transit mode) ... We study the ... mode known as anycast, in which a server is selected from a group of servers. Further we develop ... schemes for group-based communication exploiting the distinct features of one-time signatures... cover situations when a threshold number of participants are involved and ... where a proxy signer is required.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="530">
+              <subfield code="a">Also available in a print form.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="533">
+              <subfield code="a">Electronic reproduction.</subfield>
+              <subfield code="b">[Australia] :</subfield>
+              <subfield code="c">Australasian Digital Theses program,</subfield>
+              <subfield code="d">2005.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="534">
+              <subfield code="e">xiv, 175 leaves, bound : ill. ; 30 cm.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Authentication.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Digital signatures.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Computer networks</subfield>
+              <subfield code="x">Security measures.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Data encryption (Computer science)</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Computers</subfield>
+              <subfield code="x">Access control.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Cryptography.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Computer security.   alibrahim@kuc01.kuniv.edu.kw&gt;</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="650">
+              <subfield code="a">Computer network protocols.</subfield>
+            </datafield>
+            <datafield ind1="2" ind2=" " tag="710">
+              <subfield code="a">Macquarie University.</subfield>
+              <subfield code="c">Dept. of Computing.</subfield>
+            </datafield>
+            <datafield ind1=" " ind2="0" tag="830">
+              <subfield code="a">Australasian Digital Theses Program.</subfield>
+            </datafield>
+            <datafield ind1="4" ind2="1" tag="856">
+              <subfield code="u">http://lachesis.lib.mq.edu.au/catalogue/erthesis/728917.pdf</subfield>
+              <subfield code="z">Electronic version</subfield>
+            </datafield>
+            <datafield ind1=" " ind2=" " tag="929">
+              <subfield code="a">NMQUICSp2004</subfield>
+            </datafield>
+          </record>
+        </collection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

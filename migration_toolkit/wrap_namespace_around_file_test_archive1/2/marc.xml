@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+<record><leader>02303ctm a2200241 a 4500</leader>
+<controlfield tag="001">748908</controlfield>
+
+<controlfield tag="005">20060919143213.0</controlfield>
+<controlfield tag="008">060426s2006    xnaa     bm   000 0 eng d</controlfield>
+<datafield tag="040" ind1=" " ind2=" ">
+<subfield code="a">NMQU</subfield>
+<subfield code="b">eng</subfield>
+<subfield code="c">NMQU</subfield>
+</datafield>
+<datafield tag="042" ind1=" " ind2=" ">
+<subfield code="a">anuc</subfield>
+</datafield>
+<datafield tag="043" ind1=" " ind2=" ">
+<subfield code="a">e------</subfield>
+</datafield>
+<datafield tag="090" ind1=" " ind2=" ">
+<subfield code="a">Electronic version</subfield>
+</datafield>
+<datafield tag="100" ind1="1" ind2=" ">
+<subfield code="a">Fox, James.</subfield>
+</datafield>
+<datafield tag="245" ind1="1" ind2="4">
+<subfield code="a">The fragile state of the European Union (EU)</subfield>
+<subfield code="h">[electronic resource] :</subfield>
+<subfield code="b">its battle for survival with the Member States /</subfield>
+<subfield code="c">James Fox.</subfield>
+</datafield>
+<datafield tag="260" ind1=" " ind2=" ">
+<subfield code="c">2006.</subfield>
+</datafield>
+<datafield tag="502" ind1=" " ind2=" ">
+<subfield code="a">Thesis (Masters)--Macquarie University (Division of Humanitites, Department of Politics), 2006.</subfield>
+</datafield>
+<datafield tag="504" ind1=" " ind2=" ">
+<subfield code="a">Bibliography: p. 215-231.</subfield>
+</datafield>
+<datafield tag="505" ind1="0" ind2=" ">
+<subfield code="a">The fragile state of the European Union (EU), its battle for survival with the Member States. -- The growth of the EU and the gradual transfer of powers from the Member States. -- The impact of the European Court of Justice. -- The formation of policy communities and multi-level governance. -- The Commission's sole right to initiate legislation and its reference to subsidiarity. -- The all-powerful Competition Directorate, which has an influential section of economic purists. -- The increased powers of the European Parliament and its shortcomings. -- The reluctance of national governments to adopt progressive attitudes and to let the Commission change its policies and procedures. -- The national contributions to the EU budget. -- The taxation differences between the various Member States. -- The EU constitution. -- The demographic development. -- Regional development and the structural funds. -- Competition policy. -- The Common Agricultural Policy. -- The Common Environment Policy. -- Economic and Monetary Union (EMU), the Euro, the Stability and Growth Pact (SGP) and the European Central Bank. -- Transport. -- The Common Energy Policy. -- The Area of Freedom, Security and Justice (AFSJ).</subfield>
+</datafield>
+<datafield tag="520" ind1="0" ind2=" ">
+<subfield code="a">The European Union (EU) is partly supranational and partly inter-governmental.  It is dependent on the concurrance of all its Member States for the important decisions required for the running of the EU.  This causes an inherent instability in the EU.</subfield>
+</datafield>
+<datafield tag="533" ind1=" " ind2=" ">
+<subfield code="a">Electronic reproduction.</subfield>
+<subfield code="b">[Australia] :</subfield>
+<subfield code="c">Australasian Digital Theses program,</subfield>
+<subfield code="d">2006.</subfield>
+</datafield>
+<datafield tag="650" ind1=" " ind2="0">
+<subfield code="a">European Union.</subfield>
+</datafield>
+<datafield tag="710" ind1="1" ind2=" ">
+<subfield code="a">Macquarie University.</subfield>
+<subfield code="c">Dept. of Politics.</subfield>
+</datafield>
+<datafield tag="929" ind1=" " ind2=" ">
+<subfield code="a">NMQU...2006</subfield>
+</datafield>
+</record>
+</collection>
+ 

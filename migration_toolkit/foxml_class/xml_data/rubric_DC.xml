@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title>FOXML Reference Object</dc:title>
+    <dc:creator>Sandy Payette</dc:creator>
+    <dc:subject>Fedora documentation</dc:subject>
+    <dc:description>FOXML showing how a digital object is encoded for persistent storage in a Fedora repository</dc:description>
+    <dc:publisher>Cornell CIS</dc:publisher>
+    <dc:identifier>demo:999</dc:identifier>
+</oai_dc:dc>

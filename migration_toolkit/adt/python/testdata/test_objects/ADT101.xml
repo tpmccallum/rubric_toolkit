@@ -1,0 +1,112 @@
+<foxml:digitalObject xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PID="ADT:100" xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="A"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="ADTImport07 Influence of the form and level of organic versus inorganic copper and zinc in diets for growing and finishing pigs"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL"></foxml:property>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A">
+    <foxml:datastreamVersion ID="DC.0" LABEL="Dublin Core" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>Influence of the form and level of organic versus inorganic copper and zinc in diets for growing and finishing pigs</dc:title>
+          <dc:creator>Aracely Hernandez</dc:creator>
+          <dc:description>Pharmacological levels of inorganic forms of copper (Cu) and zinc (Zn) are frequently used in diets for pigs to improve performance and control post-weaning colibacillosis. However, the use of such forms and levels causes mineral accumulation in the soil, and is a non-sustainable practice from an environmental perspective. Alternatively, organic complexes of copper (Cu) and zinc (Zn) have been proposed to be more available to pigs, and when included at lower levels than inorganic sources of these minerals have significantly reduced mineral excretion in faeces without compromising performance. However the effect of these organic minerals fed simultaneously at low levels of inclusion has not been well studied. The general hypothesis tested in this thesis was that concentrations of Cu and Zn in faecal material would be reduced when fed in an organic (Bioplex®) form without compromising performance or mineral homeostasis in growing/finishing pigs, in comparison to Cu and Zn fed in an inorganic (sulphate) form.   &#xD;
+&#xD;
+Two experiments were performed to test this hypothesis: Experiment 1 was designed as a 2x2 factorial arrangement of treatments, with two mineral forms (Bioplex® and Sulphate) and two inclusion levels (High and Low). The “low” levels aimed at providing 80 mg/kg of dietary Cu and Zn, and the “high” levels aimed at providing 160 mg/kg of dietary Cu and Zn. Experiment 2 was designed as a 3x2 factorial arrangement of treatments, with two mineral forms (Bioplex® and Sulphate) and three inclusion levels (Low, Medium and High). The “low” levels aimed at providing 25 mg/kg of Cu and 40 mg/kg of Zn, the “medium” levels aimed at providing 80 mg/kg of both Cu and Zn, and the “high” levels aimed at providing 160 mg/kg of both Cu and Zn in the diet. Unfortunately the Medium sulphate grower diet was contaminated with excess Zn while manufacturing, which led to the exclusion of this treatment from the study.  &#xD;
+&#xD;
+In Experiment 1, pigs fed LB (Low Bioplex®) or HS (High Sulphate) diets grew faster (P=0.014) and their carcasses were 3.5 kg heavier (P=0.020) than LS (Low Sulphate)- or HB (High Bioplex®)-fed pigs. Pigs fed LB or HS diets had lower (P=0.001) levels of Zn in plasma, a higher (P=0.029) concentration of Zn in the pancreas and a lower (P=0.020) concentration of Zn in bone than pigs fed LS or HB diets. The concentration of Cu in liver increased (P=0.017) with the concentration in the diet as did Cu and Zn levels in faeces (P&lt;0.001) without any difference between mineral forms. Feed conversion ratio (FCR) tended to be improved (P=0.062) by the inclusion of Bioplex® in the diet. The inclusion of Bioplex® reduced (P=0.003) subcutaneous fat depth at the P2 site by 2.2 mm compared to the sulphate. In Experiment 2, there was no difference (P&gt;0.05) in growth rate between experimental diets, but again there was an overall improvement (P=0.012) in FCR when Bioplex® were included. Blood and tissue Cu and Zn concentrations were within normal physiological ranges in all treatments, supporting a reduction of Cu and Zn levels in the diet. Only Zn level in plasma during the growing phase and Cu and Zn concentration in tissues increased (P&lt;0.001) with the addition in the diet. None of the biomarkers of Cu or Zn status analysed in the pigs showed any difference between the inorganic and the Bioplex® forms. Copper and Zn concentrations in faecal material decreased (P&lt;0.001) with their inclusion in the diet, and only in the finishing collection there was a further decrease of 10% in Zn faecal concentration when Bioplex® was included instead of the sulphate at similar low levels. Carcass and meat quality measures were independent of the Cu and Zn form or level, however a higher proportion of carcasses from LB-fed pigs had &lt;14 mm subcutaneous fat depth at the P2 site. The inclusion of Bioplex® failed to have a significant effect on Cu excretion and its inclusion had an inconsistent effect on Zn excretion. &#xD;
+&#xD;
+The overall findings from this thesis partially supported the hypothesis that the inclusion of Bioplex® would reduce the concentration of Cu and Zn in faeces compared to the inclusion of inorganic forms at similar inclusion levels. Nevertheless, total Cu and Zn levels in growing/finishing pig diets could be reduced from 160 mg/kg of both Cu and Zn to 30 mg/kg Cu and 60 mg/kg Zn, in either the sulphate or the Bioplex® form, without negatively affecting performance or mineral homeostasis in the pigs and significantly reducing Cu and Zn excretion (between 50 and 80%). The advantage of including Bioplex® instead of sulphates was in the improvement in FCR. Carcass and meat quality were independent of the form and level of dietary Cu and Zn.</dc:description>
+          <dc:publisher>. </dc:publisher>
+          <dc:date>2006</dc:date>
+          <dc:publisher>Murdoch University. </dc:publisher>
+          <dc:date></dc:date>
+          <dc:rights>http://www.murdoch.edu.au/goto/CopyrightNotice</dc:rights>
+          <dc:rights>Copyright Aracely Hernandez</dc:rights>
+          <dc:identifier>http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20060727.122557</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DS1" STATE="A">
+    <foxml:datastreamVersion ID="DS1.0" LABEL="MARCXML Record" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <record>
+            <leader>00000nam a22000002a 4500</leader>
+            <controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </controlfield>
+            <datafield ind1="1" ind2="0" tag="245">
+              <subfield code="a">Influence of the form and level of organic versus inorganic copper and zinc in diets for growing and finishing pigs</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="" tag="100">
+              <subfield code="a">Aracely Hernandez</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">pigs</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">copper</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">zinc</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">growth performance</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">mineral excretion</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">carcass</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">meat quality</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="520">
+              <subfield code="a">Pharmacological levels of inorganic forms of copper (Cu) and zinc (Zn) are frequently used in diets for pigs to improve performance and control post-weaning colibacillosis. However, the use of such forms and levels causes mineral accumulation in the soil, and is a non-sustainable practice from an environmental perspective. Alternatively, organic complexes of copper (Cu) and zinc (Zn) have been proposed to be more available to pigs, and when included at lower levels than inorganic sources of these minerals have significantly reduced mineral excretion in faeces without compromising performance. However the effect of these organic minerals fed simultaneously at low levels of inclusion has not been well studied. The general hypothesis tested in this thesis was that concentrations of Cu and Zn in faecal material would be reduced when fed in an organic (Bioplex®) form without compromising performance or mineral homeostasis in growing/finishing pigs, in comparison to Cu and Zn fed in an inorganic (sulphate) form.   &#xD;
+&#xD;
+Two experiments were performed to test this hypothesis: Experiment 1 was designed as a 2x2 factorial arrangement of treatments, with two mineral forms (Bioplex® and Sulphate) and two inclusion levels (High and Low). The “low” levels aimed at providing 80 mg/kg of dietary Cu and Zn, and the “high” levels aimed at providing 160 mg/kg of dietary Cu and Zn. Experiment 2 was designed as a 3x2 factorial arrangement of treatments, with two mineral forms (Bioplex® and Sulphate) and three inclusion levels (Low, Medium and High). The “low” levels aimed at providing 25 mg/kg of Cu and 40 mg/kg of Zn, the “medium” levels aimed at providing 80 mg/kg of both Cu and Zn, and the “high” levels aimed at providing 160 mg/kg of both Cu and Zn in the diet. Unfortunately the Medium sulphate grower diet was contaminated with excess Zn while manufacturing, which led to the exclusion of this treatment from the study.  &#xD;
+&#xD;
+In Experiment 1, pigs fed LB (Low Bioplex®) or HS (High Sulphate) diets grew faster (P=0.014) and their carcasses were 3.5 kg heavier (P=0.020) than LS (Low Sulphate)- or HB (High Bioplex®)-fed pigs. Pigs fed LB or HS diets had lower (P=0.001) levels of Zn in plasma, a higher (P=0.029) concentration of Zn in the pancreas and a lower (P=0.020) concentration of Zn in bone than pigs fed LS or HB diets. The concentration of Cu in liver increased (P=0.017) with the concentration in the diet as did Cu and Zn levels in faeces (P&lt;0.001) without any difference between mineral forms. Feed conversion ratio (FCR) tended to be improved (P=0.062) by the inclusion of Bioplex® in the diet. The inclusion of Bioplex® reduced (P=0.003) subcutaneous fat depth at the P2 site by 2.2 mm compared to the sulphate. In Experiment 2, there was no difference (P&gt;0.05) in growth rate between experimental diets, but again there was an overall improvement (P=0.012) in FCR when Bioplex® were included. Blood and tissue Cu and Zn concentrations were within normal physiological ranges in all treatments, supporting a reduction of Cu and Zn levels in the diet. Only Zn level in plasma during the growing phase and Cu and Zn concentration in tissues increased (P&lt;0.001) with the addition in the diet. None of the biomarkers of Cu or Zn status analysed in the pigs showed any difference between the inorganic and the Bioplex® forms. Copper and Zn concentrations in faecal material decreased (P&lt;0.001) with their inclusion in the diet, and only in the finishing collection there was a further decrease of 10% in Zn faecal concentration when Bioplex® was included instead of the sulphate at similar low levels. Carcass and meat quality measures were independent of the Cu and Zn form or level, however a higher proportion of carcasses from LB-fed pigs had &lt;14 mm subcutaneous fat depth at the P2 site. The inclusion of Bioplex® failed to have a significant effect on Cu excretion and its inclusion had an inconsistent effect on Zn excretion. &#xD;
+&#xD;
+The overall findings from this thesis partially supported the hypothesis that the inclusion of Bioplex® would reduce the concentration of Cu and Zn in faeces compared to the inclusion of inorganic forms at similar inclusion levels. Nevertheless, total Cu and Zn levels in growing/finishing pig diets could be reduced from 160 mg/kg of both Cu and Zn to 30 mg/kg Cu and 60 mg/kg Zn, in either the sulphate or the Bioplex® form, without negatively affecting performance or mineral homeostasis in the pigs and significantly reducing Cu and Zn excretion (between 50 and 80%). The advantage of including Bioplex® instead of sulphates was in the improvement in FCR. Carcass and meat quality were independent of the form and level of dietary Cu and Zn.</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="260">
+              <subfield code="c">2006</subfield>
+            </datafield>
+            <datafield ind1="0" ind2="" tag="041">
+              <subfield code="a">eng
+     </subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="260">
+              <subfield code="b">Murdoch University</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="540">
+              <subfield code="a">http://www.murdoch.edu.au/goto/CopyrightNotice</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="540">
+              <subfield code="a">Copyright Aracely Hernandez</subfield>
+            </datafield>
+            <datafield ind1="4" ind2="" tag="856">
+              <subfield code="u">http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20060727.122557</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="502">
+              <subfield code="a">Influence of the form and level of organic versus inorganic copper and zinc in diets for growing and finishing pigs</subfield>
+            </datafield>
+          </record>
+        </collection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="M" ID="DS2" STATE="A">
+    <foxml:datastreamVersion ID="DS2.0" LABEL="02Whole.pdf" MIMETYPE="application/pdf">
+      <foxml:contentLocation REF="http://localhost:8000/dspaceArchive/99/02Whole.pdf" TYPE="URL"></foxml:contentLocation>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="M" ID="DS3" STATE="A">
+    <foxml:datastreamVersion ID="DS3.0" LABEL="01Front.pdf" MIMETYPE="application/pdf">
+      <foxml:contentLocation REF="http://localhost:8000/dspaceArchive/99/01Front.pdf" TYPE="URL"></foxml:contentLocation>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

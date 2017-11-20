@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+    -->
+    <utfx:stylesheet src="usc_herbarium_to_marc.xsl"/>
+
+
+    <!-- Item Title (no 662)-->
+    <utfx:test>
+        <utfx:name>Item Title 1</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <Aq_Nr>75/40</Aq_Nr>
+                        <Family_Name>Acanthaceae</Family_Name>
+                        <Botanical_Name>Adhatoda vasica</Botanical_Name>
+                        <Status>test</Status>
+                        <Bc_Nr>test</Bc_Nr>
+                        <Collect_Name>G. Hiley</Collect_Name>
+                        <Collect_Date>27.8.1975</Collect_Date>
+                        <Additional_Collectors>G. Hileys friend</Additional_Collectors>
+                        <Deter_Name>Queensland Herbarium</Deter_Name>
+                        <Deter_Date>16.9.1975</Deter_Date>
+                        <Additional>Plant is native to Ceylon</Additional>
+                        <Floristic>Shrub to 2m</Floristic>
+                        <Habitat>Dry Rainforest</Habitat>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="243" ind1=" " ind2=" ">
+                            <subfield code="a">Acanthaceae</subfield>
+                            <subfield code="g">Adhatoda vasica</subfield>
+                        </datafield>
+                        <datafield tag="513" ind1=" " ind2=" ">
+                            <subfield code="a">test</subfield>
+                        </datafield>
+                       <datafield tag="100" ind1=" " ind2=" ">
+                            <subfield code="a">G. Hiley</subfield>
+                        </datafield>
+                        
+                        <datafield tag="046" ind1=" " ind2=" ">
+                            <subfield code="a">m</subfield>
+                            <subfield code="k">27.8.1975</subfield>
+                            <subfield code="l">16.9.1975</subfield>
+                        </datafield>
+                      
+                        
+                        <datafield tag="500" ind1=" " ind2=" ">
+                            <subfield code="a">Plant is native to Ceylon</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                       
+                       
+                    </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+
+
+        <!-- Item Title (one 662 subfield)-->
+    <utfx:test>
+        <utfx:name>Item Title 2</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <Batch_No>820 10 D5 (54)</Batch_No>
+                        <Family_Name>Acanthaceae</Family_Name>
+                        <Botanical_Name>Brunoniella spiciflora</Botanical_Name>
+                        <Collect_Name>E. Rider</Collect_Name>
+                        <Collect_Date>30/12/1975</Collect_Date>
+                        <Deter_Name>Government Botanist</Deter_Name>
+                        <Deter_Date>12/1975</Deter_Date>
+                        <Region_Name>Region Name Goes Here</Region_Name>
+                 
+                        <Label>Peter Bostock says that users have been misapplying etc name
+                            Isoglossa eranthemoulis.</Label>
+                        <Reference_Set>Field</Reference_Set>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="243" ind1=" " ind2=" ">
+                            <subfield code="a">Acanthaceae</subfield>
+                            <subfield code="g">Brunoniella spiciflora</subfield>
+                        </datafield>
+                        <datafield tag="100" ind1=" " ind2=" ">
+                            <subfield code="a">E. Rider</subfield>
+                        </datafield>
+                        <datafield tag="046" ind1=" " ind2=" ">
+                            <subfield code="a">m</subfield>
+                            <subfield code="k">30/12/1975</subfield>
+                            <subfield code="l">12/1975</subfield>
+                        </datafield>
+                      
+                        <datafield tag="662" ind1=" " ind2=" ">
+                            <subfield code="b">Region Name Goes Here</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+
+                    </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+        </utfx:test>
+
+
+        <!-- Item Title (three 662 subfields)-->
+    <utfx:test>
+        <utfx:name>Item Title 3</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+                    <record>
+                        <Batch_No>820 10 D5 (54)</Batch_No>
+                        <Family_Name>Acanthaceae</Family_Name>
+                        <Botanical_Name>Brunoniella spiciflora</Botanical_Name>
+                        <Collect_Name>E. Rider</Collect_Name>
+                        <Collect_Date>32933</Collect_Date>
+                        <Deter_Name>Government Botanist</Deter_Name>
+                         <Region_Name>Region Name Goes Here</Region_Name>
+                        <District_Name>Imbil</District_Name>
+                        <Locality>Mt Kandangar</Locality>
+                       
+                        <Label>Peter Bostock says that users have been misapplying etc name
+                            Isoglossa eranthemoulis.</Label>
+                        <Reference_Set>Field</Reference_Set>
+
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="243" ind1=" " ind2=" ">
+                            <subfield code="a">Acanthaceae</subfield>
+                            <subfield code="g">Brunoniella spiciflora</subfield>
+                        </datafield>
+                        <datafield tag="100" ind1=" " ind2=" ">
+                            <subfield code="a">E. Rider</subfield>
+                        </datafield>
+                        <datafield tag="046" ind1=" " ind2=" ">
+                            <subfield code="a">m</subfield>
+                            <subfield code="k">32933</subfield>
+                        </datafield>
+                       
+                        <datafield tag="662" ind1=" " ind2=" ">
+                            <subfield code="b">Region Name Goes Here</subfield>
+                            <subfield code="c">Imbil</subfield>
+                            <subfield code="g">Mt Kandangar</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+
+                    </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+</utfx:tests>

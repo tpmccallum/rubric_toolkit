@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+    <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="digital_commons_to_dc.xsl"/>
+   
+    <!-- Test to verify conversion of adt html to Dublin Core -->
+     
+    <utfx:test>
+        <utfx:name>title</utfx:name>
+        <utfx:assert-equal>
+             <utfx:source validate="no">
+               <dc:title>Responding to Class Theft: Theoretical and Empirical Links to Critical Management Studies</dc:title>
+             </utfx:source>
+          <utfx:expected validate="no">
+             <dcvalue element="title" qualifier="none">Responding to Class Theft: Theoretical and Empirical Links to Critical Management Studies</dcvalue>
+         </utfx:expected>            
+        </utfx:assert-equal>
+    </utfx:test>
+   <utfx:test>
+      <utfx:name>subject</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <dc:subject>Critical Management Studies</dc:subject>
+            <dc:subject>Postmodern class analysis</dc:subject>
+            <dc:subject>management</dc:subject>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element="subject" qualifier="classification">Critical Management Studies</dcvalue>
+            <dcvalue element="subject" qualifier="classification">Postmodern class analysis</dcvalue>
+            <dcvalue element="subject" qualifier="classification">management</dcvalue>   
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+   <utfx:test>
+      <utfx:name>creator</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <dc:creator>Prichard, Craig</dc:creator>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element="contributor" qualifier="author">Prichard, Craig</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+  <utfx:test>
+      <utfx:name>abstract</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <dc:description>This paper suggests closer linkages between the fields of Postmodern Class Analysis (PCA) and Critical Management Studies (CMS)2 are possible. It argues that CMS might contribute to the empirical engagement with the over-determined relations between class and non-class processes in work organizations (this appears to have received relatively little attention in PCA) and that PCA's theoretical and conceptual commitments may provide one means for CMS to engage in class analysis. CMS's focus on power and symbolic relations has led to the relative neglect of exploitation and class, in surplus terms. Both fields share similar although not identical political and ethical commitments.</dc:description>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element="description" qualifier="abstract">This paper suggests closer linkages between the fields of Postmodern Class Analysis (PCA) and Critical Management Studies (CMS)2 are possible. It argues that CMS might contribute to the empirical engagement with the over-determined relations between class and non-class processes in work organizations (this appears to have received relatively little attention in PCA) and that PCA's theoretical and conceptual commitments may provide one means for CMS to engage in class analysis. CMS's focus on power and symbolic relations has led to the relative neglect of exploitation and class, in surplus terms. Both fields share similar although not identical political and ethical commitments.</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+   <utfx:test>
+      <utfx:name>date</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <dc:date>2007-01-01</dc:date>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element="date" qualifier="issued">2007-01-01</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+   <utfx:test>
+      <utfx:name>type</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <dc:type>text</dc:type>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element="type" qualifier="none">text</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+   
+   
+   <utfx:test>
+      <utfx:name>format</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <dc:format>application/pdf</dc:format>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element="format" qualifier="medium">application/pdf</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+   
+   <utfx:test>
+   <utfx:name>dateStamp[</utfx:name>
+   <utfx:assert-equal>
+      <utfx:source validate="no">
+         <datestamp>2006-10-18</datestamp>
+      </utfx:source>
+      <utfx:expected validate="no">
+         <dcvalue element="date" qualifier="available">2006-10-18</dcvalue>
+      </utfx:expected>            
+   </utfx:assert-equal>
+   </utfx:test>
+   <!--<utfx:test>
+      <utfx:name>language</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <meta name="dc.language" scheme="RFC1766" content="en"/>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element = "language" qualifier = "iso">en</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>-->
+   <utfx:test>
+      <utfx:name>publisher</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+      <dc:publisher>Massey University.</dc:publisher>
+         </utfx:source>
+         <utfx:expected validate="no">
+      <dcvalue element="publisher" qualifier="none">Massey University.</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+ <utfx:test>
+   <utfx:name>rights</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+      <dc:rights>http://digitalcommons.massey.ac.nz/dissertations/theses_copyright.html</dc:rights>
+         </utfx:source>
+         <utfx:expected validate="no">
+      <dcvalue element="rights" qualifier="none">http://digitalcommons.massey.ac.nz/dissertations/theses_copyright.html</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+<utfx:test>
+      <utfx:name>identifier</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+      <dc:identifier xsi:type="dcterms:URI">http://digitalcommons.massey.ac.nz/craig_prichard/3</dc:identifier>
+         </utfx:source>
+         <utfx:expected validate="no">
+      <dcvalue element="identifier" qualifier="uri">http://digitalcommons.massey.ac.nz/craig_prichard/3</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+   <!--  <utfx:test>
+      <utfx:name>description</utfx:name>
+      <utfx:assert-equal>
+         <utfx:source validate="no">
+            <meta name="dc.description" content= "PhD Doctorate"/>
+         </utfx:source>
+         <utfx:expected validate="no">
+            <dcvalue element = "type" qualifier = "none">PhD Doctorate</dcvalue>
+         </utfx:expected>            
+      </utfx:assert-equal>
+   </utfx:test>
+-->
+    
+    
+    </utfx:tests>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject xmlns:foxml="http://www.fedora.info/resources/faq.shtml#rdfproperties" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PID="test:99" xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+	<!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><foxml:objectProperties>
+		<foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="I"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="test import object"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL2"/>
+	</foxml:objectProperties>
+	<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:title>FOXML Reference Object</dc:title>
+		<dc:creator>Sandy Payette</dc:creator>
+		<dc:subject>Fedora documentation</dc:subject>
+		<dc:description>FOXML showing how a digital object is encoded for persistent storage in a Fedora repository</dc:description>
+		<dc:publisher>Cornell CIS</dc:publisher>
+		<dc:identifier>demo:999</dc:identifier>
+	</oai_dc:dc>
+</foxml:digitalObject>

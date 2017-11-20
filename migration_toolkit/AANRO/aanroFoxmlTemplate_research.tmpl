@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PID="$pid" 
+xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="A"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="$title"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="Fez"></foxml:property>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A">
+    <foxml:datastreamVersion ID="DC.0" LABEL="Dublin Core" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                        xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        
+<dc:type>$doctype</dc:type>
+
+## Code date YYYY-MM according to OAI-PMH guidelines: http://www.openarchives.org/OAI/openarchivesprotocol.html 
+<dc:date>$startdate</dc:date>
+<dc:title>$title</dc:title>
+  
+#for ($author) in $authors
+
+## Enter only the personal names into dc:creator. A single xl cell can contain several author names along with other information .e.g. Ms I (Irma) de Bree Ph: (03) 96936603|idebree@ausingred.com.au|Australian Ingredient Centre|88 Maribyrnong Street Footscray Vic 3011|Dr M (Mary-Ann) Augustin Ph: (03) 97420186|maryann.augustin@foodscience.afisc.csiro.au|Food Science Australia|Ingredient Functionality|Sneydes Road Werribee Vic 3030|Dr P (Paul) Grieve Ph: (07) 34068556|grievep@dpi.qld.gov.au|Queensland Department of Primary Industries and Fisheries|Centre for Food Technology|19 Hercules Street Hamilton Qld 4007. -->
+
+<dc:creator>$researcher</dc:creator>
+
+#end for
+
+<dc:description>$objectives</dc:description>
+
+#for subject in $subjects
+
+## Keeping $subject here though the AANRO spreadsheet uses "keywords" as the term. AANRO "Keywords" are being mapped.
+
+<dc:subject>$subject</dc:subject>
+
+#end for
+</oai_dc:dc>
+      </foxml:xmlContent>
+      
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="MODS" STATE="A">
+    <foxml:datastreamVersion ID="MODS.0" LABEL="MODSXML Record" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+      
+## Don't throw out modsCollection without checking http://www.loc.gov/standards/mods/v3/MARC21slim2MODS.xsl -->
+
+  <mods version="3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd">  
+  
+	<identifier type="local">$id</identifier>
+  
+## NonSort is for "The" "An" "A" when these words appear at beginning of title -->
+    
+    <titleInfo>
+    	  <nonSort></nonSort>
+	      <title>$title</title>	      
+    </titleInfo>    
+   
+    <titleInfo displayLabel="Program:">
+    	  <nonSort></nonSort>
+	      <title>$program</title>
+	      <subTitle displayLabel="Subprogram:">$subprogram</subTitle>
+    </titleInfo>    
+        
+#for $researcher in $researchers
+    
+## Should the family and given names not be separated? No given names are included -- only one initial.
+
+    <name type="personal">
+            <namePart type="family">$researcher['familyname']</namePart>
+            <namePart type="given">$researcher['initials']</namePart>
+            <namePart type="termsOfAddress">$researcher['title']</namePart>
+            <affiliation>$researcher['affiliation']</affiliation>
+            <affiliation>$researcher['address']</affiliation>
+            <role>
+                <roleTerm authority="marcrelator" type="text">creator</roleTerm>
+            </role>
+    </name>
+    
+ #end for
+    <typeOfResource>text</typeOfResource>
+    <genre authority="AANRO">$doctype</genre>
+    
+##Enter dates in YYYY-MM format    
+    <originInfo>
+      <dateOther encoding="iso8601" point="start">$startdate</dateOther>
+      <dateOther encoding="iso8601" point="end">$finishdate</dateOther>
+    </originInfo>        
+          
+    #for $subject in $subjects
+    
+    ##Keeping $subject here though the AANRO spreadsheet uses "keywords" as the term. AANRO "Keywords" are being mapped.
+    
+     <subject>
+            <topic>$subject</topic>
+    </subject>
+    
+    #end for
+    
+##AANRO's locality to go to subject-geographic as follows
+
+    <subject>
+		<geographic>$locality</geographic>
+	</subject>
+    
+ #for $sponsor in $sponsors
+
+	<name type="corporate">
+            <namePart>$sponsor</namePart>
+            <role>
+                <roleTerm authority="marcrelator" >Sponsor</roleTerm>
+            </role>
+    </name>
+#end for 
+    <name type="corporate">
+            <namePart>$collaboration</namePart>
+            <role>
+                <roleTerm authority="marcrelator">Collaborator</roleTerm>
+            </role>
+    </name>
+    
+    <note displayLabel="Objectives">$objectives</note>
+    <note displayLabel="Background">$background</note>
+    <note displayLabel="Methodology">$methodology</note>
+    <note displayLabel="Progress">$progress</note>
+    <note displayLabel="Implication">$implication</note>
+    
+    
+    <location>
+		<url></url>
+	</location>
+   
+  </mods>
+
+   
+    </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

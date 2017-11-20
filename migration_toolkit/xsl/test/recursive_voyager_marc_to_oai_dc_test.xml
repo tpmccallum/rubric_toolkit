@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+-->
+    <utfx:stylesheet src="marc_dc_macquarie.xsl"/>
+
+    <utfx:test>
+        <utfx:name>recursive test</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>01215cac a22002657a 4500</leader>
+                        <controlfield tag="001">695743</controlfield>
+                        <controlfield tag="005">20060313112633.0</controlfield>
+                        <controlfield tag="006">m d </controlfield>
+                        <controlfield tag="007">cr m| ---|aaaa</controlfield>
+                        <controlfield tag="008">050419s1891    gw     fs           ger d</controlfield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">Ein koptisches Fragment einer Moses-Adam-Apokalypse</subfield>
+                            <subfield code="b">shared perspectives in Australian heritage interpretation /</subfield>
+                            <subfield code="h">[electronic resource] /</subfield>
+                            <subfield code="c">von Adolf Harnack und Carl Schmidt.</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">Ein koptisches Fragment einer Moses-Adam-Apokalypse</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="1" ind2="4">
+                            <subfield code="a">The island of Meroë</subfield>
+                            <subfield code="h">[electronic resource] /</subfield>
+                            <subfield code="c">by J. W. Crowfoot.  Meroitic inscriptions.</subfield>
+                            <subfield code="n">Part 1,</subfield>
+                            <subfield code="p">Sôba to Dangêl  / by F. Ll. Griffith.</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="1" ind2="4">
+                            <subfield code="a">The island of Meroë</subfield>
+                            <subfield code="h">[electronic resource] /</subfield>
+                            <subfield code="c">by J. W. Crowfoot.  Meroitic inscriptions.</subfield>
+                            <subfield code="p">Sôba to Dangêl  / by F. Ll. Griffith.</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="1" ind2="4">
+                            <subfield code="a">The island of Meroë</subfield>
+                            <subfield code="h">[electronic resource] /</subfield>
+                            <subfield code="c">by J. W. Crowfoot.  Meroitic inscriptions.</subfield>
+                            <subfield code="n">Part 1,</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="1" ind2="4">
+                            <subfield code="a">The island of Meroë</subfield>
+                            <subfield code="b">b goes here</subfield>
+                            <subfield code="h">[electronic resource] /</subfield>
+                            <subfield code="c">by J. W. Crowfoot.  Meroitic inscriptions.</subfield>
+                            <subfield code="n">Part 1,</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="1" ind2="4">
+                            <subfield code="a">The island of Meroë</subfield>
+                            <subfield code="b">b goes here</subfield>
+                            <subfield code="h">[electronic resource] /</subfield>
+                            <subfield code="c">by J. W. Crowfoot.  Meroitic inscriptions.</subfield>
+                            <subfield code="p">Sôba to Dangêl  / by F. Ll. Griffith.</subfield>
+                        </datafield>
+                        <datafield tag="810" ind1=" " ind2=" ">
+                            <subfield code="a">Corporate name</subfield>
+                            <subfield code="b">Subordinate unit</subfield>
+                            <subfield code="v">Volume</subfield>
+                        </datafield>
+                        <datafield tag="830" ind1=" " ind2=" ">
+                            <subfield code="a">Australsian Digital Thesis Program</subfield>
+                            <subfield code="v">Volume</subfield>
+                        </datafield>
+                        
+                        
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">frecop</subfield>
+                        </datafield>
+                        
+                        <datafield tag="440" ind1=" " ind2="0">
+                            <subfield code="a">Archaeological survey of Egypt ;</subfield>
+                            <subfield code="v">22nd memoir</subfield>
+                        </datafield>
+                        
+                        <datafield tag="300" ind1=" " ind2=" ">
+                            <subfield code="a">xii, 41 p., [33] leaves of plates :</subfield>
+                            <subfield code="b">ill. (some col.), fold., geneal. tables, plan :</subfield>
+                            <subfield code="c">32 cm.</subfield>
+                        </datafield>
+
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Harnack, Adolf von,</subfield>
+                            <subfield code="d">1851-1930.</subfield>
+
+                        </datafield>
+                        
+                        <datafield tag="246" ind1="3" ind2=" ">
+                            <subfield code="a">Hieroglyphic texts from Egyptian stelae, &amp;c., in the British Museum.</subfield>
+                        </datafield>
+
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Ables, Sean Thomas</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                            <subfield code="d">1851-1970.</subfield>
+                        </datafield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Bob, Billy</subfield>
+                            <subfield code="u">University of Hardknocks</subfield>
+                        </datafield>
+
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                        </datafield>
+
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                        </datafield>
+
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Schmidt, Carl,</subfield>
+                            <subfield code="d">1868-1938.</subfield>
+                        </datafield>
+
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Bob, Cheryl</subfield>
+                            <subfield code="u">College of Applied Bricklaying</subfield>
+                            <subfield code="d">1868-1938.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Budge, E. A. Wallis</subfield>
+                            <subfield code="q">(Ernest Alfred Wallis),</subfield>
+                            <subfield code="c">Sir,</subfield>
+                            <subfield code="d">1857-1934.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Budge, E. A. Wallis</subfield>
+                            <subfield code="q">(Ernest Alfred Wallis),</subfield>
+                            <subfield code="c">Sir,</subfield>
+                            <subfield code="d">1857-1934.</subfield>
+                            <subfield code="u">University</subfield>
+                        </datafield>
+                        <datafield tag="710" ind1="2" ind2=" ">
+                            <subfield code="a">Königlich Preussische Akademie der Wissenschaften zu Berlin.</subfield>
+                            <subfield code="b">Library.</subfield>
+                            <subfield code="c">test data</subfield>
+                        </datafield>
+
+                        <datafield tag="710" ind1="2" ind2=" ">
+                            <subfield code="a">Königlich Preussische Akademie der Wissenschaften zu Berlin.</subfield>
+                                                   </datafield>
+                        <datafield tag="520" ind1="0" ind2=" ">
+                            <subfield code="a">The European Union (EU) is partly supranational and partly inter-governmental. It is dependent on the concurrance of all its Member States for the important decisions required for the running of the EU. This causes an inherent instability in the EU.</subfield>
+                        </datafield>
+
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Berlin :</subfield>
+                            <subfield code="b">Reichsdruckerei,</subfield>
+                            <subfield code="c">1891.</subfield>
+                        </datafield>
+
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Berlin :1</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="b">Reichsdruckerei,1</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="c">1891.1</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Berlin :2</subfield>
+                            <subfield code="b">Reichsdruckerei,2</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="b">Reichsdruckerei,3</subfield>
+                            <subfield code="c">1891.3</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Berlin :4</subfield>
+                            <subfield code="c">1891.4</subfield>
+                        </datafield>
+                        <datafield tag="500" ind1=" " ind2=" ">
+                            <subfield code="a">Title from screen page: viewed 10 Oct 2005.</subfield>
+                        </datafield>
+                        
+                      <datafield tag="856" ind1="4" ind2="0">
+                          <subfield code="u">handle goes here</subfield>
+                            <subfield code="z">Electronic version</subfield>
+                      </datafield>
+                        <datafield tag="852" ind1="4" ind2="0">
+                            <subfield code="u">http://www.lib.mq.edu.au/catalogue/public/brunner.php?ctype=2&amp;doc=696193.pdf</subfield>
+                        </datafield>
+                        <datafield tag="561" ind1="4" ind2="0">
+                            <subfield code="a">561 goes here</subfield>
+                         </datafield>
+                         <datafield tag="600" ind1=" " ind2=" ">
+                            <subfield code="a">600key</subfield>
+                            <subfield code="a">600key2</subfield>
+                            <subfield code="b">600keyb</subfield>
+                            <subfield code="v">600key2v</subfield>
+                            <subfield code="x">600keyx</subfield>
+                            <subfield code="y">600key2y</subfield>
+                            <subfield code="z">600key2z</subfield>
+                        </datafield>
+                        <datafield tag="650" ind1=" " ind2=" ">
+                            <subfield code="a">650key</subfield>
+                            <subfield code="a">650key2</subfield>
+                        </datafield>
+                        <datafield tag="651" ind1=" " ind2=" ">
+                            <subfield code="a">651key</subfield>
+                            <subfield code="a">651key2</subfield>
+                        </datafield>
+                        <datafield tag="653" ind1=" " ind2=" ">
+                            <subfield code="a">653key</subfield>
+                            <subfield code="a">653key2</subfield>
+                        </datafield>
+                        
+                           <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">journal article</subfield>
+                               <subfield code="2">local</subfield>
+                        </datafield>
+
+                        <datafield tag="773" ind1="0" ind2=" ">
+                            <subfield code="t">The University of Newcastle VITAL repository</subfield>
+                            <subfield code="a">Marina Heywood (ed).</subfield>
+                            <subfield code="g">Vol. 32, no. 10 (May 28. 2005), p. 4 pages</subfield>
+                        </datafield>
+
+                        <datafield tag="787" ind1="0" ind2=" ">
+                            <subfield code="t">University of Newcastle VITAL repository</subfield>
+                            <subfield code="g">Vol. 1, no. 10 (May 28. 2005), p. 4 pages</subfield>
+                        </datafield>
+
+                        <datafield tag="591" ind1=" " ind2=" ">
+                            <subfield code="a">2005</subfield>
+                        </datafield>
+
+                        <datafield tag="592" ind1=" " ind2=" ">
+                            <subfield code="a">C1</subfield>
+                        </datafield>
+
+                        <datafield tag="711" ind1="0" ind2=" ">
+                            <subfield code="a">This is a conference</subfield>
+                        </datafield>
+
+                        <datafield tag="013" ind1="0" ind2=" ">
+                            <subfield code="a">Patent Number</subfield>
+                        </datafield>
+
+                        <datafield tag="043" ind1=" " ind2=" ">
+                            <subfield code="a">f-sj---</subfield>
+                        </datafield>
+
+                        <datafield tag="502" ind1=" " ind2=" ">
+                            <subfield code="a">Thesis (Masters)--Macquarie University (Division of Humanitites, Department of Politics), 2006.</subfield>
+                        </datafield>
+
+                        <datafield tag="504" ind1=" " ind2=" ">
+                            <subfield code="a">Bibliography: p. 7-10.</subfield>
+                        </datafield>
+
+                        <datafield tag="505" ind1="0" ind2=" ">
+                            <subfield code="a">The fragile state of the European Union (EU), its battle for survival with the Member States. -- The growth of the EU and the gradual transfer of powers from the Member States. -- The impact of the European Court of Justice. -- The formation of policy communities and multi-level governance. -- The Commission's sole right to initiate legislation and its reference to subsidiarity. --   The all-powerful Competition Directorate, which has an influential section of economic purists. -- The increased powers of the European   Parliament and its shortcomings. -- The reluctance of national governments to adopt progressive attitudes and to let the Commission change its policies and procedures. -- The national contributions to the EU budget. -- The taxation differences between the various Member States. -- The EU constitution. -- The demographic development. -- Regional development and the structural funds. -- Competition policy. -- The Common Agricultural Policy. -- The Common Environment Policy. -- Economic and Monetary Union (EMU), the Euro, the Stability and Growth Pact (SGP) and the European Central Bank. -- Transport. -- The Common Energy Policy. -- The Area of Freedom, Security and Justice (AFSJ).</subfield>
+                        </datafield>
+
+                        <datafield tag="530" ind1=" " ind2=" ">
+                            <subfield code="a">Also available in a print form.</subfield>
+                        </datafield>
+
+                        <datafield tag="533" ind1=" " ind2=" ">
+                            <subfield code="a">Electronic reproduction.</subfield>
+                            <subfield code="b">North Ryde, NSW :</subfield>
+                            <subfield code="c">Macquarie University Library,</subfield>
+                            <subfield code="d">2006.</subfield>
+                            <subfield code="n">In PDF format.</subfield>
+                        </datafield>
+
+                        <datafield tag="534" ind1=" " ind2=" ">
+                            <subfield code="a">xii, 347 leaves, bound :</subfield>
+                        </datafield>
+                        
+                        <datafield tag="546" ind1=" " ind2=" ">
+                            <subfield code="a">Text in German with some Coptic</subfield>
+                        </datafield>
+                       <datafield tag="250" ind1=" " ind2=" ">
+                                <subfield code="a">2nd ed.</subfield>
+                            </datafield>
+                     
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                      <dc:title>Ein koptisches Fragment einer Moses-Adam-Apokalypse: shared perspectives in Australian heritage interpretation</dc:title>
+                      <dc:format>electronic resource</dc:format>
+                      <dc:title>Ein koptisches Fragment einer Moses-Adam-Apokalypse</dc:title>
+                
+                      <dc:title>The island of Meroë, Part 1, Sôba to Dangêl  / by F. Ll. Griffith</dc:title>
+                      <dc:format>electronic resource</dc:format>
+                       <dc:title>The island of Meroë, Sôba to Dangêl  / by F. Ll. Griffith</dc:title>
+                       <dc:format>electronic resource</dc:format>
+                
+                    <dc:title>The island of Meroë, Part 1</dc:title>
+                    <dc:format>electronic resource</dc:format>
+                
+                    <dc:title>The island of Meroë: b goes here, Part 1</dc:title>
+                    <dc:format>electronic resource</dc:format>
+                
+                    <dc:title>The island of Meroë: b goes here, Sôba to Dangêl  / by F. Ll. Griffith</dc:title>
+                    <dc:format>electronic resource</dc:format>
+                
+                     <dc:relation>This is a conference</dc:relation>
+                    <dc:creator>Harnack, Adolf von, 1851-1930</dc:creator>
+                    <dc:creator>Ables, Sean Thomas, 1851-1970. University of Newcastle</dc:creator>
+                    <dc:creator>Bob, Billy. University of Hardknocks</dc:creator>
+                    <dc:creator>Fraser, Brian J</dc:creator>
+                    <dc:creator>Fraser, Brian J. University of Newcastle</dc:creator>
+                    <dc:creator>Schmidt, Carl, 1868-1938</dc:creator>
+                    <dc:creator>Bob, Cheryl, 1868-1938. College of Applied Bricklaying</dc:creator>
+                <dc:creator>Budge, E. A. Wallis (Ernest Alfred Wallis), Sir, 1857-1934</dc:creator>
+                <dc:creator>Budge, E. A. Wallis (Ernest Alfred Wallis), Sir, 1857-1934. University</dc:creator>
+                
+                    <dc:contributor>Königlich Preussische Akademie der Wissenschaften zu Berlin. Library. test data</dc:contributor>
+                <dc:contributor>Königlich Preussische Akademie der Wissenschaften zu Berlin</dc:contributor>
+                    <dc:type>collection</dc:type>
+                    <dc:type>journal article</dc:type>
+                    <dc:publisher>Berlin : Reichsdruckerei</dc:publisher>
+                <dc:publisher>Berlin :1</dc:publisher>
+                    <dc:publisher>Reichsdruckerei,1</dc:publisher>
+                <dc:publisher>Berlin :2 : Reichsdruckerei,2</dc:publisher>
+                    <dc:publisher>Reichsdruckerei,3</dc:publisher>
+                <dc:publisher>Berlin :4</dc:publisher>
+                    <dc:date>1891.</dc:date>
+                    <dc:date>1891.1</dc:date>  
+                    <dc:date>1891.3</dc:date>
+                    <dc:date>1891.4</dc:date>
+                <dc:language>ger</dc:language>
+                <dc:subject>Patent Number</dc:subject>
+                <dc:description>The European Union (EU) is partly supranational and partly inter-governmental. It is dependent on the concurrance of all its Member States for the important decisions required for the running of the EU. This causes an inherent instability in the EU.</dc:description>
+                <dc:description>Title from screen page: viewed 10 Oct 2005.</dc:description>
+                <dc:description>Thesis (Masters)--Macquarie University (Division of Humanitites, Department of Politics), 2006.</dc:description>
+                <dc:description>Bibliography: p. 7-10.</dc:description>
+                <dc:description>The fragile state of the European Union (EU), its battle for survival with the Member States. -- The growth of the EU and the gradual transfer of powers from the Member States. -- The impact of the European Court of Justice. -- The formation of policy communities and multi-level governance. -- The Commission's sole right to initiate legislation and its reference to subsidiarity. --   The all-powerful Competition Directorate, which has an influential section of economic purists. -- The increased powers of the European   Parliament and its shortcomings. -- The reluctance of national governments to adopt progressive attitudes and to let the Commission change its policies and procedures. -- The national contributions to the EU budget. -- The taxation differences between the various Member States. -- The EU constitution. -- The demographic development. -- Regional development and the structural funds. -- Competition policy. -- The Common Agricultural Policy. -- The Common Environment Policy. -- Economic and Monetary Union (EMU), the Euro, the Stability and Growth Pact (SGP) and the European Central Bank. -- Transport. -- The Common Energy Policy. -- The Area of Freedom, Security and Justice (AFSJ).</dc:description>
+                <dc:description>Electronic reproduction.</dc:description> 
+                <dc:description>xii, 347 leaves, bound :</dc:description>
+                
+                
+                <dc:subject>600key -- 600key2 -- 600keyb -- 600key2v -- 600keyx -- 600key2y -- 600key2z </dc:subject>
+                    <dc:subject>650key -- 650key2</dc:subject>
+                    <dc:subject>651key -- 651key2</dc:subject>
+                    <dc:subject>653key</dc:subject>
+                     <dc:subject>653key2</dc:subject>
+                  <dc:description>Also available in a print form</dc:description>
+                  <dc:relation>The University of Newcastle VITAL repository, Vol. 32, no. 10 (May 28. 2005), p. 4 pages, Marina Heywood (ed).</dc:relation>
+                <dc:description>561 goes here</dc:description>
+                <dc:identifier>handle goes here</dc:identifier>
+                <dc:relation>http://www.lib.mq.edu.au/catalogue/public/brunner.php?ctype=2&amp;doc=696193.pdf</dc:relation>
+                 <dc:relation>Archaeological survey of Egypt 22nd memoir</dc:relation>
+                <dc:description>xii, 41 p., [33] leaves of plates ill. (some col.), fold., geneal. tables, plan 32 cm</dc:description>
+                <dc:title>Hieroglyphic texts from Egyptian stelae, &amp;c., in the British Museum</dc:title>
+                  <dc:description>2nd ed.</dc:description>
+                <dc:relation>Corporate name Subordinate unit Volume</dc:relation>
+                <dc:relation>Australsian Digital Thesis Program Volume</dc:relation>
+           </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <utfx:test>
+        <utfx:name>recursive test</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+    
+    <record>
+        <leader>00000nam a22000002a 4500</leader>
+        <controlfield tag="008">050419s1891    gw     fs           eng d</controlfield>
+        <datafield tag="245" ind1="1" ind2="4">
+            <subfield code="a">The Processing of Lexical Stress During Disordered Reading</subfield></datafield>
+        <datafield tag="100" ind1="1" ind2=" "><subfield code="a">Arciuli, J.</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" "><subfield code="a">Cupples, L.</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2=" "><subfield code="a">Nickels, L.</subfield>
+        </datafield>
+        <datafield tag="856" ind1="4" ind2="0">
+            <subfield code="u">handle goes here</subfield>
+        </datafield>
+        
+        <datafield tag="300" ind1=" " ind2=" "><subfield code="a">1 page</subfield>
+        </datafield>
+        <datafield tag="773" ind1="0" ind2="8"><subfield code="t">Abstracts of the Inaugural Australian Conference for Cognitive Neuropsychology and Cognitive Neuropsychiatry</subfield>
+            <subfield code="g">p. 119-126</subfield>
+            <subfield code="a">Marina Haywood</subfield>
+            <subfield code="n">0</subfield>
+        </datafield>
+        <datafield tag="711" ind1="2" ind2=" "><subfield code="a">Australian Conference for Cognitive Neuropsychology and Cognitive Neuropsychiatry</subfield>
+            <subfield code="d">2001</subfield>
+            <subfield code="c">Deakin University Geelong</subfield>
+        </datafield>
+        <datafield tag="596" ind1=" " ind2=" "><subfield code="a">E3</subfield>
+        </datafield>
+        <datafield tag="655" ind1=" " ind2="7"><subfield code="a">Conference Paper</subfield>                       
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" "><subfield code="a">RM 2001012127</subfield>
+        </datafield>
+        <datafield tag="710" ind1="2" ind2=" ">
+            <subfield code="b">Linguistics</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" "><subfield code="a">Melbourne Australia</subfield>
+            <subfield code="b">The Australian Psychological Society Limited</subfield>
+            <subfield code="c">2003</subfield>
+        </datafield>
+        <datafield tag="041" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+        </datafield>
+        <datafield tag="546" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+        </datafield>                       
+    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">     
+                <dc:title>The Processing of Lexical Stress During Disordered Reading</dc:title>
+               <dc:relation>Australian Conference for Cognitive Neuropsychology and Cognitive Neuropsychiatry (2001 : Deakin University Geelong)</dc:relation>
+                <dc:creator>Arciuli, J</dc:creator>
+                <dc:creator>Cupples, L</dc:creator>
+                <dc:creator>Nickels, L</dc:creator>
+                <dc:contributor>Linguistics</dc:contributor>
+                <dc:type>Conference Paper</dc:type>
+                <dc:publisher>Melbourne Australia : The Australian Psychological Society Limited</dc:publisher>
+                <dc:date>2003</dc:date>
+                <dc:language>eng</dc:language>
+                <dc:relation>Abstracts of the Inaugural Australian Conference for Cognitive Neuropsychology and Cognitive Neuropsychiatry, p. 119-126, Marina Haywood</dc:relation>
+                <dc:identifier>handle goes here</dc:identifier>
+                <dc:description>1 page</dc:description>
+                </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+
+
+
+
+
+</utfx:tests>

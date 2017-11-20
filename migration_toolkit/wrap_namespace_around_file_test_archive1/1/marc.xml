@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+<record><leader>02546ctm a2200349 a 4500</leader>
+<controlfield tag="001">729347</controlfield>
+
+<controlfield tag="005">20060919142601.0</controlfield>
+<controlfield tag="008">051012s2001    xnaa   esbm   000 0 eng d</controlfield>
+<datafield tag="040" ind1=" " ind2=" ">
+<subfield code="a">NMQU</subfield>
+<subfield code="b">eng</subfield>
+<subfield code="c">NMQU</subfield>
+</datafield>
+<datafield tag="042" ind1=" " ind2=" ">
+<subfield code="a">anuc</subfield>
+</datafield>
+<datafield tag="043" ind1=" " ind2=" ">
+<subfield code="a">u-at---</subfield>
+</datafield>
+<datafield tag="090" ind1=" " ind2=" ">
+<subfield code="a">Electronic version</subfield>
+</datafield>
+<datafield tag="100" ind1="1" ind2=" ">
+<subfield code="a">Johnstone, Patricia Lynne.</subfield>
+</datafield>
+<datafield tag="245" ind1="1" ind2="4">
+<subfield code="a">The process and organisational consequences of new artefact adoption in surgery</subfield>
+<subfield code="h">[electronic resource] /</subfield>
+<subfield code="c">by Patricia Lynne Johnstone.</subfield>
+</datafield>
+<datafield tag="260" ind1=" " ind2=" ">
+<subfield code="c">2001.</subfield>
+</datafield>
+<datafield tag="502" ind1=" " ind2=" ">
+<subfield code="a">Thesis (PhD)--Macquarie University, 2001.</subfield>
+</datafield>
+<datafield tag="504" ind1=" " ind2=" ">
+<subfield code="a">Bibliography: leaves 288-310.</subfield>
+</datafield>
+<datafield tag="505" ind1="0" ind2=" ">
+<subfield code="a">Introduction -- Introduction to research problem and methodology -- Study context -- Theoretical framework - Review of the literature -- Study design and methods -- Study sites, surgical procedures, and labour input to surgical production -- New intra-operative artefacts: goals, choices and consequences -- Conclusion.</subfield>
+</datafield>
+<datafield tag="520" ind1="3" ind2=" ">
+<subfield code="a">Surgical technologies since the late 1980s have undergone substantial innovations that have involved ...the adoption of new machines, instruments, and related surgical materials... referred to throughtout this thesis as intra-operative artefacts... typically represents a commitment of substantial financial resources by the hospitals concerned. However, little is documented about the process whereby the decisions are made to adopt new intra-operative artefacts, and no previous research appears to have explored the work-related consequences of new intra-operative artefact adoption within operating theatre services. This thesis explores the reasons why new intra-operative artefacts are adopted, how the decisions are made, who are the participants in the decsion process and what are the expected and actual organisational consequences of new intra-operative artefact adoption.</subfield>
+</datafield>
+<datafield tag="530" ind1=" " ind2=" ">
+<subfield code="a">Also available in print form.</subfield>
+</datafield>
+<datafield tag="533" ind1=" " ind2=" ">
+<subfield code="a">Electronic reproduction.</subfield>
+<subfield code="b">[Australia]:</subfield>
+<subfield code="c">Australasian Digital Theses Program,</subfield>
+<subfield code="d">2005.</subfield>
+</datafield>
+<datafield tag="534" ind1=" " ind2=" ">
+<subfield code="a">xii, 347 leaves, bound :</subfield>
+<subfield code="b">ill. ;</subfield>
+<subfield code="c">30 cm.</subfield>
+</datafield>
+<datafield tag="650" ind1=" " ind2="0">
+<subfield code="a">Surgical technology</subfield>
+<subfield code="z">Australia.</subfield>
+</datafield>
+<datafield tag="650" ind1=" " ind2="0">
+<subfield code="a">Operating rooms</subfield>
+<subfield code="x">Administration</subfield>
+<subfield code="z">Australia.</subfield>
+</datafield>
+<datafield tag="650" ind1=" " ind2="0">
+<subfield code="a">Hospitals</subfield>
+<subfield code="x">Materials management</subfield>
+<subfield code="z">Australia.</subfield>
+</datafield>
+<datafield tag="650" ind1=" " ind2="0">
+<subfield code="a">Surgical instruments and apparatus</subfield>
+<subfield code="x">Technological innovations.</subfield>
+</datafield>
+<datafield tag="650" ind1=" " ind2="0">
+<subfield code="a">Hospitals</subfield>
+<subfield code="x">Administration</subfield>
+<subfield code="z">Australia.</subfield>
+</datafield>
+<datafield tag="653" ind1=" " ind2=" ">
+<subfield code="a">Technological change -- decision process.</subfield>
+</datafield>
+<datafield tag="710" ind1="1" ind2=" ">
+<subfield code="a">Macquarie University.</subfield>
+<subfield code="c">Macquarie Graduate School of Management.</subfield>
+</datafield>
+<datafield tag="830" ind1=" " ind2="0">
+<subfield code="a">Australasian Digital Theses Program.</subfield>
+</datafield>
+<datafield tag="929" ind1=" " ind2=" ">
+<subfield code="a">NMQUGSMp2001</subfield>
+</datafield>
+<datafield tag="984" ind1=" " ind2=" ">
+<subfield code="a">NMQU</subfield>
+<subfield code="c">held</subfield>
+</datafield>
+</record>
+</collection>
+ 

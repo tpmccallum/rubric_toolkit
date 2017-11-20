@@ -1,0 +1,1619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node label="ASRC">
+    <isComposedBy>
+        <node label="210000 - SCIENCE GENERAL"/>
+        <node label="220000 - SOCIAL SCIENCES, HUMANITIES AND ARTS GENERAL"/>
+        <node label="230000 - MATHEMATICAL SCIENCES">
+            <isComposedBy>
+                <node label="230100 - Mathematics">
+                    <isComposedBy>
+                        <node
+                            label="230101 - Mathematical Logic, Set Theory, Lattices and Combinatorics"/>
+                        <node label="230102 - Number Theory and Field Theory"/>
+                        <node label="230103 - Rings and Algebras"/>
+                        <node label="230104 - Category Theory, K Theory, Homological Algebra"/>
+                        <node
+                            label="230105 - Group Theory and Generalisations (incl. Topological Groups and Lie&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Groups)"/>
+                        <node label="230106 - Real and Complex Functions"/>
+                        <node label="230107 - Differential, Difference and Integral Equations"/>
+                        <node label="230108 - Harmonic and Fourier Analysis"/>
+                        <node label="230109 - Functional Analysis"/>
+                        <node label="230110 - Calculus of Variations and Control Theory"/>
+                        <node label="230111 - Geometry"/>
+                        <node label="230112 - Topology and Manifolds"/>
+                        <node label="230113 - Dynamical Systems"/>
+                        <node label="230114 - Functions of Several Complex Variables"/>
+                        <node label="230115 - Approximation Theory"/>
+                        <node label="230116 - Numerical Analysis"/>
+                        <node label="230117 - Operations Research"/>
+                        <node label="230118 - Optimisation"/>
+                        <node label="230119 - Systems Theory and Control"/>
+                        <node label="230199 - Mathematics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="230200 - Statistics">
+                    <isComposedBy>
+                        <node label="230201 - Probability Theory"/>
+                        <node label="230202 - Stochastic Analysis and Modelling"/>
+                        <node label="230203 - Statistical Theory"/>
+                        <node label="230204 - Applied Statistics"/>
+                        <node label="230299 - Statistics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="239900 - Other Mathematical Sciences">
+                    <isComposedBy>
+                        <node label="239901 - Biological Mathematics"/>
+                        <node label="239902 - Actuarial Mathematics"/>
+                        <node label="239903 - Risk Theory"/>
+                        <node label="239904 - Theory of Graduation"/>
+                        <node label="239999 - Mathematical Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="240000 - PHYSICAL SCIENCES">
+            <isComposedBy>
+                <node label="240100 - Astronomical Sciences">
+                    <isComposedBy>
+                        <node label="240101 - Astronomy and Astrophysics"/>
+                        <node label="240102 - Cosmic Ray Physics"/>
+                        <node label="240199 - Astronomical Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="240200 - Theoretical and Condensed Matter Physics">
+                    <isComposedBy>
+                        <node label="240201 - Theoretical Physics"/>
+                        <node label="240202 - Condensed Matter PhysicsStructural Properties"/>
+                        <node
+                            label="240203 - Condensed Matter PhysicsElectronic and Magnetic Properties;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Superconductivity"/>
+                        <node label="240204 - Condensed Matter PhysicsOther"/>
+                    </isComposedBy>
+                </node>
+                <node
+                    label="240300 - Atomic and Molecular Physics; Nuclear and Particle Physics; Plasma&#xA;&#x9;&#x9;&#x9;&#x9;Physics">
+                    <isComposedBy>
+                        <node label="240301 - Atomic and Molecular Physics"/>
+                        <node label="240302 - Nuclear and Particle Physics"/>
+                        <node label="240303 - Plasmas and Electrical Discharges"/>
+                        <node label="240304 - Other Plasma Physics"/>
+                    </isComposedBy>
+                </node>
+                <node label="240400 - Optical Physics">
+                    <isComposedBy>
+                        <node label="240401 - Optics and Opto-electronic Physics"/>
+                        <node label="240402 - Quantum Optics and Lasers"/>
+                        <node label="240499 - Optical Physics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="240500 - Classical Physics">
+                    <isComposedBy>
+                        <node label="240501 - Acoustics and Acoustical Devices; Waves"/>
+                        <node label="240502 - Fluid Physics"/>
+                        <node label="240503 - Thermodynamics and Statistical Physics"/>
+                        <node label="240504 - Electrostatics and Electrodynamics"/>
+                        <node label="240599 - Classical Physics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="249900 - Other Physical Sciences">
+                    <isComposedBy>
+                        <node label="249901 - Biophysics"/>
+                        <node label="249902 - Medical Physics"/>
+                        <node label="249903 - Instruments and Techniques"/>
+                        <node label="249999 - Physical Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="250000 - CHEMICAL SCIENCES">
+            <isComposedBy>
+                <node label="250100 - Physical Chemistry (incl. Structural)">
+                    <isComposedBy>
+                        <node label="250101 - Chemical Thermodynamics and Energetics"/>
+                        <node label="250102 - Chemistry of Catalysis"/>
+                        <node label="250103 - Colloid and Surface Chemistry"/>
+                        <node label="250104 - Chemical Spectroscopy"/>
+                        <node label="250105 - Structural Chemistry"/>
+                        <node label="250106 - Mechanisms of Reactions"/>
+                        <node label="250107 - Electrochemistry"/>
+                        <node label="250199 - Physical Chemistry not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="250200 - Inorganic Chemistry">
+                    <isComposedBy>
+                        <node label="250201 - Transition Metal Chemistry"/>
+                        <node label="250202 - Main Group Metal Chemistry"/>
+                        <node label="250203 - Solid State Chemistry"/>
+                        <node label="250204 - Bioinorganic Chemistry"/>
+                        <node label="250205 - Non-Metal Chemistry"/>
+                        <node label="250206 - f-Block Chemistry"/>
+                        <node label="250299 - Inorganic Chemistry not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="250300 - Organic Chemistry">
+                    <isComposedBy>
+                        <node label="250301 - Organic Chemical Synthesis"/>
+                        <node label="250302 - Biological and Medical Chemistry"/>
+                        <node label="250303 - Physical Organic Chemistry"/>
+                        <node label="250399 - Organic Chemistry not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="250400 - Analytical Chemistry">
+                    <isComposedBy>
+                        <node label="250401 - Separation Science"/>
+                        <node label="250402 - Analytical Spectrometry"/>
+                        <node label="250403 - Electroanalytical Chemistry"/>
+                        <node label="250404 - Flow Analysis"/>
+                        <node label="250405 - Sensor (Chemical and Bio-) Technology"/>
+                        <node label="250406 - Immunological and Bioassay Methods"/>
+                        <node label="250407 - Other Instrumental Methods"/>
+                        <node label="250408 - Chemometrics"/>
+                        <node
+                            label="250409 - Quality Assurance, Traceability and Metrological Chemistry"/>
+                        <node label="250499 - Analytical Chemistry not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="250500 - Macromolecular Chemistry">
+                    <isComposedBy>
+                        <node label="250501 - Synthesis of Macromolecules"/>
+                        <node label="250502 - Physical Chemistry of Macromolecules"/>
+                        <node label="250503 - Characterisation of Macromolecules"/>
+                        <node label="250504 - Polymerisation Mechanisms"/>
+                        <node label="250599 - Macromolecular Chemistry not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="250600 - Theoretical and Computational Chemistry">
+                    <isComposedBy>
+                        <node label="250601 - Quantum Chemistry"/>
+                        <node label="250602 - Statistical Mechanics"/>
+                        <node label="250603 - Reaction Kinetics and Dynamics"/>
+                        <node label="250604 - Radiation and Matter"/>
+                        <node label="250605 - Theory of Materials"/>
+                        <node label="250606 - Macromolecular Design"/>
+                        <node
+                            label="250699 - Theoretical and Computational Chemistry not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="259900 - Other Chemical Sciences">
+                    <isComposedBy>
+                        <node label="259901 - Organometallic Chemistry"/>
+                        <node label="259902 - Environmental Chemistry (incl. Atmospheric Chemistry)"/>
+                        <node label="259903 - Industrial Chemistry"/>
+                        <node label="259904 - Supramolecular Chemistry"/>
+                        <node label="259999 - Chemical Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="260000 - EARTH SCIENCES">
+            <isComposedBy>
+                <node label="260100 - Geology">
+                    <isComposedBy>
+                        <node label="260101 - Mineralogy and Crystallography"/>
+                        <node label="260102 - Igneous and Metamorphic Petrology"/>
+                        <node label="260103 - Vulcanology"/>
+                        <node label="260104 - Sedimentology"/>
+                        <node label="260105 - Petroleum Geology"/>
+                        <node label="260106 - Ore Deposit Petrology"/>
+                        <node label="260107 - Structural Geology"/>
+                        <node label="260108 - Geotectonics"/>
+                        <node label="260109 - Geochronology"/>
+                        <node label="260110 - Biostratigraphy"/>
+                        <node label="260111 - Other Stratigraphy (incl. Sequence Stratigraphy)"/>
+                        <node label="260112 - Palaeontology"/>
+                        <node label="260113 - Palynology"/>
+                        <node label="260114 - Geomorphology"/>
+                        <node label="260115 - Glaciology"/>
+                        <node label="260199 - Geology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="260200 - Geophysics">
+                    <isComposedBy>
+                        <node label="260201 - Gravity"/>
+                        <node label="260202 - Geomagnetism"/>
+                        <node label="260203 - Electromagnetism"/>
+                        <node label="260204 - Petrophysics"/>
+                        <node label="260205 - Explosion Seismology"/>
+                        <node label="260206 - Earthquake Seismology"/>
+                        <node label="260207 - Radiometrics"/>
+                        <node label="260299 - Geophysics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="260300 - Geochemistry">
+                    <isComposedBy>
+                        <node label="260301 - Geochronology and Isotope Geochemistry"/>
+                        <node label="260302 - Exploration Geochemistry"/>
+                        <node label="260303 - Organic Geochemistry not elsewhere classified"/>
+                        <node label="260304 - Inorganic Geochemistry not elsewhere classified"/>
+                        <node label="260399 - Geochemistry not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="260400 - Oceanography">
+                    <isComposedBy>
+                        <node label="260401 - Biological Oceanography"/>
+                        <node label="260402 - Chemical Oceanography"/>
+                        <node label="260403 - Physical Oceanography"/>
+                        <node label="260499 - Oceanography not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="260500 - Hydrology">
+                    <isComposedBy>
+                        <node label="260501 - Groundwater Hydrology"/>
+                        <node label="260502 - Surfacewater Hydrology"/>
+                        <node label="260599 - Hydrology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="260600 - Atmospheric Sciences">
+                    <isComposedBy>
+                        <node label="260601 - Meteorology"/>
+                        <node label="260602 - Climatology (incl. Palaeoclimatology)"/>
+                        <node label="260603 - Ionospheric and Magnetospheric Physics"/>
+                        <node label="260699 - Atmospheric Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="269900 - Other Earth Sciences">
+                    <isComposedBy>
+                        <node label="269901 - Physical Geography"/>
+                        <node label="269999 - Earth Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="270000 - BIOLOGICAL SCIENCES">
+            <isComposedBy>
+                <node label="270100 - Biochemistry and Cell Biology">
+                    <isComposedBy>
+                        <node label="270101 - Analytical Biochemistry"/>
+                        <node label="270102 - Cell Metabolism"/>
+                        <node label="270103 - Protein Targeting and Signal Transduction"/>
+                        <node label="270104 - Membrane Biology"/>
+                        <node
+                            label="270105 - Cellular Interactions (incl. Adhesion, Matrix, Cell Wall)"/>
+                        <node label="270106 - Cell Development (incl. Cell Division and Apoptosis)"/>
+                        <node label="270107 - Cell Neurochemistry"/>
+                        <node label="270108 - Enzymes"/>
+                        <node
+                            label="270199 - Biochemistry and Cell Biology not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="270200 - Genetics">
+                    <isComposedBy>
+                        <node label="270201 - Gene Expression"/>
+                        <node label="270202 - Genome Structure"/>
+                        <node label="270203 - Population and Ecological Genetics"/>
+                        <node label="270204 - Anthropological Genetics"/>
+                        <node label="270205 - Genetic Development (incl. Sex Determination)"/>
+                        <node label="270206 - Genetic Immunology"/>
+                        <node label="270207 - Quantitative Genetics"/>
+                        <node label="270208 - Molecular Evolution"/>
+                        <node label="270209 - Meiosis and Recombination"/>
+                        <node label="270210 - Neurogenetics"/>
+                        <node label="270299 - Genetics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="270300 - Microbiology">
+                    <isComposedBy>
+                        <node label="270301 - Bacteriology"/>
+                        <node label="270302 - Archaebacteriology"/>
+                        <node label="270303 - Virology"/>
+                        <node label="270304 - Infectious Agents"/>
+                        <node label="270305 - Mycology"/>
+                        <node label="270306 - Microbial Genetics"/>
+                        <node label="270307 - Microbial Ecology"/>
+                        <node label="270308 - Microbial Systematics, Taxonomy and Phylogeny"/>
+                        <node label="270399 - Microbiology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="270400 - Botany">
+                    <isComposedBy>
+                        <node label="270401 - Plant Systematics, Taxonomy and Phylogeny"/>
+                        <node label="270402 - Plant Physiology"/>
+                        <node label="270403 - Plant Pathology"/>
+                        <node label="270404 - Phycology"/>
+                        <node label="270499 - Botany not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="270500 - Zoology">
+                    <isComposedBy>
+                        <node label="270501 - Animal Systematics, Taxonomy and Phylogeny"/>
+                        <node label="270502 - Neurobiology"/>
+                        <node label="270503 - Animal Anatomy and Histology"/>
+                        <node label="270504 - Invertebrate Biology"/>
+                        <node label="270599 - Zoology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="270600 - Physiology">
+                    <isComposedBy>
+                        <node label="270601 - Animal PhysiologyBiophysics"/>
+                        <node label="270602 - Animal PhysiologyCell"/>
+                        <node label="270603 - Animal PhysiologySystems"/>
+                        <node label="270604 - Comparative Physiology"/>
+                        <node label="270699 - Physiology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="270700 - Ecology and Evolution">
+                    <isComposedBy>
+                        <node label="270701 - Freshwater Ecology"/>
+                        <node
+                            label="270702 - Marine and Estuarine Ecology (incl. Marine Ichthyology)"/>
+                        <node label="270703 - Terrestrial Ecology"/>
+                        <node label="270704 - Landscape Ecology"/>
+                        <node label="270705 - Palaeoecology"/>
+                        <node label="270706 - Life Histories (incl. Population Ecology)"/>
+                        <node label="270707 - Sociobiology and Behavioural Ecology"/>
+                        <node label="270708 - Conservation and Biodiversity"/>
+                        <node label="270709 - Biogeography"/>
+                        <node label="270799 - Ecology and Evolution not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="270800 - Biotechnology">
+                    <isComposedBy>
+                        <node label="270801 - Gene Therapy"/>
+                        <node label="270802 - Diagnostic Applications"/>
+                        <node label="270803 - Transgenesis"/>
+                        <node
+                            label="270804 - Genetic Technologies: Transformation, Site-directed Mutagenesis,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;etc."/>
+                        <node label="270805 - Genetic Engineering and Enzyme Technology"/>
+                        <node label="270899 - Biotechnology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="279900 - Other Biological Sciences">
+                    <isComposedBy>
+                        <node label="279901 - Global Change Biology"/>
+                        <node label="279999 - Biological Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="280000 - INFORMATION, COMPUTING AND COMMUNICATION SCIENCES">
+            <isComposedBy>
+                <node label="280100 - Information Systems">
+                    <isComposedBy>
+                        <node label="280101 - Information Systems Organisation"/>
+                        <node label="280102 - Information Systems Management"/>
+                        <node label="280103 - Information Storage, Retrieval and Management"/>
+                        <node label="280104 - Computer-Human Interaction"/>
+                        <node
+                            label="280105 - Interfaces and Presentation (excl. Computer-Human Interaction)"/>
+                        <node label="280106 - Interorganisational Information Systems"/>
+                        <node label="280107 - Global Information Systems"/>
+                        <node label="280108 - Database Management"/>
+                        <node label="280109 - Decision Support and Group Support Systems"/>
+                        <node label="280110 - Systems Theory"/>
+                        <node label="280111 - Conceptual Modelling"/>
+                        <node label="280112 - Information Systems Development Methodologies"/>
+                        <node label="280199 - Information Systems not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="280200 - Artificial Intelligence and Signal and Image Processing">
+                    <isComposedBy>
+                        <node label="280201 - Expert Systems"/>
+                        <node label="280202 - Computer Graphics"/>
+                        <node label="280203 - Image Processing"/>
+                        <node label="280204 - Signal Processing"/>
+                        <node label="280205 - Text Processing"/>
+                        <node label="280206 - Speech Recognition"/>
+                        <node label="280207 - Pattern Recognition"/>
+                        <node label="280208 - Computer Vision"/>
+                        <node label="280209 - Intelligent Robotics"/>
+                        <node label="280210 - Simulation and Modelling"/>
+                        <node label="280211 - Virtual Reality and Related Simulation"/>
+                        <node label="280212 - Neural Networks, Genetic Alogrithms and Fuzzy Logic"/>
+                        <node label="280213 - Other Artificial Intelligence"/>
+                    </isComposedBy>
+                </node>
+                <node label="280300 - Computer Software">
+                    <isComposedBy>
+                        <node label="280301 - Programming Techniques"/>
+                        <node label="280302 - Software Engineering"/>
+                        <node label="280303 - Programming Languages"/>
+                        <node label="280304 - Operating Systems"/>
+                        <node label="280305 - Multimedia Programming"/>
+                        <node label="280399 - Computer Software not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="280400 - Computation Theory and Mathematics">
+                    <isComposedBy>
+                        <node label="280401 - Analysis of Algorithms and Complexity"/>
+                        <node label="280402 - Mathematical Logic and Formal Languages"/>
+                        <node label="280403 - Logics and Meanings of Programs"/>
+                        <node label="280404 - Numerical Analysis"/>
+                        <node label="280405 - Discrete Mathematics"/>
+                        <node label="280406 - Mathematical Software"/>
+                        <node
+                            label="280499 - Computation Theory and Mathematics not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="280500 - Data Format">
+                    <isComposedBy>
+                        <node label="280501 - Data Structures"/>
+                        <node label="280502 - Data Storage Representations"/>
+                        <node label="280503 - Files"/>
+                        <node label="280504 - Data Encryption"/>
+                        <node label="280505 - Data Security"/>
+                        <node label="280506 - Coding and Information Theory"/>
+                        <node label="280599 - Data Format not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="289900 - Other Information, Computing and Communication Sciences">
+                    <isComposedBy>
+                        <node
+                            label="289999 - Other Information, Computing and Communication Sciences"
+                        />
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="290000 - ENGINEERING AND TECHNOLOGY">
+            <isComposedBy>
+                <node label="290100 - Industrial Biotechnology and Food Sciences">
+                    <isComposedBy>
+                        <node
+                            label="290101 - Fermentation, Biotechnology and Industrial Microbiology"/>
+                        <node label="290102 - Food Engineering"/>
+                        <node label="290103 - Food Processing"/>
+                        <node label="290104 - Other Food Sciences"/>
+                        <node label="290105 - Other Industrial Biotechnology"/>
+                    </isComposedBy>
+                </node>
+                <node label="290200 - Aerospace Engineering">
+                    <isComposedBy>
+                        <node label="290201 - Aerodynamics"/>
+                        <node label="290202 - Flight Dynamics"/>
+                        <node label="290203 - Aerospace Structures"/>
+                        <node label="290204 - Aircraft Performance"/>
+                        <node label="290205 - Flight Control Systems"/>
+                        <node label="290206 - Aerospace Electrical Systems"/>
+                        <node label="290207 - Satellite, Space Vehicle and Missile Design"/>
+                        <node label="290299 - Aerospace Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="290300 - Manufacturing Engineering">
+                    <isComposedBy>
+                        <node label="290301 - Robotics and Mechatronics"/>
+                        <node label="290302 - Flexible Manufacturing Systems"/>
+                        <node label="290303 - CAD/CAM Systems"/>
+                        <node label="290304 - Control Engineering"/>
+                        <node label="290305 - Welding Technology"/>
+                        <node label="290306 - Textile Technology"/>
+                        <node label="290307 - Printing Technology"/>
+                        <node label="290308 - Packaging, Storage and Transportation"/>
+                        <node label="290309 - Safety and Quality"/>
+                        <node label="290399 - Manufacturing Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="290400 - Automotive Engineering">
+                    <isComposedBy>
+                        <node label="290401 - Automotive Engineering"/>
+                    </isComposedBy>
+                </node>
+                <node label="290500 - Mechanical and Industrial Engineering">
+                    <isComposedBy>
+                        <node label="290501 - Mechanical Engineering"/>
+                        <node label="290502 - Industrial Engineering"/>
+                    </isComposedBy>
+                </node>
+                <node label="290600 - Chemical Engineering">
+                    <isComposedBy>
+                        <node label="290601 - Chemical Engineering Design"/>
+                        <node label="290602 - Process Control and Simulation"/>
+                        <node label="290603 - Membrane and Separation Technologies"/>
+                        <node label="290699 - Chemical Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="290700 - Resources Engineering">
+                    <isComposedBy>
+                        <node label="290701 - Mining Engineering"/>
+                        <node label="290702 - Mineral Processing"/>
+                        <node label="290703 - Petroleum and Reservoir Engineering"/>
+                        <node label="290704 - Geomechanics"/>
+                        <node label="290799 - Resources Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="290800 - Civil Engineering">
+                    <isComposedBy>
+                        <node label="290801 - Structural Engineering"/>
+                        <node label="290802 - Water and Sanitary Engineering"/>
+                        <node label="290803 - Transport Engineering"/>
+                        <node label="290804 - Construction Engineering"/>
+                        <node label="290805 - Geotechnical Engineering"/>
+                        <node label="290899 - Civil Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="290900 - Electrical and Electronic Engineering">
+                    <isComposedBy>
+                        <node label="290901 - Electrical Engineering"/>
+                        <node label="290902 - Integrated Circuits"/>
+                        <node label="290903 - Other Electronic Engineering"/>
+                    </isComposedBy>
+                </node>
+                <node label="291000 - Geomatic Engineering">
+                    <isComposedBy>
+                        <node label="291001 - Geodesy"/>
+                        <node label="291002 - Surveying"/>
+                        <node label="291003 - Photogrammetry and Remote Sensing"/>
+                        <node label="291004 - Spatial Information Systems"/>
+                        <node label="291005 - Navigation and Position Fixing"/>
+                        <node label="291006 - Cartography"/>
+                        <node label="291099 - Geomatic Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="291100 - Environmental Engineering">
+                    <isComposedBy>
+                        <node label="291101 - Environmental Engineering Modelling"/>
+                        <node label="291102 - Bio-remediation"/>
+                        <node label="291103 - Environmental Engineering Design"/>
+                        <node label="291104 - Environmental Technologies"/>
+                        <node label="291199 - Environmental Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="291200 - Maritime Engineering">
+                    <isComposedBy>
+                        <node label="291201 - Naval Architecture"/>
+                        <node label="291202 - Ship and Platform Hydrodynamics"/>
+                        <node label="291203 - Ship and Platform Structures"/>
+                        <node label="291204 - Marine Engineering"/>
+                        <node label="291205 - Ocean Engineering"/>
+                        <node label="291206 - Special Vehicles"/>
+                        <node label="291299 - Maritime Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="291300 - Metallurgy">
+                    <isComposedBy>
+                        <node label="291301 - Process Metallurgy"/>
+                        <node label="291302 - Physical Metallurgy"/>
+                    </isComposedBy>
+                </node>
+                <node label="291400 - Materials Engineering">
+                    <isComposedBy>
+                        <node label="291401 - Polymers"/>
+                        <node label="291402 - Composite Materials"/>
+                        <node label="291403 - Alloy Materials"/>
+                        <node label="291404 - Ceramics"/>
+                        <node label="291405 - Timber"/>
+                        <node label="291406 - Pulp and Paper"/>
+                        <node label="291407 - Plastics"/>
+                        <node label="291499 - Materials Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="291500 - Biomedical Engineering">
+                    <isComposedBy>
+                        <node label="291501 - Clinical Engineering"/>
+                        <node label="291502 - Rehabilitation Engineering"/>
+                        <node label="291503 - Biomaterials"/>
+                        <node label="291504 - Biomechanical Engineering"/>
+                        <node label="291599 - Biomedical Engineering not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="291600 - Computer Hardware">
+                    <isComposedBy>
+                        <node label="291601 - Arithmetic and Logic Structures"/>
+                        <node label="291602 - Memory Structures"/>
+                        <node label="291603 - Input, Output and Data Devices"/>
+                        <node label="291604 - Logic Design"/>
+                        <node label="291605 - Processor Architectures"/>
+                        <node label="291699 - Computer Hardware not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="291700 - Communications Technologies">
+                    <isComposedBy>
+                        <node label="291701 - Antenna Technology"/>
+                        <node label="291702 - Optical and Photonic Systems"/>
+                        <node label="291703 - Digital Systems"/>
+                        <node label="291704 - Computer Communications Networks"/>
+                        <node label="291705 - Microwave and Millimetrewave Technology"/>
+                        <node label="291706 - Broadband Network Technology"/>
+                        <node label="291707 - Modem Technology"/>
+                        <node label="291708 - Baseband Technology"/>
+                        <node label="291709 - Satellite Communications"/>
+                        <node
+                            label="291710 - Radio Communications and Broadcasting not elsewhere classified"/>
+                        <node label="291799 - Communications Technologies not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="291800 - Interdisciplinary Engineering">
+                    <isComposedBy>
+                        <node label="291801 - Fluidization and Fluid Mechanics"/>
+                        <node label="291802 - Heat and Mass Transfer Operations"/>
+                        <node label="291803 - Turbulent Flows"/>
+                        <node label="291804 - Nanotechnology"/>
+                        <node
+                            label="291899 - Interdisciplinary Engineering not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="299900 - Other Engineering and Technology">
+                    <isComposedBy>
+                        <node label="299901 - Agricultural Engineering"/>
+                        <node label="299902 - Combustion and Fuel Engineering"/>
+                        <node label="299903 - Biosensor Technologies"/>
+                        <node label="299904 - Engineering/Technology Instrumentation"/>
+                        <node label="299999 - Engineering and Technology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="300000 - AGRICULTURAL, VETERINARY AND ENVIRONMENTAL SCIENCES">
+            <isComposedBy>
+                <node label="300100 - Soil and Water Sciences">
+                    <isComposedBy>
+                        <node label="300101 - Soil Physics"/>
+                        <node label="300102 - Soil Biology"/>
+                        <node label="300103 - Soil Chemistry"/>
+                        <node label="300104 - Land Capability and Soil Degradation"/>
+                        <node
+                            label="300105 - Applied Hydrology (Drainage, Flooding, Irrigation, Quality, etc.)"/>
+                        <node label="300199 - Soil and Water Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="300200 - Crop and Pasture Production">
+                    <isComposedBy>
+                        <node label="300201 - Plant Biochemistry and Physiology"/>
+                        <node label="300202 - Plant Nutrition"/>
+                        <node
+                            label="300203 - Plant Improvement (Selection, Breeding and Genetic Engineering)"/>
+                        <node label="300204 - Plant Protection (Pests, Diseases and Weeds)"/>
+                        <node label="300205 - Agronomy"/>
+                        <node
+                            label="300206 - Post Harvest Technologies (Transportation and Storage)"/>
+                        <node label="300299 - Crop and Pasture Production not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="300300 - Horticulture">
+                    <isComposedBy>
+                        <node
+                            label="300301 - Plant Improvement (Selection, Breeding and Genetic Engineering)"/>
+                        <node label="300302 - Plant Growth and Development"/>
+                        <node label="300303 - Plant Protection (Pests, Diseases and Weeds)"/>
+                        <node label="300304 - Post Harvest Technologies"/>
+                        <node label="300305 - Oenology and Viticulture"/>
+                        <node label="300399 - Horticulture not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="300400 - Animal Production">
+                    <isComposedBy>
+                        <node label="300401 - Animal Breeding"/>
+                        <node label="300402 - Animal Reproduction"/>
+                        <node label="300403 - Animal Nutrition"/>
+                        <node label="300404 - Animal Husbandry"/>
+                        <node label="300405 - Animal Protection (Pests and Pathogens)"/>
+                        <node label="300406 - Animal Growth and Development"/>
+                        <node label="300499 - Animal Production not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="300500 - Veterinary Sciences">
+                    <isComposedBy>
+                        <node label="300501 - Veterinary Medicine"/>
+                        <node label="300502 - Anaesthesiology and Intensive Care"/>
+                        <node label="300503 - Epidemiology"/>
+                        <node label="300504 - Immunology"/>
+                        <node label="300505 - Anatomy and Physiology"/>
+                        <node label="300506 - Pathology"/>
+                        <node label="300507 - Microbiology (excl. Virology)"/>
+                        <node label="300508 - Parasitology"/>
+                        <node label="300509 - Radiology and Imaging"/>
+                        <node label="300510 - Virology"/>
+                        <node label="300511 - Surgery"/>
+                        <node label="300512 - Pharmacology"/>
+                        <node label="300599 - Veterinary Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="300600 - Forestry Sciences">
+                    <isComposedBy>
+                        <node label="300601 - Nutrition and Physiology"/>
+                        <node
+                            label="300602 - Tree Improvement (Selection, Breeding and Genetic Engineering)"/>
+                        <node label="300603 - Pests, Health and Diseases"/>
+                        <node label="300604 - Management and Environment"/>
+                        <node label="300605 - Fire Management"/>
+                        <node label="300606 - Agroforestry"/>
+                        <node label="300699 - Forestry Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="300700 - Fisheries Sciences">
+                    <isComposedBy>
+                        <node label="300701 - Physiology and Genetics"/>
+                        <node label="300702 - Pests and Diseases"/>
+                        <node label="300703 - Aquaculture"/>
+                        <node label="300704 - Ecosystem Studies and Stock Assessment"/>
+                        <node label="300705 - Evaluation of Management Strategies"/>
+                        <node label="300799 - Fisheries Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="300800 - Environmental Sciences">
+                    <isComposedBy>
+                        <node label="300801 - Environmental Management and Rehabilitation"/>
+                        <node label="300802 - Wildlife and Habitat Management"/>
+                        <node label="300803 - Natural Resource Management"/>
+                        <node label="300804 - Environmental Impact Assessment"/>
+                        <node label="300805 - Conservation"/>
+                        <node label="300899 - Environmental Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="300900 - Land, Parks and Agriculture Management">
+                    <isComposedBy>
+                        <node label="300901 - Farm Management, Rural Management and Agribusiness"/>
+                        <node label="300902 - Land and Parks Management"/>
+                        <node label="300903 - Sustainable Development"/>
+                        <node
+                            label="300999 - Land, Parks and Agriculture Management not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="309900 - Other Agricultural, Veterinary and Environmental Sciences">
+                    <isComposedBy>
+                        <node label="309901 - Fertilisers and Agrochemicals (Application etc.)"/>
+                        <node label="309902 - Education and Extension"/>
+                        <node
+                            label="309999 - Agricultural, Veterinary and Environmental Sciences not elsewhere&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;classified"
+                        />
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="310000 - ARCHITECTURE, URBAN ENVIRONMENT AND BUILDING">
+            <isComposedBy>
+                <node label="310100 - Architecture and Urban Environment">
+                    <isComposedBy>
+                        <node label="310101 - Architecture"/>
+                        <node label="310102 - Heritage and Conservation"/>
+                        <node label="310103 - Urban and Regional Planning"/>
+                        <node label="310104 - Landscape Planning"/>
+                        <node label="310105 - History of the Built Environment"/>
+                        <node label="310106 - Interior and Environmental Design"/>
+                        <node
+                            label="310199 - Architecture and Urban Environment not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="310200 - Building">
+                    <isComposedBy>
+                        <node label="310201 - Building Science and Techniques"/>
+                        <node label="310202 - Building Construction Management"/>
+                        <node
+                            label="310203 - Building Construction Economics (incl. Quantity Surveying)"/>
+                        <node label="310299 - Building not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="319900 - Other Architecture, Urban Environment and Building">
+                    <isComposedBy>
+                        <node label="319999 - Other Architecture, Urban Environment and Building"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="320000 - MEDICAL AND HEALTH SCIENCES">
+            <isComposedBy>
+                <node label="320100 - Medicine.general"/>
+                <node label="320200 - Immunology">
+                    <isComposedBy>
+                        <node label="320201 - Allergy"/>
+                        <node label="320202 - Cellular Immunology"/>
+                        <node label="320203 - Humoral Immunology and Immunochemistry"/>
+                        <node label="320204 - Immunogenetics"/>
+                        <node label="320205 - Transplantation Immunology"/>
+                        <node label="320206 - Tumor Immunology"/>
+                        <node label="320207 - Autoimmunity"/>
+                        <node label="320299 - Immunology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="320300 - Medical Biochemistry and Clinical Chemistry">
+                    <isComposedBy>
+                        <node label="320301 - Clinical Chemistry"/>
+                        <node label="320302 - Medical Biochemistry: Carbohydrates"/>
+                        <node label="320303 - Medical Biochemistry: Lipids"/>
+                        <node label="320304 - Medical Biochemistry: Nucleic Acids"/>
+                        <node label="320305 - Medical Biochemistry: Proteins and Peptides"/>
+                        <node label="320306 - Medical Biochemistry: Phospholipids"/>
+                        <node label="320307 - Medical Biochemistry: Other"/>
+                    </isComposedBy>
+                </node>
+                <node label="320400 - Medical Microbiology">
+                    <isComposedBy>
+                        <node label="320401 - Medical Bacteriology"/>
+                        <node label="320402 - Medical Virology"/>
+                        <node label="320403 - Medical Infection Agents (incl. Prions)"/>
+                        <node label="320404 - Medical Mycology"/>
+                        <node label="320405 - Medical Parasitology"/>
+                        <node label="320499 - Medical Microbiology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="320500 - Pharmacology and Pharmaceutical Sciences">
+                    <isComposedBy>
+                        <node label="320501 - Pharmaceutical Sciences and Pharmacy"/>
+                        <node label="320502 - Basic Pharmacology"/>
+                        <node label="320503 - Clinical Pharmacology and Therapeutics"/>
+                        <node label="320504 - Toxicology (incl. Clinical Toxicology)"/>
+                        <node label="320599 - Pharmacology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="320600 - Medical Physiology">
+                    <isComposedBy>
+                        <node label="320601 - Human Biophysics"/>
+                        <node label="320602 - Cell Physiology"/>
+                        <node label="320603 - Systems Physiology"/>
+                        <node label="320699 - Medical Physiology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="320700 - Neurosciences">
+                    <isComposedBy>
+                        <node label="320701 - Autonomic Nervous System"/>
+                        <node label="320702 - Central Nervous System"/>
+                        <node label="320703 - Peripheral Nervous System"/>
+                        <node label="320704 - Cellular Nervous System"/>
+                        <node label="320705 - Sensory Systems"/>
+                        <node label="320799 - Neurosciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="320800 - Dentistry">
+                    <isComposedBy>
+                        <node label="320801 - Oral Surgery"/>
+                        <node label="320802 - Dentistry Support"/>
+                        <node label="320803 - Dental Technology"/>
+                        <node label="320804 - Dental Therapy"/>
+                        <node label="320899 - Dentistry not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="320900 - Optometry">
+                    <isComposedBy>
+                        <node label="320901 - Optical Technology"/>
+                        <node label="320999 - Optometry not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="321000 - Clinical Sciences">
+                    <isComposedBy>
+                        <node label="321001 - Anaesthesiology"/>
+                        <node label="321002 - Dermatology"/>
+                        <node label="321003 - Cardiology (incl. Cardiovascular Diseases)"/>
+                        <node label="321004 - Endocrinology"/>
+                        <node label="321005 - Fetal Development and Medicine"/>
+                        <node label="321006 - Gastroenterology and Hepatology"/>
+                        <node label="321007 - Geriatrics and Gerontology"/>
+                        <node label="321008 - Haematology"/>
+                        <node label="321009 - Intensive Care"/>
+                        <node label="321010 - Infectious Diseases"/>
+                        <node label="321011 - Medical Genetics"/>
+                        <node label="321012 - Nephrology and Urology"/>
+                        <node label="321013 - Neurology and Neuromuscular Diseases"/>
+                        <node label="321014 - Obstetrics and Gynaecology"/>
+                        <node label="321015 - Oncology and Carcinogenesis"/>
+                        <node label="321016 - Opthalmology and Vision Science"/>
+                        <node label="321017 - Orthopaedics"/>
+                        <node label="321018 - Otorhinolaryngology"/>
+                        <node label="321019 - Paediatrics"/>
+                        <node label="321020 - Pathology"/>
+                        <node label="321021 - Psychiatry"/>
+                        <node label="321022 - Radiology and Organ Imaging"/>
+                        <node label="321023 - Radiotherapy and Nuclear Medicine"/>
+                        <node label="321024 - Rehabilitation and Therapy: Occupational and Physical"/>
+                        <node label="321025 - Rehabilitation and Therapy: Hearing and Speech"/>
+                        <node label="321026 - Reproduction"/>
+                        <node label="321027 - Respiratory Diseases"/>
+                        <node label="321028 - Rheumatology and Arthritis"/>
+                        <node label="321029 - Surgery"/>
+                        <node label="321030 - Venereology"/>
+                        <node label="321099 - Clinical Sciences not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="321100 - Nursing">
+                    <isComposedBy>
+                        <node label="321101 - Midwifery"/>
+                        <node label="321102 - Clinical Nursing: Primary (Preventative)"/>
+                        <node label="321103 - Clinical Nursing: Secondary (Acute Care)"/>
+                        <node label="321104 - Clinical Nursing: Tertiary (Rehabilitative)"/>
+                        <node label="321105 - Mental Health Nursing"/>
+                        <node label="321106 - Aged Care Nursing"/>
+                        <node label="321199 - Nursing not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="321200 - Public Health and Health Services">
+                    <isComposedBy>
+                        <node label="321201 - Environmental and Occupational Health and Safety"/>
+                        <node label="321202 - Epidemiology"/>
+                        <node label="321203 - Health Information Systems (incl. Surveillance)"/>
+                        <node label="321204 - Mental Health"/>
+                        <node label="321205 - Nutrition and Dietetics"/>
+                        <node label="321206 - Preventive Medicine"/>
+                        <node label="321207 - Indigenous Health"/>
+                        <node label="321208 - Primary Health Care"/>
+                        <node label="321209 - Family Care"/>
+                        <node label="321210 - Community Child Health"/>
+                        <node label="321211 - Residential Client Care"/>
+                        <node label="321212 - Care for Disabled"/>
+                        <node label="321213 - Human Bioethics"/>
+                        <node label="321214 - Health and Community Services"/>
+                        <node label="321215 - Health Care Administration"/>
+                        <node label="321216 - Health Promotion"/>
+                        <node label="321217 - Health Counselling"/>
+                        <node
+                            label="321299 - Public Health and Health Services not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="321300 - Complementary/alternative Medicine">
+                    <isComposedBy>
+                        <node label="321301 - Oriental Medicine and Treatments"/>
+                        <node label="321302 - Chiropractic"/>
+                        <node label="321303 - Naturopathy"/>
+                        <node
+                            label="321399 - Complementary/Alternative Medicine not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="321400 - Human Movement and Sports Science">
+                    <isComposedBy>
+                        <node label="321401 - Exercise Physiology"/>
+                        <node label="321402 - Biomechanics"/>
+                        <node label="321403 - Motor Control"/>
+                        <node label="321404 - Sport and Exercise Psychology"/>
+                        <node label="321405 - Sports Medicine"/>
+                        <node
+                            label="321499 - Human Movement and Sports Science not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="329900 - Other Medical and Health Sciences">
+                    <isComposedBy>
+                        <node label="329901 - Podiatry"/>
+                        <node label="329902 - Medical Biotechnology"/>
+                        <node label="329903 - Therapies and Therapeutic Technology"/>
+                        <node label="329999 - Medical and Health Sciences not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="330000 - EDUCATION">
+            <isComposedBy>
+                <node label="330100 - Education Studies">
+                    <isComposedBy>
+                        <node label="330101 - Educational Psychology"/>
+                        <node label="330102 - History and Philosophy of Education"/>
+                        <node label="330103 - Sociology of Education"/>
+                        <node label="330104 - Educational Policy, Administration and Management"/>
+                        <node label="330105 - Educational Counselling"/>
+                        <node label="330106 - Comparative Education"/>
+                        <node label="330107 - Educational Technology and Media"/>
+                        <node label="330108 - Special Education"/>
+                        <node label="330109 - Assessment and Evaluation"/>
+                        <node label="330199 - Education Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="330200 - Curriculum Studies">
+                    <isComposedBy>
+                        <node label="330201 - Curriculum Studies: English Education"/>
+                        <node label="330202 - Curriculum Studies: Mathematics Education"/>
+                        <node label="330203 - Curriculum Studies: Science Education"/>
+                        <node
+                            label="330204 - Curriculum Studies: Economics, Commerce, Management and Services&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Education"/>
+                        <node
+                            label="330205 - Curriculum Studies: Other Social Sciences, Humanities and Arts&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Education"/>
+                        <node label="330206 - Curriculum Theory and Development"/>
+                        <node label="330299 - Curriculum Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="330300 - Professional Development of Teachers">
+                    <isComposedBy>
+                        <node label="330301 - Teacher Education: Early Childhood"/>
+                        <node label="330302 - Teacher Education: Primary"/>
+                        <node label="330303 - Teacher Education: Secondary"/>
+                        <node label="330304 - Teacher Education: Vocational Education and Training"/>
+                        <node label="330305 - Teacher Education: Higher Education"/>
+                        <node label="330306 - Teacher Education: Special Education"/>
+                        <node label="330307 - Teacher Education: Nursing and Health"/>
+                        <node
+                            label="330399 - Professional Development of Teachers not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="339900 - Other Education">
+                    <isComposedBy>
+                        <node label="339999 - Other Education"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="340000 - ECONOMICS">
+            <isComposedBy>
+                <node label="340100 - Economic Theory">
+                    <isComposedBy>
+                        <node label="340101 - Microeconomic Theory"/>
+                        <node label="340102 - Macroeconomic Theory"/>
+                        <node label="340103 - Mathematical Economics"/>
+                        <node label="340199 - Economic Theory not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="340200 - Applied Economics">
+                    <isComposedBy>
+                        <node label="340201 - Agricultural Economics"/>
+                        <node label="340202 - Environment and Resource Economics"/>
+                        <node label="340203 - Finance Economics"/>
+                        <node label="340204 - Health Economics"/>
+                        <node label="340205 - Industry Economics and Industrial Organisation"/>
+                        <node label="340206 - International Economics and International Finance"/>
+                        <node label="340207 - Labour Economics"/>
+                        <node label="340208 - Macroeconomics (incl. Monetary and Fiscal Theory)"/>
+                        <node label="340209 - Public Sector Economics"/>
+                        <node label="340210 - Welfare Economics"/>
+                        <node label="340211 - Transport Economics"/>
+                        <node label="340212 - Economic Geography"/>
+                        <node label="340213 - Economic Development and Growth"/>
+                        <node label="340214 - Urban and Regional Economics"/>
+                        <node label="340299 - Applied Economics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="340300 - Economic History and History of Economic Thought">
+                    <isComposedBy>
+                        <node label="340301 - Economic History"/>
+                        <node label="340302 - History of Economic Thought"/>
+                    </isComposedBy>
+                </node>
+                <node label="340400 - Econometrics">
+                    <isComposedBy>
+                        <node label="340401 - Economic Models and Forecasting"/>
+                        <node label="340402 - Econometric and Statistical Methods"/>
+                        <node label="340403 - Time-Series Analysis"/>
+                        <node label="340404 - Cross-Sectional Analysis"/>
+                        <node label="340405 - Panel Data Analysis"/>
+                        <node label="340499 - Econometrics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="349900 - Other Economics">
+                    <isComposedBy>
+                        <node label="349901 - Political Economy"/>
+                        <node label="349902 - Comparative Economic Systems"/>
+                        <node label="349999 - Economics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="350000 - COMMERCE, MANAGEMENT, TOURISM AND SERVICES">
+            <isComposedBy>
+                <node label="350100 - Accounting, Auditing and Accountability">
+                    <isComposedBy>
+                        <node label="350101 - Financial Accounting"/>
+                        <node label="350102 - Management Accounting"/>
+                        <node label="350103 - Auditing and Accountability"/>
+                        <node label="350104 - Taxation"/>
+                        <node label="350105 - Bookkeeping"/>
+                        <node label="350106 - International Accounting"/>
+                        <node label="350107 - Other Accounting"/>
+                    </isComposedBy>
+                </node>
+                <node label="350200 - Business and Management">
+                    <isComposedBy>
+                        <node label="350201 - Human Resources Management"/>
+                        <node label="350202 - Business Information Systems (incl. Data Processing)"/>
+                        <node label="350203 - Industrial Relations"/>
+                        <node label="350204 - Marketing and Market Research"/>
+                        <node label="350205 - Sales and Distribution"/>
+                        <node label="350206 - Advertising and Public Relations"/>
+                        <node label="350207 - Office Services"/>
+                        <node label="350208 - Organisational Planning and Management"/>
+                        <node label="350209 - Small Business Management"/>
+                        <node label="350210 - Quality Management"/>
+                        <node label="350211 - Innovation and Technology Management"/>
+                        <node label="350212 - International Business"/>
+                        <node label="350213 - Electronic Commerce"/>
+                        <node label="350299 - Business and Management not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="350300 - Banking, Finance and Investment">
+                    <isComposedBy>
+                        <node label="350301 - Finance"/>
+                        <node label="350302 - Financial Econometrics"/>
+                        <node label="350303 - Financial Institutions (incl. Banking)"/>
+                        <node label="350304 - Insurance Studies"/>
+                        <node
+                            label="350399 - Banking, Finance and Investment not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="350400 - Transportation">
+                    <isComposedBy>
+                        <node label="350401 - Aeronautical Transportation"/>
+                        <node label="350402 - Aircrew Training"/>
+                        <node label="350403 - Nautical Transportation"/>
+                        <node label="350404 - Marine Crew Training"/>
+                        <node label="350405 - Road and Rail Transportation"/>
+                        <node label="350499 - Transportation not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="350500 - Tourism">
+                    <isComposedBy>
+                        <node label="350501 - Tourism Policy and Planning"/>
+                        <node label="350502 - Tourism Resource Appraisal"/>
+                        <node label="350503 - Impacts of Tourism"/>
+                        <node label="350504 - Tourist Behaviour"/>
+                        <node label="350505 - Tourism Economics"/>
+                        <node label="350506 - Tourism Forecasting"/>
+                        <node label="350507 - Tourism Management"/>
+                        <node label="350508 - Tourism Marketing"/>
+                        <node label="350599 - Tourism not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="350600 - Services">
+                    <isComposedBy>
+                        <node label="350601 - Hospitality Management"/>
+                        <node label="350602 - Food and Hospitality Services"/>
+                        <node label="350603 - Real Estate and Valuation"/>
+                        <node
+                            label="350604 - Professional Services (Legal, Management Consulting, etc.)"/>
+                        <node label="350605 - Other Retail Services"/>
+                        <node label="350606 - Wholesale Services"/>
+                        <node label="350699 - Services not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="359900 - Other Commerce, Management, Tourism and Services">
+                    <isComposedBy>
+                        <node label="359999 - Other Commerce, Management, Tourism and Services"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="360000 - POLICY AND POLITICAL SCIENCE">
+            <isComposedBy>
+                <node label="360100 - Political Science">
+                    <isComposedBy>
+                        <node label="360101 - Australian Government and Politics"/>
+                        <node label="360102 - Comparative Government and Politics"/>
+                        <node label="360103 - Federalism and Intergovernmental Relations"/>
+                        <node label="360104 - Political Theory and Political Philosophy"/>
+                        <node label="360105 - International Relations"/>
+                        <node label="360199 - Political Science not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="360200 - Policy and Administration">
+                    <isComposedBy>
+                        <node label="360201 - Public Policy"/>
+                        <node label="360202 - Public Administration"/>
+                        <node label="360203 - Research, Science and Technology Policy"/>
+                        <node label="360204 - Defence Studies"/>
+                        <node label="360299 - Policy and Administration not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="369900 - Other Policy and Political Science">
+                    <isComposedBy>
+                        <node label="369999 - Other Policy and Political Science"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="370000 - STUDIES IN HUMAN SOCIETY">
+            <isComposedBy>
+                <node label="370100 - Sociology">
+                    <isComposedBy>
+                        <node label="370101 - Social Theory"/>
+                        <node label="370102 - Social Policy and Planning"/>
+                        <node label="370103 - Race and Ethnic Relations"/>
+                        <node label="370104 - Urban Sociology and Community Studies"/>
+                        <node
+                            label="370105 - Applied Sociology, Program Evaluation and Social Impact Assessment"/>
+                        <node label="370106 - Sociological Methodology and Research Methods"/>
+                        <node label="370107 - Social Change"/>
+                        <node label="370199 - Sociology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="370200 - Social Work">
+                    <isComposedBy>
+                        <node label="370201 - Clinical Social Work Practice"/>
+                        <node label="370202 - Social Program Evaluation"/>
+                        <node label="370203 - Social Policy"/>
+                        <node label="370204 - Counselling, Welfare and Community Services"/>
+                        <node label="370299 - Social Work not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="370300 - Anthropology">
+                    <isComposedBy>
+                        <node label="370301 - Biological (Physical) Anthropology"/>
+                        <node label="370302 - Social and Cultural Anthropology"/>
+                        <node label="370303 - Linguistic Anthropology"/>
+                        <node label="370399 - Anthropology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="370400 - Human Geography">
+                    <isComposedBy>
+                        <node label="370401 - Urban and Regional Studies"/>
+                        <node label="370402 - Social and Cultural Geography"/>
+                        <node label="370403 - Recreation and Leisure Studies"/>
+                        <node label="370499 - Human Geography not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="370500 - Demography">
+                    <isComposedBy>
+                        <node label="370501 - Population Trends and Policies"/>
+                        <node label="370502 - Migration"/>
+                        <node label="370503 - Fertility"/>
+                        <node label="370504 - Family and Household Studies"/>
+                        <node label="370599 - Demography not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="370600 - History and Philosophy of Science and Medicine">
+                    <isComposedBy>
+                        <node label="370601 - History and Philosophy of Science and Technology"/>
+                        <node
+                            label="370602 - Sociology and Social Studies of Science and Technology"/>
+                        <node label="370603 - History and Philosophy of Medicine"/>
+                        <node
+                            label="370699 - History and Philosophy of Science and Medicine not elsewhere&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="379900 - Other Studies in Human Society">
+                    <isComposedBy>
+                        <node label="379901 - Gender Specific Studies"/>
+                        <node label="379902 - Aboriginal Studies"/>
+                        <node label="379999 - Studies in Human Society not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="380000 - BEHAVIOURAL AND COGNITIVE SCIENCES">
+            <isComposedBy>
+                <node label="380100 - Psychology">
+                    <isComposedBy>
+                        <node label="380101 - Sensory Processes, Perception and Performance"/>
+                        <node label="380102 - Learning, Memory, Cognition and Language"/>
+                        <node
+                            label="380103 - Biological Psychology (Neuropsychology, Psychopharmacology,Physiological&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Psychology)"/>
+                        <node label="380104 - Personality, Abilities and Assessment"/>
+                        <node label="380105 - Social and Community Psychology"/>
+                        <node label="380106 - Developmental Psychology and Ageing"/>
+                        <node label="380107 - Health, Clinical and Counselling Psychology"/>
+                        <node label="380108 - Industrial and Organisational Psychology"/>
+                        <node label="380109 - Psychological Methodology, Design and Analysis"/>
+                        <node label="380199 - Psychology not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="380200 - Linguistics">
+                    <isComposedBy>
+                        <node label="380201 - Applied Linguistics and Educational Linguistics"/>
+                        <node label="380202 - Computational Linguistics"/>
+                        <node label="380203 - Discourse and Pragmatics"/>
+                        <node label="380204 - Laboratory Phonetics and Speech Science"/>
+                        <node label="380205 - Language in Culture and Society (Sociolinguistics)"/>
+                        <node
+                            label="380206 - Language in Time and Space (incl. Historical Linguistics,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Dialectology)"/>
+                        <node
+                            label="380207 - Linguistic Structures (incl. Grammar, Phonology, Lexicon,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Semantics)"/>
+                        <node label="380208 - Lexicography"/>
+                        <node label="380299 - Linguistics not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="380300 - Cognitive Science">
+                    <isComposedBy>
+                        <node label="380301 - Philosophy of Cognition"/>
+                        <node
+                            label="380302 - Linguistic Processes (incl. Speech Production and Comprehension)"/>
+                        <node label="380303 - Computer Perception, Memory and Attention"/>
+                        <node label="380304 - Neurocognitive Patterns and Neural Networks"/>
+                        <node label="380305 - Knowledge Representation and Machine Learning"/>
+                        <node label="380306 - Planning and Problem Solving"/>
+                        <node label="380399 - Cognitive Science not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="389900 - Other Behavioural and Cognitive Sciences">
+                    <isComposedBy>
+                        <node label="389999 - Other Behavioural and Cognitive Sciences"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="390000 - LAW, JUSTICE AND LAW ENFORCEMENT">
+            <isComposedBy>
+                <node label="390100 - Law">
+                    <isComposedBy>
+                        <node label="390101 - Administrative Law"/>
+                        <node label="390102 - Comparative Law"/>
+                        <node label="390103 - Constitutionalism and Constitutional Law"/>
+                        <node label="390104 - Commercial and Contract Law"/>
+                        <node label="390105 - Corporations and Associations Law"/>
+                        <node label="390106 - Criminal Law"/>
+                        <node label="390107 - Environmental and Natural Resources Law"/>
+                        <node label="390108 - Family Law"/>
+                        <node label="390109 - Civil Law"/>
+                        <node label="390110 - Indigenous Law"/>
+                        <node label="390111 - International Law"/>
+                        <node label="390112 - Law and Literature"/>
+                        <node label="390113 - Legal History"/>
+                        <node label="390114 - Intellectual Property"/>
+                        <node
+                            label="390115 - Property Law and Conveyancing (excl. Intellectual Property)"/>
+                        <node label="390116 - Labour Law"/>
+                        <node label="390117 - Tort Law"/>
+                        <node label="390100 - Law continued"/>
+                        <node label="390118 - Taxation Law"/>
+                        <node label="390119 - Equity Law"/>
+                        <node label="390120 - Trust Law"/>
+                        <node label="390199 - Law not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="390200 - Professional Development of Law Practitioners">
+                    <isComposedBy>
+                        <node label="390201 - Legal Practice"/>
+                        <node label="390202 - Adjudication"/>
+                        <node label="390203 - Legal Education"/>
+                        <node label="390204 - Professional Ethics"/>
+                    </isComposedBy>
+                </node>
+                <node
+                    label="390299 - Professional Development of Law Practitioners not elsewhere classified">
+                    <isComposedBy>
+                        <node label="390300 - Justice and Legal Studies"/>
+                        <node label="390301 - Justice Systems and Administration"/>
+                        <node label="390302 - Jurisprudence and Legal Theory"/>
+                        <node label="390303 - Human Rights"/>
+                        <node label="390304 - Counselling and Mediation Services"/>
+                        <node label="390305 - Law and Society"/>
+                        <node label="390399 - Justice and Legal Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="390400 - Law Enforcement">
+                    <isComposedBy>
+                        <node label="390401 - Criminology"/>
+                        <node label="390402 - Evidence and Procedure"/>
+                        <node label="390403 - Police Administration, Procedures and Practice"/>
+                        <node label="390404 - Detection and Prevention of Crime; Security Services"/>
+                        <node label="390405 - Correctional Theory and Services; Penology"/>
+                        <node label="390499 - Law Enforcement not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="399900 - Other Law, Justice and Law Enforcement">
+                    <isComposedBy>
+                        <node label="399901 - History and Philosophy of Law and Justice"/>
+                        <node
+                            label="399999 - Law, Justice and Law Enforcement not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="400000 - JOURNALISM, LIBRARIANSHIP AND CURATORIAL STUDIES">
+            <isComposedBy>
+                <node label="400100 - Journalism, Communication and Media">
+                    <isComposedBy>
+                        <node label="400101 - Journalism"/>
+                        <node label="400102 - Technical Writing"/>
+                        <node label="400103 - Professional Creative Writing"/>
+                        <node label="400104 - Communication and Media Studies"/>
+                        <node
+                            label="400199 - Journalism, Communication and Media not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="400200 - Librarianship">
+                    <isComposedBy>
+                        <node label="400201 - Librarianship"/>
+                        <node label="400300 - Curatorial Studies"/>
+                        <node label="400301 - Museum Studies"/>
+                        <node label="400302 - Archival Studies"/>
+                        <node label="400303 - Materials Conservation"/>
+                        <node label="400399 - Curatorial Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="409900 - Other Journalism, Librarianship and Curatorial Studies">
+                    <isComposedBy>
+                        <node
+                            label="409999 - Other Journalism, Librarianship and Curatorial Studies"
+                        />
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="410000 - THE ARTS">
+            <isComposedBy>
+                <node label="410100 - Performing Arts">
+                    <isComposedBy>
+                        <node label="410101 - Music"/>
+                        <node label="410102 - Drama, Theatre and Performance Studies"/>
+                        <node label="410103 - Dance"/>
+                        <node label="410104 - Indigenous Performing Arts"/>
+                        <node label="410199 - Performing Arts not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="410200 - Visual Arts and Crafts">
+                    <isComposedBy>
+                        <node label="410201 - Graphic Arts"/>
+                        <node label="410202 - Fine Arts (incl. Sculpture and Painting)"/>
+                        <node label="410203 - Photography"/>
+                        <node label="410204 - Crafts"/>
+                        <node label="410299 - Visual Arts and Crafts not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="410300 - Cinema, Electronic Arts and Multimedia">
+                    <isComposedBy>
+                        <node label="410301 - Film and Video"/>
+                        <node label="410302 - Cinema Studies"/>
+                        <node label="410303 - Multimedia"/>
+                        <node label="410304 - Other Cinema and Electronic Arts"/>
+                    </isComposedBy>
+                </node>
+                <node label="410400 - Design Studies">
+                    <isComposedBy>
+                        <node label="410401 - Design Theory"/>
+                        <node label="410402 - Design Innovation"/>
+                        <node label="410403 - Design Studio Practice"/>
+                        <node label="410404 - Design Management and Professional Practice"/>
+                        <node label="410405 - Design History and Cultural Theory"/>
+                        <node label="410499 - Design Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="419900 - Other Arts">
+                    <isComposedBy>
+                        <node label="419901 - Art History and Appreciation"/>
+                        <node label="419999 - The Arts not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="420000 - LANGUAGE AND CULTURE">
+            <isComposedBy>
+                <node label="420100 - Language Studies">
+                    <isComposedBy>
+                        <node label="420101 - English"/>
+                        <node label="420102 - English as a Second Language"/>
+                        <node label="420103 - Aboriginal Languages"/>
+                        <node label="420104 - Latin"/>
+                        <node label="420105 - Greek"/>
+                        <node label="420106 - French"/>
+                        <node label="420107 - German"/>
+                        <node label="420108 - Italian"/>
+                        <node label="420109 - Spanish"/>
+                        <node label="420110 - Russian"/>
+                        <node label="420111 - Other European Languages"/>
+                        <node label="420112 - Chinese Languages"/>
+                        <node label="420113 - Japanese"/>
+                        <node label="420114 - Indonesian Languages"/>
+                        <node label="420115 - Malaysian Languages"/>
+                        <node label="420116 - Indian Languages"/>
+                        <node label="420117 - Korean"/>
+                        <node label="420118 - Vietnamese Languages"/>
+                        <node label="420119 - Thai Languages"/>
+                        <node label="420120 - Other Asian Languages"/>
+                        <node label="420121 - Comparative Language Studies"/>
+                        <node label="420122 - Oracy and Oral Traditions"/>
+                        <node label="420199 - Language Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="420200 - Literature Studies">
+                    <isComposedBy>
+                        <node label="420201 - British and Irish"/>
+                        <node label="420202 - Australian and New Zealand"/>
+                        <node label="420203 - North American"/>
+                        <node label="420204 - South American"/>
+                        <node label="420205 - Latin and Classical Greek"/>
+                        <node label="420206 - French"/>
+                        <node label="420207 - German"/>
+                        <node label="420208 - Italian"/>
+                        <node label="420209 - Russian"/>
+                        <node label="420210 - Other European"/>
+                        <node label="420211 - Chinese"/>
+                        <node label="420200 - Literature Studies continued"/>
+                        <node label="420212 - Japanese"/>
+                        <node label="420213 - Indonesian"/>
+                        <node label="420214 - Indian"/>
+                        <node label="420215 - Other Asian"/>
+                        <node label="420216 - Comparative Literature Studies"/>
+                        <node label="420217 - Textual Transmission and the Material Record"/>
+                        <node label="420218 - Literary Theory"/>
+                        <node label="420219 - Stylistics"/>
+                        <node label="420220 - Folklore, Myth and Mythologies"/>
+                        <node label="420299 - Literature Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="420300 - Cultural Studies">
+                    <isComposedBy>
+                        <node label="420301 - Cultural Policy Studies"/>
+                        <node label="420302 - Cultural Theory"/>
+                        <node label="420303 - Culture, Gender, Sexuality"/>
+                        <node label="420304 - Screen and Media Culture"/>
+                        <node label="420305 - Aboriginal Cultural Studies"/>
+                        <node label="420306 - Postcolonial and Global Cultural Studies"/>
+                        <node label="420307 - Consumption and Everyday Life"/>
+                        <node
+                            label="420308 - Multicultural, Intercultural and Cross-cultural Studies"/>
+                        <node label="420399 - Cultural Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="429900 - Other Language and Culture">
+                    <isComposedBy>
+                        <node label="429999 - Other Language and Culture"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="430000 - HISTORY AND ARCHAEOLOGY">
+            <isComposedBy>
+                <node label="430100 - Historical Studies">
+                    <isComposedBy>
+                        <node label="430101 - History: Australian"/>
+                        <node label="430102 - History: Asian"/>
+                        <node label="430103 - History: Pacific"/>
+                        <node label="430104 - History: North American"/>
+                        <node label="430105 - History: Latin American"/>
+                        <node label="430106 - History: African"/>
+                        <node label="430107 - History: British"/>
+                        <node label="430108 - History: European"/>
+                        <node label="430109 - History: Middle Eastern"/>
+                        <node label="430110 - History: Classical Greek and Roman"/>
+                        <node label="430111 - History: Other"/>
+                        <node label="430112 - Biography"/>
+                        <node label="430199 - Historical Studies not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="430200 - Archaeology and Prehistory">
+                    <isComposedBy>
+                        <node
+                            label="430201 - Archaeology of Hunter-Gatherer Societies (incl. Pleistocene&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Archaeology)"/>
+                        <node label="430202 - Archaeology of Agricultural and Pastoral Societies"/>
+                        <node
+                            label="430203 - Archaeology of Complex Societies: Europe, the Mediterranean and the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Levant"/>
+                        <node
+                            label="430204 - Archaeology of Complex Societies: Asia, Africa, Oceania and the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Americas"/>
+                        <node label="430205 - Historical Archaeology (incl. Industrial Archaeology)"/>
+                        <node label="430206 - Maritime Archaeology"/>
+                        <node label="430207 - Archaeological Science"/>
+                        <node label="430299 - Archaeology and Prehistory not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="439900 - Other History and Archaeology">
+                    <isComposedBy>
+                        <node label="439999 - Other History and Archaeology"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+        <node label="440000 - PHILOSOPHY AND RELIGION">
+            <isComposedBy>
+                <node label="440100 - Philosophy">
+                    <isComposedBy>
+                        <node label="440101 - Aesthetics"/>
+                        <node label="440102 - Epistemology"/>
+                        <node label="440103 - Ethical Theory"/>
+                        <node
+                            label="440104 - Applied Ethics (incl. Bioethics and Environmental Ethics)"/>
+                        <node label="440105 - History of Philosophy and History of Ideas"/>
+                        <node label="440106 - Logic"/>
+                        <node label="440107 - Metaphysics"/>
+                        <node label="440108 - Philosophy of Language"/>
+                        <node label="440109 - Philosophy of Mind (excl. Cognition)"/>
+                        <node label="440110 - Social Philosophy"/>
+                        <node label="440111 - Phenomenology"/>
+                        <node label="440112 - Hermeneutic Theory"/>
+                        <node label="440113 - Comparative Philosophy"/>
+                        <node label="440114 - Philosophy of Action"/>
+                        <node
+                            label="440115 - Philosophy of Specific Cultures (e.g. Ancient Greek, Chinese)"/>
+                        <node label="440199 - Philosophy not elsewhere classified"/>
+                    </isComposedBy>
+                </node>
+                <node label="440200 - Religion and Religious Traditions">
+                    <isComposedBy>
+                        <node label="440201 - Hindu Studies"/>
+                        <node label="440202 - Buddhist Studies"/>
+                        <node label="440203 - Jewish Studies"/>
+                        <node
+                            label="440204 - Christian Theology (incl. Biblical Studies and Church History)"/>
+                        <node label="440205 - Islamic Studies"/>
+                        <node label="440206 - Studies in Other Religious Traditions"/>
+                        <node label="440207 - Religion and Society"/>
+                        <node label="440208 - Psychology of Religion"/>
+                        <node label="440209 - Philosophy of Religion"/>
+                        <node
+                            label="440299 - Religion and Religious Traditions not elsewhere classified"
+                        />
+                    </isComposedBy>
+                </node>
+                <node label="449900 - Other Philosophy and Religion">
+                    <isComposedBy>
+                        <node label="449999 - Other Philosophy and Religion"/>
+                    </isComposedBy>
+                </node>
+            </isComposedBy>
+        </node>
+    </isComposedBy>
+</node>

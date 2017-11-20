@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+-->
+    <utfx:stylesheet src="marc.xsl"/>
+    <!-- Journal Item -->
+    <utfx:test>
+        <utfx:name>Journal Item_Valet2MARC</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                    <Formdata>
+                        <faculty/>
+                        <rights/>
+                        <_count_creator-multiple_creators>6</_count_creator-multiple_creators>
+                        <_count_keyword-multiple_keywords>2</_count_keyword-multiple_keywords>
+                        <creator_affiliation_3>University of Newcastle</creator_affiliation_3>
+                        <creator_first_name>J J</creator_first_name>
+                        <creator_first_name_1>G</creator_first_name_1>
+                        <creator_first_name_2>T Y</creator_first_name_2>
+                        <creator_first_name_3>W</creator_first_name_3>
+                        <creator_first_name_4>R</creator_first_name_4>
+                        <creator_first_name_5>S R</creator_first_name_5>
+                        <creator_first_name_6>P</creator_first_name_6>
+                        <creator_last_name>Wang</creator_last_name>
+                        <creator_last_name_1>Liew</creator_last_name_1>
+                        <creator_last_name_2>Wong</creator_last_name_2>
+                        <creator_last_name_3>Smith</creator_last_name_3>
+                        <creator_last_name_4>Klein</creator_last_name_4>
+                        <creator_last_name_5>Leeder</creator_last_name_5>
+                        <creator_last_name_6>Mitchell</creator_last_name_6>
+                        <description_abstract>Objective: To examine whether retinal vascular calibre independently predicts risk of coronary heart disease (CHD) -related death. &#13; &#13; Methods: In a population-based cohort study of 3654 Australians aged 49 years, retinal arteriolar and venular calibres were measured from baseline retinal photographs and the arteriole to venule ratio (AVR) was calculated. CHD-related death was confirmed from the Australian National Death Index. &#13; &#13; Results: Over nine years, 78 women (4.1%) and 114 men (7.8%) had incident CHD-related deaths. In people aged 49–75 years, wider venules were associated with CHD death, with relative risk (RR) 1.8 (95% confidence interval (CI) 1.1 to 2.7) and RR 2.0 (95% CI 1.1 to 3.6) per standard deviation (SD) increase in venular calibre for men and women, respectively, after adjustment for traditional risk factors. Additionally, in women aged 49–75 years, smaller AVR and narrower arterioles were associated with CHD death (RR 1.5, 95% CI 1.1 to 2.2, and RR 1.9, 95% CI 1.0 to 3.5 per SD decrease in AVR and arteriolar calibre, respectively, after adjustment). These associations were not observed in people aged &gt; 75 years. &#13; &#13; Conclusions: These findings suggest that microvascular disease processes may have a role in CHD development in middle-aged people, particularly in women. Retinal photography may be useful in cardiovascular risk pediction. &#13;</description_abstract>
+                        <dest_category>C1</dest_category>
+                        <dest_publication_year>1992</dest_publication_year>
+                        <function>save_formdata</function>
+                        <help_details>sjd</help_details>
+                        <journal_issn>1355-6037</journal_issn>
+                        <journal_issue>11</journal_issue>
+                        <journal_page_from>1583</journal_page_from>
+                        <journal_page_to>1587</journal_page_to>
+                        <journal_peer_reviewed>Yes</journal_peer_reviewed>
+                        <journal_publisher>BMJ Publishing Group</journal_publisher>
+                        <journal_title>Heart</journal_title>
+                        <journal_volume>92</journal_volume>
+                        <keyword>retinal vascular calibre</keyword>
+                        <keyword_1>coronary heart disease</keyword_1>
+                        <keyword_2>cardiovascular risk prediction</keyword_2>
+                        <language>eng</language>
+                        <resource_type>journal article</resource_type>
+                        <session>uon-P145136-CPE177297</session>
+                        <title>Retinal vascular calibre and the risk of coronary heart disease-related death</title>
+                        <url>10.1136/hrt.2006.090522</url>
+                        <url_type>doi</url_type>
+                        <year>2006</year>
+                    </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">uon-P145136-CPE177297</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="592">
+                    <marc:subfield code="a">C1</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="592">
+                    <marc:subfield code="a">1992</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="599">
+                    <marc:subfield code="a">sjd</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">journal article</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="773">
+                    <marc:subfield code="t">Heart</marc:subfield>
+                    <marc:subfield code="n">1</marc:subfield>
+                    <marc:subfield code="g">Vol. 92, Issue 11, p. 1583-1587</marc:subfield>
+                    <marc:subfield code="x">1355-6037</marc:subfield>
+                    <marc:subfield code="d">BMJ Publishing Group</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="300">
+                    <marc:subfield code="a">5</marc:subfield>
+                </marc:datafield>  
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">2006</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="0" tag="245">
+                    <marc:subfield code="a">Retinal vascular calibre and the risk of coronary heart disease-related death</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="3" ind2=" " tag="520">
+                    <marc:subfield code="a">Objective: To examine whether retinal vascular calibre independently predicts risk of coronary heart disease (CHD) -related death. &#13; &#13; Methods: In a population-based cohort study of 3654 Australians aged 49 years, retinal arteriolar and venular calibres were measured from baseline retinal photographs and the arteriole to venule ratio (AVR) was calculated. CHD-related death was confirmed from the Australian National Death Index. &#13; &#13; Results: Over nine years, 78 women (4.1%) and 114 men (7.8%) had incident CHD-related deaths. In people aged 49–75 years, wider venules were associated with CHD death, with relative risk (RR) 1.8 (95% confidence interval (CI) 1.1 to 2.7) and RR 2.0 (95% CI 1.1 to 3.6) per standard deviation (SD) increase in venular calibre for men and women, respectively, after adjustment for traditional risk factors. Additionally, in women aged 49–75 years, smaller AVR and narrower arterioles were associated with CHD death (RR 1.5, 95% CI 1.1 to 2.2, and RR 1.9, 95% CI 1.0 to 3.5 per SD decrease in AVR and arteriolar calibre, respectively, after adjustment). These associations were not observed in people aged &gt; 75 years. &#13; &#13; Conclusions: These findings suggest that microvascular disease processes may have a role in CHD development in middle-aged people, particularly in women. Retinal photography may be useful in cardiovascular risk pediction. &#13; </marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">retinal vascular calibre</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">coronary heart disease</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">cardiovascular risk prediction</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="100">
+                    <marc:subfield code="a">Wang, J J</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2=" " tag="700">
+                    <marc:subfield code="a">Liew, G</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2=" " tag="700">
+                    <marc:subfield code="a">Wong, T Y</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1"  ind2=" " tag="700">
+                    <marc:subfield code="a">Smith, W</marc:subfield>
+                    <marc:subfield code="u">University of Newcastle</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1"  ind2=" " tag="700">
+                    <marc:subfield code="a">Klein, R</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1"  ind2=" " tag="700">
+                    <marc:subfield code="a">Leeder, S R</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2=" " tag="700">
+                    <marc:subfield code="a">Mitchell, P</marc:subfield>
+                </marc:datafield>       
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- Book Item -->
+    <utfx:test>
+        <utfx:name>Book Item_Valet2MARC</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>book</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>Book Title - undergo an allometric change that can be used to determine morphometric maturity</title>
+                            <book_publisher>Academic Press</book_publisher>
+                            <book_place_publication>London, UK</book_place_publication>
+                            <book_isbn>1054-3139</book_isbn>
+                            <book_edition>6th</book_edition>
+                            <book_series>The Third Age</book_series>
+                            <book_series_number>1</book_series_number>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">book</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="a">London, UK</marc:subfield>
+                    <marc:subfield code="b">Academic Press</marc:subfield>
+                    <marc:subfield code="c">2006</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="0" tag="440">
+                    <marc:subfield code="a">The Third Age</marc:subfield>
+                    <marc:subfield code="v">1</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="020">
+                    <marc:subfield code="a">1054-3139</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="250">
+                    <marc:subfield code="a">6th</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">2006</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="0" tag="245">
+                    <marc:subfield code="a">Book Title - undergo an allometric change that can be used to determine morphometric maturity</marc:subfield>
+                </marc:datafield>
+              </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Book Chapter Item -->
+    <utfx:test>
+        <utfx:name>Book Chapter Item_Valet2MARC</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>book chapter</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>A decade of enterprise bargaining in Australia: An Introduction</title>
+                            <chapter_isbn>0310-5814</chapter_isbn>
+                            <chapter_publisher>Macquarie University, Sydney, Australia</chapter_publisher>
+                            <chapter_page_from>64</chapter_page_from>
+                            <chapter_page_to>84</chapter_page_to>
+                            <chapter_editor>John Burgess &amp; Duncan Macdonald</chapter_editor>
+                            <chapter_book_title>Developments in Enterprise Bargaining in Australia</chapter_book_title>
+                            <chapter_place_publication>Reston, USA</chapter_place_publication>
+                            <chapter_edition>1</chapter_edition>
+                            <chapter_url>http://website.com</chapter_url>
+                            <chapter_series>The Third Age</chapter_series>
+                            <chapter_series_number>1</chapter_series_number>
+                            <chapter_number>12</chapter_number>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">book chapter</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="773">
+                    <marc:subfield code="t">Developments in Enterprise Bargaining in Australia</marc:subfield>
+                    <marc:subfield code="b">1</marc:subfield>
+                    <marc:subfield code="g"> Chapter 12 p. 64-84</marc:subfield>
+                    <marc:subfield code="d">Macquarie University, Sydney, Australia : Reston, USA </marc:subfield>
+                    <marc:subfield code="z">0310-5814</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="4" ind2="0" tag="856">
+                    <marc:subfield code="u">http://website.com</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="0" tag="440">
+                    <marc:subfield code="a">The Third Age</marc:subfield>
+                    <marc:subfield code="v">1</marc:subfield>
+                </marc:datafield>
+                
+                <marc:datafield ind1="1" ind2=" " tag="700">
+                    <marc:subfield code="a">John Burgess &amp; Duncan Macdonald</marc:subfield>
+                    <marc:subfield code="e">(Editor)</marc:subfield>
+                </marc:datafield>
+                
+                <marc:datafield ind1=" " ind2=" " tag="300">
+                    <marc:subfield code="a">20</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">2006</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="2" tag="245">
+                    <marc:subfield code="a">A decade of enterprise bargaining in Australia: An Introduction</marc:subfield>
+                </marc:datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Review Item -->
+    <utfx:test>
+        <utfx:name>Review Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>review</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>A decade of enterprise bargaining in Australia: An Introduction</title>
+                            <review_publisher>Academic Press</review_publisher>
+                            <review_place_publication>London, UK</review_place_publication>
+                            <review_issn>1054-3139</review_issn>
+                            <review_title>Does the largest chela of the males of three crab species undergo an allometric change</review_title>
+                            <review_volume>63</review_volume>
+                            <review_number>2</review_number>
+                            <review_issue>1</review_issue>
+                            <review_page_from>140</review_page_from>
+                            <review_page_to>150</review_page_to>
+                            <review_url>http://websitereview.com</review_url>
+                            <review_peer_reviewed>No</review_peer_reviewed>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">review</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="773">
+                    <marc:subfield code="t">Does the largest chela of the males of three crab species undergo an allometric change</marc:subfield>
+                    <marc:subfield code="n">0</marc:subfield>
+                    <marc:subfield code="g">Vol. 63, Issue 1, no. 2, p. 140-150</marc:subfield>
+                    <marc:subfield code="x">1054-3139</marc:subfield>
+                    <marc:subfield code="d">Academic Press : London, UK</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="4" ind2="0" tag="856">
+                    <marc:subfield code="u">http://websitereview.com</marc:subfield>
+                </marc:datafield>
+               <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">2006</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="2" tag="245">
+                    <marc:subfield code="a">A decade of enterprise bargaining in Australia: An Introduction</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">November</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">rain</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">precipitation</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">cloud</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">thunder</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="500">
+                    <marc:subfield code="a">More details to hand.....</marc:subfield>
+                </marc:datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Conference Item -->
+    <utfx:test>
+        <utfx:name>Conference Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                    <Formdata>
+                        <faculty/>
+                        <rights>These are my rights</rights>
+                        <_count_creator-multiple_creators>1</_count_creator-multiple_creators>
+                        <_count_keyword-multiple_keywords>2</_count_keyword-multiple_keywords>
+                        <conference_date>5-7 December, 2005</conference_date>
+                        <conference_editor>Purchase, S.</conference_editor>
+                        <conference_isbn>0646455028</conference_isbn>
+                        <conference_location>Perth, W.A.</conference_location>
+                        <conference_name>ANZMAC 2005: Broadening the Boundaries</conference_name>
+                        <conference_page_from>82</conference_page_from>
+                        <conference_page_to>88</conference_page_to>
+                        <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                        <conference_place_publication>Fremantle, Western Australia</conference_place_publication>
+                        <conference_publisher>Australian and New Zealand Marketing Academy / University of Western Australia</conference_publisher>
+                        <conference_title>ANZMAC 2005: Broadening the Boundaries Conferece Procedings</conference_title>
+                        <creator_affiliation>University of Newcastle</creator_affiliation>
+                        <creator_affiliation_1>University of Newcastle</creator_affiliation_1>
+                        <creator_first_name>Ali</creator_first_name>
+                        <creator_first_name_1>Abul</creator_first_name_1>
+                        <creator_last_name>Quazi</creator_last_name>
+                        <creator_last_name_1>Shamsuddin</creator_last_name_1>
+                        <description_abstract>This paper proposes a conceptual framework for socially responsible investment (SRI) in the context of equity markets with three possible antecedents of SRI - moral beliefs, demographic and economic factors. It is argued that these factors influence an investor’s portfolio choice in relation to socially responsible vis-a-vis mainstream shares through their impacts on preferences as well as the investment opportunity set. It follows from the proposed conceptual framework that (a) the SRI products may be held by any risk-averse investors regardless of their ethical standing due to potential portfolio diversification benefits; (b) investors with moral beliefs will allocate a larger proportion of their assets in SRI than their conventional counterparts as they derive non-pecuniary benefits by investing in socially responsible firms; and (c) investors willing to attain steady long-term returns on investment will exploit SRI investment opportunities. These assertions can be empirically examined in further research.</description_abstract>
+                        <dest_category>E1</dest_category>
+                        <function>save_formdata</function>
+                        <help_details>aob</help_details>
+                        <keyword>socially responsible investment</keyword>
+                        <keyword_1>moral beliefs</keyword_1>
+                        <keyword_2>long-term returns</keyword_2>
+                        <language>eng</language>
+                        <resource_type>conference paper</resource_type>
+                        <session>uon-P143742-CPE170267</session>
+                        <title>A conceptual exploration of antecedents and outcomes of socially responsible investment in equity market</title>
+                        <url>http://smib.vuw.ac.nz:8081/WWW/ANZMAC2005/index.html</url>
+                        <url_type>conference</url_type>
+                        <year>2005</year>
+                    </Formdata>
+                    </Session>
+                    
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">uon-P143742-CPE170267</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="592">
+                    <marc:subfield code="a">E1</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="599">
+                    <marc:subfield code="a">aob</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">conference paper</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="2" ind2=" " tag="711">
+                    <marc:subfield code="a">ANZMAC 2005: Broadening the Boundaries</marc:subfield>
+                    <marc:subfield code="c">Perth, W.A.</marc:subfield>
+                    <marc:subfield code="d">5-7 December, 2005</marc:subfield>
+                </marc:datafield>         
+                <marc:datafield ind1="0" ind2=" " tag="773">
+                    <marc:subfield code="t">ANZMAC 2005: Broadening the Boundaries Conferece Procedings</marc:subfield>
+                    <marc:subfield code="g">p. 82-88</marc:subfield>
+                    <marc:subfield code="d">Australian and New Zealand Marketing Academy / University of Western Australia : Fremantle, Western Australia</marc:subfield>
+                    <marc:subfield code="n">1</marc:subfield>
+                    <marc:subfield code="z">0646455028</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="300">
+                    <marc:subfield code="a">7</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2=" " tag="720">
+                    <marc:subfield code="a">Purchase, S.</marc:subfield>
+                    <marc:subfield code="e">(Editor)</marc:subfield>
+                </marc:datafield>
+               
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">2005</marc:subfield>
+                </marc:datafield>
+                 <marc:datafield ind1="1" ind2="2" tag="245">
+                    <marc:subfield code="a">A conceptual exploration of antecedents and outcomes of socially responsible investment in equity market</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="3" ind2=" " tag="520">
+                    <marc:subfield code="a">This paper proposes a conceptual framework for socially responsible investment (SRI) in the context of equity markets with three possible antecedents of SRI - moral beliefs, demographic and economic factors. It is argued that these factors influence an investor’s portfolio choice in relation to socially responsible vis-a-vis mainstream shares through their impacts on preferences as well as the investment opportunity set. It follows from the proposed conceptual framework that (a) the SRI products may be held by any risk-averse investors regardless of their ethical standing due to potential portfolio diversification benefits; (b) investors with moral beliefs will allocate a larger proportion of their assets in SRI than their conventional counterparts as they derive non-pecuniary benefits by investing in socially responsible firms; and (c) investors willing to attain steady long-term returns on investment will exploit SRI investment opportunities. These assertions can be empirically examined in further research.</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">socially responsible investment</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">moral beliefs</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">long-term returns</marc:subfield>
+                </marc:datafield>
+                 <marc:datafield ind1=" " ind2=" " tag="100">
+                     <marc:subfield code="a">Quazi, Ali</marc:subfield>
+                    <marc:subfield code="u">University of Newcastle</marc:subfield>
+                 </marc:datafield>
+                <marc:datafield ind1="1" ind2=" " tag="700">
+                    <marc:subfield code="a">Shamsuddin, Abul</marc:subfield>
+                    <marc:subfield code="u">University of Newcastle</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="540">
+                    <marc:subfield code="a">Copyright 2005 Ali Quazi</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="590">
+                    <marc:subfield code="a">These are my rights</marc:subfield>
+                </marc:datafield>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Software Item -->
+    <utfx:test>
+        <utfx:name>Software Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>computer software</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excel-lent</title>
+                            <software_technical_details>A really neat piece of code</software_technical_details>
+                            <software_edition>2</software_edition>
+                            <software_publisher>Pixar</software_publisher>
+                            <software_place_publication>Toowoomba QLD</software_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="592">
+                    <marc:subfield code="a">E1</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">computer software</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="300">
+                    <marc:subfield code="a">A really neat piece of code</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="250">
+                    <marc:subfield code="a">2</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="a">Toowoomba QLD</marc:subfield>
+                    <marc:subfield code="b">Pixar</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">1997</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="0" tag="245">
+                    <marc:subfield code="a">Excel-lent</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">November</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">rain</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">precipitation</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">cloud</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">thunder</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="500">
+                    <marc:subfield code="a">More details to hand.....</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="100">
+                    <marc:subfield code="a">Fityush, Stephen George</marc:subfield>
+                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                </marc:datafield>
+
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Report Item -->
+    <utfx:test>
+        <utfx:name>Report Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>report</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Report</title>
+                            <report_commissioner>Fred Smith</report_commissioner>
+                            <report_series>The Advanced Excellent Report Series</report_series>
+                            <report_series_number>3</report_series_number>
+                            <report_isbn>1234-4563</report_isbn>
+                            <report_publisher>Pixar</report_publisher>
+                            <report_place_publication>Toowoomba QLD</report_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="592">
+                    <marc:subfield code="a">E1</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">report</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="2" tag="720">
+                    <marc:subfield code="a">Fred Smith</marc:subfield>
+                    <marc:subfield code="e">patron</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="0" tag="440">
+                    <marc:subfield code="a">The Advanced Excellent Report Series</marc:subfield>
+                    <marc:subfield code="v">3</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="a">Toowoomba QLD</marc:subfield>
+                    <marc:subfield code="b">Pixar</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="020">
+                    <marc:subfield code="a">1234-4563</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">1997</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="0" tag="245">
+                    <marc:subfield code="a">Excellent Report</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">November</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">rain</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">precipitation</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">cloud</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">thunder</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="500">
+                    <marc:subfield code="a">More details to hand.....</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="100">
+                    <marc:subfield code="a">Fityush, Stephen George</marc:subfield>
+                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                </marc:datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Working Paper Item -->
+    <utfx:test>
+        <utfx:name>Working Paper Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>working paper</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Working paper</title>
+                           <working_paper_isbn>1234-6598</working_paper_isbn>
+                            <working_paper_issn>123456879123</working_paper_issn>
+                            <working_paper_publisher>Collins</working_paper_publisher>
+                            <working_paper_place_publication>Sydney, NSW</working_paper_place_publication>
+                            <working_paper_title>The lovely Working Paper</working_paper_title>
+                            <working_paper_number>3</working_paper_number>
+                            <working_paper_url>http://workingpaper.com</working_paper_url>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="592">
+                    <marc:subfield code="a">E1</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">working paper</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="020">
+                    <marc:subfield code="a">1234-6598</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="022">
+                    <marc:subfield code="a">123456879123</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="0" tag="440">
+                    <marc:subfield code="a">The lovely Working Paper</marc:subfield>
+                    <marc:subfield code="v">3</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="4" ind2="0" tag="856">
+                    <marc:subfield code="u">http://workingpaper.com</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">1997</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="0" tag="245">
+                    <marc:subfield code="a">Excellent Working paper</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">November</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">rain</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">precipitation</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">cloud</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">thunder</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="500">
+                    <marc:subfield code="a">More details to hand.....</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="100">
+                    <marc:subfield code="a">Fityush, Stephen George</marc:subfield>
+                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                </marc:datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Thesis Item -->
+    <utfx:test>
+        <utfx:name>Thesis Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>thesis</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>ExcellenThesis</title>
+                            <thesis_degree>Masters Research</thesis_degree>
+                            <thesis_degree_program>Master of Science Something</thesis_degree_program>
+                            <thesis_supervisor_first_name>Billy</thesis_supervisor_first_name>
+                             <thesis_supervisor_last_name>Bob</thesis_supervisor_last_name>
+                            <thesis_supervisor_affiliation>Murdoch University</thesis_supervisor_affiliation>
+                            <availability>worldwide</availability>
+                            <authenticity_assent>I agree</authenticity_assent>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="592">
+                    <marc:subfield code="a">E1</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">thesis</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="2" tag="720">
+                    <marc:subfield code="a">Bob, Billy</marc:subfield>
+                    <marc:subfield code="e">(Supervisor)</marc:subfield>
+                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                </marc:datafield>
+                
+                <marc:datafield ind1=" " ind2=" " tag="502">
+                    <marc:subfield code="a">Masters Research - Master of Science Something</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="830">
+                    <marc:subfield code="a">Australasian Digital Thesis</marc:subfield>
+                </marc:datafield>
+              
+                <marc:datafield ind1=" " ind2=" " tag="506">
+                    <marc:subfield code="a">Unrestricted worldwide access</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="591">
+                    <marc:subfield code="a">I agree</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+               
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">1997</marc:subfield>
+                </marc:datafield>
+               
+                <marc:datafield ind1="1" ind2="0" tag="245">
+                    <marc:subfield code="a">ExcellenThesis</marc:subfield>
+                    </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">November</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">rain</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">precipitation</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">cloud</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">thunder</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="500">
+                    <marc:subfield code="a">More details to hand.....</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="100">
+                    <marc:subfield code="a">Fityush, Stephen George</marc:subfield>
+                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                </marc:datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Patent Item -->
+    <utfx:test>
+        <utfx:name>Patent Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>patent</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Patent</title>
+                            <patent_owner>Fred Smith</patent_owner>
+                            <patent_number>TF5643</patent_number>
+                            <patent_provisional_number>YHT6543</patent_provisional_number>
+                            <patent_pct_number>87654</patent_pct_number>
+                            <patent_wipo_number>09876</patent_wipo_number>
+                            <patent_place_publication>Sydney, NSW</patent_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="592">
+                    <marc:subfield code="a">E1</marc:subfield>
+                </marc:datafield> 
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">patent</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="2" tag="720">
+                    <marc:subfield code="a">Fred Smith</marc:subfield>
+                    <marc:subfield code="e">(Owner)</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="013">
+                    <marc:subfield code="a">TF5643</marc:subfield>
+                    <marc:subfield code="b">at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="013">
+                    <marc:subfield code="a">YHT6543</marc:subfield>
+                    <marc:subfield code="e">provisional</marc:subfield>
+               </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">PCT/87654</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">WIPO/09876</marc:subfield>
+                </marc:datafield>
+
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">1997</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="0" tag="245">
+                    <marc:subfield code="a">Excellent Patent</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">November</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">rain</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">precipitation</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">cloud</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">thunder</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="500">
+                    <marc:subfield code="a">More details to hand.....</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="100">
+                    <marc:subfield code="a">Fityush, Stephen George</marc:subfield>
+                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                </marc:datafield>
+                
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Major Project Item -->
+    <utfx:test>
+        <utfx:name>Major Project</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <university_name>University of Georgia</university_name>
+                            <faculty>Science</faculty>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights>I agree to NOVA 1.0</rights>
+                            <dest_category>E1</dest_category>
+                            <resource_type>major project</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <creator_affiliation>Murdoch University</creator_affiliation>                            
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>ExcellenThesis</title>                      
+                            <mp_thesis_degree>Masters Research</mp_thesis_degree>
+                            <mp_thesis_degree_program>Master of Science Something</mp_thesis_degree_program>
+                            <supervisor_first_name>Billy</supervisor_first_name>
+                            <supervisor_last_name>Bob</supervisor_last_name>
+                            <supervisor_affiliation>Murdoch University</supervisor_affiliation>
+                            <availability>restricted</availability>
+                            <num_months>5</num_months>
+                            <authenticity_assent>I agree</authenticity_assent>
+                            <SubmissionDate>2008-03-03 12:49</SubmissionDate>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+        
+                 <utfx:expected>  
+                     <marc:datafield ind1=" " ind2=" " tag="035">
+                         <marc:subfield code="a">Murdoch Id - 28</marc:subfield>
+                     </marc:datafield> 
+                     <marc:datafield ind1=" " ind2=" " tag="592">
+                         <marc:subfield code="a">E1</marc:subfield>
+                     </marc:datafield> 
+                     <marc:datafield ind1=" " ind2=" " tag="043">
+                         <marc:subfield code="a">u-at</marc:subfield>
+                     </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">major project</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="2" tag="720">
+                    <marc:subfield code="a">Bob, Billy</marc:subfield>
+                    <marc:subfield code="e">(Supervisor)</marc:subfield>
+                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                </marc:datafield>
+                
+                <marc:datafield ind1=" " ind2=" " tag="502">
+                    <marc:subfield code="a">Masters Research - Master of Science Something</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="830">
+                    <marc:subfield code="a">Australasian Digital Thesis</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="506">
+                    <marc:subfield code="a"> Restricted access. Embargo for 5 months</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="591">
+                    <marc:subfield code="a">I agree</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">1997</marc:subfield>
+                </marc:datafield>
+                
+                <marc:datafield ind1="1" ind2="0" tag="245">
+                    <marc:subfield code="a">ExcellenThesis</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">November</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="650">
+                    <marc:subfield code="a">rain</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">precipitation</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">cloud</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">thunder</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="500">
+                    <marc:subfield code="a">More details to hand.....</marc:subfield>
+                </marc:datafield>   
+                <marc:datafield ind1=" " ind2=" " tag="100">
+                    <marc:subfield code="a">Fityush, Stephen George</marc:subfield>
+                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="710">
+                    <marc:subfield code="a"> University of Georgia</marc:subfield>
+                    <marc:subfield code="b">Science</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="540">
+                    <marc:subfield code="a"> Copyright 1997 Stephen George Fityush</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="590">
+                    <marc:subfield code="a">I agree to NOVA 1.0</marc:subfield>
+                </marc:datafield>         
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Sample Item to test multiple supervisors-->
+    <utfx:test>
+        <utfx:name>Multiple Supervisor Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                         <Formdata>
+                            <SubmissionDate>2008-03-11 11:25</SubmissionDate>
+                            <_count_keyword-multiple_keywords>3</_count_keyword-multiple_keywords>
+                            <_count_supervisor-multiple_supervisors>1</_count_supervisor-multiple_supervisors>
+                            <authenticity_assent>I agree. I certify that this is a direct electronic equivalent of the copy of my thesis approved by the University.</authenticity_assent>
+                            <availability>worldwide</availability>
+                            <creator_affiliation>University of Newcastle</creator_affiliation>
+                            <creator_email>vicki.picasso@newcastle.edu.au</creator_email>
+                            <creator_first_name>Gerry</creator_first_name>
+                            <creator_last_name>Smith</creator_last_name>
+                            <description_abstract>This thesis examines the secret life of ants.  The author conducted a long term study over a two decade period within the ants own environment.  Social and cultural norms of the ant society are documented and discussed including environmental factures.</description_abstract>
+                            <faculty>Education and Arts</faculty>
+                            <function>save_formdata</function>
+                            <keyword>ants</keyword>
+                            <keyword_1>social</keyword_1>
+                            <keyword_2>culture</keyword_2>
+                            <keyword_3>environment</keyword_3>
+                            <language>eng</language>
+                             <availability>worldwide</availability>
+                            <num_months>0</num_months>
+                            <research_unit>Sociology</research_unit>
+                            <resource_type>thesis</resource_type>
+                            <rights>I agree to NOVA Deposit Licence 1.0</rights>
+                            <session>uon-20080311-111830</session>
+                            <thesis_degree>Professional Doctorate</thesis_degree>
+                            <thesis_degree_program>Doctor of Business Administration</thesis_degree_program>
+                            <thesis_supervisor_affiliation>University of Newcastle</thesis_supervisor_affiliation>
+                            <thesis_supervisor_affiliation_1>University of Antsville</thesis_supervisor_affiliation_1>
+                            <thesis_supervisor_first_name>Joe</thesis_supervisor_first_name>
+                            <thesis_supervisor_first_name_1>Cedrik</thesis_supervisor_first_name_1>
+                            <thesis_supervisor_last_name>Blogs</thesis_supervisor_last_name>
+                            <thesis_supervisor_last_name_1>Brown</thesis_supervisor_last_name_1>
+                            <title>The Secret Life of Ants : An Anthology</title>
+                            <university_name>University of Newcastle</university_name>
+                            <year>2007</year>
+                        </Formdata>
+                        
+                    </Session>    
+                </collection>  
+            </utfx:source>
+            
+            <utfx:expected>
+                <marc:datafield ind1=" " ind2=" " tag="035">
+                    <marc:subfield code="a">uon-20080311-111830</marc:subfield>
+                </marc:datafield>      
+                <marc:datafield ind1=" " ind2=" " tag="043">
+                    <marc:subfield code="a">u-at</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2="7" tag="655">
+                    <marc:subfield code="a">thesis</marc:subfield>
+                    <marc:subfield code="2">local</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="2" tag="720">
+                    <marc:subfield code="a">Blogs, Joe</marc:subfield>
+                    <marc:subfield code="e">(Supervisor)</marc:subfield>
+                    <marc:subfield code="u">University of Newcastle</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="2" tag="720">
+                    <marc:subfield code="a">Brown, Cedrik</marc:subfield>
+                    <marc:subfield code="e">(Supervisor)</marc:subfield>
+                    <marc:subfield code="u">University of Antsville</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="502">
+                    <marc:subfield code="a">Professional Doctorate - Doctor of Business Administration</marc:subfield>
+                </marc:datafield>
+                 <marc:datafield ind1=" " ind2=" " tag="506">
+                    <marc:subfield code="a"> Unrestricted worldwide access</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="591">
+                    <marc:subfield code="a">I agree. I certify that this is a direct electronic equivalent of the copy of my thesis approved by the University.</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="0" ind2=" " tag="041">
+                    <marc:subfield code="a">eng</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="260">
+                    <marc:subfield code="c">2007</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="1" ind2="4" tag="245">
+                    <marc:subfield code="a">The Secret Life of Ants : An Anthology</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1="3" ind2=" " tag="520">
+                    <marc:subfield code="a">This thesis examines the secret life of ants.  The author conducted a long term study over a two decade period within the ants own environment.  Social and cultural norms of the ant society are documented and discussed including environmental factures.</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">ants</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">social</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">culture</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="653">
+                    <marc:subfield code="a">environment</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="100">
+                    <marc:subfield code="a">Smith, Gerry</marc:subfield>
+                    <marc:subfield code="u">University of Newcastle</marc:subfield>
+                </marc:datafield>
+                
+                <marc:datafield ind1=" " ind2=" " tag="710">
+                    <marc:subfield code="a"> University of Newcastle</marc:subfield>
+                    <marc:subfield code="b">Education and Arts</marc:subfield>
+                    <marc:subfield code="c">Sociology</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="540">
+                    <marc:subfield code="a"> Copyright 2007 Gerry Smith</marc:subfield>
+                </marc:datafield>
+                <marc:datafield ind1=" " ind2=" " tag="590">
+                    <marc:subfield code="a">I agree to NOVA Deposit Licence 1.0 </marc:subfield>
+                </marc:datafield>        
+            </utfx:expected>
+        </utfx:assert-equal>
+        
+        
+    </utfx:test>
+
+</utfx:tests>

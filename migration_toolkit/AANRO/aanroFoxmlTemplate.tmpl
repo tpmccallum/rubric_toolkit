@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PID="$pid" 
+xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="A"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="$title"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="Fez"></foxml:property>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A">
+    <foxml:datastreamVersion ID="DC.0" LABEL="Dublin Core" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                        xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        
+
+<dc:type>$doctype</dc:type>
+<dc:date>$pubyear</dc:date>
+<dc:title>$title</dc:title>
+  
+#for author in $authors
+## Note: remove the affiliation in brackets from the author entry in AANRO so that only the personal name goes in to dc:creator. Affiliation information will not appear in DC -->
+<dc:creator>$author['name']</dc:creator>
+#end for
+<dc:description>$abstract</dc:description>
+
+#for subject in $subjects
+<dc:subject>$subject</dc:subject>
+#end for
+</oai_dc:dc>
+      </foxml:xmlContent>
+      
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="MODS" STATE="A">
+    <foxml:datastreamVersion ID="MODS.0" LABEL="MODSXML Record" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+      
+## Don't throw out modsCollection without checking http://www.loc.gov/standards/mods/v3/MARC21slim2MODS.xsl -->
+<modsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-2.xsd">
+  <mods version="3.2">  
+## Change: &lt;nonSort is for "The" "An" "A" when these words appear at beginning of title -->
+    <titleInfo>
+    	  <nonSort></nonSort>
+	      <title>$title</title>
+    </titleInfo>
+    #for $author in $authors
+    ## Change: Enter author as it appears in the AANRO cell -- family name, initials.
+    <name type="personal">
+            <namePart >$author</namePart>
+            <affiliation>$author["affiliation"]</affiliation>
+            <role>
+                <roleTerm authority="marcrelator" type="text">creator</roleTerm>
+            </role>
+    </name>
+    #end for
+    <typeOfResource>text</typeOfResource>
+    <genre authority="AANRO">$doctype</genre>
+    <originInfo>
+      <dateIssued>$pubyear</dateIssued>
+    </originInfo>    
+    
+##Where an AANRO abstract entry ends with (A), delete (A) and move the full stop to the end of the last word. -->
+    <abstract>$abstract</abstract>
+    
+##No notes were included in the testpublications  
+    <note>$notes</note>
+    
+    #for $subject in $subjects
+     <subject>
+            <topic>$subject</topic>
+    </subject>
+    #end for
+    
+##AANRO's locality to go to subject - geographic as follows
+    <subject>
+		<geographic>$locality</geographic>
+	</subject>
+    
+##Change: Have removed <physicalDescription> above. In related item enter the complete text of AANRO's $source
+
+   <relatedItem type="host">
+		<note type="citation">$source</note>	
+		<identifier type="isbn">$isbn</identifier>
+        <identifier type="issn">$issn</identifier>
+    </relatedItem>
+    
+    #for $sponsor in $sponsors
+
+	<name type="corporate">
+            <namePart>$sponsor</namePart>
+            <role>
+                <roleTerm authority="marcrelator" >Sponsor</roleTerm>
+            </role>
+    </name>
+
+    #end for
+    
+	## NOTE: Not included in this template is the AANRO $source data. The $source info is already included as part of the <relatedItem><note type="citation">$source</note> information. The $source info (which in MODS is either an isbn or issn identifier) will often refer to the relatedItem. But sometimes it may refer to the main entry titleInfo. Need further advice from AANRO if they want the issn or isbn data separated out with its own MODS property.
+	
+    <location>
+		<url displayLabel="Delivery Link:">$deliverylink</url>
+	</location>
+	<location>
+		<url displayLabel="Delivery Email:">$deliveryemail</url>
+	</location>
+	
+	<accessCondition type="restrictionOnAccess">$deliverynote</accessCondition>
+	
+##Need to decide the appropriate displayLabel for here 
+
+    <location>
+      <url>$weblink</url>
+    </location>
+   
+  </mods>
+</modsCollection>
+   
+    </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

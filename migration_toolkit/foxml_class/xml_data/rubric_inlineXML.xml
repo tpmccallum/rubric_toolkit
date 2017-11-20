@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uvalibadmin:admin xmlns:uvalibadmin="http://virginia.lib.edu/uvalibadmin:tech">
+    <uvalibadmin:technical>
+        <uvalibadmin:format>image/jpeg</uvalibadmin:format>
+        <uvalibadmin:compression>LZW</uvalibadmin:compression>
+        <uvalibadmin:bitDepth BITS=""/>
+        <uvalibadmin:colorSpace/>
+        <uvalibadmin:colorProfile CPLOCAT="" CPFILE=""/>
+        <uvalibadmin:resolution>600</uvalibadmin:resolution>
+    </uvalibadmin:technical>
+</uvalibadmin:admin>

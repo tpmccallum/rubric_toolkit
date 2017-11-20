@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="murdoch_xml_to_marc.xsl"/>
+    
+       
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                <record>
+                    <author>Ahmed, M W, Neller, R J &amp; Katouli, M, 2005,</author>
+                    <issn_isbn></issn_isbn>
+                    <conferenceYear/>
+                    <conferenceLocation/>
+                    <pages>pp910-920</pages>
+                    <itemType>Journal Article (Refereed, Research)</itemType>
+                    <publication>Journal of Applied Microbiology</publication>
+                    <conferenceName/>
+                    <number>4</number>
+                    <pageEnd>920</pageEnd>
+                    <pageStart>910</pageStart>
+                    <place>UK</place>
+                    <destCode>C1</destCode>
+                    <publisher>The Society for Applied Microbiology</publisher>
+                    <title>Evidence of septic system failure determined by a bacterial biochemical fingerprinting technique</title>
+                    <volume>98</volume>
+                    <year>2005</year>
+                </record>
+                    <record>
+                        <author>Ahmed, M W, Neller, R J &amp; Katouli, M, 2005, </author>
+                        <issn_isbn>1444-5212</issn_isbn>
+                        <conferenceYear/>
+                        <conferenceLocation/>
+                        <pages>pp41-58</pages>
+                        <itemType>Journal Article (Refereed, Research)</itemType>
+                        <publication>Environmental Health</publication>
+                        <conferenceName/>
+                        <number>3</number>
+                        <pageEnd>58</pageEnd>
+                        <pageStart>41</pageStart>
+                        <place>Australia</place>
+                        <destCode>C1</destCode>
+                        <publisher>The Journal of the Australian Institute of Environmental Health</publisher>
+                        <title>Faecal source tracking in surface waters: a review of faecal indicator microorganisms and current methods</title>
+                        <volume>5</volume>
+                        <year>2005</year>
+                    </record>
+                    <record>
+                        <author>Ahmed, M W, Neller, R J &amp; Katouli, M, 2005, </author>
+                        <issn_isbn>0099-2240</issn_isbn>
+                        <conferenceYear/>
+                        <conferenceLocation/>
+                        <pages>pp4461-4468</pages>
+                        <itemType>Journal Article (Refereed, Research)</itemType>
+                        <publication>Applied and Environmental Microbiology</publication>
+                        <conferenceName/>
+                        <number>8</number>
+                        <pageEnd>4468</pageEnd>
+                        <pageStart>4461</pageStart>
+                        <place>USA</place>
+                        <destCode>C1</destCode>
+                        <publisher>American Society for Microbiology</publisher>
+                        <title>Host species-specific metabolic fingerprint database for Enterococci and Escherichia coli and its application to identify sources of fecal contamination in surface waters</title>
+                        <volume>71</volume>
+                        <year>2005</year>
+                    </record>
+                    <record>
+                        <author>Garlick, S, 2005, </author>
+                        <issn_isbn>1 920719 03 2</issn_isbn>
+                        <conferenceYear>14/08/2005</conferenceYear>
+                        <conferenceLocation>Brisbane, Australia</conferenceLocation>
+                        <pages/>
+                        <itemType>Full Conference Paper (Refereed)</itemType>
+                        <publication>International Conference on Engaging Communities</publication>
+                        <conferenceName>International Conference on Engaging Community</conferenceName>
+                        <number/>
+                        <pageEnd/>
+                        <pageStart/>
+                        <place>Australia</place>
+                        <destCode>E1</destCode>
+                        <publisher>Queensland Department of Main Roads</publisher>
+                        <title>Regional Competitiveness, Enterprising Human Capital and Community Engagement</title>
+                        <volume/>
+                        <year>2005</year>
+                    </record>
+                    <record>
+                        <author>Matthews, J M, </author>
+                        <issn_isbn>0816-4649</issn_isbn>
+                        <pages>pp207-219</pages>
+                        <itemType>Journal Article (Refereed, Research)</itemType>
+                        <publication>Australian Feminist Studies</publication>
+                        <number>38</number>
+                        <pageEnd>219</pageEnd>
+                        <pageStart>207</pageStart>
+                        <place>Northbridge, Australia</place>
+                        <destCode>C1</destCode>
+                        <publisher>Carfax Publishing</publisher>
+                        <title>An Ambiguous Juncture: Racism and the Formation of Asian Femininity</title>
+                        <volume>17</volume>
+                        <year>2002</year>
+                    </record>
+                    <record>
+                        <author>Simpson, R W, Williams, G, Barnett, A, Neller, A H, Best, T, Petroeschevsky, A, Denison, L, Neville, G,  Sheppeard, V &amp; Runnion, T, 2004, </author>
+                        <issn_isbn>1044-3983</issn_isbn>
+                        <conferenceYear>38200</conferenceYear>
+                        <conferenceLocation>New York, USA</conferenceLocation>
+                        <itemType>Full Conference Paper (Refereed)</itemType>
+                        <publication>Epidemiology</publication>
+                        <conferenceName>ISEE 2004 Conference</conferenceName>
+                        <place>USA</place>
+                        <destCode>E1</destCode>
+                        <subject>230102</subject>
+                        <subject>300105</subject>
+                        <subject>299901</subject>
+                        <publisher>Lippincott, Williams and Wilkinson</publisher>
+                        <title>Multi-City Studies in Australia and New Zealand: The Impact of Air Pollution on Daily Mortality and Morbidity</title>
+                        <year>2004</year>
+                    </record>
+                    </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"></controlfield>
+                    <datafield tag="245" ind1="1" ind2="0">
+                        <subfield code="a">Evidence of septic system failure determined by a bacterial biochemical fingerprinting technique</subfield></datafield>
+                    <datafield tag="100" ind1="1" ind2=" "><subfield code="a">Ahmed, M W</subfield>
+                    </datafield>
+                    <datafield tag="700" ind1="1" ind2=" "><subfield code="a"> Neller, R J</subfield>
+                    </datafield>
+                    <datafield tag="700" ind1="1" ind2=" "><subfield code="a"> Katouli, M</subfield>
+                    </datafield>
+                    <datafield tag="260" ind1=" " ind2=" "><subfield code="a">UK</subfield>
+                        <subfield code="b">The Society for Applied Microbiology</subfield>
+                        <subfield code="c">2005</subfield>
+                    </datafield>
+                    <datafield tag="300" ind1=" " ind2=" "><subfield code="a">11</subfield>
+                    </datafield>
+                    <datafield tag="773" ind1="0" ind2="8"><subfield code="t">Journal of Applied Microbiology</subfield>
+                        <subfield code="g">Vol. 98, no. 4, pp910-920</subfield>
+                        <subfield code="n">1</subfield>
+                    </datafield>
+                    
+                    
+                    <datafield tag="655" ind1=" " ind2="7"><subfield code="a">journal article </subfield>
+                       
+                    </datafield>
+                    <datafield tag="595" ind1=" " ind2=" "><subfield code="a">Refereed, Research</subfield>
+                    </datafield>
+                    <datafield tag="596" ind1=" " ind2=" "><subfield code="a">C1</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                    </datafield>
+                    <datafield tag="546" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                    </datafield>
+                    
+                </record>
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">Faecal source tracking in surface waters: a review of faecal indicator microorganisms and current methods</subfield></datafield>
+                        <datafield tag="100" ind1="1" ind2=" "><subfield code="a">Ahmed, M W</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" "><subfield code="a"> Neller, R J</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" "><subfield code="a"> Katouli, M</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" "><subfield code="a">Australia</subfield>
+                            <subfield code="b">The Journal of the Australian Institute of Environmental Health</subfield>
+                            <subfield code="c">2005</subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" "><subfield code="a">18</subfield>
+                        </datafield>
+                        <datafield tag="773" ind1="0" ind2="8"><subfield code="t">Environmental Health</subfield>
+                            <subfield code="g">Vol. 5, no. 3, pp41-58</subfield>
+                            <subfield code="n">1</subfield>
+                        </datafield>
+                        
+                        <datafield tag="022" ind1=" " ind2=" "><subfield code="a">1444-5212</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="7"><subfield code="a">journal article </subfield>
+                            
+                        </datafield>
+                        <datafield tag="595" ind1=" " ind2=" "><subfield code="a">Refereed, Research</subfield>
+                        </datafield>
+                        <datafield tag="596" ind1=" " ind2=" "><subfield code="a">C1</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">Host species-specific metabolic fingerprint database for Enterococci and Escherichia coli and its application to identify sources of fecal contamination in surface waters</subfield></datafield>
+                        <datafield tag="100" ind1="1" ind2=" "><subfield code="a">Ahmed, M W</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" "><subfield code="a"> Neller, R J</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" "><subfield code="a"> Katouli, M</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" "><subfield code="a">USA</subfield>
+                            <subfield code="b">American Society for Microbiology</subfield>
+                            <subfield code="c">2005</subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" "><subfield code="a">8</subfield>
+                        </datafield>
+                        <datafield tag="773" ind1="0" ind2="8"><subfield code="t">Applied and Environmental Microbiology</subfield>
+                            <subfield code="g">Vol. 71, no. 8, pp4461-4468</subfield>
+                            <subfield code="n">1</subfield>
+                        </datafield>
+                       
+                  
+                        <datafield tag="022" ind1=" " ind2=" "><subfield code="a">0099-2240</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="7"><subfield code="a">journal article </subfield>
+                           
+                        </datafield>
+                        <datafield tag="595" ind1=" " ind2=" "><subfield code="a">Refereed, Research</subfield>
+                        </datafield>
+                        <datafield tag="596" ind1=" " ind2=" "><subfield code="a">C1</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">Regional Competitiveness, Enterprising Human Capital and Community Engagement</subfield></datafield>
+                        <datafield tag="100" ind1="1" ind2=" "><subfield code="a">Garlick, S</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" "><subfield code="a">Australia</subfield>
+                            <subfield code="b">Queensland Department of Main Roads</subfield>
+                            <subfield code="c">2005</subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" "><subfield code="a"/>
+                        </datafield>
+                        <datafield tag="773" ind1="0" ind2="8"><subfield code="t">International Conference on Engaging Communities</subfield>
+                            <subfield code="g"/>
+                            <subfield code="n">1</subfield>
+                        </datafield>
+                        <datafield tag="711" ind1="2" ind2=" "><subfield code="a">International Conference on Engaging Community</subfield>
+                            <subfield code="d">2005</subfield>
+                            <subfield code="c">Brisbane, Australia</subfield>
+                        </datafield>
+                        <datafield tag="020" ind1=" " ind2=" "><subfield code="a">1 920719 03 2</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="7"><subfield code="a">conference paper</subfield>
+                            
+                        </datafield>
+                        <datafield tag="595" ind1=" " ind2=" "><subfield code="a">Refereed</subfield>
+                        </datafield>
+                        <datafield tag="596" ind1=" " ind2=" "><subfield code="a">E1</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">An Ambiguous Juncture: Racism and the Formation of Asian Femininity</subfield>
+                        </datafield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Matthews, J M</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Northbridge, Australia</subfield>
+                            <subfield code="b">Carfax Publishing</subfield>
+                            <subfield code="c">2002</subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" ">
+                            <subfield code="a">13</subfield>
+                        </datafield>
+                        <datafield tag="773" ind1="0" ind2="8">
+                            <subfield code="t">Australian Feminist Studies</subfield>
+                            <subfield code="g">Vol. 17, no. 38, pp207-219</subfield>
+                            <subfield code="n">1</subfield>
+                        </datafield>
+                        <datafield tag="022" ind1=" " ind2=" ">
+                            <subfield code="a">0816-4649</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">journal article </subfield>
+                           
+                        </datafield>
+                        <datafield tag="595" ind1=" " ind2=" ">
+                            <subfield code="a">Refereed, Research</subfield>
+                        </datafield>
+                        <datafield tag="596" ind1=" " ind2=" ">
+                            <subfield code="a">C1</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">Multi-City Studies in Australia and New Zealand: The Impact of Air Pollution on Daily Mortality and Morbidity</subfield>
+                        </datafield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Simpson, R W</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Williams, G</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Barnett, A</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Neller, A H</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Best, T</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Petroeschevsky, A</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Denison, L</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Neville, G</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Sheppeard, V</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a"> Runnion, T</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">USA</subfield>
+                            <subfield code="b">Lippincott, Williams and Wilkinson</subfield>
+                            <subfield code="c">2004</subfield>
+                        </datafield>
+                        <datafield tag="773" ind1="0" ind2="8">
+                            <subfield code="t">Epidemiology</subfield>
+                            <subfield code="g"/>
+                            <subfield code="n">1</subfield>
+                        </datafield>
+                        <datafield tag="711" ind1="2" ind2=" ">
+                            <subfield code="a">ISEE 2004 Conference</subfield>
+                            <subfield code="d">8200</subfield>
+                            <subfield code="c">New York, USA</subfield>
+                        </datafield>
+                        <datafield tag="022" ind1=" " ind2=" ">
+                            <subfield code="a">1044-3983</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">conference paper </subfield>
+                            
+                        </datafield>
+                        <datafield tag="595" ind1=" " ind2=" ">
+                            <subfield code="a">Refereed</subfield>
+                        </datafield>
+                        <datafield tag="596" ind1=" " ind2=" ">
+                            <subfield code="a">E1</subfield>
+                            </datafield>
+                            <datafield tag="650" ind1="2" ind2="4">
+                                <subfield code="a">230102 - Number Theory and Field Theory</subfield>
+                            </datafield>
+                            <datafield tag="650" ind1="2" ind2="4">
+                                <subfield code="a">300105 - Applied Hydrology (Drainage, Flooding, Irrigation, Quality, etc.)</subfield>
+                            </datafield>
+                            <datafield tag="650" ind1="2" ind2="4">
+                                <subfield code="a">299901 - Agricultural Engineering</subfield>
+                            </datafield>
+                       
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        
+                    </record>
+               </collection>
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+   
+</utfx:tests>

@@ -1,0 +1,48 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>00000nam a22000002a 4500</marc:leader>
+        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Book</marc:subfield>
+            <marc:subfield code="2">local</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Perth</marc:subfield>
+            <marc:subfield code="b">Murdoch Uni</marc:subfield>
+            <marc:subfield code="c">2007</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">12369-9652</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">first</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="a">EN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">test for sitling</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a">sdfs rdg</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a">230103 Rings and Algebras </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a"> 230104 Category Theory, K Theory, Homological Algebra
+            </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a"> </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1=" " ind2=" ">
+            <marc:subfield code="a">dye, Bron</marc:subfield>
+            <marc:subfield code="u">Visionary Technology in Library Solutions</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="540" ind1=" " ind2="0">
+            <marc:subfield code="a">I am unclear and would like the Copyright Office to investigate
+                the copyright policies of the rights owner.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</collection>

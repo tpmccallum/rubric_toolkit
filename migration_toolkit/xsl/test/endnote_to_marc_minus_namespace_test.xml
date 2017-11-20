@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="endnote_to_marc_minus_namespace.xsl"/>
+    <!-- Basic Test Outline -->
+    <!--
+        <utfx:test>
+        <utfx:name>Test Name</utfx:name>
+        <utfx:assert-equal>
+        <utfx:source validate="no">
+        
+        </utfx:source>
+        <utfx:expected validate="no">
+        
+        </utfx:expected>
+        </utfx:assert-equal>
+        </utfx:test>
+    -->
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <titles>
+                                <title>
+                                    <style face="normal" font="default" size="100%">Observing the open-closed boundary using cusp-latitude magnetometers</style>
+                                </title>
+                            </titles>
+                        </record>
+                    </records>
+                    </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="245" ind1="0" ind2="0">
+                            <subfield code="a">Observing the open-closed boundary using cusp-latitude magnetometers</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                    </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Authors [1] -->
+    <utfx:test>
+        <utfx:name>Authors [1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <contributors>
+                                <authors>
+                                    <author>
+                                        <style face="bold" font="default" size="100%">Ables, Sean Thomas</style>
+                                    </author>
+                                </authors>
+                            </contributors>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                            <datafield tag="100" ind1="1" ind2=" ">
+                                <subfield code="a">Ables, Sean Thomas</subfield>
+                                <subfield code="u">University of Newcastle</subfield>
+                            </datafield>
+                            
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Authors [2] -->
+    <utfx:test>
+        <utfx:name>Authors [2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <contributors>
+                                <authors>
+                                    <author>
+                                        <style face="bold" font="default" size="100%">Ables, Sean Thomas</style>
+                                    </author>
+                                    <author>
+                                        <style face="bold" font="default" size="100%">Fraser, Brian J</style>
+                                    </author>
+                                </authors>
+                            </contributors>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Ables, Sean Thomas</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                        </datafield>
+                       <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Authors [3] -->
+    <utfx:test>
+        <utfx:name>Authors [3]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <contributors>
+                                <authors>
+                                    <author>
+                                        <style face="normal" font="default" size="100%">Ables, Sean Thomas</style>
+                                    </author>
+                                    <author>
+                                        <style face="bold" font="default" size="100%">Fraser, Brian J</style>
+                                    </author>
+                                </authors>
+                            </contributors>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Ables, Sean Thomas</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Authors [4] -->
+    <utfx:test>
+        <utfx:name>Authors [4]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <contributors>
+                                <authors>
+                                    <author>
+                                        <style face="normal" font="default" size="100%">Ables, Sean Thomas</style>
+                                    </author>
+                                </authors>
+                            </contributors>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Ables, Sean Thomas</subfield>
+                        </datafield>
+                       <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Authors [5] -->
+    <utfx:test>
+        <utfx:name>Authors [5]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <contributors>
+                                <authors>
+                                    <author>
+                                        <style face="normal" font="default" size="100%">Ables, Sean Thomas</style>
+                                    </author>
+                                    <author>
+                                        <style face="bold" font="default" size="100%">Fraser, Brian J</style>
+                                    </author>
+                                    <author>
+                                        <style face="bold" font="default" size="100%">Bond, J</style>
+                                    </author>
+                                </authors>
+                            </contributors>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Ables, Sean Thomas</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fraser, Brian J</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Bond, J</subfield>
+                            <subfield code="u">University of Newcastle</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Abstract -->
+    <utfx:test>
+        <utfx:name>Abstract</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <abstract>
+                                <style face="normal" font="default" size="100%">A new ground-based diagnostic of reconnection at the magnetopause using ULF waves is presented, and we give an example day in which the dynamics of the open-closed boundary (OCB) are clearly observed. The diagnostic is based on data from two close (similar to 110 km), magnetic azimuthally spaced magnetometer sites (Davis and Zhongshan, Antarctica). During average IMF conditions Davis passes just equatorward of the last closed field lines in the dayside magnetosphere, and cross-phase measurements indicate propagation away from local magnetic noon (LMN) as expected for the Kelvin-Helmholtz Instability (KHI) acting at the magnetopause. During times when IMF B-z &lt; -2 nT intervals of broadband activity appear, with the azimuthal component of propagation directed towards noon. Statistical analysis shows a correlation between the negative magnitude of IMF B-z and cross-phase measurements +/- 2-6 hours from LMN. We conclude that under the right conditions, reconnection signatures can be identified in magnetometer data superimposed on the KHI-like propagation signatures of the last closed field lines.</style>
+                            </abstract>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="520" ind1="3" ind2=" ">
+                            <subfield code="a">A new ground-based diagnostic of reconnection at the magnetopause using ULF waves is presented, and we give an example day in which the dynamics of the open-closed boundary (OCB) are clearly observed. The diagnostic is based on data from two close (similar to 110 km), magnetic azimuthally spaced magnetometer sites (Davis and Zhongshan, Antarctica). During average IMF conditions Davis passes just equatorward of the last closed field lines in the dayside magnetosphere, and cross-phase measurements indicate propagation away from local magnetic noon (LMN) as expected for the Kelvin-Helmholtz Instability (KHI) acting at the magnetopause. During times when IMF B-z &lt; -2 nT intervals of broadband activity appear, with the azimuthal component of propagation directed towards noon. Statistical analysis shows a correlation between the negative magnitude of IMF B-z and cross-phase measurements +/- 2-6 hours from LMN. We conclude that under the right conditions, reconnection signatures can be identified in magnetometer data superimposed on the KHI-like propagation signatures of the last closed field lines.</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Total Pages -->
+    <utfx:test>
+        <utfx:name>Total Pages</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <pages>
+                                <style face="normal" font="default" size="100%">4 pages</style>
+                            </pages>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="300" ind1=" " ind2=" ">
+                            <subfield code="a">4 pages</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Publication Details -->
+    <utfx:test>
+        <utfx:name>Publication Details</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <dates>
+                                <year>
+                                    <style face="normal" font="default" size="100%">2005</style>
+                                </year>
+                                <pub-dates>
+                                    <date>
+                                        <style face="normal" font="default" size="100%">May 28</style>
+                                    </date>
+                                </pub-dates>
+                            </dates>
+                            <pub-location>
+                                <style face="normal" font="default" size="100%">Washington</style>
+                            </pub-location>
+                            <publisher>
+                                <style face="normal" font="default" size="100%">American Geophysical Union</style>
+                            </publisher>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Washington</subfield>
+                            <subfield code="b">American Geophysical Union</subfield>
+                            <subfield code="c">2005</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- URL and copyright-->
+    <!--<utfx:test>
+        <utfx:name>URL &amp; Copyright</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <urls>
+                                <related-urls>
+                                    <url>
+                                        <style face="normal" font="default" size="100%">View fulltext at: http://0-www.agu.org.library.newcastle.edu.au/journals/gl/   Copy also included in EndNote Library</style>
+                                    </url>
+                                </related-urls>
+                            </urls>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        
+                        <datafield tag="856" ind1="4" ind2="0">
+                            <subfield code="u">http://0-www.agu.org.library.newcastle.edu.au/journals/gl/</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>-->
+    <!-- Keywords [1] -->
+    <utfx:test>
+        <utfx:name>Keywords [1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <keywords>
+                                <keyword>
+                                    <style face="normal" font="default" size="100%">flux-transfer events</style>
+                                </keyword>
+                            </keywords>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                            <datafield tag="653" ind1=" " ind2=" ">
+                                <subfield code="a">flux-transfer events</subfield>
+                            </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Keywords [2] -->
+    <utfx:test>
+        <utfx:name>Keywords [2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <keywords>
+                                <keyword>
+                                    <style face="normal" font="default" size="100%">flux-transfer events</style>
+                                </keyword>
+                                <keyword>
+                                    <style face="normal" font="default" size="100%">interplanetary magnetic-field</style>
+                                </keyword>
+                                <keyword>
+                                    <style face="normal" font="default" size="100%">impulse events</style>
+                                </keyword>
+                                <keyword>
+                                    <style face="normal" font="default" size="100%">magnetopause</style>
+                                </keyword>
+                                <keyword>
+                                    <style face="normal" font="default" size="100%">reconnection</style>
+                                </keyword>
+                                <keyword>
+                                    <style face="normal" font="default" size="100%">signatures</style>
+                                </keyword>
+                            </keywords>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="653" ind1=" " ind2=" ">
+                            <subfield code="a">flux-transfer events</subfield>
+                            <subfield code="a">interplanetary magnetic-field</subfield>
+                            <subfield code="a">impulse events</subfield>
+                            <subfield code="a">magnetopause</subfield>
+                            <subfield code="a">reconnection</subfield>
+                            <subfield code="a">signatures</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Type, Collection Title. and item specific info [1] -->
+    <utfx:test>
+        <utfx:name>Item Type &amp; Collection Title &amp; Item Specific Info [1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <ref-type name="Journal Article">17</ref-type>
+                            <titles>
+                                <title>
+                                    <style face="normal" font="default" size="100%">Experiences of occupational violence in Australian urban general practice: A cross-sectional study of GPs</style>
+                                </title>
+                                <secondary-title>
+                                    <style face="normal" font="default" size="100%">Medical Journal of Australia</style>
+                                </secondary-title>
+                            </titles>
+                            <custom1>
+                                <style face="normal" font="default" size="100%">C1</style>
+                            </custom1>
+                            <pages>
+                                <style face="normal" font="default" size="100%">4 pages</style>
+                            </pages>
+                            <volume>
+                                <style face="normal" font="default" size="100%">32</style>
+                            </volume>
+                            <number>
+                                <style face="normal" font="default" size="100%">10</style>
+                            </number>
+                            <dates>
+                                <year>
+                                    <style face="normal" font="default" size="100%">2005</style>
+                                </year>
+                                <pub-dates>
+                                    <date>
+                                        <style face="normal" font="default" size="100%">May 28</style>
+                                    </date>
+                                </pub-dates>
+                            </dates>
+                            <isbn>
+                                <style face="normal" font="default" size="100%">0094-8276</style>
+                            </isbn>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">journal article</subfield>
+                        </datafield>
+                       
+                       
+                        <datafield tag="773" ind1="0" ind2=" ">
+                            <subfield code="t">Medical Journal of Australia</subfield>
+                            <subfield code="n">1</subfield>
+                            <subfield code="g">Vol. 32, no. 10, 4 pages</subfield>
+                        </datafield>
+                        <datafield tag="022" ind1=" " ind2=" ">
+                            <subfield code="a">0094-8276</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="0" ind2="0">
+                            <subfield code="a">Experiences of occupational violence in Australian urban general practice: A cross-sectional study of GPs</subfield>
+                        </datafield>
+                        <datafield tag="591" ind1=" " ind2=" ">
+                            <subfield code="a">2005</subfield>
+                        </datafield>
+                        <datafield tag="592" ind1=" " ind2=" ">
+                            <subfield code="a"> C1 </subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" ">
+                            <subfield code="a">4 pages</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Type, Collection Title. and item MINUS VOLUME NUMBER -->
+    <utfx:test>
+        <utfx:name>Item Type &amp; Collection Title &amp; Item MINUS VOLUME NUMBER</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <ref-type name="Journal Article">17</ref-type>
+                            <titles>
+                                <title>
+                                    <style face="normal" font="default" size="100%">Experiences of occupational violence in Australian urban general practice: A cross-sectional study of GPs</style>
+                                </title>
+                                <secondary-title>
+                                    <style face="normal" font="default" size="100%">Medical Journal of Australia</style>
+                                </secondary-title>
+                            </titles>
+                            <custom1>
+                                <style face="normal" font="default" size="100%">C1</style>
+                            </custom1>
+                            <pages>
+                                <style face="normal" font="default" size="100%">4 pages</style>
+                            </pages>
+                            <volume>
+                                <style face="normal" font="default" size="100%">32</style>
+                            </volume>
+                           <dates>
+                                <year>
+                                    <style face="normal" font="default" size="100%">2005</style>
+                                </year>
+                                <pub-dates>
+                                    <date>
+                                        <style face="normal" font="default" size="100%">May 28</style>
+                                    </date>
+                                </pub-dates>
+                            </dates>
+                            <isbn>
+                                <style face="normal" font="default" size="100%">0094-8276</style>
+                            </isbn>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">journal article</subfield>
+                        </datafield>
+                        
+                      
+                        <datafield tag="773" ind1="0" ind2=" ">
+                            <subfield code="t">Medical Journal of Australia</subfield>
+                            <subfield code="n">1</subfield>
+                            <subfield code="g">Vol. 32, 4 pages</subfield>
+                        </datafield>
+                        <datafield tag="022" ind1=" " ind2=" ">
+                            <subfield code="a">0094-8276</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="0" ind2="0">
+                            <subfield code="a">Experiences of occupational violence in Australian urban general practice: A cross-sectional study of GPs</subfield>
+                        </datafield>
+                        <datafield tag="591" ind1=" " ind2=" ">
+                            <subfield code="a">2005</subfield>
+                        </datafield>
+                        <datafield tag="592" ind1=" " ind2=" ">
+                            <subfield code="a"> C1 </subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" ">
+                            <subfield code="a">4 pages</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Type, Collection Title. and item specific info [2] -->
+    <utfx:test>
+        <utfx:name>Item Type &amp; Collection Title &amp; Item Specific Info [2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <ref-type name="Conference Proceedings">10</ref-type>
+                            <titles>
+                                <title>
+                                    <style face="normal" font="default" size="100%">Modelling perceptual discrimination</style>
+                                </title>
+                                <secondary-title>
+                                    <style face="normal" font="default" size="100%">Computational Intelligence and Bioinspired Systems 8th InternationalWork-Conference on Artificial Neural Networks, IWANN 2005</style>
+                                </secondary-title>
+                                <tertiary-title>
+                                    <style face="normal" font="default" size="100%">Computational Intelligence and Bioinspired Systems 8th InternationalWork-Conference on Artificial Neural Networks, IWANN 2005 Vilanova i la Geltr, Barcelona, Spain, June 8-10, 2005 Proceedings</style>
+                                </tertiary-title>
+                            </titles>
+                            <isbn>
+                                <style face="normal" font="default" size="100%">3-540-26208-3</style>
+                            </isbn>
+                            <pages>
+                                <style face="normal" font="default" size="100%">646-653</style>
+                            </pages>
+                            <volume>
+                                <style face="normal" font="default" size="100%">Lecture Notes in Computer Science No. 3512</style>
+                            </volume>
+                            <dates>
+                                <year>
+                                    <style face="normal" font="default" size="100%">2005</style>
+                                </year>
+                            </dates>
+                            <custom1>
+                                <style face="normal" font="default" size="100%">E1</style>
+                            </custom1>
+                            <custom2>
+                                <style face="normal" font="default" size="100%">Barcelona, Spain</style>
+                            </custom2>
+                            <custom3>
+                                <style face="normal" font="default" size="100%">June 8-10, 2005</style>
+                            </custom3>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">conference proceedings</subfield>
+                        </datafield>
+                        
+                        <datafield tag="773" ind1="0" ind2=" ">
+                            <subfield code="t">Computational Intelligence and Bioinspired Systems 8th InternationalWork-Conference on Artificial Neural Networks, IWANN 2005</subfield>
+                            <subfield code="n">0</subfield>
+                            <subfield code="g">Lecture Notes in Computer Science No. 3512 (2005), p. 646-653</subfield>
+                            
+                        </datafield>
+                        <datafield tag="711" ind1="0" ind2=" ">
+                            <subfield code="a">Computational Intelligence and Bioinspired Systems 8th InternationalWork-Conference on Artificial Neural Networks, IWANN 2005 Vilanova i la Geltr, Barcelona, Spain, June 8-10, 2005 Proceedings</subfield>
+                            <subfield code="c">Barcelona, Spain</subfield>
+                            <subfield code="d">June 8-10, 2005</subfield>
+                        </datafield>
+                        <datafield tag="020" ind1=" " ind2=" ">
+                            <subfield code="a">3-540-26208-3</subfield>
+                        </datafield>                        
+                        <datafield tag="245" ind1="0" ind2="0">
+                            <subfield code="a">Modelling perceptual discrimination</subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" ">
+                            <subfield code="a">646-653</subfield>
+                        </datafield>
+                        <datafield tag="591" ind1=" " ind2=" ">
+                            <subfield code="a">2005</subfield>
+                        </datafield>
+                        <datafield tag="592" ind1=" " ind2=" ">
+                            <subfield code="a"> E1 </subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Type, Collection Title. and item specific info [3] -->
+    <utfx:test>
+        <utfx:name>Item Type &amp; Collection Title &amp; Item Specific Info [3]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <ref-type name="Patent">25</ref-type>
+                            <number>
+                                <style face="normal" font="default" size="100%">US20040018911 20041221</style>
+                            </number>
+                            <isbn>
+                                <style face="normal" font="default" size="100%">US2005180963; AU2002PS03152 20020624; AU20020952793 20021118</style>
+                            </isbn>
+                            <custom1>
+                                <style face="normal" font="default" size="100%">I1</style>
+                            </custom1>
+                            <custom2>
+                                <style face="normal" font="default" size="100%">2005-08-18</style>
+                            </custom2>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">patent</subfield>
+                        </datafield>
+                        
+                        <datafield tag="013" ind1="0" ind2=" ">
+                            <subfield code="a">US20040018911 20041221</subfield>
+                        </datafield>
+                        <datafield tag="653" ind1=" " ind2=" ">
+                            <subfield code="a">US2005180963</subfield>
+                            <subfield code="a">AU2002PS03152 20020624</subfield>
+                            <subfield code="a">AU20020952793 20021118</subfield>
+                        </datafield>  
+                        <datafield tag="591" ind1=" " ind2=" ">
+                            <subfield code="a">2005</subfield>
+                        </datafield>
+                        <datafield tag="592" ind1=" " ind2=" ">
+                            <subfield code="a"> I1 </subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <!-- Callista -->
+    <utfx:test>
+        <utfx:name>Callista</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <electronic-resource-num>
+                                <style face="normal" font="default" size="100%">P142464</style>
+                            </electronic-resource-num>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>  
+                        <datafield tag="024" ind1="8" ind2=" ">
+                            <subfield code="a">P142464</subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                       
+                        
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <!-- DEST Information -->
+    <utfx:test>
+        <utfx:name>DEST Information</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <xml>
+                    <records>
+                        <record>
+                            <custom1>
+                                <style face="normal" font="default" size="100%">C1</style>
+                            </custom1>
+                        </record>
+                    </records>
+                </xml>                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008">20uu9999 |||||s|||||00| 0|eng d </controlfield>                        
+                        <datafield tag="591" ind1=" " ind2=" ">
+                            <subfield code="a">2005</subfield>
+                        </datafield>
+                        <datafield tag="592" ind1=" " ind2=" ">
+                            <subfield code="a"> C1 </subfield>
+                        </datafield>
+                        <datafield tag="540" ind1=" " ind2=" ">
+                            <subfield code="a">*</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                    </record>
+                </collection>                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+
+
+
+
+
+
+</utfx:tests>

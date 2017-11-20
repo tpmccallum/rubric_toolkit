@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Session>
+    <Step>2</Step>
+    <Attachments/>
+    <Formdata>
+        <session>ACV_2005_First record of_23</session>
+        <journal_peer_reviewed>Yes</journal_peer_reviewed>
+        <resource_type>Journal Article</resource_type>
+        <year>2006</year>
+        <creator_last_name>Cortinas</creator_last_name>
+        <creator_first_name>M</creator_first_name>
+        <creator_last_name_1>Burgess</creator_last_name_1>
+        <creator_first_name_1>T I</creator_first_name_1>
+        <creator_last_name_2>Dell</creator_last_name_2>
+        <creator_first_name_2>B</creator_first_name_2>
+        <creator_last_name_3>Wingfield</creator_last_name_3>
+        <creator_first_name_3>B D</creator_first_name_3>
+        <creator_last_name_4>Wingfield</creator_last_name_4>
+        <creator_first_name_4>M J</creator_first_name_4>
+        <_count_creator-multiple_creators>5</_count_creator-multiple_creators>
+        <creator_last_name_5>Xu</creator_last_name_5>
+        <creator_first_name_5>D</creator_first_name_5>
+        <faculty/>
+        <function>save_formdata</function>
+        <language>eng</language>
+        <rights/>
+        <title>First record of Colletogloeopsis zuluense comb.nov., causing a stem canker of
+            Eucalyptus in China</title>
+        <journal_publisher>Elsevier</journal_publisher>
+        <journal_place_publication>Amsterdam, The Netherlands</journal_place_publication>
+        <journal_issn>0953-7562</journal_issn>
+        <journal_issn_online/>
+        <journal_title>Mycological Research</journal_title>
+        <journal_volume>110</journal_volume>
+        <journal_issue>2</journal_issue>
+        <journal_page_from>229</journal_page_from>
+        <journal_page_to>236</journal_page_to>
+        <journal_url>http://www.elsevier.com/wps/find/homepage.cws_home</journal_url>
+        <journal_article_url>http://0-www.sciencedirect.com.prospero.murdoch.edu.au/science?_ob=MImg&amp;_imagekey=B7XMR-4HWXB42-1-1&amp;_cdi=29677&amp;_user=917906&amp;_orig=browse&amp;_coverDate=02%2F28%2F2006&amp;_sk=998899997&amp;view=c&amp;wchp=dGLbVlb-zSkzV&amp;md5=8621e1c097921dd3f91b9a8945e4c5da&amp;ie=/sdarticle.pdf</journal_article_url>
+        <subject>270403 - Plant Pathology</subject>
+        <file_description>Published</file_description>
+        <creator_affiliation>Murdoch University</creator_affiliation>
+    </Formdata>
+</Session>

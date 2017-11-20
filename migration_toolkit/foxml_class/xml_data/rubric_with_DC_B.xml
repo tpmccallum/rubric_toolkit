@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject xmlns:foxml="http://www.fedora.info/resources/faq.shtml#rdfproperties" PID="test:99"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+	<foxml:objectProperties>
+		<foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="I"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="test import object"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL2"/>
+	</foxml:objectProperties>
+	<foxml:datastream ID="DC" STATE="I" CONTROL_GROUP="X">
+		<foxml:datastreamVersion ID="DC.0" MIMETYPE="text/xml" LABEL="Dublin Core">
+			<foxml:xmlContent>
+			</foxml:xmlContent>
+		</foxml:datastreamVersion>
+	</foxml:datastream>
+</foxml:digitalObject>

@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+-->
+    <utfx:stylesheet src="dc.xsl"/>
+
+
+    <!-- Journal Item -->
+    <utfx:test>
+        <utfx:name>Journal Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <creator_affiliation>RUBRIC University</creator_affiliation>
+                            <creator_first_name>Billy</creator_first_name>
+                            <creator_last_name>Smith</creator_last_name>
+                            <description_abstract>This is a brief abstract</description_abstract>
+                            <faculty>Faculty of Science</faculty>
+                            <research_unit>Computer Science Research Unit</research_unit>
+                            <session>Murdoch Id - 28</session>
+                            <journal_peer_reviewed>Yes</journal_peer_reviewed>
+                            <resource_type>Journal Article</resource_type>
+                            <year>2006</year>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>Title - Does the largest chela of the males of three crab species undergo an allometric change that can be used to determine morphometric maturity</title>
+                            <journal_publisher>Academic Press</journal_publisher>
+                            <journal_place_publication>London, UK</journal_place_publication>
+                            <journal_issn>1054-3139</journal_issn>
+                            <journal_title>Crab Species Journal</journal_title>
+                            <journal_volume>63</journal_volume>
+                            <journal_number/>
+                            <journal_issue>1</journal_issue>
+                            <journal_page_from>140</journal_page_from>
+                            <journal_page_to>150</journal_page_to>
+                            <journal_url>http://websitejournal.com</journal_url>
+                            <university_name>RUBRIC University</university_name>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>Title - Does the largest chela of the males of three crab species undergo an allometric change that can be used to determine morphometric maturity</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:description>This is a brief abstract</dc:description>
+                <dc:type>Journal Article</dc:type>
+                <dc:relation>Crab Species Journal, Vol. 63, Issue 1, p. 140-150</dc:relation>
+                <dc:relation>http://websitejournal.com</dc:relation>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>2006</dc:date>
+                <dc:relation>RUBRIC University. Faculty of Science, Computer Science Research Unit</dc:relation>
+                <dc:creator>Smith, Billy</dc:creator>
+              </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- Book Item -->
+    <utfx:test>
+        <utfx:name>Book Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>Book</resource_type>
+                            <year>2006</year>
+                            <faculty>School of Engineering</faculty>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>Book Title - undergo an allometric change that can be used to determine morphometric maturity</title>
+                            <book_publisher>Academic Press</book_publisher>
+                            <book_place_publication>London, UK</book_place_publication>
+                            <book_isbn>1054-3139</book_isbn>
+                            <book_edition>6th</book_edition>
+                            <book_series>The Third Age</book_series>
+                            <book_series_number>1</book_series_number>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>Book Title - undergo an allometric change that can be used to determine morphometric maturity</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Book</dc:type>
+                <dc:publisher>Academic Press : London, UK</dc:publisher>
+                <dc:identifier>ISBN 1054-3139</dc:identifier>
+                <dc:relation>The Third Age - No.1</dc:relation>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>2006</dc:date>
+                <dc:relation>School of Engineering</dc:relation>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Book Chapter Item -->
+    <utfx:test>
+        <utfx:name>Book Chapter Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>Book Chapter</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>A decade of enterprise bargaining in Australia: An Introduction</title>
+                            <chapter_isbn>0310-5814</chapter_isbn>
+                            <chapter_publisher>Macquarie University, Sydney, Australia</chapter_publisher>
+                            <chapter_page_from>64</chapter_page_from>
+                            <chapter_page_to>84</chapter_page_to>
+                            <chapter_editor>John Burgess &amp; Duncan Macdonald</chapter_editor>
+                            <chapter_book_title>Developments in Enterprise Bargaining in Australia</chapter_book_title>
+                            <chapter_place_publication>Reston, USA</chapter_place_publication>
+                            <chapter_edition>1</chapter_edition>
+                            <chapter_url>http://website.com</chapter_url>
+                            <chapter_series>The Third Age</chapter_series>
+                            <chapter_series_number>1</chapter_series_number>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>A decade of enterprise bargaining in Australia: An Introduction</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Book Chapter</dc:type>
+                <dc:relation>Developments in Enterprise Bargaining in Australia, Edition 1, p. 64-84</dc:relation>
+                <dc:publisher>Macquarie University, Sydney, Australia : Reston, USA</dc:publisher>
+                <dc:identifier>ISBN 0310-5814</dc:identifier>
+                <dc:relation>http://website.com</dc:relation>
+                <dc:relation>The Third Age - No. 1</dc:relation>
+                <dc:contributor>John Burgess &amp; Duncan Macdonald (Editor)</dc:contributor>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>2006</dc:date>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Review Item -->
+    <utfx:test>
+        <utfx:name>Review Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <resource_type>Review</resource_type>
+                            <year>2006</year>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <rights/>
+                            <title>A decade of enterprise bargaining in Australia: An Introduction</title>
+                            <review_publisher>Academic Press</review_publisher>
+                            <review_place_publication>London, UK</review_place_publication>
+                            <review_issn>1054-3139</review_issn>
+                            <review_title>Title - Does the largest chela of the males of three crab species undergo an allometric change</review_title>
+                            <review_volume>63</review_volume>
+                            <review_number>2</review_number>
+                            <review_issue>1</review_issue>
+                            <review_page_from>140</review_page_from>
+                            <review_page_to>150</review_page_to>
+                            <review_url>http://websitejournal.com</review_url>
+                            <review_peer_reviewed>Yes</review_peer_reviewed>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>A decade of enterprise bargaining in Australia: An Introduction</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Review</dc:type>
+                <dc:relation>Title - Does the largest chela of the males of three crab species undergo an allometric change, Vol. 63, Issue 1, No. 2, p. 140-150</dc:relation>
+                <dc:relation>http://websitejournal.com</dc:relation>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>2006</dc:date>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Conference Item -->
+    <utfx:test>
+        <utfx:name>Conference Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights>These are my rights</rights>
+                            <description_abstract>This is a really cool Conference Paper</description_abstract>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Conference Paper</resource_type>
+                            <year>1998</year>
+                            <creator_last_name>Fityus</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</title>
+                            <conference_place_publication>Springwood, NSW, Australia</conference_place_publication>
+                            <conference_publisher> Conference Publications for Australian Geomechanics Society</conference_publisher>
+                            <conference_location>Newcastle, Australia</conference_location>
+                            <conference_title>Geotechnical Engineering and Engineering Geology in the Hunter Valley</conference_title>
+                            <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                            <conference_editor>Fred Smith</conference_editor>
+                            <conference_date>1998</conference_date>
+                            <conference_page_from>140</conference_page_from>
+                            <conference_page_to>150</conference_page_to>
+                            <conference_url>http://websiteconf.com</conference_url>
+                            <conference_name>Geotechnical Engineering and Engineering Conference</conference_name>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:description>This is a really cool Conference Paper</dc:description>
+                <dc:type>Conference Paper</dc:type>
+                <dc:relation>Geotechnical Engineering and Engineering Conference, Newcastle, Australia, 1998</dc:relation>
+                <dc:relation>Geotechnical Engineering and Engineering Geology in the Hunter Valley, p. 140-150</dc:relation>
+                <dc:contributor>Fred Smith (Editor)</dc:contributor>
+                <dc:relation>http://websiteconf.com</dc:relation>              
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1998</dc:date>
+                <dc:creator>Fityus, Stephen George</dc:creator>
+                <dc:rights>These are my rights</dc:rights>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Conference Item -->
+    <utfx:test>
+        <utfx:name>Conference Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights>These are my rights</rights>
+                            <description_abstract>This is a really cool Conference Paper</description_abstract>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Conference Paper</resource_type>
+                            <year>1998</year>
+                            <creator_last_name>Fityus</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</title>
+                            <conference_place_publication>Springwood, NSW, Australia</conference_place_publication>
+                            <conference_publisher> Conference Publications for Australian Geomechanics Society</conference_publisher>
+                            <conference_location>Newcastle, Australia</conference_location>
+                            <conference_title>Geotechnical Engineering and Engineering Geology in the Hunter Valley</conference_title>
+                            <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                            <conference_editor>Fred Smith</conference_editor>
+                            <conference_date>1998</conference_date>
+                            <conference_page_from>140</conference_page_from>
+                            <conference_page_to>150</conference_page_to>
+                            <conference_url>http://websiteconf.com</conference_url>
+                            <conference_name>Geotechnical Engineering and Engineering Conference</conference_name>
+                        </Formdata>
+                    </Session>
+                </collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:description>This is a really cool Conference Paper</dc:description>
+                <dc:type>Conference Paper</dc:type>
+                <dc:relation>Geotechnical Engineering and Engineering Conference, Newcastle, Australia, 1998</dc:relation>
+                <dc:relation>Geotechnical Engineering and Engineering Geology in the Hunter Valley, p. 140-150</dc:relation>
+                <dc:contributor>Fred Smith (Editor)</dc:contributor>
+                <dc:relation>http://websiteconf.com</dc:relation>              
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1998</dc:date>
+                <dc:creator>Fityus, Stephen George</dc:creator>
+                <dc:rights>These are my rights</dc:rights>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Software Item -->
+    <utfx:test>
+        <utfx:name>Software Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Computer Software</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excel-lent</title>
+                            <software_technical_details>A really neat piece of code</software_technical_details>
+                            <software_edition>2</software_edition>
+                            <software_publisher>Pixar</software_publisher>
+                            <software_place_publication>Toowoomba QLD</software_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>Excel-lent</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Computer Software</dc:type>
+                <dc:description>A really neat piece of code, Edition 2</dc:description>
+                <dc:publisher>Pixar : Toowoomba QLD</dc:publisher>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1997</dc:date>
+                <dc:creator>Fityush, Stephen George</dc:creator>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Report Item -->
+    <utfx:test>
+        <utfx:name>Report Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Report</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Report</title>
+                            <report_commissioner>Fred Smith</report_commissioner>
+                            <report_series>The Advanced Excellent Report Series</report_series>
+                            <report_series_number>3</report_series_number>
+                            <report_isbn>1234-4563</report_isbn>
+                            <report_publisher>Pixar</report_publisher>
+                            <report_place_publication>Toowoomba QLD</report_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>Excellent Report</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Report</dc:type>
+                <dc:contributor>Fred Smith</dc:contributor>
+                <dc:publisher>Pixar : Toowoomba QLD</dc:publisher>
+                <dc:relation>The Advanced Excellent Report Series</dc:relation>
+                <dc:identifier>ISBN 1234-4563</dc:identifier>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1997</dc:date>
+                <dc:creator>Fityush, Stephen George</dc:creator>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Working Paper Item -->
+    <utfx:test>
+        <utfx:name>Working Paper Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Working Paper</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Working paper</title>
+                            <working_paper_isbn>1234-6598</working_paper_isbn>
+                            <working_paper_issn>123456879123</working_paper_issn>
+                            <working_paper_publisher>Collins</working_paper_publisher>
+                            <working_paper_place_publication>Sydney, NSW</working_paper_place_publication>
+                            <working_paper_title>The lovely Working Paper</working_paper_title>
+                            <working_paper_number>3</working_paper_number>
+                            <working_paper_url>http://workingpaper.com</working_paper_url>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>Excellent Working paper</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Working Paper</dc:type>
+                <dc:publisher>Collins : Sydney, NSW</dc:publisher>
+                <dc:relation>The lovely Working Paper, No.3</dc:relation>
+                <dc:relation>http://workingpaper.com</dc:relation>
+                <dc:identifier>ISBN 1234-6598</dc:identifier>
+                <dc:identifier>ISSN 123456879123</dc:identifier>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1997</dc:date>
+                <dc:creator>Fityush, Stephen George</dc:creator>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Thesis Item -->
+    <utfx:test>
+        <utfx:name>Thesis Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Thesis</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>ExcellenThesis</title>
+                            <thesis_degree>Professional Doctorate</thesis_degree>
+                            <thesis_degree_program>Master of Science Something</thesis_degree_program>
+                            <thesis_supervisor_first_name>Billy</thesis_supervisor_first_name>
+                            <thesis_supervisor_last_name>Bob</thesis_supervisor_last_name>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>ExcellenThesis</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Thesis</dc:type>
+                <dc:contributor>Bob, Billy (Supervisor) </dc:contributor>
+                <dc:description>Professional Doctorate - Master of Science Something</dc:description>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1997</dc:date>
+                <dc:creator>Fityush, Stephen George</dc:creator>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Patent Item -->
+    <utfx:test>
+        <utfx:name>Patent Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <resource_type>Patent</resource_type>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>ExcellenThesis</title>
+                            <patent_owner>Fred Smith</patent_owner>
+                            <patent_number>TF5643</patent_number>
+                            <patent_provisional_number>YHT6543</patent_provisional_number>
+                            <patent_pct_number>87654</patent_pct_number>
+                            <patent_wipo_number>09876</patent_wipo_number>
+                            <patent_place_publication>at</patent_place_publication>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>ExcellenThesis</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Patent</dc:type>
+                <dc:contributor>Fred Smith (Owner) </dc:contributor>
+                <dc:identifier>TF5643, Australia</dc:identifier>               
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1997</dc:date>
+                <dc:creator>Fityush, Stephen George</dc:creator>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- Audio Visual -->
+    <utfx:test>
+        <utfx:name>Audio Visual</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Work</title>
+                            <av_type>format</av_type>
+                            <av_editor>fred</av_editor>
+                            <av_publisher>publisher</av_publisher>
+                            <av_publish_year>av_publish_year</av_publish_year>
+                            <av_place_publication>place</av_place_publication>
+                            <av_url>av url</av_url>
+                            <av_title>Alternative / Variation on title</av_title>
+                            <av_recording_length>Length</av_recording_length>
+                            <resource_type>Audio Visual</resource_type>
+                        </Formdata>
+                    </Session>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no"> 
+                <dc:language>eng</dc:language>
+                <dc:title>Excellent Work</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Audio Visual</dc:type>
+                <dc:description>editor, fred</dc:description>
+                <dc:description>Length</dc:description>
+                <dc:publisher>publisher : place</dc:publisher>
+                <dc:relation>av url</dc:relation>
+                <dc:format>format</dc:format>
+                <dc:title>Alternative / Variation on title</dc:title>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1997</dc:date>
+                <dc:creator>Fityush, Stephen George</dc:creator>
+               </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+
+    <!-- Reference work -->
+    <utfx:test>
+        <utfx:name>Reference work</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Work</title>
+                            <ref_work_title>Alternative Title (series)</ref_work_title>
+                            <ref_work_edition>edition statement</ref_work_edition>
+                            <ref_work_volume>volume</ref_work_volume>
+                            <ref_work_editor>fred</ref_work_editor>
+                            <ref_work_publisher>publisher</ref_work_publisher>
+                            <ref_work_publication_year>1997</ref_work_publication_year>
+                            <ref_work_place_publication>place</ref_work_place_publication>
+                            <ref_work_url>ref_work url</ref_work_url>
+                            <ref_work_appear_year>Date</ref_work_appear_year>
+                            <ref_work_isbn>ISBN</ref_work_isbn>
+                            <resource_type>Reference Work</resource_type>
+                        </Formdata>
+                    </Session>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:title>Excellent Work</dc:title>
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Reference Work</dc:type>
+                <dc:description>Edition or Version: edition statement</dc:description>                
+                <dc:description>Vol. volume</dc:description>
+                <dc:contributor>fred, Editor</dc:contributor>
+                <dc:publisher>publisher : place</dc:publisher>
+                <dc:relation>ref_work url</dc:relation>
+                <dc:description>Appearance Year: Date</dc:description>
+                <dc:identifier>ISBN ISBN</dc:identifier>
+                <dc:title>Alternative Title (series)</dc:title>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1997</dc:date>
+                <dc:creator>Fityush, Stephen George</dc:creator>         
+            </utfx:expected>
+                
+                
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <!-- Creative work -->
+    <utfx:test>
+        <utfx:name>Creative work</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <Session>
+                        <Formdata>
+                            <session>Murdoch Id - 28</session>
+                            <faculty/>
+                            <subject>November &#13; rain &#13;</subject>
+                            <keyword>precipitation</keyword>
+                            <keyword_1>cloud</keyword_1>
+                            <keyword_2>thunder</keyword_2>
+                            <additional_info>More details to hand.....</additional_info>
+                            <rights/>
+                            <dest_category>E1</dest_category>
+                            <year>1997</year>
+                            <creator_last_name>Fityush</creator_last_name>
+                            <creator_first_name>Stephen George</creator_first_name>
+                            <function>save_formdata</function>
+                            <language>eng</language>
+                            <title>Excellent Work</title>
+                            <creative_type>creative type</creative_type>
+                            <creative_edition>3</creative_edition>
+                            <creative_publisher>publisher</creative_publisher>
+                            <creative_publish_year>creative_publish_year</creative_publish_year>
+                            <creative_place_publication>place</creative_place_publication>
+                            <creative_url>creative url</creative_url>
+                            <creative_number_pages>4</creative_number_pages>
+                            <creative_start_date>date</creative_start_date>
+                            <creative_exhibition_location>Location</creative_exhibition_location>
+                            <creative_advert_date>date</creative_advert_date>
+                            <creative_advert_place>place</creative_advert_place>
+                            <creative_record_dist>distributor</creative_record_dist>
+                            <creative_record_dist_medium>Medium</creative_record_dist_medium>
+                            <creative_record_create_date>YYYY-MM-DD</creative_record_create_date>
+                            <creative_record_first_perform_date>YYYY-MM-DD</creative_record_first_perform_date>
+                            <creative_title>Variation of title</creative_title>
+                            <creative_isbn>ISBN</creative_isbn>
+                            <resource_type>Creative Work</resource_type>
+                        </Formdata>
+                    </Session>
+                </collection>
+
+            </utfx:source>
+            <utfx:expected validate="no"> 
+                <dc:language>eng</dc:language> 
+                <dc:title>Excellent Work</dc:title>            
+                <dc:description>More details to hand.....</dc:description>
+                <dc:type>Creative Work</dc:type>
+                <dc:type>creative type</dc:type>
+                <dc:description>Edition or Version: 3</dc:description>
+                <dc:publisher>publisher, place, distributor (Distributor)</dc:publisher>
+                <dc:relation>creative url</dc:relation>
+                <dc:description>4 p.</dc:description>
+                <dc:description>EXHIBITION NOTE: Location, date</dc:description>
+                <dc:description>ADVERT FOR EXHIBITION: place, date</dc:description>
+                <dc:identifier>ISBN ISBN</dc:identifier>
+                <dc:format>Medium</dc:format>
+                <dc:description>Date of Recording: YYYY-MM-DD</dc:description>
+                <dc:description>First Performed: YYYY-MM-DD</dc:description>    
+                <dc:title>Variation of title</dc:title>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>
+                <dc:subject>thunder</dc:subject>
+                <dc:date>1997</dc:date>
+                <dc:creator>Fityush, Stephen George</dc:creator>   
+            
+            
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Multiple Authors -->
+    <utfx:test>
+        <utfx:name>Multiple Authors</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>    
+                    <Session>
+                        <Attachments/>
+                        <Formdata>
+                            <dest_category>C1</dest_category>
+                            <faculty/><rights/>
+                            <_count_creator-multiple_creators>4</_count_creator-multiple_creators>
+                            <creator_first_name>R</creator_first_name>
+                            <creator_first_name_1>Vladimir</creator_first_name_1>
+                            <creator_first_name_2>Michael Ralph</creator_first_name_2>
+                            <creator_first_name_3>Elena</creator_first_name_3>
+                            <creator_first_name_4>Frances Ann</creator_first_name_4>
+                            <creator_last_name>Downey</creator_last_name>
+                            <creator_last_name_1>Estivill-Castro</creator_last_name_1>
+                            <creator_last_name_2>Fellows</creator_last_name_2>
+                            <creator_last_name_3>Prieto-Rodriguez</creator_last_name_3>
+                            <creator_last_name_4>Rosamond</creator_last_name_4>
+                            <function>save_formdata</function>
+                            <journal_issn>1571-0661</journal_issn>
+                            <journal_page_from>205</journal_page_from>
+                            <journal_page_to>218</journal_page_to>
+                            <journal_peer_reviewed>Yes</journal_peer_reviewed>
+                            <journal_place_publication>United States</journal_place_publication>
+                            <journal_publisher>Elsevier</journal_publisher>
+                            <journal_title>Electronic Notes in Theoretical Computer Science</journal_title>
+                            <journal_volume>78</journal_volume>
+                            <language>eng</language>
+                            <resource_type>journal article</resource_type>
+                            <session>uon-P146923-CPE18071203</session>
+                            <title>Cutting up is hard to do: the parameterized Complexity of k-Cut and Related Problems</title>
+                            <year>2003</year>
+                        </Formdata>
+                    </Session>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no"> 
+                <dc:language>eng</dc:language>   
+                <dc:title>Cutting up is hard to do: the parameterized Complexity of k-Cut and Related Problems</dc:title>
+                <dc:type>journal article</dc:type>
+                <dc:date>2003</dc:date>
+                <dc:creator>Downey, R</dc:creator>
+                <dc:creator>Estivill-Castro, Vladimir</dc:creator>
+                <dc:creator>Fellows, Michael Ralph</dc:creator>
+                <dc:creator>Prieto-Rodriguez, Elena</dc:creator>
+                <dc:creator>Rosamond, Frances Ann</dc:creator>
+                
+            </utfx:expected>
+        </utfx:assert-equal>  
+        </utfx:test>
+</utfx:tests>

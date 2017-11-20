@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<record>
+    <leader>01269cam a2200337 a 4500</leader>
+    <controlfield tag="001">923925</controlfield>
+    <controlfield tag="005">20070605091622.0</controlfield>
+    <controlfield tag="006">m d </controlfield>
+    <controlfield tag="007">cr au ---auuuu</controlfield>
+    <controlfield tag="008">070522s2007 xna sb 000 0 eng </controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">923925</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+        <subfield code="a">NMQU</subfield>
+        <subfield code="c">NMQU</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+        <subfield code="a">anuc</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+        <subfield code="a">u-at---</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+        <subfield code="a">Electronic version</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+        <subfield code="a">Carlin, Tyrone M.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+        <subfield code="a">Early impressions of Australia's brave new world of goodwill impairment</subfield>
+        <subfield code="h">[electronic resource] /</subfield>
+        <subfield code="c">Tyrone M. Carlin, Nigel Finch.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+        <subfield code="a">Sydney :</subfield>
+        <subfield code="b">Macquarie Graduate School of Management,</subfield>
+        <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+        <subfield code="a">26 leaves.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+        <subfield code="a">MGSM working papers in management,</subfield>
+        <subfield code="x">1445-3029 ;</subfield>
+        <subfield code="v">MGSM WP 2007-1</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+        <subfield code="a">"January 2007"--T.p.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+        <subfield code="a">Bibliography: p. 25-26.</subfield>
+    </datafield>
+    <datafield tag="530" ind1=" " ind2=" ">
+        <subfield code="a">Also available in print.</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+        <subfield code="a">Macquarie author.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Goodwill (Commerce)</subfield>
+        <subfield code="z">Australia</subfield>
+        <subfield code="z">Accounting.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Accounting</subfield>
+        <subfield code="x">Standards</subfield>
+        <subfield code="z">Australia.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+        <subfield code="a">Working paper</subfield>
+        <subfield code="2">local</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Finch, Nigel.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+        <subfield code="a">Macquarie University.</subfield>
+        <subfield code="b">Macquarie Graduate School of Management.</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+        <subfield code="a">MGSM working papers in management ;</subfield>
+        <subfield code="v">WP 2007-1.</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="1">
+        <subfield code="u">http://www.mgsm.edu.au/download.cfm?DownloadFile=904CE808-9360-65A8-498FACE97C10D970</subfield>
+        <subfield code="z">Electronic version</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="1">
+        <subfield code="u">http://www.mgsm.edu.au/download.cfm?DownloadFile=904CE808-9360-65A8-498FACE97C10D970</subfield>
+        <subfield code="z">Electronic version</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="0">
+    <subfield code="u">http://www.lib.mq.edu.au/catalogue/restricted/brunner.php?ctype=1&amp;doc=697876pt04.pdf</subfield>
+    <subfield code="z">Meroitic inscriptions, Part 1: So&#x302;ba to Dange&#x302;l/ Preface/Introduction/Table of the Meroitic alphabets Pages [43-50] Access to Macquarie authorised users only</subfield>
+    </datafield>
+    
+    <datafield tag="540" ind1=" " ind2=" ">
+        <subfield code="a">Permission for use provided to the Macquarie University Digital
+            Repository by the publisher.</subfield>
+    </datafield>
+</record>

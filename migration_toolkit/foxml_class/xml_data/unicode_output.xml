@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject xmlns:foxml="http://www.fedora.info/resources/faq.shtml#rdfproperties"
+	PID="test:99" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+	<foxml:objectProperties>
+		<foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="I"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="test import object"/>
+		<foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL"/>
+	</foxml:objectProperties>
+	<foxml:datastream ID="DC" STATE="I" CONTROL_GROUP="X">
+		<foxml:datastreamVersion ID="DC.0" MIMETYPE="text/xml" LABEL="Dublin Core">
+			<foxml:xmlContent>
+				<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+					xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+					<dc:title>Drivers and Inhibitors</dc:title>
+					<dc:creator>Quaddus, Mohammed</dc:creator>
+					<dc:creator>Curtin University</dc:creator>
+					<dc:creator>Dieter, Fink</dc:creator>
+					<dc:creator>Edith Cowan</dc:creator>
+					<dc:date>1999</dc:date>
+					<dc:type>Working Paper</dc:type>
+					<dc:identifier>valet-20060608-164557</dc:identifier>
+					<dc:identifier>rubric:964</dc:identifier>
+					<dc:language>EN</dc:language>
+				</oai_dc:dc>
+			</foxml:xmlContent>
+		</foxml:datastreamVersion>
+	</foxml:datastream>
+	<foxml:datastream ID="MARC" STATE="I" CONTROL_GROUP="X">
+		<foxml:datastreamVersion ID="MARC.0" MIMETYPE="text/xml" LABEL="MARCXML">
+			<foxml:xmlContent>
+				<marc:record xmlns:marc="http://www.loc.gov/MARC21/slim"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+					<marc:leader>00000nam a22000002a 4500</marc:leader>
+					<marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+					<marc:datafield ind1="" ind2="7" tag="655">
+						<marc:subfield code="a">Working Paper</marc:subfield>
+						<marc:subfield code="2">local</marc:subfield>
+					</marc:datafield>
+					<marc:datafield ind1="" ind2="" tag="260">
+						<marc:subfield code="c">1999</marc:subfield>
+					</marc:datafield>
+					<marc:datafield ind1="" ind2="" tag="546">
+						<marc:subfield code="a">EN</marc:subfield>
+					</marc:datafield>
+					<marc:datafield ind1="1" ind2="0" tag="245">
+						<marc:subfield code="a">Drivers and Inhibitors</marc:subfield>
+					</marc:datafield>
+					<marc:datafield ind1="" ind2="" tag="100">
+						<marc:subfield code="a">Quaddus, Mohammed</marc:subfield>
+						<marc:subfield code="u">Curtin University</marc:subfield>
+					</marc:datafield>
+					<marc:datafield ind1="1" ind2="" tag="700">
+						<marc:subfield code="a">Dieter, Fink</marc:subfield>
+						<marc:subfield code="u">Edith Cowan</marc:subfield>
+					</marc:datafield>
+                                        <marc:datafield tag="710" ind1="2" ind2=" ">
+                                        	<marc:subfield code="a">K&#xf6;niglich Preussische Akademie der Wissenschaften zu Berlin.</marc:subfield>
+    </marc:datafield>
+				</marc:record>
+			</foxml:xmlContent>
+		</foxml:datastreamVersion>
+	</foxml:datastream>
+	<foxml:datastream CONTROL_GROUP="M" ID="DS1" STATE="A">
+		<foxml:datastreamVersion ID="DS1.0" MIMETYPE="application/pdf"
+			LABEL="Journal Article">
+			<foxml:contentLocation REF="http://localhost/managed.pdf" TYPE="URL"/>
+		</foxml:datastreamVersion>
+	</foxml:datastream>
+</foxml:digitalObject>

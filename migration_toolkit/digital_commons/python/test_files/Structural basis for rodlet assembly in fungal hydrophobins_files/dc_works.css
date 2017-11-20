@@ -1,0 +1,154 @@
+#collectedworks {
+	margin: 0;
+	padding: 2px;
+	font: 85% verdana, arial, helvetica, sans-serif;
+	color: #333;
+text-align:left;
+width:750px;
+position:relative;border: 3px double #ccc;}
+
+#collectedworks a:link,
+#collectedworks a:visited { color: #036; }
+
+
+#collectedworks a:hover, #collectedworks a:active{
+	color: #369;}
+
+
+#collectedworks h2{
+	color: #036;
+	font: 120% georgia, times, "times new roman", serif;
+	font-weight: bold;
+	margin: 8px 0 2px 0;
+width:400px;}
+
+#collectedworks #header h1 {
+	font-size: 2em;
+	text-align: left;
+	color: #036;
+	margin: 0;
+	padding: 5px;
+font-weight:400;
+letter-spacing:2px;}
+
+#collectedworks h2 a { text-decoration: none; }
+
+
+#collectedworks h3{
+	color: #369;
+	font: 106% georgia, times, "times new roman", serif;
+	font-weight: bold;
+	margin-top: 0;}
+
+
+#collectedworks #container{
+	margin: 1em 5px;
+	text-align: left;
+	/*background-color: #f9f9f9;*/
+padding:0;
+}
+
+
+#collectedworks #header {
+	height: 50px;
+	width: 100%;
+	background:#e2e2e2;
+	/*position: relative;*/
+	border-bottom: 1px solid #ddd;
+padding:0;
+margin-bottom:8px;}
+
+ #collectedworks #mainnav { width:100%; 
+
+text-align:right;/*clear:both;*/padding:0 10px 10px 0;}
+
+
+#collectedworks #mainnav a:link,
+#collectedworks #mainnav a:visited { 
+font-size:.9em;
+text-transform:uppercase;
+color:#666; }
+
+#collectedworks #mainnav a:active,
+#collectedworks #mainnav a:hover { color:#369;} 
+
+
+#collectedworks #menu {
+	float: right;
+	width: 165px;
+	border-left: 1px dotted #666;
+	padding-left: 15px;margin-top:10px;}
+
+ #collectedworks #menu p
+ {       
+        line-height:1em;
+   font-size:1em;}
+
+ #collectedworks #menu li {       
+        line-height:2em;
+   font-size:.9em;}
+
+#collectedworks #contents { 
+margin: 0 200px 40px 10px;
+position:relative; }
+
+#collectedworks .text { padding:0; }
+#collectedworks #contents p { text-align:left;line-height: 165%; 
+
+position:relative;}
+
+#collectedworks .text ul,
+#collectedworks #menu ul {
+list-style: disc;
+	padding: 7px 0 0 5px;
+	margin: 0 0 0 2em;
+	}
+
+
+#collectedworks .text ul li {
+	padding: 1px;
+	text-align:left;
+	line-height: 1.4em; 
+	position:relative;
+      
+	}
+	
+#collectedworks #menu img { border-right:1px solid #999;
+border-bottom:1px solid #999;
+	border-top:1px solid #ccc;
+border-left:1px solid #ccc;
+	background:#f9f9f9;
+padding:5px;
+ }
+
+
+
+#collectedworks #foot{
+	clear: both;
+	height:10px;
+width:100%;
+}
+
+
+
+/* forms */
+
+
+
+#collectedworks form {
+margin : 0;
+padding : 0;
+}
+
+
+#collectedworks fieldsetleft {margin : 0 1em 0 0;
+padding : 1em;
+float: left; }
+
+#collectedworks fieldsetright { margin : 0 1em 0 0;
+padding : 1em;
+float:right; }
+	
+
+
+

@@ -1,0 +1,333 @@
+id AAABGI002
+title 10th Conference of the Australian Association of Animal Breeding and
+ Genetics
+doctype Archived
+startdate 199209
+finishdate 199209
+researcher Vercoe JE Dr Australian Association of Animal Breeding and Genetics
+ Inc. (PO Box 5545, Rockhampton Mail Centre Qld 4702)
+; Davis GP Dr Australian Association of Animal Breeding and Genetics Inc. (PO
+ Box 5545, Rockhampton Mail Centre Qld 4702)
+sponsor WRDC: Wool Research and Development Corporation $3,000 (AAA3) (1992/93)
+; DRDC: Dairy R&D Corporation
+; MRC: Meat Research Corporation $2, 000 (Total)
+objective International trade in breeds and breeding technology: enhancing our
+ capability and contribution.
+methodology September 21-24: Plenary sessions on Australasian animal and human
+ resources, importing and exporting genetic material and international genetic
+ evaluation. Concurrent sessions for beef cattle, dairy cattle, sheep and fibre
+ animals, other meat animals, sire referencing, parameter estimation, selection
+ theory, practical evaluations, reproductive technologies, gene technologies.
+ Forum on use of transgenic livestock, panel discussion on genetic evaluation
+ systems, display of animal breeding software.
+datadate 199212
+$
+id AACM--002
+title International trends in legislative and consumer requirements for
+ labelling of food products
+datacode MRC M382
+doctype Archived
+startdate 199305
+finishdate 199308
+researcher Whan I Mr AACM International (PO Box 251, Spring Hill Qld 4004)
+sponsor MRC: Meat Research Corporation (M382)
+objective To identify all national and international legislation and consumer
+ issues which have current or future implications for the labelling of
+ Australian raw meat with safety, nutrition and price information, and to
+ recommend appropriate research and development strategies to address these
+ issues
+progress Completed.  The work established that the mandatory requirements
+ surrounding meat pose no barrier to the implementation of a value based
+ trading system
+datasource Meat and Livestock Australia
+datadate 199312
+$
+id ABARE-001
+title Factors affecting costs and returns from dairying
+doctype Archived
+startdate 199107
+finishdate 199206
+researcher Sheales T Dr Australian Bureau of Agricultural and Resource
+ Economics (Livestock Economics Branch, GPO Box 1563, Canberra ACT 2601)
+; Topp V Mr Australian Bureau of Agricultural and Resource Economics (Livestock
+ Economics Branch, GPO Box 1563, Canberra ACT 2601)
+sponsor DRDC: Dairy R&D Corporation (BAE3) (1991/92)
+objective 1. To provide accurate estimates of factors affecting costs and
+ returns from producing milk.
+; 2. To use estimates of costs and returns to project the effects of changes in
+ manufacturing milk prices on farm production and incomes.
+; 3. To incorporate results from analysis into a spreadsheet model of the
+ supply of milk in Australia for use by the industry in simulating responses to
+ changes in economic conditions.
+methodology Using data collected from BAE4, the factors affecting the costs and
+ returns from dairy farming will be estimated.  Using a technique designed to
+ estimate the unit costs and net returns from milk production a supply response
+ relationship can be identified.  The relationship will then be used to predict
+ changes in farm production that would result from changing milk prices.
+datasource Dairy Australia
+datadate 199112
+$
+id ABARE-003
+title On-farm storage capacity in Australia
+doctype Archived
+startdate 199107
+finishdate 199206
+researcher Hall N Dr Australian Bureau of Agricultural and Resource Economics
+ (GPO Box 1563, Canberra ACT 2601)
+objective To estimate the total capacity of on-farm grain storage facilities in
+ 1990-91, to assess the regional distribution of these facilities and farmers'
+ intentions to invest in on-farm storage, and to identify the main factors
+ affecting these decisions.
+datadate 199112
+$
+id ABARE-004
+title Agricultural production and the reduction of greenhouse gas emissions
+doctype Archived
+startdate 199107
+finishdate 199206
+researcher Hall N Dr Australian Bureau of Agricultural and Resource Economics
+ (GPO Box 1563, Canberra ACT 2601)
+objective To quantify the impact on Australian cropping and livestock
+ industries of various options to reduce their emission of greenhouse gases and
+ identify the least cost options for Australian agriculture in fulfilling the
+ cabinet commitment to an Australian contribution in the reduction of emission
+ of these gases.
+datadate 199112
+$
+id ABARE-005
+title Market potential for exports of refined sugar from Australia
+doctype Archived
+startdate 199108
+finishdate 199206
+researcher Papadopoulos C Ms Australian Bureau of Agricultural and Resource
+ Economics (Crops Economics Branch, GPO Box 1563, Canberra ACT 2601)
+sponsor SRDC: Sugar R&D Corporation $25,000 (ABS1S) (1991/92)
+collaboration Queensland Sugar Corporation
+objective 1. To undertake a market analysis of the world white sugar trade.
+; 2. To assess the potential for the Australian sugar industry.
+; 3. To become a white sugar exporter.
+methodology It is proposed to examine the growth in world trade in white sugar
+ over the last decade so as to analyse whether this growth has stabilised or is
+ likely to increase further. To do this, trade will be examined on a regional
+ basis and regression analysis will be undertaken to estimate the main
+ determinants of demand for white or refined sugar in the key markets. Such an
+ analysis will enable projections to be made about future levels of demand in
+ these countries.
+progress A trade database is being developed, and world white and raw sugar
+ price series (on a monthly basis) have been collated.
+datasource Sugar Research and Development Corporation
+datadate 199112
+$
+id ABARE-006
+title Marketing alternatives for risk management by cotton growers
+doctype Archived
+startdate 199107
+finishdate 199204
+researcher Short C Mr Australian Bureau of Agricultural and Resource Economics
+ (Wool and Other Fibres Section, GPO Box 1563, Canberra ACT 2601)
+; Foster M Mr Australian Bureau of Agricultural and Resource Economics (Wool
+ and Other Fibres Section, GPO Box 1563, Canberra ACT 2601)
+sponsor CRDC: Cotton R&D Corporation $30,000 (BAE3C) (1991/92)
+objective To provide farmers with an understanding of the range of strategies
+ for managing price risk through an exposition of those strategies.
+methodology There are two stages to the project: The first is the research into
+ current marketing strategies through discussions with industry and a
+ literature review. The output will be a paper discussing in lay terms the risk
+ management facilities available. The second stage will be a study of various
+ strategies simulated under differing conditions in an attempt to quantify the
+ risks faced by growers.
+datasource Cotton Research and Development Corporation
+datadate 199112
+$
+id ABARE-007
+title Changes in farm enterprises: a re-run of the 1970's
+doctype Archived
+startdate 199107
+finishdate 199206
+researcher Lembit M Mr Australian Bureau of Agricultural and Resource Economics
+ (Livestock Section, GPO Box 1563, Canberra ACT 2601)
+; Lindsay R Dr Australian Bureau of Agricultural and Resource Economics
+ (Livestock Section, GPO Box 1563, Canberra ACT 2601)
+sponsor Meat Research Corporation $40,772 (BAE024) (1991/92)
+objective 1. To evaluate the likely extend of movements between broadacre farm
+ enterprises during times of rapidly changing relative prices, and to assess
+ whether the current downturn in the wool and wheat industries could bring on a
+ repeat of the beef industry 'crash' of the 1970's.
+; 2. To provide information to the meat industry on the likely impact of
+ changes in commodity prices on the size and distribution of beef and sheep
+ farms.
+; 3. To estimate the likely changes in farm incomes associated with the
+ expansion or contraction of enterprises resulting from the major realignment
+ in prices received for beef relative to those for wheat and wool.
+methodology 1.  The project will rely on the availability of data collected as
+ part of the Australian agricultural and grazing industry survey which is
+ comprised of 1060 farms. 2.  Relationships between costs and returns in
+ broadacre industries will be estimated using the latest analytical techniques.
+ 3. Historical data will be used to estimate those factors which influence
+ costs and returns at the farm level. This information will be used to estimate
+ likely changes in the range and size of broadacre farm enterprises from
+ changes in commodity prices. 4.  Empirical analysis of cross commodity supply
+ relationships between beef, wool and grains when there are major changes in
+ prices received from one of these commodities will also be undertaken.
+datasource Meat and Livestock Australia
+datadate 199112
+$
+id ABARE-008
+title Survey of farm financial performance in the livestock industries
+doctype Archived
+startdate 199107
+finishdate 199406
+researcher Lembit M Mr Australian Bureau of Agricultural and Resource Economics
+ (Survey and Livestock Sections, GPO Box 1563, Canberra ACT 2601)
+; O'Donnell V Mr Australian Bureau of Agricultural and Resource Economics
+ (Survey and Livestock Sections, GPO Box 1563, Canberra ACT 2601)
+sponsor Meat Research Corporation $441,055 (BAE012) (1991/92) $432,655 (BAE012)
+ (1992/93) $432,655 (BAE012) (1993/94)
+objective 1. To provide the MRC and, through it, Australian meat producers with
+ a comprehensive set of physical and financial data at national, state,
+ industry and regional levels.
+; 2. To monitor the economic performance of the beef and sheep meat industries
+ by conducting a survey of over 1400 farms using advanced survey and
+ statistical methods.
+; 3. To project the likely economic situation of meat producers and provide
+ time series and cross sectional data for use by researchers, industry and
+ policy makers.
+; 3. To improve decision making and policy development for the livestock
+ industries by providing data for analyses of the physical and financial
+ performance of farms.
+; 5. To set up an industry surveys steering group to assist industry
+ representatives to become more aware of the data available and to provide an
+ opportunity for them to obtain data on current issues as a basis for research
+ and policy formation which will maximise the benefit to industry.
+methodology The research plan for the Australian agricultural and grazing
+ industries survey (AAGIS) involves the following 7 stages: 1. Coordinating an
+ ABARE/livestock industries survey steering group. This group will provide a
+ forum for discussing survey issues with relevant industry representatives and
+ provide the opportunity for commissioning supplementary data collections to
+ address topical issues which can be analysed using the physical and financial
+ data from AAGIS. 2. Designing the main and supplementary questionnaires and
+ data handling system which incorporates the facility for industry to add extra
+ questions on issues relevant at the time of the survey. 3. Designing the
+ sample using the latest statistical techniques and the agricultural census as
+ the framework. 4. Field and followup telephone interviews using experienced
+ field officers to collect information from over 1400 farms nationally as well
+ as from their accountants and produce outlets. 5. Processing data using a
+ fully integrated system of data entry, editing and output using an INGRES
+ database. 6. Releasing results from the survey through ABARE publications, the
+ national Outlook Conference in February, regional outlook conferences, ASPIRE
+ (electronic time series of survey data) and individual data request. 7.
+ Developing a special report showing detailed results for the livestock
+ industries, in consultation with industry representatives as part of the role
+ of the surveys steering group.
+progress Copy of survey/questionnaire and report on samples selected sent to
+ the MRC.
+datasource Meat and Livestock Australia
+datadate 199312
+$
+id ABARE-009
+title Use of technology in the Australian dairy industry
+doctype Archived
+startdate 199205
+finishdate 199306
+researcher O'Donnell V Mr Australian Bureau of Agricultural and Resource
+ Economics, Surveys Section (GPO Box 1563, Canberra ACT 2601)
+sponsor DRDC: Dairy R&D Corporation (BAE6) (1992/93)
+objective To investigate the use of technology in the dairy industry and
+ measure its effect on farm productivity.
+methodology Stage 1 - Preliminary investigation into the current use of
+ technology in the various states to develop a supplementary questionnaire for
+ attachment to the Australian Dairy Industry Survey (ADIS). Stage 2 -
+ Conducting the supplementary survey as part of ADIS during 92/93.
+progress Report published October 1993, entitled - 'Farm Management and
+ Technology in the Australian Dairy Industry 1991-92.' The report provides
+ detailed estimates of the types of farm management practices and technology
+ used on Australian dairy farms.
+datasource Dairy Australia
+datadate 199312
+$
+id ABARE-010
+title Changing institutional arrangements in the eastern European wool textile
+ industry and their influence on wool imports
+doctype Archived
+startdate 199107
+finishdate 199312
+researcher Barrett D Mr Australian Bureau of Agricultural and Resource
+ Economics (GPO Box 1563, Canberra ACT 2601)
+sponsor AWRAPO: Australian Wool Research and Promotion Organisation $25,013
+ (BAE26) (1992/93)
+objective To analyse and review the institutional arrangements in the eastern
+ European wool textile industry, paying particular attention to: - how they are
+ likely to affect imports of Australian wool - the impact on Australian growers
+ - providing information to the Australian Wool Corporation and the government
+ on appropriate strategies for marketing wool in the region.
+methodology Analysis of the changing institutional arrangements and the
+ decision making processes under the emerging market system will be the focus
+ of the study. The report reviews the economic and institutional reforms taking
+ place in eastern Europe and assesses the implication of these for changes for
+ the wool textile industry. Projections of wool production, domestic
+ consumption, textile production and trade in wool and wool textiles are
+ discussed.  The implication of these changes for the Australian wool industry
+ are also assessed.
+progress In July 1991, two ABARE officers visited Europe to collect data and
+ information required for the completion of the project.  Based on the findings
+ of this trip, a draft internal ABARE report was provided to the WRDC on a
+ draft-in-confidence basis in September 1991.
+datasource Australian Wool Innovation
+datadate 199412
+$
+id ABARE-012
+title Supply and demand projections for wine grapes to 1995-96
+doctype Archived
+startdate 199301
+finishdate 199306
+researcher Papadopoulos C Ms Australian Bureau of Agricultural and Resource
+ Economics (GPO Box 1563, Canberra ACT 2601)
+; Connell P Mr Australian Bureau of Agricultural and Resource Economics (GPO
+ Box 1563, Canberra ACT 2601)
+; Phillips B Mr Australian Bureau of Agricultural and Resource Economics (GPO
+ Box 1563, Canberra ACT 2601)
+sponsor GWRDC: Grape and Wine R&D Corporation $58,003 (BAE1/2) (1992/93) $46,
+ 243 (BAE1/2) (1993/94)
+objective To provide annual projections of supply and demand of the principal
+ wine grape varieties being grown in the principal producing regions for the
+ three vintages of 1994, 1995 and 1996. This information will assist growers in
+ their annual plantings/grubbing decisions and allow wine makers to plan future
+ vintages with more certainty about likely grape supply.
+methodology For the supply projections, an updated data set of variables that
+ will affect future grape supply will be established. This will include annual
+ series of bearing and non-bearing areas of vines and grubbings and grape
+ production by variety and regions for the period 1982-83 to 1991-92. Data
+ collected by the Australian Bureau of Statistics for their Viticulture
+ Australia publication will be supplemented by information gathered by ABARE
+ officers from state departments of agriculture, nurseries and vine improvement
+ societies and a survey of the larger wineries as appropriate. Where possible,
+ information gathered from these sources will be presented in tabular form.
+ From this data set, plantings and average yields will be estimated. An
+ economic model will then be used to project bearing area and and hence grape
+ supply for the following three seasons.  Point forecasts will be provided for
+ grape supplies by region and variety using projected yields. Sensitivity
+ analysis will also be used to show the influence of poor and good seasonal
+ conditions on supplies of grapes. For the demand projections, a mail census of
+ all major wineries will be undertaken in the first quarter of 1993 with
+ follow-up visits to the larger wineries.  One visit of two days to the Hunter
+ Valley and one visit of ten days to wineries in New South Wales, South
+ Australia and Victoria are planned. During the course of these visits,
+ researchers will also take the opportunity to obtain details of any vine
+ planting programs undertaken by the major wineries.  They will also make
+ contact with State Department of Agriculture officers who are involved with
+ viticulture in these grape growing districts. There are approximately 600
+ wineries in Australia.  However, it is not inteded to survey all of these
+ wineries.  In 1991, the Winemakers Federation of Australia supplied ABARE with
+ list of 34 wineries which it considered would purchase the major proportion of
+ all wine grapes. In view of possible ownership changes over the next 12 months
+ and in light of the response from wineries in the 1991 study, the Federation
+ will again be asked to provide an updated list of major wineries and
+ appropriate contacts.
+progress In November 1993, ABARE published Research Report 93.16, titled '
+ Winegrapes, Projections of Wine Grape Production and Winery Intake to
+ 1995-96'. The report provides information on expected trends in production and
+ intake of the principal wine grape varieties for the industry to use when
+ making decisions on planting, grubbings and intake.
+datasource Grape and Wine Research and Development Corporation
+datadate 199312
+$

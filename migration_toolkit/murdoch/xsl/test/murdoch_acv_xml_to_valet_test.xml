@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+-->
+    <utfx:stylesheet src="murdoch_acv_xml_to_valet.xsl"/>
+
+
+    <!-- Journal Item -->
+    <utfx:test>
+        <utfx:name>Journal Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <ID>28</ID>
+                        <AUTHORS>Hall N.G., Smith K.D., deLestang S</AUTHORS>
+                        <PUBLICATION_NUMB>147568</PUBLICATION_NUMB>
+                        <REFERENCE_TYPE>C1</REFERENCE_TYPE>
+                        <TITLE_1>article title</TITLE_1>
+                        <TITLE_2>journal title</TITLE_2>
+                        <PUBLISHER>Academic Press</PUBLISHER>
+                        <PUBLICATION_YEAR>2006</PUBLICATION_YEAR>
+                        <PUBLICATION_COUNTRY>UK</PUBLICATION_COUNTRY>
+                        <PUBLICATION_CITY>London</PUBLICATION_CITY>
+                        <VOLUME>63</VOLUME>
+                        <ISSUE>1</ISSUE>
+                        <ISBN>1054-3139</ISBN>
+                        <ISBN_Online>1095-9289</ISBN_Online>
+                        <PAGE_NUMB_FROM>140</PAGE_NUMB_FROM>
+                        <PAGE_NUMB_TO>150</PAGE_NUMB_TO>
+                        <FIELD_OF_RESEARCH>270702</FIELD_OF_RESEARCH>
+                        <PUBLISHING_LOCKED>Y</PUBLISHING_LOCKED>
+                        <URL>http://0-icesjms.oxfordjournals.org.prospero.murdoch.edu.au/cgi/reprint/63/1/140</URL>
+                        <STATUS>P</STATUS>
+                        <STAFF_NUMB>20010277</STAFF_NUMB>
+                        <Field45>270702</Field45>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>2</Step>
+                    <Attachments/>
+                    <Formdata>
+                        
+                        <session>ACV_2006_article title_28</session>
+                        <journal_peer_reviewed>Yes</journal_peer_reviewed>
+                        <resource_type>Journal Article</resource_type>
+                        <year>2006</year>
+                        <creator_last_name>Hall</creator_last_name>
+                        <creator_first_name>N.G.</creator_first_name>
+                        <creator_last_name_1>Smith</creator_last_name_1>
+                        <creator_first_name_1>K.D.</creator_first_name_1>
+                        <_count_creator-multiple_creators>2</_count_creator-multiple_creators>
+                        <creator_last_name_2>deLestang</creator_last_name_2>
+                        <creator_first_name_2>S</creator_first_name_2>
+                        <faculty/>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights/>
+                        <title>article title</title>
+                        <journal_publisher>Academic Press</journal_publisher>
+                        <journal_place_publication>London, UK</journal_place_publication>
+                        <journal_issn>1054-3139</journal_issn>
+                        <journal_issn_online>1095-9289</journal_issn_online>
+                        <journal_title>journal title</journal_title>
+                        <journal_volume>63</journal_volume>
+                        <journal_issue>1</journal_issue>
+                        <journal_page_from>140</journal_page_from>
+                        <journal_page_to>150</journal_page_to>
+                        <journal_article_url>http://0-icesjms.oxfordjournals.org.prospero.murdoch.edu.au/cgi/reprint/63/1/140</journal_article_url>
+                        <subject>270702 - Marine and Estuarine Ecology (incl. Marine Ichthyology)</subject>
+                        <file_description>Published</file_description>
+                        <creator_affiliation>Murdoch University</creator_affiliation>
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>Journal Item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <ID>28</ID>
+                        <AUTHORS>Hall N.G., Smith K.D., deLestang S</AUTHORS>
+                        <PUBLICATION_NUMB>147568</PUBLICATION_NUMB>
+                        <REFERENCE_TYPE>C1</REFERENCE_TYPE>
+                        <TITLE_1>article title</TITLE_1>
+                        <TITLE_2>journal title</TITLE_2>
+                        <PUBLISHER>Academic Press</PUBLISHER>
+                        <PUBLICATION_YEAR>2006</PUBLICATION_YEAR>
+                        <PUBLICATION_COUNTRY>UK</PUBLICATION_COUNTRY>
+                        <PUBLICATION_CITY>London</PUBLICATION_CITY>
+                        <VOLUME>63</VOLUME>
+                        <ISSUE>1</ISSUE>
+                        <EDITOR>Carol L Rogers</EDITOR>
+                        <PUBLICATION_URL>http://www.sagepub.com/journal.aspx?pid=144</PUBLICATION_URL>
+                        <ISBN>1054-3139</ISBN>
+                        <ISBN_Online>1095-9289</ISBN_Online>
+                        <PAGE_NUMB_FROM>140</PAGE_NUMB_FROM>
+                        <PAGE_NUMB_TO>150</PAGE_NUMB_TO>
+                        <FIELD_OF_RESEARCH>270702</FIELD_OF_RESEARCH>
+                        <PUBLISHING_LOCKED>Y</PUBLISHING_LOCKED>
+                        <URL>http://0-icesjms.oxfordjournals.org.prospero.murdoch.edu.au/cgi/reprint/63/1/140</URL>
+                        <STATUS>P</STATUS>
+                        <STAFF_NUMB>20010277</STAFF_NUMB>
+                        <Field45>270702</Field45>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>2</Step>
+                    <Attachments/>
+                    <Formdata>
+                       
+                        <session>ACV_2006_article title_28</session>
+                        <journal_peer_reviewed>Yes</journal_peer_reviewed>
+                        <resource_type>Journal Article</resource_type>
+                        <year>2006</year>
+                        <creator_last_name>Hall</creator_last_name>
+                        <creator_first_name>N.G.</creator_first_name>
+                        <creator_last_name_1>Smith</creator_last_name_1>
+                        <creator_first_name_1>K.D.</creator_first_name_1>
+                        <_count_creator-multiple_creators>2</_count_creator-multiple_creators>
+                        <creator_last_name_2>deLestang</creator_last_name_2>
+                        <creator_first_name_2>S</creator_first_name_2>
+
+                        <faculty/>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights/>
+                        <title>article title</title>
+                        <journal_publisher>Academic Press</journal_publisher>
+                        <journal_place_publication>London, UK</journal_place_publication>
+                        <journal_issn>1054-3139</journal_issn>
+                        <journal_issn_online>1095-9289</journal_issn_online>
+                        <journal_title>journal title</journal_title>
+                        <journal_volume>63</journal_volume>
+                        <journal_issue>1</journal_issue>
+                        <journal_page_from>140</journal_page_from>
+                        <journal_page_to>150</journal_page_to>
+                        <journal_url>http://www.sagepub.com/journal.aspx?pid=144</journal_url>
+                        <journal_article_url>http://0-icesjms.oxfordjournals.org.prospero.murdoch.edu.au/cgi/reprint/63/1/140</journal_article_url>
+                        <subject>270702 - Marine and Estuarine Ecology (incl. Marine Ichthyology)</subject>
+                        <file_description>Published</file_description>
+                        <creator_affiliation>Murdoch University</creator_affiliation>
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <utfx:test>
+        <utfx:name>Book Chapter</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <ID>1</ID>
+                        <AUTHORS>Garnett A.M</AUTHORS>
+                        <PUBLICATION_NUMB>114354</PUBLICATION_NUMB>
+                        <REFERENCE_TYPE>B1</REFERENCE_TYPE>
+                        <TITLE_1>Issues, Indicators and Ideas: A Guide to the Australian Economy</TITLE_1>
+                        <PUBLISHER>Pearson Education Australia Pty. Ltd.</PUBLISHER>
+                        <PUBLICATION_YEAR>2006</PUBLICATION_YEAR>
+                        <PUBLICATION_COUNTRY>Australia</PUBLICATION_COUNTRY>
+                        <PUBLICATION_CITY>Frenchs Forest, NSW</PUBLICATION_CITY>
+                        <ISBN>733974244</ISBN>
+                        <ISBN_Online>**zero missing + 13 digit isbn**</ISBN_Online>
+                        <NUMB_OF_CHAPTERS>12</NUMB_OF_CHAPTERS>
+                        <PAGE_NUMB_FROM>17</PAGE_NUMB_FROM>
+                        <PAGE_NUMB_TO>35</PAGE_NUMB_TO>
+                        <FIELD_OF_RESEARCH>270702</FIELD_OF_RESEARCH>
+                        <URL>http://prospero.murdoch.edu.au/search?/tIssues%2C+Indicators+and+Ideas%3A+A+Guide+to+the+Australia</URL>
+                        <STATUS>P</STATUS>
+                        <STAFF_NUMB>S890037D</STAFF_NUMB>
+                        <Field45>340206</Field45>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>2</Step>
+                    <Attachments/>
+                    <Formdata>
+                       
+                        <session>ACV_2006_Issues, Indicat_1</session>
+                        <resource_type>Book Chapter</resource_type>
+                        <year>2006</year>
+                        <creator_last_name>Garnett</creator_last_name>
+                        <creator_first_name>A.M</creator_first_name>
+                        <faculty/>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights/>
+                        <title>Issues, Indicators and Ideas: A Guide to the Australian Economy</title>
+                        <chapter_isbn>733974244</chapter_isbn>
+                        <chapter_isbn_online>**zero missing + 13 digit isbn**</chapter_isbn_online>
+                        <chapter_publisher>Pearson Education Australia Pty. Ltd.</chapter_publisher>
+                        <chapter_page_from>17</chapter_page_from>
+                        <chapter_page_to>35</chapter_page_to>
+
+                        <chapter_book_title>Issues, Indicators and Ideas: A Guide to the Australian Economy</chapter_book_title>
+                        <chapter_place_publication>Frenchs Forest, NSW, Australia</chapter_place_publication>
+                        <chapter_url>http://prospero.murdoch.edu.au/search?/tIssues%2C+Indicators+and+Ideas%3A+A+Guide+to+the+Australia</chapter_url>
+                        <chapter_number>12</chapter_number>
+                        <subject>270702 - Marine and Estuarine Ecology (incl. Marine Ichthyology)</subject>
+                        <file_description>Published</file_description>
+                        <creator_affiliation>Murdoch University</creator_affiliation>
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <utfx:test>
+        <utfx:name>Book</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <ID>20</ID>
+                        <AUTHORS>Dowling R K </AUTHORS>
+                        <PUBLICATION_NUMB>145934</PUBLICATION_NUMB>
+                        <REFERENCE_TYPE>A1</REFERENCE_TYPE>
+                        <TITLE_1>Geotourism</TITLE_1>
+                        <PUBLISHER>Elsevier Butterworth-Heinemann</PUBLISHER>
+                        <PUBLICATION_YEAR>2006</PUBLICATION_YEAR>
+                        <PUBLICATION_COUNTRY>United Kingdom</PUBLICATION_COUNTRY>
+                        <PUBLICATION_CITY>Oxford</PUBLICATION_CITY>
+                        <EDITOR>Ross K. Dowling and David Newsome</EDITOR>
+                        <APPEARANCE_YEAR>2005</APPEARANCE_YEAR>
+                        <ISBN>0750662158 (hbk.)</ISBN>
+                        <NUMB_OF_PAGES>352</NUMB_OF_PAGES>
+                        <FIELD_OF_RESEARCH>350507</FIELD_OF_RESEARCH>
+                        <URL>MURDOCH CATALOGUE RECORD http://prospero.murdoch.edu.au/search/?searchtype=t&amp;searcharg=geotourism&amp;SORT=D&amp;searchscope=1</URL>
+                        <STATUS>P</STATUS>
+                        <STAFF_NUMB>S890219J</STAFF_NUMB>
+                        <Field45>350507</Field45>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>2</Step>
+                    <Attachments/>
+                    <Formdata>
+                        
+                        <session>ACV_2006_Geotourism_20</session>
+                        <resource_type>Book</resource_type>
+                        <year>2006</year>
+                        <creator_last_name>Dowling</creator_last_name>
+                        <creator_first_name>R K</creator_first_name>
+                        <faculty/>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights/>
+                        <title>Geotourism</title>
+                        <book_isbn>0750662158 (hbk.)</book_isbn>
+                        <book_publisher>Elsevier Butterworth-Heinemann</book_publisher>
+                        <book_place_publication>Oxford, United Kingdom</book_place_publication>
+                        <subject>350507 - Tourism Management</subject>
+                        <file_description>Published</file_description>
+                        <creator_affiliation>Murdoch University</creator_affiliation>
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <utfx:test>
+        <utfx:name>Conference Paper</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <ID>20</ID>
+                        <AUTHORS>Dowling R K </AUTHORS>
+                        <PUBLICATION_NUMB>145934</PUBLICATION_NUMB>
+                        <REFERENCE_TYPE>E1</REFERENCE_TYPE>
+                        <TITLE_1>Geotourism</TITLE_1>
+                        <PUBLISHER>Elsevier Butterworth-Heinemann</PUBLISHER>
+                        <PLACE_PUBLISHED>Oxford</PLACE_PUBLISHED>
+                        <CONFERENCE_LOCATION>Derby, UK</CONFERENCE_LOCATION>
+                        <CONFERENCE_PUBLICATION>The conference Paper title</CONFERENCE_PUBLICATION>
+                        <PUBLICATION_YEAR>2006</PUBLICATION_YEAR>
+                        <PUBLICATION_COUNTRY>United Kingdom</PUBLICATION_COUNTRY>
+                        <PUBLICATION_CITY>Oxford</PUBLICATION_CITY>
+                        <EDITOR>Ross K. Dowling and David Newsome</EDITOR>
+                        <APPEARANCE_YEAR>2005</APPEARANCE_YEAR>
+                        <ISBN>0750662158 (hbk.)</ISBN>
+                        <NUMB_OF_PAGES>352</NUMB_OF_PAGES>
+                        <FIELD_OF_RESEARCH>350507</FIELD_OF_RESEARCH>
+                        <URL>MURDOCH CATALOGUE RECORD http://prospero.murdoch.edu.au/search/?searchtype=t&amp;searcharg=geotourism&amp;SORT=D&amp;searchscope=1</URL>
+                        <STATUS>P</STATUS>
+                        <STAFF_NUMB>S890219J</STAFF_NUMB>
+                        <Field45>350507</Field45>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>2</Step>
+                    <Attachments/>
+                    <Formdata>
+                        
+                        <session>ACV_2006_Geotourism_20</session>
+                        <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                        <resource_type>Conference Publication</resource_type>
+                        <year>2006</year>
+                        <creator_last_name>Dowling</creator_last_name>
+                        <creator_first_name>R K</creator_first_name>
+                        <faculty/>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights/>
+                        <title>Geotourism</title>
+                        <conference_place_publication>Oxford</conference_place_publication>
+                        <conference_publisher>Elsevier Butterworth-Heinemann</conference_publisher>
+                        <conference_location>Derby, UK</conference_location>
+                        <conference_title>The conference Paper title</conference_title>
+                        <subject>350507 - Tourism Management</subject>
+                        <file_description>Published</file_description>
+                        <creator_affiliation>Murdoch University</creator_affiliation>
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+</utfx:tests>

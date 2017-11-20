@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="marc_to_oai_dc.xsl"/>
+    <!-- Basic Test Outline -->
+    <!--
+        <utfx:test>
+        <utfx:name>Test Name</utfx:name>
+        <utfx:assert-equal>
+        <utfx:source validate="no">
+        
+        </utfx:source>
+        <utfx:expected validate="no">
+        
+        </utfx:expected>
+        </utfx:assert-equal>
+        </utfx:test>
+    -->
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Test Name</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="245" ind1="0" ind2="0">
+                            <marc:subfield code="a">Observing the open-closed boundary using cusp-latitude magnetometers</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:title>Observing the open-closed boundary using cusp-latitude magnetometers</dc:title>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [1.1] -->
+    <utfx:test>
+        <utfx:name>Creators [1.1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="100" ind1="1" ind2=" ">
+                            <marc:subfield code="a">Ables, Sean Thomas</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:creator>Ables, Sean Thomas</dc:creator>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [1.2] -->
+    <utfx:test>
+        <utfx:name>Creators [1.2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="100" ind1="1" ind2=" ">
+                            <marc:subfield code="a">Ables, Sean Thomas</marc:subfield>
+                            <marc:subfield code="u">University of Newcastle</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:creator>Ables, Sean Thomas. University of Newcastle</dc:creator>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [2.1] -->
+    <utfx:test>
+        <utfx:name>Creators [2.1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="700" ind1="1" ind2=" ">
+                            <marc:subfield code="a">Fraser, Brian J</marc:subfield>                            
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:creator>Fraser, Brian J</dc:creator>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [2.2] -->
+    <utfx:test>
+        <utfx:name>Creators [2.2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="700" ind1="1" ind2=" ">
+                            <marc:subfield code="a">Fraser, Brian J</marc:subfield>
+                            <marc:subfield code="u">University of Newcastle</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:creator>Fraser, Brian J. University of Newcastle</dc:creator>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [3] -->
+    <utfx:test>
+        <utfx:name>Creators [3]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="710" ind1="2" ind2=" ">
+                            <marc:subfield code="a">University of Newcastle</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:creator>University of Newcastle</dc:creator>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Description -->
+    <utfx:test>
+        <utfx:name>Description</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="520" ind1="3" ind2=" ">
+                            <marc:subfield code="a">A new ground-based diagnostic of reconnection at the magnetopause</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:description>A new ground-based diagnostic of reconnection at the magnetopause</dc:description>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Publisher Information & publication date -->
+    <utfx:test>
+        <utfx:name>Publisher Information &amp; publication date</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="260" ind1=" " ind2=" ">
+                            <marc:subfield code="a">Washington</marc:subfield>
+                            <marc:subfield code="b">American Geophysical Union</marc:subfield>
+                            <marc:subfield code="c">2005</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:publisher>American Geophysical Union. Washington</dc:publisher>
+                    <dc:date>2005</dc:date>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Relation -->
+    <utfx:test>
+        <utfx:name>Relation</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="787" ind1="0" ind2=" ">
+                            <marc:subfield code="t">Geophysical Research Letters</marc:subfield>
+                            <marc:subfield code="n">1</marc:subfield>
+                            <marc:subfield code="g"> Vol. 32, no. 10 (May 28. 2005), p. 4 pages</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:relation>Geophysical Research Letters</dc:relation>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Rights -->
+    <utfx:test>
+        <utfx:name>Rights</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="540" ind1=" " ind2="0">
+                            <marc:subfield code="a">We have permission to have this in our repository</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:rights>We have permission to have this in our repository</dc:rights>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Publisher URL -->
+    <utfx:test>
+        <utfx:name>Publisher URL</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="856" ind1="4" ind2="0">
+                            <marc:subfield code="u">http://0-www.agu.org.library.newcastle.edu.au/journals/gl/</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:identifier>http://0-www.agu.org.library.newcastle.edu.au/journals/gl/</dc:identifier>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Subjects -->
+    <utfx:test>
+        <utfx:name>Subjects</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="650" ind1=" " ind2=" ">
+                            <marc:subfield code="a">flux-transfer events</marc:subfield>
+                            <marc:subfield code="a">interplanetary magnetic-field</marc:subfield>
+                            <marc:subfield code="a">impulse events</marc:subfield>
+                            <marc:subfield code="a">magnetopause</marc:subfield>
+                            <marc:subfield code="a">reconnection</marc:subfield>
+                            <marc:subfield code="a">signatures</marc:subfield>
+                            <marc:subfield code="a">altitude</marc:subfield>
+                            <marc:subfield code="a">identification</marc:subfield>
+                            <marc:subfield code="a">magnetosphere</marc:subfield>
+                            <marc:subfield code="a">layer</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:subject>flux-transfer events</dc:subject>
+                    <dc:subject>interplanetary magnetic-field</dc:subject>
+                    <dc:subject>impulse events</dc:subject>
+                    <dc:subject>magnetopause</dc:subject>
+                    <dc:subject>reconnection</dc:subject>
+                    <dc:subject>signatures</dc:subject>
+                    <dc:subject>altitude</dc:subject>
+                    <dc:subject>identification</dc:subject>
+                    <dc:subject>magnetosphere</dc:subject>
+                    <dc:subject>layer</dc:subject>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Type -->
+    <utfx:test>
+        <utfx:name>Item Type</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="655" ind1=" " ind2="7">
+                            <marc:subfield code="a">journal article</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:type>journal article</dc:type>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Collection Title-->
+    <utfx:test>
+        <utfx:name>Collection Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="773" ind1="0" ind2=" ">
+                            <marc:subfield code="t">The University of Newcastle VITAL repository</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:relation>The University of Newcastle VITAL repository</dc:relation>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- DEST Collection Year-->
+    <utfx:test>
+        <utfx:name>DEST Collection Year</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="591" ind1=" " ind2=" ">
+                            <marc:subfield code="a">2005</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:description>2005</dc:description>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- DEST Category-->
+    <utfx:test>
+        <utfx:name>DEST Category</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="592" ind1=" " ind2=" ">
+                            <marc:subfield code="a">C1</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:description>C1</dc:description>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Conference Title -->
+    <utfx:test>
+        <utfx:name>Conference Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="711" ind1="0" ind2=" ">
+                            <marc:subfield code="a">This is a conference</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:relation>This is a conference</dc:relation>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Patent Number -->
+    <utfx:test>
+        <utfx:name>Patent Number</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="013" ind1="0" ind2=" ">
+                            <marc:subfield code="a">Patent Number</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <dc:subject>Patent Number</dc:subject>
+                </oai_dc:dc>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+
+</utfx:tests>

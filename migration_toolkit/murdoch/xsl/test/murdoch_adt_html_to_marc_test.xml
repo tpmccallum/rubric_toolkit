@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="murdoch_adt_html_to_marc.xsl"/>
+
+
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.title" content="The Ethical Nature Of The Mother-Midwife Relationship: A Feminist Perspective"/>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="245" ind1="1" ind2="4">
+                    <subfield code="a">The Ethical Nature Of The Mother-Midwife Relationship: A Feminist Perspective</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>Author</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.creator.personalname" content="Thompson, Faye Elizabeth"/>
+                <meta name="dc.lastname" content="Thompson"/>
+                <meta name="dc.othernames" content="Faye Elizabeth"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="100" ind1="1" ind2=" ">
+                    <subfield code="a">Thompson, Faye Elizabeth</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>keywords</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.subject" content="."/>
+                <meta name="dc.subject" content="childbirth"/>
+                <meta name="dc.subject" content="pregnancy"/>
+                <meta name="dc.subject" content="midwife"/>
+                <meta name="dc.subject" content="midwives"/>
+                <meta name="dc.subject" content="ethics"/>
+                <meta name="dc.subject" content="bioethics"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="653" ind1=" " ind2=" ">
+                    <subfield code="a">childbirth</subfield>
+                </datafield>
+                <datafield tag="653" ind1=" " ind2=" ">
+                    <subfield code="a">pregnancy</subfield>
+                </datafield>
+                <datafield tag="653" ind1=" " ind2=" ">
+                    <subfield code="a">midwife</subfield>
+                </datafield>
+                <datafield tag="653" ind1=" " ind2=" ">
+                    <subfield code="a">midwives</subfield>
+                </datafield>
+                <datafield tag="653" ind1=" " ind2=" ">
+                    <subfield code="a">ethics</subfield>
+                </datafield>
+                <datafield tag="653" ind1=" " ind2=" ">
+                    <subfield code="a">bioethics</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>abstract</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.description.abstract" content="This research explored the ethical nature of the mother-midwife relationship"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="520" ind1=" " ind2=" ">
+                    <subfield code="a">This research explored the ethical nature of the mother-midwife relationship</subfield>
+                </datafield>
+
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>date</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.date.valid" scheme="W3CDTF" content="2001"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="260" ind1=" " ind2=" ">
+                    <subfield code="c">2001</subfield>
+                </datafield>
+
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>publisher</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+
+                <meta name="dc.publisher" content="University of Southern Queensland. "/>
+            </utfx:source>
+            <utfx:expected validate="no">
+
+                <datafield tag="260" ind1=" " ind2=" ">
+                    <subfield code="b">University of Southern Queensland.</subfield>
+                </datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>rights</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.rights" content="http://www.usq.edu.au)"/>
+                <meta name="dc.rights" content="Copyright Faye Elizabeth Thompson"/>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+
+                <datafield tag="540" ind1=" " ind2=" ">
+                    <subfield code="a">http://www.usq.edu.au)</subfield>
+                </datafield>
+                <datafield tag="540" ind1=" " ind2=" ">
+                    <subfield code="a">Copyright Faye Elizabeth Thompson</subfield>
+                </datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <utfx:test>
+        <utfx:name>identifier</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+
+                <meta name="dc.identifier" scheme="URI" content="http://adt.usq.edu.au./adt-QUSQ/public/adt-QUSQ20030512.165509"/>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+
+                
+
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>description</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.description" content="PhD Doctorate"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+
+                <datafield tag="502" ind1=" " ind2=" ">
+                    <subfield code="a">PhD Doctorate</subfield>
+                </datafield>
+
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+
+
+    <utfx:test>
+        <utfx:name>language</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.language" scheme="RFC1766" content="en"/>
+                <meta name="dc.language" scheme="RFC1766" content="testLanguage"/>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="041" ind1="0" ind2=" ">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield tag="546" ind1=" " ind2=" ">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield tag="041" ind1="0" ind2=" ">
+                    <subfield code="a">testLanguage</subfield>
+                 </datafield>
+                <datafield tag="546" ind1=" " ind2=" ">
+                    <subfield code="a">testLanguage</subfield>
+                </datafield>
+              </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <utfx:test>
+        <utfx:name>Murdoch additional info</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <head>
+                    <meta name="category" content="i"/>
+                    <meta name="thesisid" content="adt-MU20070820.130155"/>
+                    <meta name="dc.title" content="DNA methods for the detection of Phytophthora cinnamomi from soil"/>
+                    <meta name="dc.creator.personalname" content="Nari Michelle Anderson"/>
+                    <meta name="dc.creator" content="N.Williams@murdoch.edu.au"/>
+                    <meta name="dc.subject" content="phytophthora cinnamomi"/>
+                    <meta name="dc.subject" content="DNA"/>
+                    <meta name="dc.subject" content="PCR"/>
+                    <meta name="dc.subject" content="Microarray"/>
+                    <meta name="dc.subject" content="detection"/>
+                    <meta name="dc.subject" content="diagnostics soil"/>
+                    <meta name="dc.description.abstract" content="This project assesses two aspects of DNA detection of Phytophthora species from soil samples. Firstly, a nested PCR protocol was established with both primary and nested PCR specific for P. cinnamomi detection. PCR amplification of P. cinnamomi DNA isolated from soil was optimised with the addition of bovine serum albumin and formamide. This was found to improve both the specificity and sensitivity of PCR amplification of DNA in the presence of inhibitors co-extracted along with the target DNA from soil samples. The application of diagnostic nested PCR with the addition of BSA and formamide was verified by comparison with routine culture based detection methods. In all cases, nested PCR detection incorporating BSA and formamide was found to be considerably more sensitive than the culture based detection methods. &#13;&#10;&#13;&#10;The second component of this thesis investigates the simultaneous detection of multiple species of Phytophthora using microarray analysis. Microarray based detection has been previously limited by variable and inconsistent hybridisation intensities across the diversity of probes used in each array. In this study a novel concept for the differentiation of detection targets using duplex melting kinetics is introduced. A microarray assay was developed on a PamChip &#x201E;&#xA5; microarray enabling the differentiation of target Phytophthora species using the melting kinetics of probe-target duplexes. In the majority of cases the hybridization kinetics of target and non-target duplexes differed significantly. Analysis of the melting kinetics of duplexes formed by probes with target and non-target DNA was found to be an effective method for determining specific hybridization and was independent of fluctuations in hybridization signal intensity. This form of analysis was more robust than the traditional approach based on hybridisation intensity, and allowed the detection of individual Phytophthora species and mixtures there of."/>
+                    <meta name="dc.date.valid" scheme="W3CDTF" content="2006"/>
+                    <meta name="dc.language" scheme="RFC1766" content="en"/>
+                    <meta name="dc.publisher" content="Murdoch University"/>
+                    <meta name="dc.rights" content="http://www.murdoch.edu.au/goto/CopyrightNotice"/>
+                    <meta name="dc.rights" content="Copyright Nari Michelle Anderson"/>
+                    <meta name="dc.identifier" scheme="URI" content="http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20070820.130155"/>
+                    <meta name="dc.faculty" content="Science &amp; Engineering"/>
+                    <meta name="dc.school" content="Biological Science &amp; Biotechnology"/>
+                    <meta name="dc.degreeprogram" content="Doctor of Philosophy (PhD)"/>
+                    <meta name="dc.thesistype" content="PhD Doctorate"/>
+                    <meta name="dc.supervisor" content="Dr. Phillip O'Brien"/>
+                    <meta name="dc.lastname" content="Anderson"/>
+                    <meta name="dc.othernames" content="Nari Michelle"/>
+               </head>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"></controlfield>
+                    <datafield tag="655" ind1=" " ind2=" ">
+                        <subfield code="a">Australasian Digital Thesis</subfield>
+                    </datafield>
+                    <datafield tag="245" ind1="1" ind2="0">
+                        <subfield code="a">DNA methods for the detection of Phytophthora cinnamomi from soil</subfield>
+                    </datafield>
+                    
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">phytophthora cinnamomi</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">DNA</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">PCR</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">Microarray</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">detection</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">diagnostics soil</subfield>
+                    </datafield>
+                    <datafield tag="520" ind1=" " ind2=" ">
+                        <subfield code="a">This project assesses two aspects of DNA detection of Phytophthora species from soil samples. Firstly, a nested PCR protocol was established with both primary and nested PCR specific for P. cinnamomi detection. PCR amplification of P. cinnamomi DNA isolated from soil was optimised with the addition of bovine serum albumin and formamide. This was found to improve both the specificity and sensitivity of PCR amplification of DNA in the presence of inhibitors co-extracted along with the target DNA from soil samples. The application of diagnostic nested PCR with the addition of BSA and formamide was verified by comparison with routine culture based detection methods. In all cases, nested PCR detection incorporating BSA and formamide was found to be considerably more sensitive than the culture based detection methods. &#13;&#10;&#13;&#10;The second component of this thesis investigates the simultaneous detection of multiple species of Phytophthora using microarray analysis. Microarray based detection has been previously limited by variable and inconsistent hybridisation intensities across the diversity of probes used in each array. In this study a novel concept for the differentiation of detection targets using duplex melting kinetics is introduced. A microarray assay was developed on a PamChip &#x201E;&#xA5; microarray enabling the differentiation of target Phytophthora species using the melting kinetics of probe-target duplexes. In the majority of cases the hybridization kinetics of target and non-target duplexes differed significantly. Analysis of the melting kinetics of duplexes formed by probes with target and non-target DNA was found to be an effective method for determining specific hybridization and was independent of fluctuations in hybridization signal intensity. This form of analysis was more robust than the traditional approach based on hybridisation intensity, and allowed the detection of individual Phytophthora species and mixtures there of.</subfield>
+                    </datafield>
+                    <datafield tag="260" ind1=" " ind2=" ">
+                        <subfield code="c">2006</subfield>
+                    </datafield> 
+      
+                <datafield tag="041" ind1="0" ind2=" ">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield tag="546" ind1=" " ind2=" ">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                    <datafield tag="260" ind1=" " ind2=" ">
+                        <subfield code="b">Murdoch University </subfield>
+                    </datafield>
+                    <datafield tag="540" ind1=" " ind2=" ">
+                        <subfield code="a">http://www.murdoch.edu.au/goto/CopyrightNotice</subfield>
+                    </datafield>
+                    <datafield tag="540" ind1=" " ind2=" ">
+                        <subfield code="a">Copyright Nari Michelle Anderson</subfield>
+                    </datafield>   
+                
+                    <datafield tag="710" ind1=" " ind2=" ">
+                        <subfield code="a">Murdoch University</subfield>
+                        <subfield code="b">Division of Science &amp; Engineering</subfield>
+                        <subfield code="c">School of Biological Science &amp; Biotechnology</subfield>
+                    </datafield>
+                    <datafield tag="502" ind1=" " ind2=" " >
+                        <subfield code="a">PhD Doctorate - Doctor of Philosophy (PhD)</subfield>
+                    </datafield>
+                    <datafield tag="720" ind1=" " ind2=" ">
+                        <subfield code="a">Dr. Phillip O'Brien</subfield>
+                        <subfield code="e">Supervisor</subfield>
+                    </datafield>   
+                    <datafield tag="100" ind1="1" ind2=" ">
+                        <subfield code="a">Anderson, Nari Michelle</subfield>
+                    </datafield>
+                   
+               
+                </record>
+                    </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+      
+    <utfx:test>
+        <utfx:name>recursive</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">    
+    <head>
+        <meta name="dc.title" content="The Ethical Nature Of The Mother-Midwife Relationship: A Feminist Perspective"/>
+        <meta name="dc.creator.personalname" content="Thompson, Faye Elizabeth"/>
+        <meta name="dc.creator.personalname.address" content="n/a"/>
+        <meta name="dc.subject" content="childbirth"/>
+        <meta name="dc.subject" content="pregnancy"/>
+        <meta name="dc.subject" content="midwife"/>
+        <meta name="dc.subject" content="midwives"/>
+        <meta name="dc.subject" content="ethics"/>
+        <meta name="dc.subject" content="bioethics"/>
+        <meta name="dc.description.abstract" content="This research explored the ethical nature of the mother-midwife relationship"/>
+        <meta name="dc.date.valid" scheme="W3CDTF" content="2001"/>
+        <meta name="dc.language" scheme="RFC1766" content="en"/>
+        <meta name="dc.publisher" content="University of Southern Queensland. "/>
+        <meta name="dc.rights" content="http://www.usq.edu.au)"/>
+        <meta name="dc.rights" content="Copyright Faye Elizabeth Thompson"/>
+        <meta name="dc.identifier" scheme="URI" content="http://adt.usq.edu.au./adt-QUSQ/public/adt-QUSQ20030512.165509"/>
+        <meta name="dc.description" content="PhD Doctorate"/>
+    </head>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="655" ind1=" " ind2=" ">
+                            <subfield code="a">Australasian Digital Thesis</subfield>
+                        </datafield>
+                            <datafield tag="245" ind1="1" ind2="4">
+                                <subfield code="a">The Ethical Nature Of The Mother-Midwife Relationship: A Feminist Perspective</subfield>
+                            </datafield>
+                        
+                         
+                            <datafield tag="653" ind1=" " ind2=" ">
+                                <subfield code="a">childbirth</subfield>
+                            </datafield>
+                            <datafield tag="653" ind1=" " ind2=" ">
+                                <subfield code="a">pregnancy</subfield>
+                            </datafield>
+                            <datafield tag="653" ind1=" " ind2=" ">
+                                <subfield code="a">midwife</subfield>
+                            </datafield>
+                            <datafield tag="653" ind1=" " ind2=" ">
+                                <subfield code="a">midwives</subfield>
+                            </datafield>
+                            <datafield tag="653" ind1=" " ind2=" ">
+                                <subfield code="a">ethics</subfield>
+                            </datafield>
+                            <datafield tag="653" ind1=" " ind2=" ">
+                                <subfield code="a">bioethics</subfield>
+                            </datafield>
+                            <datafield tag="520" ind1=" " ind2=" ">
+                                <subfield code="a">This research explored the ethical nature of the mother-midwife relationship</subfield>
+                            </datafield>
+                            <datafield tag="260" ind1=" " ind2=" ">
+                                <subfield code="c">2001</subfield>
+                            </datafield> 
+                            <datafield tag="041" ind1="0" ind2=" ">
+                                <subfield code="a">eng</subfield>
+                            </datafield>
+                        <datafield tag="546" ind1=" " ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                            <datafield tag="260" ind1=" " ind2=" ">
+                                <subfield code="b">University of Southern Queensland.</subfield>
+                            </datafield>
+                            <datafield tag="540" ind1=" " ind2=" ">
+                                <subfield code="a">http://www.usq.edu.au)</subfield>
+                            </datafield>
+                            <datafield tag="540" ind1=" " ind2=" ">
+                                <subfield code="a">Copyright Faye Elizabeth Thompson</subfield>
+                            </datafield>                            
+                            
+                            <datafield tag="502" ind1=" " ind2=" ">
+                                <subfield code="a">PhD Doctorate</subfield>
+                            </datafield>
+                                
+                       
+                    </record>
+                    </collection>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+                
+                
+</utfx:tests>

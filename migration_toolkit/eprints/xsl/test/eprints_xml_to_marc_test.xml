@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+    -->
+    <utfx:stylesheet src="eprints_xml_to_marc.xsl"/>
+
+
+
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>245 Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                
+                <record>
+                    <field name="title">This is the title of an eprints record</field>
+                </record>
+                    
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="245" ind1="1" ind2="0">
+                        <subfield code="a">This is the title of an eprints record</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Title THE -->
+    <utfx:test>
+        <utfx:name>245 Item Title THE</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="title">The title</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="245" ind1="1" ind2="4">
+                        <subfield code="a">The title</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Title A -->
+    <utfx:test>
+        <utfx:name>245 Item Title A</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="title">A title</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="245" ind1="1" ind2="2">
+                        <subfield code="a">A title</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- author -->
+    <utfx:test>
+        <utfx:name>100 Creator</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="creators" id="">
+                        <part name="given">givenName</part>
+                        <part name="family">familyName</part>
+                    </field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="100" ind1="1" ind2=" ">
+                        <subfield code="a">familyName, givenName </subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- authorz -->
+    <utfx:test>
+        <utfx:name>100 + 700 Creatorz</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="creators" id="">
+                        <part name="given">givenName</part>
+                        <part name="family">familyName</part>
+                    </field>
+                    <field name="creators" id="">
+                        <part name="given">givenName2</part>
+                        <part name="family">familyName2</part>
+                    </field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="100" ind1="1" ind2=" ">
+                        <subfield code="a">familyName, givenName </subfield>
+                    </datafield>
+                    <datafield tag="700" ind1="1" ind2=" ">
+                        <subfield code="a">familyName2, givenName2 </subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+
+    <!-- Number of pages -->
+    <utfx:test>
+        <utfx:name>300 Number of pages</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="pages">99 pages</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="300" ind1=" " ind2=" ">
+                        <subfield code="a">99 pages</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- Host Item Entry -->
+    <utfx:test>
+        <utfx:name>260 and 773 publication, date, publisher, place of publisher</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="publication">Title of publication</field>
+                    <field name="date_effective">2002-12</field>
+                    <field name="publisher">Publisher</field>
+                    <field name="place_of_pub">Place of publisher</field>
+                    <field name="refereed">FALSE</field>
+                    <field name="volume">1</field>
+                    <field name="pagerange">110-120</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="773" ind1="0" ind2="8">
+                        <subfield code="t">Title of publication</subfield>
+                        <subfield code="n">0</subfield>
+                        <subfield code="g">Vol 1, pp110-120</subfield>
+                        
+                    </datafield>
+                    <datafield tag="260" ind1=" " ind2=" ">
+                        <subfield code="a">Place of publisher</subfield>
+                        <subfield code="b">Publisher</subfield>
+                        <subfield code="c">2002</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <!-- 655 Resource Type -->
+    <utfx:test>
+        <utfx:name>655 Type</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="type">type</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="655" ind1=" " ind2="7">
+                        <subfield code="a">type</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus </subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- 022 issn -->
+    <utfx:test>
+        <utfx:name>022 issn</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="issn">1444-5212</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="022" ind1=" " ind2=" ">
+                        <subfield code="a">1444-5212</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- 020 isbn  -->
+    <utfx:test>
+        <utfx:name>020 isbn</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="isbn">1 920719 03 2</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="020" ind1=" " ind2=" ">
+                        <subfield code="a">1 920719 03 2</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!--  653 keywords -->
+    <utfx:test>
+        <utfx:name>653 keywords</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="keywords">Keyword1, Keyword2, Keyword3</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">Keyword1</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">Keyword2</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">Keyword3</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!--  520 abstract text -->
+    <utfx:test>
+        <utfx:name>520 abstract text</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="abstract">This is abstract text This is abstract text This is abstract text This is abstract text</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="520" ind1="3" ind2=" ">
+                        <subfield code="a">This is abstract text This is abstract text This is abstract text This is abstract text</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!--  856 URL -->
+    <utfx:test>
+        <utfx:name>856 URL</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="official_url">http://www.university.edu.au</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="856" ind1="4" ind2=" ">
+                        <subfield code="u">http://www.university.edu.au</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- subject  -->
+    <utfx:test>
+        <utfx:name>Subject</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="subjects">230102</field>
+                    <field name="subjects">300105</field>
+                    <field name="subjects">299901</field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"/>
+                    <datafield tag="650" ind1="2" ind2="4">
+                        <subfield code="a">230102 - Number Theory and Field Theory</subfield>
+                    </datafield>
+                    <datafield tag="650" ind1="2" ind2="4">
+                        <subfield code="a">300105 - Applied Hydrology (Drainage, Flooding, Irrigation, Quality, etc.)</subfield>
+                    </datafield>
+                    <datafield tag="650" ind1="2" ind2="4">
+                        <subfield code="a">299901 - Agricultural Engineering</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng </subfield>
+                    </datafield>
+                    <datafield tag="546" ind1=" " ind2=" ">
+                        <subfield code="a">en-aus</subfield>
+                    </datafield>
+                        </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+  
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <record>
+                    <field name="eprintid">4</field>
+                    <field name="userid">2</field>
+                    <field name="dir">disk0/00/00/00/04</field>
+                    <field name="datestamp">2005-06-08</field>
+                    <field name="type">usqproj</field>
+                    <field name="succeeds"></field>
+                    <field name="commentary"></field>
+                    <field name="replacedby"></field>
+                    <field name="creators" id=""><part name="given">Cheryl</part><part name="family">McCarthy</part></field>
+                    <field name="title">Advance rate measurement for furrow irrigation</field>
+                    <field name="no_authors"></field>
+                    <field name="ispublished">unpub</field>
+                    <field name="date_pubgrant"></field>
+                    <field name="grad_level">ugrad</field>
+                    <field name="subjects">300105</field>
+                    <field name="subjects">299901</field>
+                    <field name="full_text_status">public</field>
+                    <field name="monograph_type"></field>
+                    <field name="pres_type"></field>
+                    <field name="keywords">furrow irrigation, advance rate measurement, digital camera advance front detection</field>
+                    <field name="note"></field>
+                    <field name="suggestions"></field>
+                    <field name="abstract">Furrow irrigation is used for 96% of the irrigated cotton crop area in Australia. The
+                        performance of furrow irrigation can be improved by measuring furrow irrigation advance
+                        rate, from which optimised values for irrigation parameters can be determined
+                        and implemented in subsequent irrigations. Most water detection methods for advance
+                        rate measurement use water sensors that are located in the furrow, and which must be
+                        tediously collected from the furrow after the irrigation takes place. Design of an alternate
+                        system for advance rate measurement has emphasised convenient, immediate
+                        recovery of advance data.
+                        
+                        Machine vision was investigated as an approach for measuring advance rate for furrow
+                        irrigation. A high resolution digital camera at a fixed location at the end of the field
+                        monitors changes in field appearance during an irrigation. In the absence of a crop
+                        canopy, an unobstructed view of the advancing water front can be obtained from the
+                        end of the field. For more mature crops, under certain conditions, change in crop
+                        canopy appearance during an irrigation also travels visibly down the field.
+                        
+                        The digital camera has been interfaced with a laptop so that images can be captured,
+                        downloaded and analysed during the irrigation. Field trials indicate that a single camera
+                        can detect objects for distances up to 500 metres with an accuracy of + or - 5 metres,
+                        by use of optical zoom and by increasing the height of the camera. Experiments reveal
+                        significant tonal response of dry crop plants to water within twenty minutes of application
+                        of water. The image analysis involves two separate approaches for the bare soil
+                        and closed canopy conditions.
+                        
+                        Temperature sensing of soil and crop canopy temperature was considered in conjunction
+                        with the digital camera advance front detection, however due to budgetary constraints
+                        thermal response of the field could not be investigated for this project.</field>
+                    <field name="date_sub">2004-10</field>
+                    <field name="date_issue"></field>
+                    <field name="date_effective">2004-10</field>
+                    <field name="series"></field>
+                    <field name="publication"></field>
+                    <field name="volume"></field>
+                    <field name="number"></field>
+                    <field name="publisher"></field>
+                    <field name="place_of_pub">Toowoomba, Australia</field>
+                    <field name="pagerange">1-135</field>
+                    <field name="pages"></field>
+                    <field name="no_chaps"></field>
+                    <field name="event_title"></field>
+                    <field name="event_location"></field>
+                    <field name="event_dates"></field>
+                    <field name="event_type"></field>
+                    <field name="id_number"></field>
+                    <field name="patent_applicant"></field>
+                    <field name="institution"></field>
+                    <field name="department">engsurv</field>
+                    <field name="subdept">mech</field>
+                    <field name="centre_name"></field>
+                    <field name="thesis_type"></field>
+                    <field name="refereed">FALSE</field>
+                    <field name="isbn"></field>
+                    <field name="issn"></field>
+                    <field name="fileinfo">pdf;http://rubric-idp.usq.edu.au/eprints2dspace/test_pdf_1.pdf</field>
+                    <field name="book_title"></field>
+                    <field name="official_url"></field>
+                    <field name="book_cat"></field>
+                    <field name="article_cat"></field>
+                    <field name="conf_item_cat"></field>
+                    <field name="referencetext"></field>
+                </record>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">This is the title of an eprints record</subfield></datafield>
+                        <datafield tag="100" ind1="1" ind2=" "><subfield code="a">Ahmed, M W</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" "><subfield code="a"> Neller, R J</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" "><subfield code="a"> Katouli, M</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" "><subfield code="a">UK</subfield>
+                            <subfield code="b">The Society for Applied Microbiology</subfield>
+                            <subfield code="c">2005</subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" "><subfield code="a">11</subfield>
+                        </datafield>
+                        <datafield tag="773" ind1="0" ind2="8"><subfield code="t">Journal of Applied Microbiology</subfield>
+                            <subfield code="g">Vol. 98, no. 4, pp910-920</subfield>
+                            <subfield code="n">1</subfield>
+                        </datafield>
+                        
+                        
+                        <datafield tag="655" ind1=" " ind2="7"><subfield code="a">journal article </subfield>
+                            
+                        </datafield>
+                        <datafield tag="595" ind1=" " ind2=" "><subfield code="a">Refereed, Research</subfield>
+                        </datafield>
+                        <datafield tag="596" ind1=" " ind2=" "><subfield code="a">C1</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                        
+                    </record>
+                 <datafield tag="041" ind1="0" ind2=" ">                         <subfield code="a">eng </subfield>                     </datafield>                     <datafield tag="546" ind1=" " ind2=" ">                         <subfield code="a">en-aus</subfield>                     </datafield></collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    -->
+
+
+</utfx:tests>

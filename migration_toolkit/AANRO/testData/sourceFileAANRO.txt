@@ -1,0 +1,37 @@
+id 038166
+doctype Book or Report
+pubyear 1996
+title Application of duckweed in treating municipal wastewater
+author Leng RA (University of New England)
+; nextAuthor
+sponsor Hunter Water Corporation
+source Urban Water Research Association of Australia, Melbourne VIC 1996-05,
+ 53p, tables, 35 figs, refs.
+isbn 1876088087
+series Research Report (Urban Water Research Association of Australia); no 111.
+abstract Duckweed species (Lemnaceae) have demonstrated, in overseas
+ experiments, a tremendous ability to remove mineral contaminants, primarily
+ nitrogen, phosphorus, potassium, calcium, sodium and magnesium, from
+ wastewaters emanating from municipal sewage treatment works, intensive animal
+ production industries and food processing factories. The research program
+ aimed to adapt overseas studies to Australian conditions using Spirodila
+ species of duckweed. The results were impressive and confirmed that duckweed
+ has the capability to further polish municipal wastewater in Australia. Trials
+ of duckweed on coal mine wastewater showed that the plant can tolerate the
+ wastewater, but cannot uptake the huge quantities of salts required by the
+ mining companies.
+keywords Wastewater Treatment
+; Sewage Treatment
+; Coal Industry Waste Waters
+; Aquatic Macrophytes (Lemnaceae)
+; Water Quality (Treated Waters)
+; Biological Treatment
+; Wetlands
+; Small Sewage Works
+; Spirodila
+weblink http://www.wsaa.asn.au
+availability Copies of this report are available from the Water Services
+ Association of Australia, Phone (03) 9606 0678 or Fax (03) 9606 0376.  For
+ online ordering visit the website
+availemail info@wsaa.asn.au
+$

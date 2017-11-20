@@ -1,0 +1,82 @@
+<record><leader>03244ctm a2200313 a 4500</leader>
+    <controlfield tag="001">748905</controlfield>
+    
+    <controlfield tag="005">20060914143418.0</controlfield>
+    <controlfield tag="008">060426s2005    xnaa     bm   000 0 eng d</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+        <subfield code="a">NMQU</subfield>
+        <subfield code="b">eng</subfield>
+        <subfield code="c">NMQU</subfield>
+    </datafield>
+    <datafield tag="042" ind1=" " ind2=" ">
+        <subfield code="a">anuc</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+        <subfield code="a">u-at---</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+        <subfield code="a">Electronic version</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+        <subfield code="a">Batten, Bronwyn.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+        <subfield code="a">From prehistory to history</subfield>
+        <subfield code="h">[electronic resource] :</subfield>
+        <subfield code="b">shared perspectives in Australian heritage interpretation /</subfield>
+        <subfield code="c">Bronwyn Batten.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+        <subfield code="c">2005.</subfield>
+    </datafield>
+    <datafield tag="502" ind1=" " ind2=" ">
+        <subfield code="a">Thesis (PhD)--Macquarie University (Division of Society, Culture, Media &amp; Philosophy, Warawara - Department of Indigenous Studies), 2005.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+        <subfield code="a">Bibliography: p. 248-265.</subfield>
+    </datafield>
+    <datafield tag="505" ind1="0" ind2=" ">
+        <subfield code="a">Introduction and method -- General issues in heritage interpretation: Monuments and memorials; Museums; Other issues -- Historic site case studies: Parramatta Park and Old Government House; The Meeting Place Precinct - Botany Bay National Park; Myall Creek -- Discussion and conclusions.</subfield>
+    </datafield>
+    <datafield tag="520" ind1="3" ind2=" ">
+        <subfield code="a">It has long been established that in Australia contemporary (post-contact) Aboriginal history has suffered as a result of the colonisation process.  Aboriginal history was seen as belonging in the realm of prehistory, rather than in contemporary historical discourses.  Attempts have now been made to reinstate indigenous history into local, regional and national historical narratives.  The field of heritage interpretation however, still largely relegates Aboriginal heritage to prehistory.  Aboriginal heritage is seen as being a separate interpretive field from 'historic heritage', and is often linked to 'natural heritage'.  This thesis invetigates the ways in which Aborigianl history can be incorporated into the interpetation of contemporary or post-contact history at heritage sites.  The thesis uses the principle of 'shared history' as outlined by the Council for Aboriginal Reconciliation, as a starting point in these discussions.  However, the ultimate aim is to go beyond this definition.  By investigating a variety of heritage sites (examples are taken from monuments, museums and historic sites Australia wide), and in particular those that are attempting to</subfield>
+    </datafield>
+    <datafield tag="520" ind1="3" ind2=" ">
+        <subfield code="a">incorporate both indigenous and non-indigenous history in their interpretive programs, this thesis argues for effective ways to create 'shared histories' in practice, whilst also analysing the problems that can be encountered when trying to establish these programs.  The resulting discussion provides insights, particularly for those working in the field of interpretation, as to how heritage interpreters in Australia can adopt a more inclusive approach, that is, an approach that allows for multiple voices both from and about the past, to be heard.</subfield>
+    </datafield>
+    <datafield tag="530" ind1=" " ind2=" ">
+        <subfield code="a">Also available in print form.</subfield>
+    </datafield>
+    <datafield tag="533" ind1=" " ind2=" ">
+        <subfield code="a">Electronic reproduction.</subfield>
+        <subfield code="b">[Australia] :</subfield>
+        <subfield code="c">Australasian Digital Theses program,</subfield>
+        <subfield code="d">2005.</subfield>
+    </datafield>
+    <datafield tag="534" ind1=" " ind2=" ">
+        <subfield code="a">viii, 265 p., bound : ill. ; 30 cm.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Aboriginal Australians</subfield>
+        <subfield code="x">History.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Historic preservation</subfield>
+        <subfield code="z">Australia.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Cultural property</subfield>
+        <subfield code="z">Australia.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="1" ind2=" ">
+        <subfield code="a">Macquarie University.</subfield>
+        <subfield code="c">Warawara - Dept. of Indigenous Studies.</subfield>
+    </datafield>
+    <datafield tag="856" ind1="4" ind2="1">
+        <subfield code="u">http:// ... lib.mq.edu.au/catalogue/erthesis/748905</subfield>
+        <subfield code="z">Electronic version</subfield>
+    </datafield>
+    <datafield tag="929" ind1=" " ind2=" ">
+        <subfield code="a">NMQUSCMPp2005</subfield>
+    </datafield>
+</record>

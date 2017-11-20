@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <record>
+    <leader>00000nam a22000002a 4500</leader>
+    <controlfield tag="008">070827t2006|||||||                 eng|d</controlfield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Online-Offline Channel Switching Behaviour of Retail Consumers: Towards a Model of Consumer Value</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Croome, R</subfield>
+      <subfield code="u">Faculty of Business, University of the Sunshine Coast</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="520">
+      <subfield code="a">This thesis explores the factors driving the online buying decision process and answers the research question: 
+“What and why do consumers purchase online?”
+The objectives of this thesis in pursuit of the research question were to determine: The types of retail products consumers search for, evaluate and purchase online, the factors influencing the consumer to shop solely online and solely offline, the factors influencing the consumer to switch from the online to the offline retail channel and vice versa to make their purchase, and the development and testing of a consumer value model.
+The methodology adopted for this research comprised three distinct stages, a literature review, a qualitative exploration consisting of depth interviews and focus groups and finally, a quantitative survey of the Australian population.
+The theoretical implications of this research are: the identification of product attributes as the key driver of the consumer value creation process, the identification of product and pricing information as the key channel switching drivers during the buying decision process, the identification of the development of consumer trust as a function of product attributes and product and pricing information, confirmation that why consumer value is created is constant and how it is created is a function of the product under consideration, and the development of a model of consumer value.
+The practical implications of this research has identified: the likely impact of the online channel to incumbent retailers, the product types with the potential to be adapted to the online channel using current technology, and potential future product adaptations, and new product developments.
+The research conducted in this thesis has provided opportunities for further research in three areas; delimitations of scope, the further testing and validation of the scales and models developed and finally the methodology used.
+</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+      <subfield code="c">2006</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="653">
+      <subfield code="a">online consumer behaviour</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="653">
+      <subfield code="a">retail change</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="653">
+      <subfield code="a">Internet shopping</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="653">
+      <subfield code="a">consumer switching behaviour</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="653">
+      <subfield code="a">consumer value</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+      <subfield code="a">Australasian Digital Thesis</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="596">
+      <subfield code="a">A1</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="041">
+      <subfield code="a">eng</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="546">
+      <subfield code="a">eng</subfield>
+    </datafield>
+  </record>
+</collection>

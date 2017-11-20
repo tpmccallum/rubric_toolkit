@@ -1,0 +1,439 @@
+id AG199600002
+doctype Journal article
+pubyear 1996
+title Naphthalophos combinations with benzimidazoles or levamisole as effective
+ anthelmintics for sheep
+author Cooper NA (Bayer Australia Ltd, Pymble)
+; Rolfe PF (NSW Agriculture, Elizabeth Macarthur Agricultural Institute,
+ Camden)
+; Searson JE (NSW Agriculture, Regional Veterinary Laboratory, Wagga Wagga)
+; Dawson KL (NSW Agriculture, Elizabeth Macarthur Agricultural Institute,
+ Camden)
+source Australian Veterinary Journal, 1996-09, 74 (3), p221-224, 3 tables, 9
+ refs, ISSN 0005-0423.
+issn 0005-0423
+abstract A study was undertaken to investigate the relative efficacy and safety
+ of the anthelmintic naphthalophos in sheep, either given alone or in
+ combination with benzimidazole (fenbendazole and albendazole) or levamisole
+ anthelmintics. Faecal nematode egg count reduction tests were carried out on
+ 13 farms in central and southern New South Wales. Naphthalophos and
+ combinations of naphthalophos with levamisole and fenbendazole were included
+ in the drench tests. Safety trials were carried out on eight farms where
+ approximately 50 000 sheep were treated with naphthalophos and albendazole
+ mixture. The mortality rate in safety trials was 0.05%, with most fatalities
+ occurring on one farm.  The mixtures were more effective than naphthalophos
+ alone.  A combination of naphthalophos and fenbendazole was more effective
+ than a combination of naphthalophos and levamisole, and will provide a
+ sufficiently safe drench rotation option (A).
+keywords Sheep
+; Animal parasitic nematodes
+; Nematode larvae
+; Anthelmintics
+; Pest control
+; Efficacy
+; Benzimidazoles
+; Fenbendazole
+; Albendazole
+; Naftalofos
+; Levamisole
+; Mortality
+; Pesticide mixtures
+locality New South Wales
+$
+id AG199600003
+doctype Journal article
+pubyear 1996
+title Field trials of a formulation containing moxidectin and six in one
+ vaccines for sheep
+author Schwartzkoff CL
+; Cobb RM
+; (Cyanamid Websters Pty Ltd, Castle Hill)
+source Australian Veterinary Journal, 1996-09, 74 (3), p225-227, 2 tables, 10
+ refs, ISSN 0005-0423.
+issn 0005-0423
+abstract A study was undertaken to assess the efficacy and safety of a
+ formulation containing moxidectin and six in one vaccine in sheep for
+ immunization against clostridial diseases and caseous lymphadenitis. Field
+ trials were conducted with vaccines formulated with traditional six in one
+ clostridial/corynebacterial antigens with and without moxidectin, using 205
+ crossbred Merino lambs on a farm in central western New South Wales. Effective
+ control of nematodes and responses to antigens were achieved following
+ subcutaneous administration. Occasional minor tissue reactions were observed,
+ but there were no other adverse effects, and the formulation proved safe and
+ efficacious under field conditions (A).
+keywords Sheep
+; Animal parasitic nematodes
+; Anthelmintics
+; Moxidectin
+; Pest control
+; Efficacy
+; Corynebacterium pseudotuberculosis
+; Clostridium
+; Bacterial diseases
+; Lymphadenitis
+; Vaccination
+; Combined vaccines
+; Formulations
+; Adverse effects
+; Caseous lymphadenitis
+locality New South Wales
+$
+id AG199600004
+doctype Journal article
+pubyear 1996
+title Grazing and anthelmintic treatments to increase growth of Cashmere and
+ Angora weaner goats
+author Robertson JA (Victoria University of Technology, Centre for
+ Bioprocessing and Food Technology, Melbourne)
+; Ritar AJ (Tasmanian Department of Primary Industry and Fisheries, Marine
+ Research Laboratories, Taroona)
+; Evans G (University of Sydney, Department of Animal Science)
+sponsor Rural Industries Research and Development Corporation
+source Australian Veterinary Journal, 1996-09, 74 (3), p246-248, 1 table, 7
+ refs, ISSN 0005-0423.
+issn 0005-0423
+abstract A study was undertaken to examine whether growth of kids after weaning
+ and internal parasitism were affected by grazing on pasture or fodder crop and
+ by an initial treatment of ivermectin at weaning. Experiments were conducted
+ at Cressy Tas on 21 Angora and 94 Cashmere kids, grazing forage rape,
+ uncontaminated pastures, or pastures contaminated with nematodes, and treated
+ with ivermectin anthelmintic at weaning or not treated.  The results
+ demonstrated the benefit to weaner goats of grazing a fodder crop of rape
+ compared with pasture treatments. Grazing a crop of high nutritional value
+ maintained a weight advantage and there were no production losses due to
+ nematode infection.  It was shown that careful grazing management and
+ strategic use of anthelmintics reduces the reliance on and the cost of
+ anthelmintics and probably decreases selection pressure on parasites for
+ anthelmintic resistance while increasing rates of growth for weaner goats.
+keywords Goats
+; Kids
+; Cashmere
+; Angora
+; Animal parasitic nematodes
+; Anthelmintics
+; Ivermectin
+; Pest control
+; Grazing
+; Pastures
+; Rape
+; Fodder crops
+; Growth
+; Liveweight
+locality Cressy Tas
+; Tamar River (III18)
+; AER (1)
+$
+id AG199600005
+doctype Journal article
+pubyear 1996
+title Residues and risks
+author McLean JG (Swinburne University of Technology, Division of Science,
+ Engineering and Design, Hawthorn)
+source Plant Protection Quarterly, 1996, 11 (3), p94-95, 3 tables, 6 refs, ISSN
+ 0815-2195.
+issn 0815-2195
+abstract The assessment of toxicity of agricultural chemicals is discussed and
+ whether chemical residues are associated with any risk to consumers of
+ agricultural products.  An examination of the public perception of risk shows
+ that the risk associated with pesticide use is perceived to be very high.
+ However, the normal diet contains a large number of naturally occurring
+ pesticides that are produced by plants to defend themselves, and many of these
+ natural pesticides have been shown to be carcinogenic in rodents at high
+ doses. Requirements for testing of the safety of pesticides are rigorous, and
+ the maximum residue limit (MRL) of a compound in food is calculated so that
+ the acceptable daily intake will not be exceeded by the sum of the residues
+ derived from all sources in the human diet. However, the MRL may occasionally
+ be exceeded without risk, since it does not represent a level that equates to
+ a health hazard.
+keywords Food safety
+; Food quality
+; Pesticides
+; Pesticide residues
+; Toxic substances
+; Risk
+; Risk assessment
+; Health hazards
+$
+id AG199600006
+doctype Journal article
+pubyear 1996
+title The biology of Australian weeds, 28: Cytisus scoparius (L.) Link subsp.
+ scoparius
+author Hosking JR (Cooperative Research Centre for Weed Management Systems,
+ Tamworth)
+; Smith JM (University of New England, Department of Geography and Planning,
+ Armidale)
+; Sheppard AW (Cooperative Research Centre for Weed Management Systems,
+ Canberra)
+source Plant Protection Quarterly, 1996, 11 (3), p94-95, 3 tables, 6 refs, ISSN
+ 0815-2195.
+issn 0815-2195
+abstract The biology of the weed Cytisus scoparius (broom) is reviewed, giving
+ details of its description, history, distribution, habitat, growth and
+ development, reproduction, population dynamics, importance, relevant
+ legislation, and weed management.  Dense thickets of broom prevent
+ establishment of native vegetation and impede access, particularly to
+ watercourses.  Thickets also harbour pest animals such as feral pigs and other
+ invasive animals such as blackbirds.  Broom is declared a noxious weed
+ throughout South Australia and in parts of New South Wales, Victoria and
+ Tasmania.
+keywords Weeds
+; Cytisus scoparius
+; Weed biology
+; Population dynamics
+; Geographical distribution
+; Weed control
+; Environmental impact
+; Regulations
+; Reviews
+; Broom
+$
+id AG199600007
+doctype Journal article
+pubyear 1996
+title Parasitism of grasshopper and locust eggs (Orthoptera: Acrididae) by
+ Scelio species (Hymenoptera: Scelionidae) in southern Australia
+author Baker GL (NSW Agriculture, Biological and Chemical Research Institute,
+ Rydalmere)
+; Dysart RJ (United States Department of Agriculture, Agricultural Research
+ Service, United States)
+; Pigott G (NSW Agriculture, Dubbo)
+sponsor United States Department of Agriculture APHIS Grasshopper Integrated
+ Pest Management Project
+source Australian Journal of Zoology, 1996, 44 (4), p427-443, 4 tables, 2 figs,
+ refs, ISSN 0004-959X.
+issn 0004-959X
+abstract A study was undertaken to assess the potential of Australian Scelio
+ species as parasites of acridid grasshoppers for inclusion in a United States
+ grasshopper integrated pest management project. Surveys of Scelio spp.,
+ parasites of acridid eggs, were conducted in 1990-94 at a range of sampling
+ sites in New South Wales, South Australia and Western Australia.  Parasitism
+ of economically important grasshopper and locust species was frequently
+ substantial, confirming an important, albeit often localized, role by Scelio
+ spp. in regulating host populations. Scelio spp. were stenophageous, and
+ although some species parasitized several hosts, typically a principal host
+ was readily identifiable. New hosts, and significant new geographical
+ distributions, were recorded for several Scelio species (A).
+keywords Parasites of insect pests
+; Scelio
+; Species
+; Acrididae
+; Locusts
+; Biological control agents
+; Host parasite relationships
+; Parasitism
+; Geographical distribution
+; Host specificity
+; Hosts
+; New host records
+; Grasshoppers
+locality New South Wales
+; Western Australia
+; South Australia
+$
+id AG199600008
+doctype Journal article
+pubyear 1996
+title Effect of pasture availability on bait uptake by feral pigs in
+ Australia's semi-arid rangelands
+author Choquenot D
+; Lukins B
+; (NSW Agriculture, Agricultural Research and Veterinary Centre, Orange)
+sponsor Wool Research and Development Corporation
+; Australian Nature Conservation Agency
+; Australian Bureau of Resource Sciences, Wildlife Exotic Disease Preparedness
+ Program
+source Wildlife Research, 1996, 23 (4), p421-428, 3 tables, 2 figs, refs, ISSN
+ 1035-3712.
+issn 1035-3712
+abstract Factors that influence bait uptake by feral pigs (Sus scrofa) will
+ determine the efficacy of poisoning and trapping programs for the control of
+ pigs and have the potential to introduce bias to indices of pig abundance.  A
+ study was undertaken to investigate the influence of pasture availability on
+ uptake of bait trails consisting of soaked wheat, by pigs at six sites along
+ the Paroo River NSW.  The results showed that increasing pasture biomass
+ significantly reduced the density of pigs corresponding to a given percentage
+ uptake of trail baits, suggesting that, as pasture biomass increased, fewer
+ pigs consumed trail baits and/or the number of bait trails each pig consumed
+ declined.  Assuming the former, the effect of increasing pasture biomass on
+ the relationship between percentage uptake of bait trails and pig density
+ indicated that, for every increase in pasture biomass of 100 kg/ha, the
+ percentage of pigs consuming bait declined by about 10% (A).
+keywords Wild pigs
+; Sus scrofa
+; Baits
+; Baiting
+; Poisoning of animal pests
+; Trapping
+; Pastures
+; Biomass
+; Availability
+; Population density
+; Feral animals
+locality Paroo River NSW (IV24)
+; AER (8)
+$
+id AG199600009
+doctype Journal article
+pubyear 1996
+title Responses of sheep to annual cycles in nutrition, 1: role of endogenous
+ growth hormone during undernutrition
+author Adams NR (CSIRO, Division of Animal Production, Wembley)
+; Briegel JR (CSIRO, Division of Animal Production, Wembley)
+; Rigby RD (CSIRO, Division of Animal Production, Blacktown)
+; Sanders MR (CSIRO, Division of Animal Production, Wembley)
+; Hoskinson RM (CSIRO, Division of Animal Production, Blacktown)
+sponsor Wool Research and Development Corporation
+; Australian Pastoral Research Trust
+source Animal Science, 1996, 62 (2), p279-286, 2 tables, 5 figs, refs, ISSN
+ 1357-7298.
+issn 1357-7298
+abstract Plasma concentrations of growth hormone (GH) are elevated in sheep
+ during undernutrition.  A study was undertaken to determine whether this
+ increased secretion mediated nutritional effects on reproduction or wool
+ growth, using ewes immunized against growth hormone releasing hormone (GHRH)
+ and given a low quality, sub- maintenance diet.  It was found that
+ immunization reduced plasma concentrations of GH at all times measured,
+ through reduced pulse frequency, reduced pulse amplitude and reduced baseline
+ concentrations. Rates of liveweight loss, plasma concentrations of LH and FSH,
+ and wool growth were similar in immunized and control sheep.  Numbers of
+ ovarian follicles and corpora lutea were also unaffected by immunization.  It
+ was concluded that high endogenous concentrations of GH in sheep given food
+ below maintenance are necessary to maintain plasma insulin-like growth factor
+ 1 (IGF-1), but do not affect the concentration of gonadotropins or ovarian
+ follicular growth (A).
+keywords Sheep
+; Ewes
+; Hormone secretion
+; Somatotropin
+; Somatoliberin
+; LH
+; FSH
+; Insulin-like growth factor
+; Undernutrition
+; Underfeeding
+; Wool production
+; Reproduction
+; Liveweight
+; Nutritional state
+$
+id AG199600010
+doctype Journal article
+pubyear 1996
+title Responses of sheep to annual cycles in nutrition, 2: effects of diet and
+ endogenous growth hormone during replenishment
+author Adams NR (CSIRO, Division of Animal Production, Wembley)
+; Sanders MR (CSIRO, Division of Animal Production, Wembley)
+; Briegel JR (CSIRO, Division of Animal Production, Wembley)
+; Peter DW (CSIRO, Division of Animal Production, Wembley)
+; Rigby RD (CSIRO, Division of Animal Production, Blacktown)
+sponsor Wool Research and Development Corporation
+; Australian Pastoral Research Trust
+source Animal Science, 1996, 62 (2), p287-292, 2 tables, 2 figs, refs, ISSN
+ 1357-7298.
+issn 1357-7298
+abstract The role of growth hormone (GH) in normal growth is well established,
+ but its role during recovery after liveweight loss in adult sheep is less
+ defined. A study was undertaken to examine the interaction of endogenous GH
+ with energy or protein supplements during feeding of ewes in low body
+ condition. Control ewes and ewes immunized against growth hormone releasing
+ hormone (GHRH) were given food below maintenance for 107 days, then
+ supplemented with either fish meal or barley for 28 days, then grazed on
+ abundant pasture. Immunization reduced plasma concentrations of GH, insulin,
+ insulin- like growth factor 1 (IGF-1) and prolactin.  When grazed at pasture
+ immunized ewes gained liveweight more slowly, grew less wool, and had poorer
+ carcass condition.  It was concluded that during liveweight regain, endogenous
+ GH initially affected fat deposition, which in turn affected feed intake and
+ wool growth (A).
+keywords Sheep
+; Ewes
+; Hormone secretion
+; Somatotropin
+; Somatoliberin
+; Insulin
+; Insulin-like growth factor
+; Prolactin
+; Undernutrition
+; Underfeeding
+; Wool production
+; Liveweight
+; Growth
+; Feed supplements
+; Nutritional state
+$
+id AG199600011
+doctype Journal article
+pubyear 1996
+title The influence of feeder type and the method of group allocation at
+ weaning on voluntary food intake and growth in piglets
+author Pluske JR
+; Williams IH
+; (University of Western Australia, Faculty of Agriculture (Animal Science),
+ Nedlands)
+sponsor Pig Research and Development Corporation
+source Animal Science, 1996, 62 (1), p115-120, 2 tables, refs, ISSN 1357- 7298.
+issn 1357-7298
+abstract A study was undertaken to test the hypothesis that single space
+ feeders (SSFs) should reduce aggression between piglets while they are feeding
+ and might allow them to eat more food.  The importance of aggression was
+ studied in 210 piglets weaned at 30 days, by either weaning piglets as
+ littermates or mixing them into new social groups. The use of a 'wet and dry'
+ SSF did not enhance growth rate or voluntary feed intake in the 28 days after
+ weaning. Piglets mixed together from different litters at weaning grew
+ proportionately 0.34 faster in the first 14 days after weaning than piglets
+ weaned as littermates.  It was concluded that SSFs failed to increase the
+ production of weaner piglets, whilst mixing non-littermate piglets into a new
+ social group seemingly enhanced performance from weaning to 56 days of age (A).
+keywords Pigs
+; Piglets
+; Feed dispensers
+; Pig feeders
+; Self feeders
+; Feed intake
+; Aggression
+; Aggressive behaviour
+; Litter of origin
+; Growth rate
+; Growth
+$
+id AG199600012
+doctype Journal article
+pubyear 1996
+title Maintenance of villous height and crypt depth in piglets by providing
+ continuous nutrition after weaning
+author Pluske JR (University of Western Australia, Faculty of Agriculture (
+ Animal Science), Nedlands)
+; Williams IH (University of Western Australia, Faculty of Agriculture ( Animal
+ Science), Nedlands)
+; Aherne FX (University of Alberta, Department of Agricultural, Food and
+ Nutritional Science, Canada)
+sponsor Pig Research and Development Corporation
+source Animal Science, 1996, 62 (1), p131-144, 7 tables, 1 fig, refs, ISSN
+ 1357-7298.
+issn 1357-7298
+abstract A study was undertaken to test the hypothesis that maintenance of
+ voluntary feed intake of piglets after weaning would prevent the normal
+ decline in villous height and increase in crypt depth and hence preserve the
+ structure and function of the small intestine. In experiments using 32 piglets
+ in groups, feeding ewes' milk or ewes' milk plus 20 g L-glutamine/L maintained
+ villous height and crypt depth compared with piglets killed at weaning.  In
+ contrast, piglets given a dry starter diet had shorter villi, deeper crypts,
+ and proportionately 0.21 to 0.28 less protein in their intestinal mucosa.  The
+ results showed that the structure and function of the small intestine can be
+ preserved when a milk diet is given after weaning, and suggest an association
+ between feed intake and villous height in determining post weaning weight gain
+ (A).
+keywords Pigs
+; Piglets
+; Feed intake
+; Glutamine
+; Ewe milk
+; Small intestine
+; Villi
+; Weaning
+; Postweaning interval
+; Nutritional state
+; Plane of nutrition
+; Intestinal mucosa
+; Intestinal absorption
+$

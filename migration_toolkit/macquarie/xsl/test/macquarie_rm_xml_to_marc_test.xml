@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="macquarie_rm_xml_to_marc.xsl"/>
+    
+       
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                    <rm4export>
+                        <splacepub>Warsaw, Poland</splacepub>
+                        <spublisher>Vizja Press &amp; IT</spublisher>
+                        <cref>2006007841</cref>
+                        <sisbnissn>0 908557620;1895-1171</sisbnissn>
+                        <spubtitle>Untitled Publication</spubtitle>
+                        <mpubtitle/>
+                        <sstartpag>10</sstartpag>
+                        <sendpag>13</sendpag>
+                        <npages>3</npages>
+                        <syear>2006</syear>
+                        <lcomplete>0</lcomplete>
+                        <levidrcvd>0</levidrcvd>
+                        <sparentdoc>Advances in Cognitive Psychology</sparentdoc>
+                        <mparentdoc/>
+                        <mdesc>Description of the object</mdesc>
+                        <scust1/>
+                        <scust2/>
+                        <scust3/>
+                        <scust4/>
+                        <scust5/>
+                        <scust6/>
+                        <ntotchap>0</ntotchap>
+                        <nchapters>0</nchapters>
+                        <sauthors>Contributors, No,</sauthors>
+                        <nrawwtng>0.00</nrawwtng>
+                        <ndeetwtng>0.00</ndeetwtng>
+                        <cpubcat>0000015016</cpubcat>
+                        <svolume>5</svolume>
+                        <snumber>2</snumber>
+                        <sedition/>
+                        <splaceact/>
+                        <seditor>Fred Nurk;</seditor>
+                        <saou>Department Name</saou>
+                        <levidclaim>0</levidclaim>
+                        <slanguage/>
+                        <smedium/>
+                        <slocation/>
+                        <selecloc>http://www.tandf.co.uk/journals/journal.asp?issn=0020-739X&amp;linktype=7</selecloc>
+                        <epubcat>C1</epubcat>
+                        <scatname>C1 Journal Articles</scatname>
+                        <sclasstype/>
+                        <sclassname/>
+                        <eclass/>
+                        <npercent/>
+                        <syrcreate>2005</syrcreate>
+                    </rm4export>
+                    <rm4export>
+                        <splacepub>Melbourne Australia</splacepub>
+                        <spublisher>The Australian Psychological Society Limited</spublisher>
+                        <cref>2001012127</cref>
+                        <spubtitle>The Processing of Lexical Stress During Disordered Reading</spubtitle>
+                        <mpubtitle/>
+                        <sstartpag>119</sstartpag>
+                        <sendpag>126</sendpag>
+                        <npages>1</npages>
+                        <syear>2003</syear>
+                        <lcomplete>1</lcomplete>
+                        <levidrcvd>0</levidrcvd>
+                        <sparentdoc>Abstracts of the Inaugural Australian Conference for Cognitive Neuropsychology and Cognitive Neuropsychiatry</sparentdoc>
+                        <mparentdoc/>
+                        <scust5>13-15 July 2001</scust5>
+                        <scust6>Australian Conference for Cognitive Neuropsychology and Cognitive Neuropsychiatry</scust6>
+                        <sauthors>Arciuli, J., Cupples, L., Nickels, L.,</sauthors>
+                        <nrawwtng>0.00</nrawwtng>
+                        <ndeetwtng>0.00</ndeetwtng>
+                        <cpubcat>0000015035</cpubcat>
+                        <splaceact>Deakin University Geelong</splaceact>
+                        <seditor>Marina Haywood</seditor>
+                        <levidclaim>0</levidclaim>
+                        <slanguage/>
+                        <smedium/>
+                        <slocation/>
+                        <caou>0000015065</caou>
+                        <epubaou>9402</epubaou>
+                        <eaou>9402</eaou>
+                        <saou>Linguistics</saou>
+                        <epubcat>E3</epubcat>
+                        <scatname>E3 Conference Publications - Extract of paper - pre 2006</scatname>
+                        <sclasstype>CUSTCODES
+                            CUSTCODES</sclasstype>
+                        <sclassname>Not eligible for DEST funding
+                            MQ Category</sclassname>
+                        <eclass>A-NFF
+                            R-MQCAT</eclass>
+                        <npercent>100
+                            0</npercent>
+                   
+                    </rm4export>
+                    </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"></controlfield>
+                    <datafield tag="245" ind1="1" ind2="0">
+                        <subfield code="a">Untitled Publication</subfield></datafield>
+                    <datafield tag="100" ind1="1" ind2=" "><subfield code="a">Contributors, No</subfield>
+                    </datafield>                  
+                  
+                    <datafield tag="300" ind1=" " ind2=" "><subfield code="a">3 pages</subfield>
+                    </datafield>
+                    <datafield tag="773" ind1="0" ind2="8"><subfield code="t">Advances in Cognitive Psychology</subfield>
+                        <subfield code="g">Vol. 5, no. 2, p. 10-13</subfield>
+                        <subfield code="a">Fred Nurk (ed).</subfield>
+                        <subfield code="n">1</subfield>
+                    </datafield>
+                    <datafield tag="020" ind1=" " ind2=" "><subfield code="a">0 908557620</subfield>
+                    </datafield>
+                    <datafield tag="022" ind1=" " ind2=" "><subfield code="a">1895-1171</subfield>
+                    </datafield>
+                    <datafield tag="596" ind1=" " ind2=" "><subfield code="a">C1</subfield>
+                    </datafield>                    
+                    <datafield tag="655" ind1=" " ind2="7"><subfield code="a">Journal Article</subfield>
+                    </datafield>
+                    <datafield tag="035" ind1=" " ind2=" "><subfield code="a">RM 2006007841</subfield>
+                    </datafield> 
+                    <datafield tag="520" ind1=" " ind2=" "><subfield code="a">Description of the object</subfield>
+                    </datafield>
+                    <datafield tag="710" ind1="2" ind2=" ">
+                        <subfield code="a">Macquarie University</subfield>
+                        <subfield code="b">Department Name</subfield>
+                    </datafield>
+                    <datafield tag="852" ind1="4" ind2="0">
+                        <subfield code="u">http://www.tandf.co.uk/journals/journal.asp?issn=0020-739X&amp;linktype=7</subfield>
+                    </datafield>  
+                     <datafield tag="260" ind1=" " ind2=" ">
+                        <subfield code="a">Warsaw, Poland</subfield>
+                        <subfield code="b">Vizja Press &amp; IT</subfield>
+                        <subfield code="c">2005</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                    </datafield>
+                    <datafield tag="546" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                    </datafield>
+        
+                                     
+                </record>
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="245" ind1="1" ind2="4">
+                            <subfield code="a">The Processing of Lexical Stress During Disordered Reading</subfield></datafield>
+                        <datafield tag="100" ind1="1" ind2=" "><subfield code="a">Arciuli, J.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" "><subfield code="a">Cupples, L.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" "><subfield code="a">Nickels, L.</subfield>
+                        </datafield>
+                    
+                        <datafield tag="300" ind1=" " ind2=" "><subfield code="a">1 page</subfield>
+                        </datafield>
+                        <datafield tag="773" ind1="0" ind2="8"><subfield code="t">Abstracts of the Inaugural Australian Conference for Cognitive Neuropsychology and Cognitive Neuropsychiatry</subfield>
+                            <subfield code="g">p. 119-126</subfield>
+                            <subfield code="a">Marina Haywood (ed).</subfield>
+                            <subfield code="n">0</subfield>
+                        </datafield>
+                        <datafield tag="711" ind1="2" ind2=" "><subfield code="a">Australian Conference for Cognitive Neuropsychology and Cognitive Neuropsychiatry</subfield>
+                            <subfield code="d">2001</subfield>
+                            <subfield code="c">Deakin University Geelong</subfield>
+                        </datafield>
+                        <datafield tag="596" ind1=" " ind2=" "><subfield code="a">E3</subfield>
+                        </datafield>
+                       <datafield tag="655" ind1=" " ind2="7"><subfield code="a">Conference Paper</subfield>                       
+                       </datafield>
+                        <datafield tag="035" ind1=" " ind2=" "><subfield code="a">RM 2001012127</subfield>
+                        </datafield>
+                        <datafield tag="710" ind1="2" ind2=" ">
+                            <subfield code="a">Macquarie University</subfield>
+                            <subfield code="b">Linguistics</subfield>
+                        </datafield>
+                              <datafield tag="260" ind1=" " ind2=" "><subfield code="a">Melbourne Australia</subfield>
+                            <subfield code="b">The Australian Psychological Society Limited</subfield>
+                            <subfield code="c">2003</subfield>
+                        </datafield>
+                        <datafield tag="041" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1="0" ind2=" "><subfield code="a">eng</subfield>
+                        </datafield>                       
+                    </record>
+                 
+               </collection>
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+   
+</utfx:tests>

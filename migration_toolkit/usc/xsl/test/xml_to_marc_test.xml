@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="xml_to_marc.xsl"/>
+    
+       
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                <record>
+                    <author>Ahmed, M W, Neller, R J &amp; Katouli, M, 2005, </author>
+                    <issn_isbn>1364-5072</issn_isbn>
+                    <conferenceYear/>
+                    <conferenceLocation/>
+                    <pages>pp910-920</pages>
+                    <itemType>Journal Article (Refereed, Research)</itemType>
+                    <publication>Journal of Applied Microbiology</publication>
+                    <conferenceName/>
+                    <number>4</number>
+                    <pageEnd>920</pageEnd>
+                    <pageStart>910</pageStart>
+                    <place>UK</place>
+                    <destCode>C1</destCode>
+                    <publisher>The Society for Applied Microbiology</publisher>
+                    <title>Evidence of septic system failure determined by a bacterial biochemical fingerprinting technique</title>
+                    <volume>98</volume>
+                    <year>2005</year>
+                </record>
+                    <record>
+                        <author>Ahmed, M W, Neller, R J &amp; Katouli, M, 2005, </author>
+                        <issn_isbn>1444-5212</issn_isbn>
+                        <conferenceYear/>
+                        <conferenceLocation/>
+                        <pages>pp41-58</pages>
+                        <itemType>Journal Article (Refereed, Research)</itemType>
+                        <publication>Environmental Health</publication>
+                        <conferenceName/>
+                        <number>3</number>
+                        <pageEnd>58</pageEnd>
+                        <pageStart>41</pageStart>
+                        <place>Australia</place>
+                        <destCode>C1</destCode>
+                        <publisher>The Journal of the Australian Institute of Environmental Health</publisher>
+                        <title>Faecal source tracking in surface waters: a review of faecal indicator microorganisms and current methods</title>
+                        <volume>5</volume>
+                        <year>2005</year>
+                    </record>
+                    <record>
+                        <author>Ahmed, M W, Neller, R J &amp; Katouli, M, 2005, </author>
+                        <issn_isbn>0099-2240</issn_isbn>
+                        <conferenceYear/>
+                        <conferenceLocation/>
+                        <pages>pp4461-4468</pages>
+                        <itemType>Journal Article (Refereed, Research)</itemType>
+                        <publication>Applied and Environmental Microbiology</publication>
+                        <conferenceName/>
+                        <number>8</number>
+                        <pageEnd>4468</pageEnd>
+                        <pageStart>4461</pageStart>
+                        <place>USA</place>
+                        <destCode>C1</destCode>
+                        <publisher>American Society for Microbiology</publisher>
+                        <title>Host species-specific metabolic fingerprint database for Enterococci and Escherichia coli and its application to identify sources of fecal contamination in surface waters</title>
+                        <volume>71</volume>
+                        <year>2005</year>
+                    </record>
+                    <record>
+                        <author>Garlick, S, 2005, </author>
+                        <issn_isbn>1 920719 03 2</issn_isbn>
+                        <conferenceYear>14/08/2005</conferenceYear>
+                        <conferenceLocation>Brisbane, Australia</conferenceLocation>
+                        <pages/>
+                        <itemType>Full Conference Paper (Refereed)</itemType>
+                        <publication>International Conference on Engaging Communities</publication>
+                        <conferenceName>International Conference on Engaging Community</conferenceName>
+                        <number/>
+                        <pageEnd/>
+                        <pageStart/>
+                        <place>Australia</place>
+                        <destCode>E1</destCode>
+                        <publisher>Queensland Department of Main Roads</publisher>
+                        <title>Regional Competitiveness, Enterprising Human Capital and Community Engagement</title>
+                        <volume/>
+                        <year>2005</year>
+                    </record>
+                    
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <marc:record>
+                    <marc:leader>00000nam a22000002a 4500</marc:leader>
+                    <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                    <marc:datafield tag="245" ind1="1" ind2="0">
+                        <marc:subfield code="a">Evidence of septic system failure determined by a bacterial biochemical fingerprinting technique</marc:subfield></marc:datafield>
+                    <marc:datafield tag="100" ind1="1" ind2=" "><marc:subfield code="a">Ahmed, M W</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="700" ind1="1" ind2=" "><marc:subfield code="a"> Neller, R J</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="700" ind1="1" ind2=" "><marc:subfield code="a"> Katouli, M</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="260" ind1=" " ind2=" "><marc:subfield code="a">UK</marc:subfield>
+                        <marc:subfield code="b">The Society for Applied Microbiology</marc:subfield>
+                        <marc:subfield code="c">2005</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="300" ind1=" " ind2=" "><marc:subfield code="a">11</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="773" ind1="0" ind2="8"><marc:subfield code="t">Journal of Applied Microbiology</marc:subfield>
+                        <marc:subfield code="g">Vol. 98, no. 4, pp910-920</marc:subfield>
+                        <marc:subfield code="n">Refereed, Research</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="711" ind1="2" ind2=" "><marc:subfield code="a"/>
+                        <marc:subfield code="d"/>
+                        <marc:subfield code="c"/>
+                    </marc:datafield>
+                    <marc:datafield tag="022" ind1=" " ind2=" "><marc:subfield code="a">1364-5072</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="655" ind1=" " ind2="7"><marc:subfield code="a">Journal Article </marc:subfield>
+                        <marc:subfield code="2">local</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="595" ind1=" " ind2=" "><marc:subfield code="a">Refereed, Research</marc:subfield>
+                    </marc:datafield>
+                    <marc:datafield tag="596" ind1=" " ind2=" "><marc:subfield code="a">C1</marc:subfield>
+                    </marc:datafield>
+                </marc:record>
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="245" ind1="1" ind2="0">
+                            <marc:subfield code="a">Faecal source tracking in surface waters: a review of faecal indicator microorganisms and current methods</marc:subfield></marc:datafield>
+                        <marc:datafield tag="100" ind1="1" ind2=" "><marc:subfield code="a">Ahmed, M W</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="700" ind1="1" ind2=" "><marc:subfield code="a"> Neller, R J</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="700" ind1="1" ind2=" "><marc:subfield code="a"> Katouli, M</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="260" ind1=" " ind2=" "><marc:subfield code="a">Australia</marc:subfield>
+                            <marc:subfield code="b">The Journal of the Australian Institute of Environmental Health</marc:subfield>
+                            <marc:subfield code="c">2005</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="300" ind1=" " ind2=" "><marc:subfield code="a">18</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="773" ind1="0" ind2="8"><marc:subfield code="t">Environmental Health</marc:subfield>
+                            <marc:subfield code="g">Vol. 5, no. 3, pp41-58</marc:subfield>
+                            <marc:subfield code="n">Refereed, Research</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="711" ind1="2" ind2=" "><marc:subfield code="a"/>
+                            <marc:subfield code="d"/>
+                            <marc:subfield code="c"/>
+                        </marc:datafield>
+                        <marc:datafield tag="022" ind1=" " ind2=" "><marc:subfield code="a">1444-5212</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="655" ind1=" " ind2="7"><marc:subfield code="a">Journal Article </marc:subfield>
+                            <marc:subfield code="2">local</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="595" ind1=" " ind2=" "><marc:subfield code="a">Refereed, Research</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="596" ind1=" " ind2=" "><marc:subfield code="a">C1</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="245" ind1="1" ind2="0">
+                            <marc:subfield code="a">Host species-specific metabolic fingerprint database for Enterococci and Escherichia coli and its application to identify sources of fecal contamination in surface waters</marc:subfield></marc:datafield>
+                        <marc:datafield tag="100" ind1="1" ind2=" "><marc:subfield code="a">Ahmed, M W</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="700" ind1="1" ind2=" "><marc:subfield code="a"> Neller, R J</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="700" ind1="1" ind2=" "><marc:subfield code="a"> Katouli, M</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="260" ind1=" " ind2=" "><marc:subfield code="a">USA</marc:subfield>
+                            <marc:subfield code="b">American Society for Microbiology</marc:subfield>
+                            <marc:subfield code="c">2005</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="300" ind1=" " ind2=" "><marc:subfield code="a">8</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="773" ind1="0" ind2="8"><marc:subfield code="t">Applied and Environmental Microbiology</marc:subfield>
+                            <marc:subfield code="g">Vol. 71, no. 8, pp4461-4468</marc:subfield>
+                            <marc:subfield code="n">Refereed, Research</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="711" ind1="2" ind2=" "><marc:subfield code="a"/>
+                            <marc:subfield code="d"/>
+                            <marc:subfield code="c"/>
+                        </marc:datafield>
+                        <marc:datafield tag="022" ind1=" " ind2=" "><marc:subfield code="a">0099-2240</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="655" ind1=" " ind2="7"><marc:subfield code="a">Journal Article </marc:subfield>
+                            <marc:subfield code="2">local</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="595" ind1=" " ind2=" "><marc:subfield code="a">Refereed, Research</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="596" ind1=" " ind2=" "><marc:subfield code="a">C1</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="245" ind1="1" ind2="0">
+                            <marc:subfield code="a">Regional Competitiveness, Enterprising Human Capital and Community Engagement</marc:subfield></marc:datafield>
+                        <marc:datafield tag="100" ind1="1" ind2=" "><marc:subfield code="a">Garlick, S</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="260" ind1=" " ind2=" "><marc:subfield code="a">Australia</marc:subfield>
+                            <marc:subfield code="b">Queensland Department of Main Roads</marc:subfield>
+                            <marc:subfield code="c">2005</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="300" ind1=" " ind2=" "><marc:subfield code="a"/>
+                        </marc:datafield>
+                        <marc:datafield tag="773" ind1="0" ind2="8"><marc:subfield code="t">International Conference on Engaging Communities</marc:subfield>
+                            <marc:subfield code="g"/>
+                            <marc:subfield code="n">Refereed</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="711" ind1="2" ind2=" "><marc:subfield code="a">International Conference on Engaging Community</marc:subfield>
+                            <marc:subfield code="d">2005</marc:subfield>
+                            <marc:subfield code="c">Brisbane, Australia</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="020" ind1=" " ind2=" "><marc:subfield code="a">1 920719 03 2</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="655" ind1=" " ind2="7"><marc:subfield code="a">Full Conference Paper</marc:subfield>
+                            <marc:subfield code="2">local</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="595" ind1=" " ind2=" "><marc:subfield code="a">Refereed</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="596" ind1=" " ind2=" "><marc:subfield code="a">E1</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+               </marc:collection>
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+   
+</utfx:tests>

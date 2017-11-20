@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre,
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="newcastle_adt_to_marc.xsl"/>
+
+
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.title" content="The Ethical Nature Of The Mother-Midwife Relationship: A Feminist Perspective"/>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="245" ind1="1" ind2="4">
+                    <subfield code="a">The Ethical Nature Of The Mother-Midwife Relationship: A Feminist Perspective</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>Author</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.creator.personalname" content="Thompson, Faye Elizabeth"/>
+                <meta name="dc.publisher" content="publisher. school"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="100" ind1="1" ind2=" ">
+                    <subfield code="a">Thompson, Faye Elizabeth</subfield>
+                    
+                </datafield>
+                <datafield tag="710" ind1="2" ind2=" ">
+                    <subfield code="a">publisher</subfield>
+                    <subfield code="b">school</subfield>
+                </datafield>
+                <datafield tag="720" ind1=" " ind2=" ">
+                    <subfield code="a">school</subfield>
+                    
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+   
+    <!--<utfx:test>
+        <utfx:name>keywords</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.subject" content="childbirth"/>
+                <meta name="dc.subject" content="pregnancy"/>
+                <meta name="dc.subject" content="midwife"/>
+                <meta name="dc.subject" content="midwives"/>
+                <meta name="dc.subject" content="ethics"/>
+                <meta name="dc.subject" content="bioethics"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="653" ind1=" " ind2=" ">
+                    <subfield code="a">childbirth</subfield>
+             <subfield code="a">pregnancy</subfield>
+              <subfield code="a">midwife</subfield>
+           <subfield code="a">midwives</subfield>
+             <subfield code="a">ethics</subfield>
+            <subfield code="a">bioethics</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+-->
+    <utfx:test>
+        <utfx:name>abstract</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.description.abstract" content="This research explored the ethical nature of the mother-midwife relationship"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="520" ind1=" " ind2=" ">
+                    <subfield code="a">This research explored the ethical nature of the mother-midwife relationship</subfield>
+                </datafield>
+
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <utfx:test>
+        <utfx:name>date</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.date.valid" scheme="W3CDTF" content="2001"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="260" ind1=" " ind2=" ">
+                    <subfield code="c">2001</subfield>
+                </datafield>
+
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+    <!--<utfx:test>
+        <utfx:name>affiliation</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+
+                <meta name="dc.publisher" content="University of Southern Queensland. School of Engineering"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="100" ind1=" " ind2=" ">
+                    <subfield code="u">University of Southern Queensland. School of Engineering</subfield>
+                </datafield>
+               
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+-->
+
+    <utfx:test>
+        <utfx:name>rights</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.rights" content="http://www.unsw.edu.au/help/disclaimer.html)"/>
+                       <meta name="dc.rights" content="Copyright Faye Elizabeth Thompson"/>
+                <meta name="dc.date.valid" scheme="W3CDTF" content="2005"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+
+                <datafield tag="540" ind1=" " ind2=" ">
+                    <subfield code="a">http://www.newcastle.edu.au/copyright.html</subfield>
+                </datafield>
+                       <datafield tag="540" ind1=" " ind2=" ">
+                                <subfield code="a">Copyright 2005 Faye Elizabeth Thompson</subfield>
+                       </datafield>
+                <datafield tag="260" ind1=" " ind2=" ">
+                    <subfield code="c">2005</subfield>
+                </datafield>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!--<utfx:test>
+        <utfx:name>identifier</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+
+                <meta name="dc.identifier" scheme="URI" content="http://adt.usq.edu.au./adt-QUSQ/public/adt-QUSQ20030512.165509"/>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+
+                <datafield tag="856" ind1="4" ind2=" ">
+                    <subfield code="u">http://adt.usq.edu.au./adt-QUSQ/public/adt-QUSQ20030512.165509</subfield>
+                </datafield>
+
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>     -->
+
+
+    <utfx:test>
+        <utfx:name>description</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.description" content="PhD Doctorate"/>
+            </utfx:source>
+            <utfx:expected validate="no">
+
+                <datafield tag="502" ind1=" " ind2=" ">
+                    <subfield code="a">PhD Doctorate</subfield>
+                </datafield>
+
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+
+
+    <utfx:test>
+        <utfx:name>language</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <meta name="dc.language" scheme="RFC1766" content="en"/>
+                <meta name="dc.language" scheme="RFC1766" content="testLanguage"/>
+
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="041" ind1="0" ind2=" ">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield tag="546" ind1=" " ind2=" ">
+                    <subfield code="a">eng</subfield>
+                </datafield>
+                <datafield tag="041" ind1="0" ind2=" ">
+                    <subfield code="a">testLanguage</subfield>
+                 </datafield>
+                <datafield tag="546" ind1=" " ind2=" ">
+                    <subfield code="a">testLanguage</subfield>
+                </datafield>
+              </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+
+
+
+
+    <utfx:test>
+        <utfx:name>recursive</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+    <head>
+        <meta name="dc.title" content="The Ethical Nature Of The Mother-Midwife Relationship: A Feminist Perspective"/>
+        <meta name="dc.creator.personalname" content="Thompson, Faye Elizabeth"/>
+        <meta name="dc.creator.personalname.address" content="n/a"/>
+        <meta name="dc.subject" content="childbirth"/>
+        <meta name="dc.subject" content="pregnancy"/>
+        <meta name="dc.subject" content="midwife"/>
+        <meta name="dc.subject" content="midwives"/>
+        <meta name="dc.subject" content="ethics"/>
+        <meta name="dc.subject" content="bioethics"/>
+        <meta name="dc.description.abstract" content="This research explored the ethical nature of the mother-midwife relationship"/>
+        <meta name="dc.date.valid" scheme="W3CDTF" content="2001"/>
+        <meta name="dc.language" scheme="RFC1766" content="en"/>
+        <meta name="dc.publisher" content="University of Southern Queensland. School of Engineering"/>
+        <meta name="dc.rights" content="http://www.unsw.edu.au/help/disclaimer.html)"/>
+        <meta name="dc.rights" content="Copyright Faye Elizabeth Thompson"/>
+        <meta name="dc.identifier" scheme="URI" content="http://adt.usq.edu.au./adt-QUSQ/public/adt-QUSQ20030512.165509"/>
+        <meta name="dc.description" content="PhD Doctorate"/>
+    </head>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="655" ind1=" " ind2=" ">
+                            <subfield code="a">Australasian Digital Thesis</subfield>
+                        </datafield>
+                        <datafield tag="653" ind1=" " ind2=" ">
+                            <subfield code="a">childbirth</subfield>
+                            <subfield code="a">pregnancy</subfield>
+                            <subfield code="a">midwife</subfield>
+                            <subfield code="a">midwives</subfield>
+                            <subfield code="a">ethics</subfield>
+                            <subfield code="a">bioethics</subfield>
+                        </datafield>
+                            <datafield tag="245" ind1="1" ind2="4">
+                                <subfield code="a">The Ethical Nature Of The Mother-Midwife Relationship: A Feminist Perspective</subfield>
+                            </datafield>
+
+                            <datafield tag="100" ind1="1" ind2=" ">
+                                <subfield code="a">Thompson, Faye Elizabeth</subfield>
+                               
+                            </datafield>
+                       
+                            
+                            <datafield tag="520" ind1=" " ind2=" ">
+                                <subfield code="a">This research explored the ethical nature of the mother-midwife relationship</subfield>
+                            </datafield>
+                            <datafield tag="260" ind1=" " ind2=" ">
+                                <subfield code="c">2001</subfield>
+                            </datafield>
+
+                            <datafield tag="041" ind1="0" ind2=" ">
+                                <subfield code="a">eng</subfield>
+                            </datafield>
+                        <datafield tag="546" ind1=" " ind2=" ">
+                            <subfield code="a">eng</subfield>
+                        </datafield>
+                        <datafield tag="710" ind1="2" ind2=" ">
+                            <subfield code="a">University of Southern Queensland</subfield>
+                            <subfield code="b">School of Engineering</subfield>
+                        </datafield>
+                        <datafield tag="720" ind1=" " ind2=" ">
+                            <subfield code="a">School of Engineering</subfield>
+                         </datafield>
+                              
+                            <datafield tag="540" ind1=" " ind2=" ">
+                                <subfield code="a">http://www.newcastle.edu.au/copyright.html</subfield>
+                            </datafield>
+                            <datafield tag="540" ind1=" " ind2=" ">
+                                <subfield code="a">Copyright 2001 Faye Elizabeth Thompson</subfield>
+                            </datafield>
+                            <datafield tag="502" ind1=" " ind2=" ">
+                                <subfield code="a">PhD Doctorate</subfield>
+                            </datafield>
+
+                    </record>
+                    </collection>
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+
+</utfx:tests>

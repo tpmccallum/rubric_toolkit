@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+     <resource label="A1 -book"/>
+    <resource label="A2 -book"/>
+    <resource label="A3 -book"/>
+    <resource label="B1 -book chapter"/>
+    <resource label="B2 -book Chapter"/>
+    <resource label="C1 -journal article"/>
+    <resource label="C2 -journal article"/>
+    <resource label="C3 -journal article"/>
+    <resource label="D1 -review"/>
+    <resource label="D2 -review"/>
+    <resource label="E1 -conference paper"/>
+    <resource label="E2 -conference paper"/>
+    <resource label="E3 -conference paper"/>
+    <resource label="E4 -conference paper"/>
+    <resource label="F1 –creative work"/>
+    <resource label="F2 –creative work"/>
+   <resource label="F3 –creative work"/>
+    <resource label="G -software"/>
+    <resource label="H1 -design"/>
+    <resource label="H2 -design"/>
+    <resource label="I1-patent"/>
+    <resource label="I2 -patent"/>
+    <resource label="J1 -creative work"/>
+    <resource label="J2 -creative work"/>
+    <resource label="J3 –exhibition"/>
+</resources>

@@ -1,0 +1,124 @@
+<foxml:digitalObject xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PID="ADT:99" xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="A"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="ADTImport07 Organization development and the implementation of planned change"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL"></foxml:property>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A">
+    <foxml:datastreamVersion ID="DC.0" LABEL="Dublin Core" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>Organization development and the implementation of planned change</dc:title>
+          <dc:creator>John Charles Henderson</dc:creator>
+          <dc:description>This case study, conducted in a vocational and technical education institution at post secondary level, was concerned with the effects of an organization development intervention on the ability of an organization to implement a planned change initiated by itself.&#xD;
+&#xD;
+More specifically, the study hypothesized that organization development, or change to the organization itself, could enhance the process of planned change by the organization.&#xD;
+&#xD;
+The study develops at length the concept and theory of implementing planned change, of the critical importance of common understandings and shared expectations to this process, and of the centrality of resocialization&#xD;
+and social interaction in successful implementation.&#xD;
+&#xD;
+The study also lists in detail the events and procedures used in this particular organization development intervention, as well as the concept and theory underlying organization development. A number of principles&#xD;
+which guided the author's intervention activities are also listed and examined.&#xD;
+&#xD;
+Data on organizational change induced by the intervention were collected over a period of two years through a questionnaire, used for repeated measures, and through participant observation. These data are presented&#xD;
+both quantitatively and qualitatively in the study. The qualitative data are presented in the form Eisner (1979) has described as "educational criticism".&#xD;
+&#xD;
+Data on the implementation of planned change were collected through a questionnaire, used for repeated measures, a structured interview technique closely based on the Levels of Use methodology (Ha22 et aZ,&#xD;
+1975), and through participant observation data. Data were again collected over a period of two years and are presented both quantitatively and qualitatively.&#xD;
+&#xD;
+The study indicates clearly that the organizational intervention was successful in bringing about organizational change across a broad range of variables. These changes included organizational elements which&#xD;
+research has identified as determinants of the implementation process, The study also indicates that during the period of the intervention the education institution concerned enhanced its ability to implement&#xD;
+planned change, and that this enhanced ability was closely related to the organizational changes which had occurred as a result of the organization development intervention.</dc:description>
+          <dc:publisher>. </dc:publisher>
+          <dc:date>1984</dc:date>
+          <dc:publisher>Murdoch University. </dc:publisher>
+          <dc:date></dc:date>
+          <dc:rights>http://www.murdoch.edu.au/goto/CopyrightNotice</dc:rights>
+          <dc:rights>Copyright John Charles Henderson</dc:rights>
+          <dc:identifier>http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20060830.120730</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DS1" STATE="A">
+    <foxml:datastreamVersion ID="DS1.0" LABEL="MARCXML Record" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <record>
+            <leader>00000nam a22000002a 4500</leader>
+            <controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </controlfield>
+            <datafield ind1="1" ind2="0" tag="245">
+              <subfield code="a">Organization development and the implementation of planned change</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="" tag="100">
+              <subfield code="a">John Charles Henderson</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">Educational innovations</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">Organizational change</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">Western Australia</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="520">
+              <subfield code="a">This case study, conducted in a vocational and technical education institution at post secondary level, was concerned with the effects of an organization development intervention on the ability of an organization to implement a planned change initiated by itself.&#xD;
+&#xD;
+More specifically, the study hypothesized that organization development, or change to the organization itself, could enhance the process of planned change by the organization.&#xD;
+&#xD;
+The study develops at length the concept and theory of implementing planned change, of the critical importance of common understandings and shared expectations to this process, and of the centrality of resocialization&#xD;
+and social interaction in successful implementation.&#xD;
+&#xD;
+The study also lists in detail the events and procedures used in this particular organization development intervention, as well as the concept and theory underlying organization development. A number of principles&#xD;
+which guided the author's intervention activities are also listed and examined.&#xD;
+&#xD;
+Data on organizational change induced by the intervention were collected over a period of two years through a questionnaire, used for repeated measures, and through participant observation. These data are presented&#xD;
+both quantitatively and qualitatively in the study. The qualitative data are presented in the form Eisner (1979) has described as "educational criticism".&#xD;
+&#xD;
+Data on the implementation of planned change were collected through a questionnaire, used for repeated measures, a structured interview technique closely based on the Levels of Use methodology (Ha22 et aZ,&#xD;
+1975), and through participant observation data. Data were again collected over a period of two years and are presented both quantitatively and qualitatively.&#xD;
+&#xD;
+The study indicates clearly that the organizational intervention was successful in bringing about organizational change across a broad range of variables. These changes included organizational elements which&#xD;
+research has identified as determinants of the implementation process, The study also indicates that during the period of the intervention the education institution concerned enhanced its ability to implement&#xD;
+planned change, and that this enhanced ability was closely related to the organizational changes which had occurred as a result of the organization development intervention.</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="260">
+              <subfield code="c">1984</subfield>
+            </datafield>
+            <datafield ind1="0" ind2="" tag="041">
+              <subfield code="a">eng
+     </subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="260">
+              <subfield code="b">Murdoch University</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="540">
+              <subfield code="a">http://www.murdoch.edu.au/goto/CopyrightNotice</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="540">
+              <subfield code="a">Copyright John Charles Henderson</subfield>
+            </datafield>
+            <datafield ind1="4" ind2="" tag="856">
+              <subfield code="u">http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20060830.120730</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="502">
+              <subfield code="a">Organization development and the implementation of planned change</subfield>
+            </datafield>
+          </record>
+        </collection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="M" ID="DS2" STATE="A">
+    <foxml:datastreamVersion ID="DS2.0" LABEL="02Whole.pdf" MIMETYPE="application/pdf">
+      <foxml:contentLocation REF="http://localhost:8000/dspaceArchive/98/02Whole.pdf" TYPE="URL"></foxml:contentLocation>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="M" ID="DS3" STATE="A">
+    <foxml:datastreamVersion ID="DS3.0" LABEL="01Front.pdf" MIMETYPE="application/pdf">
+      <foxml:contentLocation REF="http://localhost:8000/dspaceArchive/98/01Front.pdf" TYPE="URL"></foxml:contentLocation>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<utfx:stylesheet src="marc_dc.xsl"/>
+<!--    <utfx:stylesheet src="/home/oem/partner/Newcastle/3_1/config/stylesheets/marc_dc.xsl"/>-->
+    
+    <!-- Dissertation Note-->
+    <utfx:test>
+        <utfx:name> Dissertation Note</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                         <marc:datafield tag="655" ind1=" " ind2=" ">
+                             <marc:subfield code="a">Australasian Digital Thesis</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                    </marc:collection>
+        
+            </utfx:source>
+            <utfx:expected validate="no">
+               
+                <dc:type>Australasian Digital Thesis</dc:type>
+                <dc:language>eng</dc:language>
+               </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <!-- Note-->
+    <utfx:test>
+        <utfx:name> Note</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="502" ind1=" " ind2=" "><marc:subfield code="a">PhD Doctorate</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+               <dc:language>eng</dc:language>
+                    <dc:description>PhD Doctorate</dc:description>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <!-- Peer Reviewed -->
+    <utfx:test>
+        <utfx:name>Peer Reviewed</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="595" ind1=" " ind2=" "><marc:subfield code="a">Refereed, Research</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                    <dc:description>Refereed, Research</dc:description>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Title -->
+    
+    
+    <!-- ISBN -->
+    <utfx:test>
+        <utfx:name>ISBN</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield ind1=" " ind2=" " tag="020">
+                            <marc:subfield code="a">0-275-96945-2</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+               <dc:language>eng</dc:language>
+                    <dc:identifier>ISBN:0-275-96945-2</dc:identifier>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- ISSN -->
+    <utfx:test>
+        <utfx:name>ISSN</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield ind1=" " ind2=" " tag="022">
+                            <marc:subfield code="a">1011-6370</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                    <dc:identifier>ISSN:1011-6370</dc:identifier>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Test Name</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="245" ind1="0" ind2="0">
+                            <marc:subfield code="a">Observing the open-closed boundary using cusp-latitude magnetometers</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                  
+                    <dc:title>Observing the open-closed boundary using cusp-latitude magnetometers</dc:title>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [1.1] -->
+    <utfx:test>
+        <utfx:name>Creators [1.1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="100" ind1="1" ind2=" ">
+                            <marc:subfield code="a">Ables, Sean Thomas</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">                
+                    <dc:creator>Ables, Sean Thomas</dc:creator>
+                <dc:language>eng</dc:language>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [1.2] -->
+    <utfx:test>
+        <utfx:name>Creators [1.2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="100" ind1="1" ind2=" ">
+                            <marc:subfield code="a">Ables, Sean Thomas</marc:subfield>
+                            <marc:subfield code="u">University of Newcastle</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                    <dc:creator>Ables, Sean Thomas</dc:creator>
+                <dc:language>eng</dc:language>
+                 
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [2.1] -->
+    <utfx:test>
+        <utfx:name>Creators [2.1]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="700" ind1="1" ind2=" ">
+                            <marc:subfield code="a">Fraser, Brian J</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+             
+                    
+                    <dc:creator>Fraser, Brian J</dc:creator>
+                <dc:language>eng</dc:language>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Creators [2.2] -->
+    <utfx:test>
+        <utfx:name>Creators [2.2]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="700" ind1="1" ind2=" ">
+                            <marc:subfield code="a">Fraser, Brian J.</marc:subfield>
+                            <marc:subfield code="u">University of Newcastle</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                  <dc:creator>Fraser, Brian J.</dc:creator>
+                <dc:language>eng</dc:language>                 
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+     Creators [3] 
+    <utfx:test>
+        <utfx:name>Creators [3]</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="710" ind1="2" ind2=" ">
+                            <marc:subfield code="a">University of Newcastle</marc:subfield>
+                            <marc:subfield code="b">school of 710b</marc:subfield>
+                            <marc:subfield code="c">school of 710c</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                    <dc:contributor>University of Newcastle. school of 710b, school of 710c</dc:contributor>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+   
+    <!-- Description -->
+    <utfx:test>
+        <utfx:name>Description</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="520" ind1="3" ind2=" ">
+                            <marc:subfield code="a">A new ground-based diagnostic of reconnection at the magnetopause</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+               
+                <dc:language>eng</dc:language>
+                    <dc:description>A new ground-based diagnostic of reconnection at the magnetopause</dc:description>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Publisher Information & publication date -->
+    <utfx:test>
+        <utfx:name>Publisher Information &amp; publication date</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="260" ind1=" " ind2=" ">
+                            <marc:subfield code="a">Washington</marc:subfield>
+                            <marc:subfield code="b">American Geophysical Union</marc:subfield>
+                            <marc:subfield code="c">2005</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                    
+                    <dc:publisher>American Geophysical Union</dc:publisher>
+                    <dc:date>2005</dc:date>
+                <dc:language>eng</dc:language>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Relation 
+    <utfx:test>
+        <utfx:name>Relation</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="787" ind1="0" ind2=" ">
+                            <marc:subfield code="t">Geophysical Research Letters</marc:subfield>
+                            <marc:subfield code="n">1</marc:subfield>
+                            <marc:subfield code="g">Vol. 32, no. 10 (May 28. 2005), p. 4 pages</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+                  
+                    <dc:relation>Geophysical Research Letters</dc:relation>
+                   
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>-->
+    <!-- Rights -->
+    <utfx:test>
+        <utfx:name>Rights</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="540" ind1=" " ind2="0">
+                            <marc:subfield code="a">We have permission to have this in our repository</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                   
+                    <dc:rights>We have permission to have this in our repository</dc:rights>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Publisher URL -->
+   <!-- <utfx:test>
+        <utfx:name>Publisher URL</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="856" ind1="4" ind2="0">
+                            <marc:subfield code="u">http://0-www.agu.org.library.newcastle.edu.au/journals/gl/</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                    xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    
+                    <dc:identifier>http://0-www.agu.org.library.newcastle.edu.au/journals/gl/</dc:identifier>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>-->
+    <!-- Subjects -->
+    <utfx:test>
+        <utfx:name>Subjects</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="650" ind1=" " ind2=" ">
+                            <marc:subfield code="a">flux-transfer events</marc:subfield>
+                            <marc:subfield code="a">interplanetary magnetic-field</marc:subfield>
+                            <marc:subfield code="a">impulse events</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+               <dc:subject>flux-transfer events interplanetary magnetic-field impulse events</dc:subject>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Item Type -->
+    <utfx:test>
+        <utfx:name>Item Type</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="655" ind1=" " ind2="7">
+                            <marc:subfield code="a">journal article</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+           
+                    
+                    <dc:type>journal article</dc:type>
+                <dc:language>eng</dc:language>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Collection Title-->
+  <!--  <utfx:test>
+        <utfx:name>Collection Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="773" ind1="0" ind2=" ">
+                            <marc:subfield code="t">The University of Newcastle VITAL repository</marc:subfield>
+                            <marc:subfield code="g">Vol. 32, no. 10 (May 28. 2005), p. 4 pages</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                   
+                    <dc:relation>The University of Newcastle VITAL repository, Vol. 32, no. 10 (May 28. 2005), p. 4 pages</dc:relation>
+                    
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>-->
+  
+    <!-- Conference Title and pages -->
+    <utfx:test>
+        <utfx:name>Conference Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="711" ind1="0" ind2=" ">
+                            <marc:subfield code="a">This is a conference</marc:subfield>
+                            <marc:subfield code="d">2005</marc:subfield>
+                            <marc:subfield code="c">Brisbane, Australia</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="300" ind1=" " ind2=" ">
+                            <marc:subfield code="a">4 pages</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                    <dc:language>eng</dc:language>
+                    <dc:relation>This is a conference (Brisbane, Australia 2005) 4 pages </dc:relation>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Conference Title and pages 2-->
+    <utfx:test>
+        <utfx:name>Conference Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="300" ind1=" " ind2=" ">
+                            <marc:subfield code="a">100-200</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield tag="711" ind1="0" ind2=" ">
+                            <marc:subfield code="a">This is a conference</marc:subfield>
+                            <marc:subfield code="d">2005</marc:subfield>
+                            <marc:subfield code="c">Brisbane, Australia</marc:subfield>
+                        </marc:datafield>
+                        
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                    
+                    <dc:relation>This is a conference (Brisbane, Australia 2005) p. 100-200 </dc:relation>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!--test Language-->
+    <utfx:test>
+        <utfx:name>Language</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="041" ind1="0" ind2=" ">
+                            <marc:subfield code="a">eng</marc:subfield>
+
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                
+                    
+                    <dc:language>eng</dc:language>
+                
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- Patent Number -->
+    <utfx:test>
+        <utfx:name>Patent Number</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="013" ind1="0" ind2=" ">
+                            <marc:subfield code="a">Patent Number</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:identifier>Patent Number</dc:identifier>  
+                <dc:language>eng</dc:language>              
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+
+    <!-- keywords -->
+    <utfx:test>
+        <utfx:name>Keywords</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield tag="653" ind1=" " ind2=" ">
+                            <marc:subfield code="a">flux-transfer events</marc:subfield>
+                            <marc:subfield code="a">interplanetary magnetic-field</marc:subfield>
+                            <marc:subfield code="a">magnetopause</marc:subfield>
+                            <marc:subfield code="a">reconnection</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+                <dc:subject>flux-transfer events</dc:subject>
+                <dc:subject>interplanetary magnetic-field</dc:subject>
+                <dc:subject>magnetopause</dc:subject>
+                <dc:subject>reconnection</dc:subject>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+<!--test supervisor doesn't show -->
+    <utfx:test>
+        <utfx:name>Thesis Supervisor</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield ind1="1" ind2="2" tag="720">
+                            <marc:subfield code="a">Robertson, Billy</marc:subfield>
+                            <marc:subfield code="e">(Supervisor)</marc:subfield>
+                            <marc:subfield code="u">Murdoch University</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:language>eng</dc:language>
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <!--830 to dc relation...things like collections -->
+    <utfx:test>
+        <utfx:name>Collections</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield ind1=" " ind2=" " tag="830">
+                            <marc:subfield code="a">Australasian Digital Thesis</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+    
+                <utfx:expected validate="no">
+                    <dc:language>eng</dc:language>
+                    <dc:relation>Australasian Digital Thesis</dc:relation>
+           
+
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Valet item thesis -->
+    <utfx:test>
+        <utfx:name>Valet item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+               <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                            <marc:datafield ind1=" " ind2="7" tag="655">
+                                <marc:subfield code="a">major project</marc:subfield>
+                                <marc:subfield code="2">local</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="1" ind2="2" tag="720">
+                                <marc:subfield code="a">Bob, Billy</marc:subfield>
+                                <marc:subfield code="e">(Supervisor)</marc:subfield>
+                                <marc:subfield code="u">Murdoch University</marc:subfield>
+                            </marc:datafield>    
+                           <marc:datafield ind1=" " ind2=" " tag="502">
+                                <marc:subfield code="a">Masters Research - Master of Science Something</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="830">
+                                <marc:subfield code="a">Australasian Digital Thesis</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="506">
+                                <marc:subfield code="a"> Restricted access. Embargo for 5 months</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="0" ind2=" " tag="041">
+                                <marc:subfield code="a">eng</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="260">
+                                <marc:subfield code="c">1997</marc:subfield>
+                            </marc:datafield>    
+                              <marc:datafield ind1="1" ind2="0" tag="245">
+                                  <marc:subfield code="a">ExcellenThesis</marc:subfield>
+                               </marc:datafield>                                
+                                <marc:datafield ind1=" " ind2="7" tag="650">
+                                    <marc:subfield code="a">November</marc:subfield>
+                                </marc:datafield>
+                                <marc:datafield ind1=" " ind2="7" tag="650">
+                                    <marc:subfield code="a">rain</marc:subfield>
+                                </marc:datafield>
+                                <marc:datafield ind1=" " ind2=" " tag="653">
+                                    <marc:subfield code="a">precipitation</marc:subfield>
+                                </marc:datafield>
+                                <marc:datafield ind1=" " ind2=" " tag="653">
+                                    <marc:subfield code="a">cloud</marc:subfield>
+                                </marc:datafield>
+                                <marc:datafield ind1=" " ind2=" " tag="653">
+                                    <marc:subfield code="a">thunder</marc:subfield>
+                                </marc:datafield>
+                                <marc:datafield ind1=" " ind2=" " tag="100">
+                                    <marc:subfield code="a">Fityush, Stephen George</marc:subfield>
+                                    <marc:subfield code="u">Murdoch University</marc:subfield>
+                                </marc:datafield>
+                                <marc:datafield ind1=" " ind2=" " tag="710">
+                                    <marc:subfield code="a"> University of Georgia</marc:subfield>
+                                    <marc:subfield code="b">Science</marc:subfield>
+                                </marc:datafield>
+                                <marc:datafield ind1=" " ind2=" " tag="540">
+                                    <marc:subfield code="a"> Copyright 1997 Stephen George Fityush</marc:subfield>
+                                </marc:datafield>
+                                <marc:datafield ind1=" " ind2=" " tag="590">
+                                    <marc:subfield code="a">I agree to NOVA 1.0</marc:subfield>
+                                </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="500">
+                            <marc:subfield code="a">More details to hand....</marc:subfield>
+                        </marc:datafield>                        
+                    </marc:record>
+                </marc:collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:title>ExcellenThesis</dc:title>
+                <dc:creator>Fityush, Stephen George</dc:creator>
+                 <dc:type>major project</dc:type>
+                <dc:date>1997</dc:date>
+                <dc:language>eng</dc:language>
+                <dc:description>More details to hand....</dc:description>
+                <dc:description>Masters Research - Master of Science Something</dc:description>
+                <dc:subject>November</dc:subject>
+                <dc:subject>rain</dc:subject>
+                <dc:subject>precipitation</dc:subject>
+                <dc:subject>cloud</dc:subject>  
+                <dc:subject>thunder</dc:subject>
+                <dc:contributor>University of Georgia. Science</dc:contributor>
+                <dc:relation>Australasian Digital Thesis</dc:relation>               
+                <dc:rights>Copyright 1997 Stephen George Fityush</dc:rights>         
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Valet item journal -->
+    <utfx:test>
+        <utfx:name>Valet journal item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                             <marc:datafield ind1=" " ind2=" " tag="043">
+                                <marc:subfield code="a">u-at</marc:subfield>
+                             </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="592">
+                            <marc:subfield code="a">E1</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="592">
+                            <marc:subfield code="a">1992</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="599">
+                            <marc:subfield code="a">Help details</marc:subfield>
+                        </marc:datafield>
+                        
+                            <marc:datafield ind1=" " ind2="7" tag="655">
+                                <marc:subfield code="a">journal article</marc:subfield>
+                                <marc:subfield code="2">local</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="0" ind2=" " tag="773">
+                                <marc:subfield code="t">Heart</marc:subfield>
+                                <marc:subfield code="n">1</marc:subfield>
+                                <marc:subfield code="g">Vol. 92, Issue 11, p. 1583-1587</marc:subfield>
+                                <marc:subfield code="x">1355-6037</marc:subfield>
+                                <marc:subfield code="d">BMJ Publishing Group</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="300">
+                                <marc:subfield code="a">4</marc:subfield>
+                            </marc:datafield>  
+                            <marc:datafield ind1="0" ind2=" " tag="041">
+                                <marc:subfield code="a">eng</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="260">
+                                <marc:subfield code="c">2006</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="1" ind2="0" tag="245">
+                                <marc:subfield code="a">Retinal vascular calibre and the risk of coronary heart disease-related death</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="3" ind2=" " tag="520">
+                                <marc:subfield code="a">Objective: To examine whether retinal vascular calibre independently predicts risk of coronary heart disease (CHD) -related death. &#13; &#13; Methods: In a population-based cohort study of 3654 Australians aged 49 years, retinal arteriolar and venular calibres were measured from baseline retinal photographs and the arteriole to venule ratio (AVR) was calculated. CHD-related death was confirmed from the Australian National Death Index. &#13; &#13; Results: Over nine years, 78 women (4.1%) and 114 men (7.8%) had incident CHD-related deaths. In people aged 49–75 years, wider venules were associated with CHD death, with relative risk (RR) 1.8 (95% confidence interval (CI) 1.1 to 2.7) and RR 2.0 (95% CI 1.1 to 3.6) per standard deviation (SD) increase in venular calibre for men and women, respectively, after adjustment for traditional risk factors. Additionally, in women aged 49–75 years, smaller AVR and narrower arterioles were associated with CHD death (RR 1.5, 95% CI 1.1 to 2.2, and RR 1.9, 95% CI 1.0 to 3.5 per SD decrease in AVR and arteriolar calibre, respectively, after adjustment). These associations were not observed in people aged &gt; 75 years. &#13; &#13; Conclusions: These findings suggest that microvascular disease processes may have a role in CHD development in middle-aged people, particularly in women. Retinal photography may be useful in cardiovascular risk pediction. &#13; </marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="653">
+                                <marc:subfield code="a">retinal vascular calibre</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="653">
+                                <marc:subfield code="a">coronary heart disease</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="653">
+                                <marc:subfield code="a">cardiovascular risk prediction</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1=" " ind2=" " tag="100">
+                                <marc:subfield code="a">Wang, J J</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="1" ind2=" " tag="700">
+                                <marc:subfield code="a">Liew, G</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="1" ind2=" " tag="700">
+                                <marc:subfield code="a">Wong, T Y</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="1"  ind2=" " tag="700">
+                                <marc:subfield code="a">Smith, W</marc:subfield>
+                                <marc:subfield code="u">University of Newcastle</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="1"  ind2=" " tag="700">
+                                <marc:subfield code="a">Klein, R</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="1"  ind2=" " tag="700">
+                                <marc:subfield code="a">Leeder, S R</marc:subfield>
+                            </marc:datafield>
+                            <marc:datafield ind1="1" ind2=" " tag="700">
+                                <marc:subfield code="a">Mitchell, P</marc:subfield>
+                            </marc:datafield>   
+                          
+                    </marc:record>
+                </marc:collection>
+                       
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:title>Retinal vascular calibre and the risk of coronary heart disease-related death</dc:title>
+                <dc:creator>Wang, J J</dc:creator>
+                <dc:creator>Liew, G</dc:creator>
+                <dc:creator>Wong, T Y</dc:creator>
+                <dc:creator>Smith, W</dc:creator>
+                <dc:creator>Klein, R</dc:creator>
+                <dc:creator>Leeder, S R</dc:creator>                                
+                <dc:creator>Mitchell, P</dc:creator>   
+                <dc:type>journal article</dc:type>
+                <dc:date>2006</dc:date>
+                <dc:language>eng</dc:language>
+                <dc:description>Objective: To examine whether retinal vascular calibre independently predicts risk of coronary heart disease (CHD) -related death.   Methods: In a population-based cohort study of 3654 Australians aged 49 years, retinal arteriolar and venular calibres were measured from baseline retinal photographs and the arteriole to venule ratio (AVR) was calculated. CHD-related death was confirmed from the Australian National Death Index.   Results: Over nine years, 78 women (4.1%) and 114 men (7.8%) had incident CHD-related deaths. In people aged 49–75 years, wider venules were associated with CHD death, with relative risk (RR) 1.8 (95% confidence interval (CI) 1.1 to 2.7) and RR 2.0 (95% CI 1.1 to 3.6) per standard deviation (SD) increase in venular calibre for men and women, respectively, after adjustment for traditional risk factors. Additionally, in women aged 49–75 years, smaller AVR and narrower arterioles were associated with CHD death (RR 1.5, 95% CI 1.1 to 2.2, and RR 1.9, 95% CI 1.0 to 3.5 per SD decrease in AVR and arteriolar calibre, respectively, after adjustment). These associations were not observed in people aged &gt; 75 years.   Conclusions: These findings suggest that microvascular disease processes may have a role in CHD development in middle-aged people, particularly in women. Retinal photography may be useful in cardiovascular risk pediction.</dc:description>
+                <dc:relation>Help details</dc:relation>
+                <dc:subject>retinal vascular calibre</dc:subject>
+                <dc:subject>coronary heart disease</dc:subject>
+                <dc:subject>cardiovascular risk prediction</dc:subject>
+                <dc:relation>Heart, Vol. 92, Issue 11, p. 1583-1587</dc:relation>
+               
+                        
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    <!-- Valet item conference -->
+    <utfx:test>
+        <utfx:name>Valet conference item</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+                    <marc:record>
+                        <marc:leader>00000nam a22000002a 4500</marc:leader>
+                        <marc:controlfield tag="008">120308s20uu9999   |||||s|||||00| 0|eng d </marc:controlfield>
+                        <marc:datafield ind1=" " ind2=" " tag="043">
+                            <marc:subfield code="a">u-at</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2="7" tag="655">
+                            <marc:subfield code="a">conference paper</marc:subfield>
+                            <marc:subfield code="2">local</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1="2" ind2=" " tag="711">
+                            <marc:subfield code="a">ANZMAC 2005: Broadening the Boundaries</marc:subfield>
+                            <marc:subfield code="c">Perth, W.A.</marc:subfield>
+                            <marc:subfield code="d">5-7 December, 2005</marc:subfield>
+                        </marc:datafield>         
+                        <marc:datafield ind1="0" ind2=" " tag="773">
+                            <marc:subfield code="t">ANZMAC 2005: Broadening the Boundaries Conferece Procedings</marc:subfield>
+                            <marc:subfield code="g">p. 82-88</marc:subfield>
+                            <marc:subfield code="d">Australian and New Zealand Marketing Academy / University of Western Australia : Fremantle, Western Australia</marc:subfield>
+                            <marc:subfield code="n">1</marc:subfield>
+                            <marc:subfield code="z">0646455028</marc:subfield>
+                        </marc:datafield>   
+                        
+                        <marc:datafield ind1="0" ind2=" " tag="041">
+                            <marc:subfield code="a">eng</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="260">
+                            <marc:subfield code="c">2005</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1="1" ind2="2" tag="245">
+                            <marc:subfield code="a">A conceptual exploration of antecedents and outcomes of socially responsible investment in equity market</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1="3" ind2=" " tag="520">
+                            <marc:subfield code="a">This paper proposes a conceptual framework for socially responsible investment (SRI) in the context of equity markets with three possible antecedents of SRI - moral beliefs, demographic and economic factors. It is argued that these factors influence an investor’s portfolio choice in relation to socially responsible vis-à-vis mainstream shares through their impacts on preferences as well as the investment opportunity set. It follows from the proposed conceptual framework that (a) the SRI products may be held by any risk-averse investors regardless of their ethical standing due to potential portfolio diversification benefits; (b) investors with moral beliefs will allocate a larger proportion of their assets in SRI than their conventional counterparts as they derive non-pecuniary benefits by investing in socially responsible firms; and (c) investors willing to attain steady long-term returns on investment will exploit SRI investment opportunities. These assertions can be empirically examined in further research.</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="653">
+                            <marc:subfield code="a">socially responsible investment</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="653">
+                            <marc:subfield code="a">moral beliefs</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="653">
+                            <marc:subfield code="a">long-term returns</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="100">
+                            <marc:subfield code="a">Quazi, Ali</marc:subfield>
+                            <marc:subfield code="u">University of Newcastle</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1="1" ind2=" " tag="700">
+                            <marc:subfield code="a">Shamsuddin, Abul</marc:subfield>
+                            <marc:subfield code="u">University of Newcastle</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="540">
+                            <marc:subfield code="a">Copyright 2005 Ali Quazi</marc:subfield>
+                        </marc:datafield>
+                        <marc:datafield ind1=" " ind2=" " tag="590">
+                            <marc:subfield code="a">These are my rights</marc:subfield>
+                        </marc:datafield>
+                    </marc:record>
+                </marc:collection>
+                
+            </utfx:source>
+            <utfx:expected validate="no">
+                <dc:title>A conceptual exploration of antecedents and outcomes of socially responsible investment in equity market</dc:title>
+                <dc:creator>Quazi, Ali</dc:creator>
+                <dc:creator>Shamsuddin, Abul</dc:creator>
+                <dc:type>conference paper</dc:type>
+                <dc:date>2005</dc:date>
+                <dc:language>eng</dc:language>
+                <dc:description>This paper proposes a conceptual framework for socially responsible investment (SRI) in the context of equity markets with three possible antecedents of SRI - moral beliefs, demographic and economic factors. It is argued that these factors influence an investor’s portfolio choice in relation to socially responsible vis-à-vis mainstream shares through their impacts on preferences as well as the investment opportunity set. It follows from the proposed conceptual framework that (a) the SRI products may be held by any risk-averse investors regardless of their ethical standing due to potential portfolio diversification benefits; (b) investors with moral beliefs will allocate a larger proportion of their assets in SRI than their conventional counterparts as they derive non-pecuniary benefits by investing in socially responsible firms; and (c) investors willing to attain steady long-term returns on investment will exploit SRI investment opportunities. These assertions can be empirically examined in further research.</dc:description>
+                <dc:subject>socially responsible investment</dc:subject>
+                <dc:subject>moral beliefs</dc:subject>
+                <dc:subject>long-term returns</dc:subject>
+                <dc:relation>ANZMAC 2005: Broadening the Boundaries (Perth, W.A. 5-7 December, 2005)</dc:relation>
+                <dc:relation>ANZMAC 2005: Broadening the Boundaries Conferece Procedings, p. 82-88</dc:relation>
+                <dc:rights>Copyright 2005 Ali Quazi</dc:rights>
+           </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+
+    
+
+
+</utfx:tests>

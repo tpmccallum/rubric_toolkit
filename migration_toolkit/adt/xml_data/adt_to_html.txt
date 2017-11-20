@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD><TITLE>Flinders University &lt;ADT&gt; Public View</TITLE>
+<META NAME="DC.Title" CONTENT="AN ASSESSMENT OF PERFORMANCE AND SUSTAINABILITY OF MICROFINANCE INSTITUTIONS: A Case Study of Village Credit Institutions in Gianyar, Bali, Indonesia">
+<META NAME="DC.Creator.personalName" CONTENT="Arsyad, Lincolin">
+<META NAME="DC.Creator.personalName.address" CONTENT="arsy0002@flinders.edu.au">
+<META NAME="DC.Subject" CONTENT="microfinance institutions">
+<META NAME="DC.Subject" CONTENT="low incomes">
+<META NAME="DC.Subject" CONTENT="development">
+<META NAME="DC.Subject" CONTENT="Village Credit Institutions of Bali">
+<META NAME="DC.Subject" CONTENT="Lembaga Perkreditan Desa">
+<META NAME="DC.Subject" CONTENT="LPD">
+<META NAME="DC.Subject" CONTENT="strategic business plan">
+<META NAME="DC.Subject" CONTENT="Gianyar district">
+<META NAME="DC.Subject" CONTENT="informal institutions">
+<META NAME="DC.Description.abstract" CONTENT="Microfinance institutions have evolved as an economic development tool intended to benefit low-income people. The benefit, however, can only be achieved if the institutions have a good financial and outreach performance. This study has three objectives. The first objective is to assess the influences of informal and formal institutions and their interrelationships on the practical operational arrangement of Village Credit Institutions of Bali (Lembaga Perkreditan Desa or LPD). Second, to evaluate the financial performance and outreach indicators of the institutions and to assess the influence of informal and formal institution on the sustainability of the institutions, which has received little attention from previous studies. Finally, to outline some elements of a strategic business plan for two selected village credit institutions (LPDs) in Gianyar district, LPD Mas and LPD Kerta. 
+
+By using a case study approach, this study finds that the informal institutions (such as social values, norms, and sanctions) have significant influences on the practical arrangements of the LPDs, including the organisation, recruitment procedure, delivery mechanism, and remuneration system. Along with the influence of informal institutions, the formal institutions have also had some direct influences on the practical operational arrangements of the LPDs that are reflected in the supervision and guidance system of LPDs, an obligation to apply prudential principles of banking, and the remuneration system. The findings also show that the local government regulations (formal institutions) concerning the LPDs have accommodated the informal institutions of the Balinese in the background of their establishment, status and ownership, and organisation of the LPDs. 
+
+Based on the performance indicators - portfolio quality, leverage, capital adequacy ratio (CAR), productivity, efficiency, profitability, self-sufficiency, and outreach � the LPDs in Gianyar district could be considered as success microfinance institutions. The success is influenced by some important factors. First, the use of local people in managing the LPDs and the application of character-based lending system in screening the clients. This has resulted in a high clients� sense of belonging and moral obligation to support the development of the LPD Second, the use of social (custom) sanctions in the contractual enforcement has forced the borrowers to comply with their credit contract in a timely fashion. Third, the use of local community personnel whose remuneration is based on performance and low transaction costs has resulted in the high efficiency of LPDs. Fourth, a growing economy and supporting government policy at all levels through provision of a legal basis for the LPDs and the Central Bank regulation (formal institutions) have also contributed to the success of the LPDs. Thus, based on the necessary conditions of sustainable microfinance institution proposed by some scholars(Yaron 1994; Christen 1998), it can be concluded that the Gianyar district LPDs have been sustainable, and by that implication they have positive net social benefits for their clients. 
+
+Any attempt, however, to replicate the achievements of the LPDs by imitating its mode of operations should be conducted with great caution. A mechanism that works well in one socioeconomic environment (in this instance, in Bali) will not necessarily work in another, where the social system including social norms and values are different.  But, the experience of the LPDs is a valuable thing since it has highlighted some critical issues that should be considered when handling the complex issue providing financial services to rural people.">
+<META NAME="DC.Date.valid" SCHEME="W3CDTF" CONTENT="2006">
+
+<META NAME="DC.Language" SCHEME="RFC1766" CONTENT="en">
+<META NAME="DC.Publisher" CONTENT="Flinders University. Development Studies">
+<META NAME="DC.Rights" CONTENT="http://www.flinders.edu.au/disclaimer/)">
+<META NAME="DC.Rights" CONTENT="Copyright Lincolin Arsyad">
+<META NAME="DC.Identifier" SCHEME="URI" CONTENT="http://catalogue.flinders.edu.au./local/adt/public/adt-SFU20060621.142512">
+</HEAD>

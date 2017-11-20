@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+    -->
+    <utfx:stylesheet src="usc_thesis_to_marc.xsl"/>
+    
+       
+    <!-- Item Title -->
+    <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <collection>
+                <record>
+                    <title>Organisational change: an analysis of psychological factors associated with resistance</title>
+                    <author>Bovey, W</author>
+                    <author_affiliation>Faculty of Business, University of the Sunshine Coast</author_affiliation>
+                    <abstract>The purpose of this research is to investigate individual psychological factors associated with resistance to organisational change. Resistance is a normal and an inevitable response to change. The success of major organisational change is generally determined by how well resistance is managed. Research reveals that change initiators generally have difficulty working with resistance. A review of the literature reveals an absence of empirically validated models which diagnose individual psychological factors associated with resistance.The research aims to investigate why some individuals resist and oppose change whereas other individuals accept and support change, even though these individuals are objectively affected by the change in exactly the same way. The study focuses on identifying some of the major individual psychological factors associated with resistance and determining the extent to which each of these factors is associated with an individual’s level of resistance. In order to investigate the research question a conceptual model of core constructs was developed and variables derived. The model postulates that the level of resistance depends on at least four individual factors (self-efficacy, irrational ideas, defence mechanisms and emotion). These factors influence behavioural intentions and overall reaction towards change.A detailed design and methodology was developed to test 12 hypotheses which investigate the research question. A questionnaire consisting of several established instruments as well as purpose-designed scales was used to collect data. Organisations implementing significant change were targeted to take part in the study. A total of 10 surveys were implemented in nine organisations. Organisations included federal government corporations and agencies, state government departments and agencies, local government and large private sector organisations.</abstract>
+                    <degreeProgram>Thesis (DBA)</degreeProgram>
+                    <yearPublished>1999</yearPublished>
+                    <keyword>organisational change</keyword>
+                    <resourceType>Thesis</resourceType>
+                    <destCode>A1</destCode>
+                </record>
+                </collection>
+            </utfx:source> 
+            <utfx:expected validate="no">    
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </controlfield>
+                    <datafield tag="245" ind1="1" ind2="0">
+                        <subfield code="a">Organisational change: an analysis of psychological factors associated with resistance</subfield>
+                    </datafield>
+                    <datafield tag="100" ind1="1" ind2=" ">
+                        <subfield code="a">Bovey, W</subfield>
+                        <subfield code="u">Faculty of Business, University of the Sunshine Coast</subfield>
+                    </datafield>
+                    <datafield tag="520" ind1=" " ind2=" ">
+                    <subfield code="a">The purpose of this research is to investigate individual psychological factors associated with resistance to organisational change. Resistance is a normal and an inevitable response to change. The success of major organisational change is generally determined by how well resistance is managed. Research reveals that change initiators generally have difficulty working with resistance. A review of the literature reveals an absence of empirically validated models which diagnose individual psychological factors associated with resistance.The research aims to investigate why some individuals resist and oppose change whereas other individuals accept and support change, even though these individuals are objectively affected by the change in exactly the same way. The study focuses on identifying some of the major individual psychological factors associated with resistance and determining the extent to which each of these factors is associated with an individual’s level of resistance. In order to investigate the research question a conceptual model of core constructs was developed and variables derived. The model postulates that the level of resistance depends on at least four individual factors (self-efficacy, irrational ideas, defence mechanisms and emotion). These factors influence behavioural intentions and overall reaction towards change.A detailed design and methodology was developed to test 12 hypotheses which investigate the research question. A questionnaire consisting of several established instruments as well as purpose-designed scales was used to collect data. Organisations implementing significant change were targeted to take part in the study. A total of 10 surveys were implemented in nine organisations. Organisations included federal government corporations and agencies, state government departments and agencies, local government and large private sector organisations.</subfield>
+                    </datafield>
+                    <datafield tag="260" ind1=" " ind2=" ">
+                        <subfield code="c">1999</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">organisational change</subfield>
+                        </datafield>
+                      <datafield tag="655" ind1=" " ind2="7">
+                        <subfield code="a">Thesis</subfield>
+                    </datafield>
+                    <datafield tag="596" ind1=" " ind2=" "><subfield code="a">A1</subfield>
+                    </datafield>
+                    <datafield tag="041" ind1="0" ind2=" ">
+                        <subfield code="a">eng</subfield>
+                    </datafield>
+                    <datafield tag="546" ind1="0" ind2=" ">
+                        <subfield code="a">eng</subfield> 
+                    </datafield>
+                </record>
+               </collection>
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+   
+</utfx:tests>

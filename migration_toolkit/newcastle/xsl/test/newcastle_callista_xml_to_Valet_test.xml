@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="newcastle_callista_xml_to_valet.xsl"/>
+    
+       
+    <!-- Journal -->
+    <utfx:test>
+        <utfx:name>Journal</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+              
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <CPE_UID>132871</CPE_UID>
+                        <UID_FLD>128932</UID_FLD>
+                        <ORGCAT_FLD>C1</ORGCAT_FLD>
+                        <PUBYEAR_FLD>1998</PUBYEAR_FLD>
+                        <COLYEAR_FLD>1999</COLYEAR_FLD>
+                        <CITATION>Scevak Jill Janina, Moore Phillip John, Jones Tim Bob</CITATION>
+                        <TITLE1_FLD>Levels of Processing Effects on Learning from Texts with Maps</TITLE1_FLD>
+                        <JOURNAL>Educational Psychology</JOURNAL>
+                        <PAGE_NUMBERS>133-155</PAGE_NUMBERS>
+                        <PLACE_PUBLISHED>Sydney??</PLACE_PUBLISHED>
+                        <PUBLISHER>Carfax Publishing Ltd</PUBLISHER>
+                        <VOLUME>18 - 2</VOLUME>
+                        <ISBN_OR_ISSN>0819-8691</ISBN_OR_ISSN>
+                        <ISSUE>1</ISSUE>
+                    </record>
+                    </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>4</Step>
+                    <Attachments/>
+                    <Formdata>
+                       
+                        <session>uon-P128932-CPE132871</session>
+                        <dest_category>C1</dest_category>
+                        <journal_peer_reviewed>Yes</journal_peer_reviewed>
+                        <resource_type>journal article</resource_type>
+                        <year>1998</year>
+                        <creator_last_name>Scevak</creator_last_name>
+                        <creator_first_name>Jill Janina</creator_first_name>
+                        <creator_last_name_1>Moore</creator_last_name_1>
+                        <creator_first_name_1>Phillip John</creator_first_name_1>
+                        <_count_creator-multiple_creators>2</_count_creator-multiple_creators>
+                        <creator_last_name_2>Jones</creator_last_name_2>
+                        <creator_first_name_2>Tim Bob</creator_first_name_2>
+                        <faculty></faculty>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights></rights>
+                        <title>Levels of Processing Effects on Learning from Texts with Maps</title>
+                        <journal_publisher>Carfax Publishing Ltd</journal_publisher>
+                        <journal_place_publication>Sydney??</journal_place_publication>
+                        <journal_issn>0819-8691</journal_issn>
+                        <journal_title>Educational Psychology</journal_title>
+                        <journal_volume>18 - 2</journal_volume>
+                        <journal_issue>1</journal_issue>
+                        <journal_page_from>133</journal_page_from>
+                        <journal_page_to>155</journal_page_to>
+                       
+                        
+                    </Formdata>
+                </Session>
+                </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    <!-- Conference -->
+    <utfx:test>
+        <utfx:name>Conference testing 4 authors</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <CPE_UID>153981</CPE_UID>
+                        <UID_FLD>129204</UID_FLD>
+                        <ORGCAT_FLD>E1</ORGCAT_FLD>
+                        <PUBYEAR_FLD>1998</PUBYEAR_FLD>
+                        <COLYEAR_FLD>1999</COLYEAR_FLD>
+                        <CITATION>Fityus Stephen George1, Fityus Stephen George2, Fityus Stephen George3, Fityus Stephen George4</CITATION>
+                        <TITLE1_FLD>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</TITLE1_FLD>
+                        <CONFERENCE_LOCATION>Newcatele, Australia</CONFERENCE_LOCATION>
+                        <CONFERENCE_PUBLICATION>Geotechnical Engineering and Engineering Geology in the Hunter Valley</CONFERENCE_PUBLICATION>
+                        <PLACE_PUBLISHED>Springwood, NSW, Australia</PLACE_PUBLISHED>
+                        <PUBLISHER>Conference Publications for Australian Geomechanics Society</PUBLISHER>
+                        
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>4</Step>
+                    <Attachments/>
+                    <Formdata>
+                        <session>uon-P129204-CPE153981</session>
+                        <dest_category>E1</dest_category>
+                        <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                        <resource_type>conference paper</resource_type>
+                        <year>1998</year>
+                        <creator_last_name>Fityus</creator_last_name>
+                        <creator_first_name>Stephen George1</creator_first_name>
+                        <creator_last_name_1>Fityus</creator_last_name_1>
+                        <creator_first_name_1>Stephen George2</creator_first_name_1>
+                        <creator_last_name_2>Fityus</creator_last_name_2>
+                        <creator_first_name_2>Stephen George3</creator_first_name_2>
+                        <_count_creator-multiple_creators>3</_count_creator-multiple_creators>
+                        <creator_last_name_3>Fityus</creator_last_name_3>
+                        <creator_first_name_3>Stephen George4</creator_first_name_3>
+                        <faculty></faculty>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights></rights>
+                        <title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</title>
+                        <conference_place_publication>Springwood, NSW, Australia</conference_place_publication>
+                        <conference_publisher> Conference Publications for Australian Geomechanics Society</conference_publisher>
+                        <conference_location>Newcatele, Australia</conference_location>
+                        <conference_title>Geotechnical Engineering and Engineering Geology in the Hunter Valley</conference_title>
+                        
+                        
+                        
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    <!-- Conference -->
+    <utfx:test>
+        <utfx:name>Conference testing 2 authors</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <CPE_UID>153981</CPE_UID>
+                        <UID_FLD>129204</UID_FLD>
+                        <ORGCAT_FLD>E1</ORGCAT_FLD>
+                        <PUBYEAR_FLD>1998</PUBYEAR_FLD>
+                        <COLYEAR_FLD>1999</COLYEAR_FLD>
+                        <CITATION>Fityus Stephen George, Walsh Paul Francis</CITATION>
+                        <TITLE1_FLD>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</TITLE1_FLD>
+                        <CONFERENCE_LOCATION>Newcatele, Australia</CONFERENCE_LOCATION>
+                        <CONFERENCE_PUBLICATION>Geotechnical Engineering and Engineering Geology in the Hunter Valley</CONFERENCE_PUBLICATION>
+                        <PLACE_PUBLISHED>Springwood, NSW, Australia</PLACE_PUBLISHED>
+                        <PUBLISHER>Conference Publications for Australian Geomechanics Society</PUBLISHER>
+                        
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>4</Step>
+                    <Attachments/>
+                    <Formdata>
+                       <session>uon-P129204-CPE153981</session>
+                        <dest_category>E1</dest_category>
+                        <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                        <resource_type>conference paper</resource_type>
+                        <year>1998</year>
+                        <creator_last_name>Fityus</creator_last_name>
+                        <creator_first_name>Stephen George</creator_first_name>
+                        <_count_creator-multiple_creators>1</_count_creator-multiple_creators>
+                        <creator_last_name_1>Walsh</creator_last_name_1>
+                        <creator_first_name_1>Paul Francis</creator_first_name_1>
+                       <faculty></faculty>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights></rights>
+                        <title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</title>
+                        <conference_place_publication>Springwood, NSW, Australia</conference_place_publication>
+                        <conference_publisher> Conference Publications for Australian Geomechanics Society</conference_publisher>
+                        <conference_location>Newcatele, Australia</conference_location>
+                        <conference_title>Geotechnical Engineering and Engineering Geology in the Hunter Valley</conference_title>
+                        
+                        
+                        
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    <!-- Conference -->
+    <utfx:test>
+        <utfx:name>Conference testing 1 author</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <CPE_UID>153981</CPE_UID>
+                        <UID_FLD>129204</UID_FLD>
+                        <ORGCAT_FLD>E1</ORGCAT_FLD>
+                        <PUBYEAR_FLD>1998</PUBYEAR_FLD>
+                        <COLYEAR_FLD>1999</COLYEAR_FLD>
+                        <CITATION>Fityus Stephen George</CITATION>
+                        <TITLE1_FLD>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</TITLE1_FLD>
+                        <CONFERENCE_LOCATION>Newcatele, Australia</CONFERENCE_LOCATION>
+                        <CONFERENCE_PUBLICATION>Geotechnical Engineering and Engineering Geology in the Hunter Valley</CONFERENCE_PUBLICATION>
+                        <PLACE_PUBLISHED>Springwood, NSW, Australia</PLACE_PUBLISHED>
+                        <PUBLISHER>Conference Publications for Australian Geomechanics Society</PUBLISHER>
+                        
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>4</Step>
+                    <Attachments/>
+                    <Formdata>
+                        <session>uon-P129204-CPE153981</session>
+                        <dest_category>E1</dest_category>
+                        <conference_peer_reviewed>Yes</conference_peer_reviewed>
+                        <resource_type>conference paper</resource_type>
+                        <year>1998</year>
+                        <creator_last_name>Fityus</creator_last_name>
+                        <creator_first_name>Stephen George</creator_first_name>
+                       <faculty></faculty>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights></rights>
+                        <title>The Influence of Climate as Expressed by the Thornthwaite Index on the Design Depth of Moisture Change of Clay Soils in the Hunter Valley</title>
+                        <conference_place_publication>Springwood, NSW, Australia</conference_place_publication>
+                        <conference_publisher> Conference Publications for Australian Geomechanics Society</conference_publisher>
+                        <conference_location>Newcatele, Australia</conference_location>
+                        <conference_title>Geotechnical Engineering and Engineering Geology in the Hunter Valley</conference_title>
+                        
+                        
+                        
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    
+    
+    <!--review -->
+    <utfx:test>
+        <utfx:name>review</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <CPE_UID>151251</CPE_UID>
+                        <UID_FLD>130277</UID_FLD>
+                        <ORGCAT_FLD>D1</ORGCAT_FLD>
+                        <PUBYEAR_FLD>1998</PUBYEAR_FLD>
+                        <COLYEAR_FLD>1999</COLYEAR_FLD>
+                        <CITATION>Hyde M, Power D, Leigh Gregory Ross</CITATION>
+                        <faculty>Select faculty ...</faculty>
+                        <function>save_formdata</function>
+                        <language>EN</language>
+                        <rights></rights>
+                        <TITLE1_FLD>Oral-only and simultaneous communication speech characteristics of teachers of the deaf</TITLE1_FLD>
+                        <ISBN_OR_ISSN>156368067 x</ISBN_OR_ISSN>
+                        <PAGE_NUMBERS>117-125</PAGE_NUMBERS>
+                        <PUBLISHER>Gallaudet University Press</PUBLISHER>
+                        <VOLUME>21</VOLUME>
+                        <ISSUE>1</ISSUE>
+                        <JOURNAL>title</JOURNAL>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>4</Step>
+                    <Attachments/>
+                    <Formdata>
+                        <session>uon-P130277-CPE151251</session>
+                        <dest_category>D1</dest_category>
+                        <resource_type>review</resource_type>
+                        <year>1998</year>
+                        <creator_last_name>Hyde</creator_last_name>
+                        <creator_first_name> M</creator_first_name>
+                        <creator_last_name_1>Power</creator_last_name_1>
+                        <creator_first_name_1> D</creator_first_name_1>
+                        <_count_creator-multiple_creators>2</_count_creator-multiple_creators>
+                        <creator_last_name_2>Leigh</creator_last_name_2>
+                        <creator_first_name_2>Gregory Ross</creator_first_name_2>
+                        <faculty></faculty>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights></rights>
+                        <title>Oral-only and simultaneous communication speech characteristics of teachers of the deaf</title>
+                        <review_publisher>Gallaudet University Press</review_publisher>
+                        <review_place_publication></review_place_publication>
+                        <review_issn>156368067 x</review_issn>
+                        <review_title>title</review_title>
+                        <review_volume>21</review_volume>
+                        <review_issue>1</review_issue>
+                        <review_page_from>117</review_page_from>
+                        <review_page_to>125</review_page_to>
+                        
+                        
+                    </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+   
+    <!--body of works -->
+    <utfx:test>
+        <utfx:name>body of works</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                
+                <collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <CPE_UID>154619</CPE_UID>
+                        <UID_FLD>137476</UID_FLD>
+                        <ORGCAT_FLD>B1</ORGCAT_FLD>
+                        <PUBYEAR_FLD>2003</PUBYEAR_FLD>
+                        <CITATION>Burgess Kenneth John, MacDonald Duncan Kimpton, Andrews John</CITATION>
+                        <TITLE1_FLD>A decade of enterprise bargaining in Australia: An Introduction</TITLE1_FLD>
+                        <PUBLISHER>Macquarie University, Sydney, Australia</PUBLISHER>
+                        <EDITOR_OF_BOOK>John Burgess &amp; Duncan Macdonald</EDITOR_OF_BOOK>
+                        <ISBN_OR_ISSN>0310-5814</ISBN_OR_ISSN>
+                        <PAGE_NUMBERS>64-84</PAGE_NUMBERS>
+                        <TITLE_OF_BOOK>Developments in Enterprise Bargaining in Australia</TITLE_OF_BOOK>
+                        <PLACE_PUBLISHED>Reston, USA</PLACE_PUBLISHED>
+                        <EDITION>1</EDITION>
+                    </record>
+                </collection>
+            </utfx:source>
+            <utfx:expected validate="no">
+                <Session>
+                    <Step>4</Step>
+                    <Attachments/>
+                    <Formdata>
+                        <session>uon-P137476-CPE154619</session>
+                        <dest_category>B1</dest_category>
+                        <resource_type>book chapter</resource_type>
+                        <year>2003</year>
+                        <creator_last_name>Burgess</creator_last_name>
+                        <creator_first_name>Kenneth John</creator_first_name>
+                        <creator_last_name_1>MacDonald</creator_last_name_1>
+                        <creator_first_name_1> Duncan Kimpton</creator_first_name_1>
+                        <_count_creator-multiple_creators>2</_count_creator-multiple_creators>
+                        <creator_last_name_2>Andrews</creator_last_name_2>
+                        <creator_first_name_2>John</creator_first_name_2>
+                        <faculty></faculty>
+                        <function>save_formdata</function>
+                        <language>eng</language>
+                        <rights></rights>
+                        <title>A decade of enterprise bargaining in Australia: An Introduction</title>
+                        <chapter_isbn>0310-5814</chapter_isbn>
+                        <chapter_publisher>Macquarie University, Sydney, Australia</chapter_publisher>
+                        <chapter_page_from>64</chapter_page_from>
+                        <chapter_page_to>84</chapter_page_to>
+                        <chapter_editor>John Burgess &amp; Duncan Macdonald</chapter_editor>
+                        <chapter_book_title>Developments in Enterprise Bargaining in Australia</chapter_book_title>
+                        <chapter_place_publication>Reston, USA</chapter_place_publication>
+                        <chapter_edition>1</chapter_edition>
+         </Formdata>
+                </Session>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+   
+</utfx:tests>

@@ -1,0 +1,106 @@
+<foxml:digitalObject xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PID="ADT:142" xsi:schemaLocation="http://www.fedora.info/definitions/1/0/foxml1-0.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" VALUE="FedoraObject"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="A"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="ADTImport07 Transoceanic Radical: The Many Identities of William Duane"></foxml:property>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#contentModel" VALUE="VITAL"></foxml:property>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A">
+    <foxml:datastreamVersion ID="DC.0" LABEL="Dublin Core" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+          <dc:title>Transoceanic Radical: The Many Identities of William Duane</dc:title>
+          <dc:creator>Nigel Ken Little</dc:creator>
+          <dc:description>The thesis examines the American career of William Duane (1760-1835) in the light of his earlier, and much less studied period in Ireland, England and India. It is the study of the development of one of America’s pre-eminent newspaper editors. Although Duane is not a first-tier figure of the Early Republican period such as John Adams, Thomas Jefferson or Alexander Hamilton, he certainly fits comfortably within the second-tier with men such as James Thomson Callender, Tench Coxe, John Binns and William Cobbett. He is an important figure within the historiography on the Early Republican period which has come out in recent years. He has an important role in three recent and seminal works on the period by Durey, Wilson and Pasley: Transatlantic Radicals, United Irishmen, United States and “The Tyranny of Printers”. &#xD;
+&#xD;
+This is a study of the identity of Duane measured against his political change and shifting sense of self. It seeks to answer the question: Who was William Duane? The thesis probes the question in depth by looking at Duane’s origins and then tracing his life in 1790s Philadelphia. The portrayal of Duane found in the recent historiography and in the first academic biography of Duane, Kim T. Phillips’ William Duane: A Radical Journalist in the Age of Jefferson, lets Duane’s version of self rest too easily, without interrogating how he constructed his identity within an American political context for an American reading audience. For example, although Duane constructed himself as a citizen of the United States by birth, the thesis maintains that he was not an U.S. citizen at all but was born in Newfoundland and was by eighteenth-century definitions a British subject.&#xD;
+&#xD;
+The thesis offers a great deal more detailed archival research within the above framework. First, it develops Duane’s familial relationships in his early life in much more detail than before. I have uncovered more details on his life from numerous sources, particularly letters, and a careful, textual search for any information on Duane’s earlier career in Ireland and England in the 1780s which has been overlooked by previous researchers. The thesis then places this material in the context of the newspaper trade in 1780s Clonmel and London while building a narrative analysis of this period before moving on to India.&#xD;
+&#xD;
+Second, this thesis demonstrates Duane’s links to the East India Company army. The importance of Duane’s Indian career also lies in his being part of a wider chronology of deported editors and government suppression of the press within the period from 1780 to 1799. The place of Duane within an ignored history of radical migrations to India is also dealt with as is his emergence as a pro revolutionary editor in Calcutta after the declaration of war in 1793.&#xD;
+&#xD;
+Third, the thesis uncovers a great deal more archival information on the period of Duane’s membership of the London Corresponding Society and his editorship of the Telegraph – a strongly pro-French newspaper in wartime London. This period was a short but crucial one for Duane as he witnessed first-hand the last real throes of a British revolutionary movement and the enactment of two important bills which sought to smother the L.C.S. and the other plebeian radical groups.&#xD;
+&#xD;
+Fourth, the thesis examines Duane’s role in what has been perceived as a crucial turning point in American history – the election of Thomas Jefferson to the presidency in 1800. The thesis seeks to understand what Duane’s impact on American politics was and how his earlier career shaped his political outlook and his actions in America. It seeks to denativise the Early Republican Period by pointing out outside currents that Duane used in defining what Americanness was as opposed to his conceptualisation of Federalism and Britain.&#xD;
+&#xD;
+Finally, the thesis argues that the story of William Duane is one of an eighteenthcentury editor’s transoceanic search for a home.</dc:description>
+          <dc:publisher>. </dc:publisher>
+          <dc:date>2003</dc:date>
+          <dc:publisher>Murdoch University. </dc:publisher>
+          <dc:date></dc:date>
+          <dc:rights>http://www.murdoch.edu.au/goto/CopyrightNotice</dc:rights>
+          <dc:rights>Copyright Nigel Ken Little</dc:rights>
+          <dc:identifier>http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20040510.153718</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DS1" STATE="A">
+    <foxml:datastreamVersion ID="DS1.0" LABEL="MARCXML Record" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+          <record>
+            <leader>00000nam a22000002a 4500</leader>
+            <controlfield tag="008"> 20uu9999 |||||s|||||00| 0|eng d </controlfield>
+            <datafield ind1="1" ind2="0" tag="245">
+              <subfield code="a">Transoceanic Radical: The Many Identities of William Duane</subfield>
+            </datafield>
+            <datafield ind1="1" ind2="" tag="100">
+              <subfield code="a">Nigel Ken Little</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="653">
+              <subfield code="a">N/A</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="520">
+              <subfield code="a">The thesis examines the American career of William Duane (1760-1835) in the light of his earlier, and much less studied period in Ireland, England and India. It is the study of the development of one of America’s pre-eminent newspaper editors. Although Duane is not a first-tier figure of the Early Republican period such as John Adams, Thomas Jefferson or Alexander Hamilton, he certainly fits comfortably within the second-tier with men such as James Thomson Callender, Tench Coxe, John Binns and William Cobbett. He is an important figure within the historiography on the Early Republican period which has come out in recent years. He has an important role in three recent and seminal works on the period by Durey, Wilson and Pasley: Transatlantic Radicals, United Irishmen, United States and “The Tyranny of Printers”. &#xD;
+&#xD;
+This is a study of the identity of Duane measured against his political change and shifting sense of self. It seeks to answer the question: Who was William Duane? The thesis probes the question in depth by looking at Duane’s origins and then tracing his life in 1790s Philadelphia. The portrayal of Duane found in the recent historiography and in the first academic biography of Duane, Kim T. Phillips’ William Duane: A Radical Journalist in the Age of Jefferson, lets Duane’s version of self rest too easily, without interrogating how he constructed his identity within an American political context for an American reading audience. For example, although Duane constructed himself as a citizen of the United States by birth, the thesis maintains that he was not an U.S. citizen at all but was born in Newfoundland and was by eighteenth-century definitions a British subject.&#xD;
+&#xD;
+The thesis offers a great deal more detailed archival research within the above framework. First, it develops Duane’s familial relationships in his early life in much more detail than before. I have uncovered more details on his life from numerous sources, particularly letters, and a careful, textual search for any information on Duane’s earlier career in Ireland and England in the 1780s which has been overlooked by previous researchers. The thesis then places this material in the context of the newspaper trade in 1780s Clonmel and London while building a narrative analysis of this period before moving on to India.&#xD;
+&#xD;
+Second, this thesis demonstrates Duane’s links to the East India Company army. The importance of Duane’s Indian career also lies in his being part of a wider chronology of deported editors and government suppression of the press within the period from 1780 to 1799. The place of Duane within an ignored history of radical migrations to India is also dealt with as is his emergence as a pro revolutionary editor in Calcutta after the declaration of war in 1793.&#xD;
+&#xD;
+Third, the thesis uncovers a great deal more archival information on the period of Duane’s membership of the London Corresponding Society and his editorship of the Telegraph – a strongly pro-French newspaper in wartime London. This period was a short but crucial one for Duane as he witnessed first-hand the last real throes of a British revolutionary movement and the enactment of two important bills which sought to smother the L.C.S. and the other plebeian radical groups.&#xD;
+&#xD;
+Fourth, the thesis examines Duane’s role in what has been perceived as a crucial turning point in American history – the election of Thomas Jefferson to the presidency in 1800. The thesis seeks to understand what Duane’s impact on American politics was and how his earlier career shaped his political outlook and his actions in America. It seeks to denativise the Early Republican Period by pointing out outside currents that Duane used in defining what Americanness was as opposed to his conceptualisation of Federalism and Britain.&#xD;
+&#xD;
+Finally, the thesis argues that the story of William Duane is one of an eighteenthcentury editor’s transoceanic search for a home.</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="260">
+              <subfield code="c">2003</subfield>
+            </datafield>
+            <datafield ind1="0" ind2="" tag="041">
+              <subfield code="a">eng
+     </subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="260">
+              <subfield code="b">Murdoch University</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="540">
+              <subfield code="a">http://www.murdoch.edu.au/goto/CopyrightNotice</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="540">
+              <subfield code="a">Copyright Nigel Ken Little</subfield>
+            </datafield>
+            <datafield ind1="4" ind2="" tag="856">
+              <subfield code="u">http://wwwlib.murdoch.edu.au/adt/browse/view/adt-MU20040510.153718</subfield>
+            </datafield>
+            <datafield ind1="" ind2="" tag="502">
+              <subfield code="a">Transoceanic Radical: The Many Identities of William Duane</subfield>
+            </datafield>
+          </record>
+        </collection>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="M" ID="DS2" STATE="A">
+    <foxml:datastreamVersion ID="DS2.0" LABEL="02Whole.pdf" MIMETYPE="application/pdf">
+      <foxml:contentLocation REF="http://localhost:8000/dspaceArchive/141/02Whole.pdf" TYPE="URL"></foxml:contentLocation>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="M" ID="DS3" STATE="A">
+    <foxml:datastreamVersion ID="DS3.0" LABEL="01Front.pdf" MIMETYPE="application/pdf">
+      <foxml:contentLocation REF="http://localhost:8000/dspaceArchive/141/01Front.pdf" TYPE="URL"></foxml:contentLocation>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

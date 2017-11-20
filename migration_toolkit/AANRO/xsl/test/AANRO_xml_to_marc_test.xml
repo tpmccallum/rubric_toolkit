@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<utfx:tests xmlns:utfx="http://utfx.org/test-definition">
+    <!--
+#
+#    Copyright (C) 2005-2006  Distance and e-Learning Centre, 
+#    University of Southern Queensland
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+
+--><utfx:stylesheet src="AANRO_xml_to_marc.xsl"/>
+    <utfx:test>
+        <utfx:name>Author</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <author>Leng RA</author> 
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="100" ind1=" " ind2=" ">
+                    <subfield code="a">Leng RA</subfield>
+                </datafield>
+            </utfx:expected>
+        </utfx:assert-equal>      
+    </utfx:test>
+       
+   <!--  Research  -->
+    <utfx:test>
+        <utfx:name>Author + Affiliation</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                <author>Dillon P (Australian Centre for Groundwater Studies)|Pavelic P (Australian Centre for Groundwater Studies)</author> 
+            </utfx:source>
+            <utfx:expected validate="no">
+                <datafield tag="100" ind1=" " ind2=" ">
+                    <subfield code="a">Dillon P</subfield>
+                    <subfield code="u">Australian Centre for Groundwater Studies</subfield>
+                </datafield>
+                <datafield tag="700" ind1=" " ind2=" ">
+                    <subfield code="a">Pavelic P</subfield>
+                    <subfield code="u">Australian Centre for Groundwater Studies</subfield>
+                </datafield>
+             </utfx:expected>
+          </utfx:assert-equal>      
+    </utfx:test>
+    <utfx:test>
+        <utfx:name>Item Title</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                    <record>
+                        <id>AAABGI002</id> 
+                        <title>10th Conference of the Australian Association of Animal Breeding and Genetics</title> 
+                        <doctype>Archived</doctype> 
+                        <startdate>199209</startdate> 
+                        <finishdate>199209</finishdate> 
+                        <researcher>Vercoe JE Dr Australian Association of Animal Breeding and Genetics Inc. (PO Box 5545, Rockhampton Mail Centre Qld 4702)|Davis GP Dr Australian Association of Animal Breeding and Genetics Inc. (PO Box 5545, Rockhampton Mail Centre Qld 4702)</researcher> 
+                        <sponsor>WRDC: Wool Research and Development Corporation $3,000 (AAA3) (1992/93)|DRDC: Dairy R&amp;D Corporation|MRC: Meat Research Corporation $2, 000 (Total)</sponsor>
+                        <collaboration>collaboration</collaboration>
+                        <keywords>keywords|keywords2</keywords>
+                        <locality>locality</locality>
+                        <program>program</program>
+                        <subprogram>subprogram</subprogram>
+                         <objective>International trade in breeds and breeding technology: enhancing our capability and contribution.</objective>
+                        <background>background</background>
+                         <methodology>September 21-24: Plenary sessions on Australasian animal and human resources, importing and exporting genetic material and international genetic evaluation. Concurrent sessions for beef cattle, dairy cattle, sheep and fibre animals, other meat animals, sire referencing, parameter estimation, selection theory, practical evaluations, reproductive technologies, gene technologies. Forum on use of transgenic livestock, panel discussion on genetic evaluation systems, display of animal breeding software.</methodology>
+                        <progress>progress</progress>
+                        <implication>implication</implication>
+                     
+                       
+                    </record>
+                 </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <record>
+                    <leader>00000nam a22000002a 4500</leader>
+                    <controlfield tag="008"></controlfield>
+                  <datafield tag="091" ind1=" " ind2=" ">
+                            <subfield code="a">AAABGI002</subfield>
+                        </datafield>
+                    <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">Archived</subfield>
+                            <subfield code="2"> AANRO</subfield>
+                        </datafield>
+                  <datafield tag="245" ind1="1" ind2=" ">
+                            <subfield code="a">10th Conference of the Australian Association of Animal Breeding and Genetics</subfield>
+                  </datafield>
+                    <datafield tag="045" ind1="2" ind2=" ">
+                        <subfield code="b">d199209</subfield>
+                        <subfield code="b">d199209 </subfield>
+                    </datafield>
+               <datafield tag="720" ind1="1" ind2=" ">
+                  <subfield code="a">Vercoe JE Dr Australian Association of Animal Breeding and Genetics Inc. (PO Box 5545, Rockhampton Mail Centre Qld 4702)</subfield>
+                       
+                    </datafield>
+                    <datafield tag="720" ind1="1" ind2=" ">
+                        <subfield code="a">Davis GP Dr Australian Association of Animal Breeding and Genetics Inc. (PO Box 5545, Rockhampton Mail Centre Qld 4702)</subfield>
+                    </datafield>
+                  <datafield tag="536" ind1=" " ind2=" ">
+                            <subfield code="a">WRDC: Wool Research and Development Corporation $3,000 (AAA3) (1992/93)</subfield>
+                  </datafield>
+                    <datafield tag="536" ind1=" " ind2=" ">
+                        <subfield code="a">DRDC: Dairy R&amp;D Corporation</subfield>
+                    </datafield>
+                    <datafield tag="536" ind1=" " ind2=" ">
+                        <subfield code="a">MRC: Meat Research Corporation $2, 000 (Total)</subfield>
+                    </datafield>
+                    <datafield tag="591" ind1=" " ind2=" ">
+                        <subfield code="a">collaboration</subfield>
+                    </datafield>
+                    <datafield tag="653" ind1=" " ind2=" ">
+                        <subfield code="a">keywords</subfield>
+                        <subfield code="a">keywords2</subfield>
+                    </datafield>
+                    <datafield tag="522" ind1=" " ind2=" ">
+                        <subfield code="a">locality</subfield>
+                    </datafield>
+                    <datafield tag="095" ind1=" " ind2=" ">
+                        <subfield code="a">program</subfield>
+                    </datafield>
+                    <datafield tag="096" ind1=" " ind2=" ">
+                        <subfield code="a">subprogram</subfield>
+                    </datafield>
+                   <datafield tag="520" ind1="2" ind2=" ">
+                            <subfield code="a">International trade in breeds and breeding technology: enhancing our capability and contribution.</subfield>
+                   </datafield>
+                    <datafield tag="592" ind1=" " ind2=" ">
+                        <subfield code="a">background</subfield>
+                    </datafield>
+                   <datafield tag="567" ind1=" " ind2=" ">
+                            <subfield code="a">September 21-24: Plenary sessions on Australasian animal and human resources, importing and exporting genetic material and international genetic evaluation. Concurrent sessions for beef cattle, dairy cattle, sheep and fibre animals, other meat animals, sire referencing, parameter estimation, selection theory, practical evaluations, reproductive technologies, gene technologies. Forum on use of transgenic livestock, panel discussion on genetic evaluation systems, display of animal breeding software.</subfield>
+                   </datafield>
+                    <datafield tag="593" ind1=" " ind2=" ">
+                        <subfield code="a">progress</subfield>
+                    </datafield>
+                    <datafield tag="594" ind1=" " ind2=" ">
+                        <subfield code="a">implication</subfield>
+                    </datafield>
+                 </record>
+               </collection>
+             </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+    
+    
+    
+    
+    
+    <!-- publication  -->
+    <utfx:test>
+        <utfx:name>Item Title2</utfx:name>
+        <utfx:assert-equal>
+            <utfx:source validate="no">
+                        <record>
+                        <id>38166</id> 
+                        <doctype>Book or Report</doctype> 
+                        <pubyear>1996</pubyear> 
+                        <title>Application of duckweed in treating municipal wastewater</title> 
+                        <author>Leng RA (University of New England)</author> 
+                        <contactauthor>contactauthor</contactauthor>
+                        <sponsor>Hunter Water Corporation</sponsor> 
+                        <contactemail>contactemail</contactemail>
+                        <source>Urban Water Research Association of Australia, Melbourne VIC 1996-05, 53p, tables, 35 figs, refs.</source> 
+                        <isbn>1876088087</isbn> 
+                        <issn>issn</issn>
+                        <series>Research Report (Urban Water Research Association of Australia); no 111.</series>
+                        <notes>notes</notes>
+                        <abstract>Duckweed species (Lemnaceae) have demonstrated, in overseas experiments, a tremendous ability to remove mineral contaminants, primarily nitrogen, phosphorus, potassium, calcium, sodium and magnesium, from wastewaters emanating from municipal sewage treatment works, intensive animal production industries and food processing factories. The research program aimed to adapt overseas studies to Australian conditions using Spirodila species of duckweed. The results were impressive and confirmed that duckweed has the capability to further polish municipal wastewater in Australia. Trials of duckweed on coal mine wastewater showed that the plant can tolerate the wastewater, but cannot uptake the huge quantities of salts required by the mining companies.</abstract> 
+                        <keywords>Wastewater Treatment|Sewage Treatment|Coal Industry Waste Waters|Aquatic Macrophytes (Lemnaceae)|Water Quality (Treated Waters)|Biological Treatment|Wetlands|Small Sewage Works|Spirodila</keywords>
+                        <locality>locality</locality>
+                        <weblink>http://www.wsaa.asn.au</weblink> 
+                        <availability>Copies of this report are available from the Water Services Association of Australia, Phone (03) 9606 0678 or Fax (03) 9606 0376. For online ordering visit the website</availability> 
+                        <availemail>info@wsaa.asn.au</availemail> 
+                        <fulltextlink>fulltextlink</fulltextlink>
+                        <deliverylink>deliverylink</deliverylink>
+                        <deliveryemail>deliveryemail</deliveryemail>
+                        <deliverynote>deliverynote</deliverynote>
+                    
+                    </record>
+             </utfx:source>
+            <utfx:expected validate="no">
+                <collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <record>
+                        <leader>00000nam a22000002a 4500</leader>
+                        <controlfield tag="008"></controlfield>
+                        <datafield tag="091" ind1=" " ind2=" ">
+                            <subfield code="a">38166</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="7">
+                            <subfield code="a">Book or Report</subfield>
+                            <subfield code="2"> AANRO</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="c">1996 </subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="1" ind2=" ">
+                            <subfield code="a">Application of duckweed in treating municipal wastewater</subfield>
+                        </datafield>
+                        <datafield tag="100" ind1=" " ind2=" ">
+                            <subfield code="a">Leng RA</subfield>
+                            <subfield code="u">University of New England</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1=" " ind2=" ">
+                            <subfield code="a">contactauthor</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1=" " ind2=" ">
+                            <subfield code="u">contactemail</subfield>
+                        </datafield>
+                        <datafield tag="536" ind1=" " ind2=" ">
+                            <subfield code="a">Hunter Water Corporation</subfield>
+                        </datafield>
+                        
+                        <datafield tag="773" ind1="0" ind2=" ">
+                            <subfield code="t">Urban Water Research Association of Australia, Melbourne VIC 1996-05, 53p, tables, 35 figs, refs.</subfield>
+                        </datafield>
+                      <datafield tag="020" ind1=" " ind2=" ">
+                            <subfield code="a">1876088087</subfield>
+                          </datafield>
+                          <datafield tag="022" ind1=" " ind2=" ">
+                              <subfield code="a">issn</subfield>
+                        </datafield>
+                        <datafield tag="440" ind1=" " ind2=" ">
+                            <subfield code="a">Research Report (Urban Water Research Association of Australia); no 111.</subfield>
+                        </datafield>
+                          <datafield tag="500" ind1=" " ind2=" ">
+                              <subfield code="a">notes</subfield>
+                          </datafield>
+                        <datafield tag="520" ind1="3" ind2=" ">
+                            <subfield code="a">Duckweed species (Lemnaceae) have demonstrated, in overseas experiments, a tremendous ability to remove mineral contaminants, primarily nitrogen, phosphorus, potassium, calcium, sodium and magnesium, from wastewaters emanating from municipal sewage treatment works, intensive animal production industries and food processing factories. The research program aimed to adapt overseas studies to Australian conditions using Spirodila species of duckweed. The results were impressive and confirmed that duckweed has the capability to further polish municipal wastewater in Australia. Trials of duckweed on coal mine wastewater showed that the plant can tolerate the wastewater, but cannot uptake the huge quantities of salts required by the mining companies.</subfield>
+                        </datafield>
+                        <datafield tag="653" ind1=" " ind2=" ">
+                            <subfield code="a">Wastewater Treatment</subfield>
+                            <subfield code="a">Sewage Treatment</subfield>
+                            <subfield code="a">Coal Industry Waste Waters </subfield>
+                            <subfield code="a">Aquatic Macrophytes (Lemnaceae)</subfield>
+                            <subfield code="a">Water Quality (Treated Waters)</subfield>
+                            <subfield code="a">Biological Treatment</subfield>
+                            <subfield code="a">Wetlands</subfield>
+                            <subfield code="a">Small Sewage Works</subfield>
+                            <subfield code="a">Spirodila</subfield>
+                            
+                        </datafield>
+                          <datafield tag="522" ind1=" " ind2=" ">
+                              <subfield code="a">locality</subfield>
+                          </datafield>
+                       
+                        <datafield tag="856" ind1="4" ind2=" ">
+                            <subfield code="u">http://www.wsaa.asn.au</subfield>
+                        </datafield> 
+                        <datafield tag="856" ind1=" " ind2=" ">
+                            <subfield code="u">fulltextlink</subfield>
+                        </datafield> 
+                        
+                        
+                        <datafield tag="506" ind1=" " ind2=" ">
+                            <subfield code="a">Copies of this report are available from the Water Services Association of Australia, Phone (03) 9606 0678 or Fax (03) 9606 0376. For online ordering visit the website</subfield>
+                        </datafield>
+                        
+                        <datafield tag="595" ind1=" " ind2=" ">
+                            <subfield code="a">info@wsaa.asn.au</subfield>
+                        </datafield>
+                        <datafield tag="596" ind1=" " ind2=" ">
+                            <subfield code="a">deliverylink</subfield>
+                        </datafield>
+                        <datafield tag="597" ind1=" " ind2=" ">
+                            <subfield code="a">deliveryemail</subfield>
+                        </datafield>
+                        <datafield tag="598" ind1=" " ind2=" ">
+                            <subfield code="a">deliverynote</subfield>
+                        </datafield>
+                        
+                     </record>
+                </collection>
+            </utfx:expected>
+        </utfx:assert-equal>
+    </utfx:test>
+    
+   
+</utfx:tests>
